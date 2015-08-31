@@ -1,0 +1,756 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <!-- MOTW-DISABLED saved from url=(0014)about:internet -->
+    <title>Scripting environment reference</title>
+    <link rel="StyleSheet" href="css/Mobile_SDK_SAML_scripting.css" type="text/css" media="all" />
+    <link rel="StyleSheet" href="css/webworks.css" type="text/css" media="all" />
+    <script type="text/javascript" language="JavaScript1.2" src="scripts/expand.js"></script>
+    <script type="text/javascript" language="JavaScript1.2">
+      <!--
+        var  WebWorksRootPath = "";
+      // -->
+    </script>
+  </head>
+  <body>
+    <div style="text-align: left;">
+      <table cellspacing="0" summary="">
+        <tr>
+          <td>
+            <a href="toc.html"><img src="images/toc.gif" alt="Table of Contents" border="0" /></a>
+          </td>
+          <td>
+            <a href="Mobile_SDK_SAML_scripting.18.5.html"><img src="images/prev.gif" alt="Previous" border="0" /></a>
+          </td>
+          <td>
+            <img src="images/nextx.gif" alt="Next" border="0" />
+          </td>
+        </tr>
+      </table>
+    </div>
+    <br />
+    <div class="WebWorks_Breadcrumbs" style="text-align: left;">
+      <a class="WebWorks_Breadcrumb_Link" href="Mobile_SDK_SAML_scripting.18.1.html#1143357">Creating a SAML application profile</a> : Scripting environment reference</div>
+    <hr align="left" />
+    <blockquote>
+      <div class="Heading1"><a name="1143357">Scripting environment reference</a></div>
+      <div class="Body"><a name="1143358">Centrify Cloud Service creates a set of Javascript objects, global variables, and global </a>functions for each SAML user session. These objects provide information that a custom SAML script can read and act on. Some of the objects also accept values that specify elements with the SAML assertion that Centrify Cloud Service presents to a SAML service.</div>
+      <div class="Body"><a name="1182582">This section describes the SAML user-session Javascript environment in which the user map </a>script and the custom SAML script execute. The section describes each available object and its public properties and methods. It also describes available global variables and global functions.</div>
+      <div class="Body"><span class="Jump_X-ref"><a href="Mobile_SDK_Intro.05.19.html#1112500" title="The SAML script specifies the attributes in the token" name="1182586">“The SAML script specifies the attributes in the token” on page&nbsp;36</a></span> describes how the Centrify Cloud Service works with a set of Javascript objects when executing the SAML script.</div>
+      <div class="Heading1_Class">
+        <span class="StepNumber">Class:  </span><a name="1143361">LoginUser</a></div>
+      <div class="Abstract"><a name="1143362">Contains information about the user identity used to authenticate through the Centrify </a>Cloud Service and the organization’s directory service.</div>
+      <div class="Reference_Heading"><a name="1164457">Properties</a></div>
+      <div class="Body"><a name="1164430">The </a><span class="Code">LoginUser</span> object’s properties describe the user as he or she is presented to the SAML service. The <span class="Code">LoginUser</span> class provides the following properties:</div>
+      <table class="Standard_Indent" style="margin-left: 46.8pt; text-align: left" cellspacing="0" summary="">
+        <caption></caption>
+        <tr>
+          <td style="border-bottom-color: Black; border-bottom-style: solid; border-bottom-width: thin; border-left-color: Black; border-left-style: solid; border-left-width: thin; border-right-color: Black; border-right-style: solid; border-right-width: thin; border-top-color: Black; border-top-style: solid; border-top-width: thin; padding-bottom: 2pt; padding-left: 2pt; padding-right: 2pt; padding-top: 6pt; vertical-align: top">
+            <div class="CellHeading"><a name="1143366">Property name</a></div>
+          </td>
+          <td style="border-bottom-color: Black; border-bottom-style: solid; border-bottom-width: thin; border-left-color: Black; border-left-style: solid; border-left-width: thin; border-right-color: Black; border-right-style: solid; border-right-width: thin; border-top-color: Black; border-top-style: solid; border-top-width: thin; padding-bottom: 2pt; padding-left: 2pt; padding-right: 2pt; padding-top: 6pt; vertical-align: top">
+            <div class="CellHeading"><a name="1143368">Description</a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-bottom-color: Black; border-bottom-style: solid; border-bottom-width: thin; border-left-color: Black; border-left-style: solid; border-left-width: thin; border-right-color: Black; border-right-style: solid; border-right-width: thin; border-top-color: Black; border-top-style: solid; border-top-width: thin; padding-bottom: 2pt; padding-left: 2pt; padding-right: 2pt; padding-top: 6pt; vertical-align: top">
+            <div class="CellBody"><span class="Jump_X-ref"><a href="#1164147" title="Scripting environment reference" name="1143370">UserName</a></span></div>
+          </td>
+          <td style="border-bottom-color: Black; border-bottom-style: solid; border-bottom-width: thin; border-left-color: Black; border-left-style: solid; border-left-width: thin; border-right-color: Black; border-right-style: solid; border-right-width: thin; border-top-color: Black; border-top-style: solid; border-top-width: thin; padding-bottom: 2pt; padding-left: 2pt; padding-right: 2pt; padding-top: 6pt; vertical-align: top">
+            <div class="CellBody"><span class="Jump_X-ref"><a href="#1164149" title="Scripting environment reference" name="1143372">The user identity presented in the SAML assertion to the SAML service.</a></span></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-bottom-color: Black; border-bottom-style: solid; border-bottom-width: thin; border-left-color: Black; border-left-style: solid; border-left-width: thin; border-right-color: Black; border-right-style: solid; border-right-width: thin; border-top-color: Black; border-top-style: solid; border-top-width: thin; padding-bottom: 2pt; padding-left: 2pt; padding-right: 2pt; padding-top: 6pt; vertical-align: top">
+            <div class="CellBody"><span class="Jump_X-ref"><a href="#1164799" title="Scripting environment reference" name="1143374">GroupNames</a></span></div>
+          </td>
+          <td style="border-bottom-color: Black; border-bottom-style: solid; border-bottom-width: thin; border-left-color: Black; border-left-style: solid; border-left-width: thin; border-right-color: Black; border-right-style: solid; border-right-width: thin; border-top-color: Black; border-top-style: solid; border-top-width: thin; padding-bottom: 2pt; padding-left: 2pt; padding-right: 2pt; padding-top: 6pt; vertical-align: top">
+            <div class="CellBody"><span class="Jump_X-ref"><a href="#1164800" title="Scripting environment reference" name="1143376">Groups in which the user is a direct member.</a></span></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-bottom-color: Black; border-bottom-style: solid; border-bottom-width: thin; border-left-color: Black; border-left-style: solid; border-left-width: thin; border-right-color: Black; border-right-style: solid; border-right-width: thin; border-top-color: Black; border-top-style: solid; border-top-width: thin; padding-bottom: 2pt; padding-left: 2pt; padding-right: 2pt; padding-top: 6pt; vertical-align: top">
+            <div class="CellBody"><span class="Jump_X-ref"><a href="#1164951" title="Scripting environment reference" name="1143378">EffectiveGroupNames</a></span></div>
+          </td>
+          <td style="border-bottom-color: Black; border-bottom-style: solid; border-bottom-width: thin; border-left-color: Black; border-left-style: solid; border-left-width: thin; border-right-color: Black; border-right-style: solid; border-right-width: thin; border-top-color: Black; border-top-style: solid; border-top-width: thin; padding-bottom: 2pt; padding-left: 2pt; padding-right: 2pt; padding-top: 6pt; vertical-align: top">
+            <div class="CellBody"><span class="Jump_X-ref"><a href="#1164953" title="Scripting environment reference" name="1143380">Groups in which the user is an effective member.</a></span> </div>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-bottom-color: Black; border-bottom-style: solid; border-bottom-width: thin; border-left-color: Black; border-left-style: solid; border-left-width: thin; border-right-color: Black; border-right-style: solid; border-right-width: thin; border-top-color: Black; border-top-style: solid; border-top-width: thin; padding-bottom: 2pt; padding-left: 2pt; padding-right: 2pt; padding-top: 6pt; vertical-align: top">
+            <div class="CellBody"><span class="Jump_X-ref"><a href="#1165152" title="Scripting environment reference" name="1143382">GroupDNs</a></span></div>
+          </td>
+          <td style="border-bottom-color: Black; border-bottom-style: solid; border-bottom-width: thin; border-left-color: Black; border-left-style: solid; border-left-width: thin; border-right-color: Black; border-right-style: solid; border-right-width: thin; border-top-color: Black; border-top-style: solid; border-top-width: thin; padding-bottom: 2pt; padding-left: 2pt; padding-right: 2pt; padding-top: 6pt; vertical-align: top">
+            <div class="CellBody"><span class="Jump_X-ref"><a href="#1165154" title="Scripting environment reference" name="1143384">Distinguished names of groups in which the user is a direct member.</a></span></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-bottom-color: Black; border-bottom-style: solid; border-bottom-width: thin; border-left-color: Black; border-left-style: solid; border-left-width: thin; border-right-color: Black; border-right-style: solid; border-right-width: thin; border-top-color: Black; border-top-style: solid; border-top-width: thin; padding-bottom: 2pt; padding-left: 2pt; padding-right: 2pt; padding-top: 6pt; vertical-align: top">
+            <div class="CellBody"><span class="Jump_X-ref"><a href="#1165275" title="Scripting environment reference" name="1143386">EffectiveGroupDNs</a></span></div>
+          </td>
+          <td style="border-bottom-color: Black; border-bottom-style: solid; border-bottom-width: thin; border-left-color: Black; border-left-style: solid; border-left-width: thin; border-right-color: Black; border-right-style: solid; border-right-width: thin; border-top-color: Black; border-top-style: solid; border-top-width: thin; padding-bottom: 2pt; padding-left: 2pt; padding-right: 2pt; padding-top: 6pt; vertical-align: top">
+            <div class="CellBody"><span class="Jump_X-ref"><a href="#1165277" title="Scripting environment reference" name="1143388">Distinguished names of groups in which the user is an effective member.</a></span></div>
+          </td>
+        </tr>
+      </table>
+      <div class="Reference_Heading"><a name="1164523">Methods</a></div>
+      <div class="Body"><a name="1143398">The </a><span class="Code">LoginUser</span> class has a single method:</div>
+      <table class="Standard_Indent" style="margin-left: 46.8pt; text-align: left" cellspacing="0" summary="">
+        <caption></caption>
+        <tr>
+          <td style="border-bottom-color: Black; border-bottom-style: solid; border-bottom-width: thin; border-left-color: Black; border-left-style: solid; border-left-width: thin; border-right-color: Black; border-right-style: solid; border-right-width: thin; border-top-color: Black; border-top-style: solid; border-top-width: thin; padding-bottom: 2pt; padding-left: 2pt; padding-right: 2pt; padding-top: 6pt; vertical-align: top">
+            <div class="CellHeading"><a name="1143391">Method</a></div>
+          </td>
+          <td style="border-bottom-color: Black; border-bottom-style: solid; border-bottom-width: thin; border-left-color: Black; border-left-style: solid; border-left-width: thin; border-right-color: Black; border-right-style: solid; border-right-width: thin; border-top-color: Black; border-top-style: solid; border-top-width: thin; padding-bottom: 2pt; padding-left: 2pt; padding-right: 2pt; padding-top: 6pt; vertical-align: top">
+            <div class="CellHeading"><a name="1143393">Description</a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-bottom-color: Black; border-bottom-style: solid; border-bottom-width: thin; border-left-color: Black; border-left-style: solid; border-left-width: thin; border-right-color: Black; border-right-style: solid; border-right-width: thin; border-top-color: Black; border-top-style: solid; border-top-width: thin; padding-bottom: 2pt; padding-left: 2pt; padding-right: 2pt; padding-top: 6pt; vertical-align: top">
+            <div class="CellBody"><span class="Jump_X-ref"><a href="#1165402" title="Scripting environment reference" name="1143395">Get</a></span></div>
+          </td>
+          <td style="border-bottom-color: Black; border-bottom-style: solid; border-bottom-width: thin; border-left-color: Black; border-left-style: solid; border-left-width: thin; border-right-color: Black; border-right-style: solid; border-right-width: thin; border-top-color: Black; border-top-style: solid; border-top-width: thin; padding-bottom: 2pt; padding-left: 2pt; padding-right: 2pt; padding-top: 6pt; vertical-align: top">
+            <div class="CellBody"><span class="Jump_X-ref"><a href="#1165404" title="Scripting environment reference" name="1143397">Returns an attribute from Active Directory.</a></span></div>
+          </td>
+        </tr>
+      </table>
+      <div class="Reference_Heading"><a name="1165677">Discussion</a></div>
+      <div class="Abstract"><a name="1165692">Centrify Cloud Service creates a single </a><span class="Code">LoginUser</span> object for each SAML user session; the object is an instance of the <span class="Code">LoginUser</span> class, and is a read/write object.</div>
+      <div class="Heading2_Property">
+        <span class="StepNumber">Property:  </span><a name="1164147">UserName</a></div>
+      <div class="Abstract"><a name="1164149">The user identity presented in the SAML assertion to the SAML service. </a></div>
+      <div class="Reference_Heading"><a name="1164152">Syntax</a></div>
+      <div class="Declaration"><a name="1164153">loginuser.UserName</a></div>
+      <div class="Reference_Heading"><a name="1164156">Discussion</a></div>
+      <div class="Body"><a name="1164769">Centrify Cloud Service determines the user ID for this user session depending on the </a><span class="bold">Map </span><span class="bold">to User Accounts</span> setting in the <span class="bold">Application Settings</span> tab. (These settings determine the user name, which is the user ID presented in the SAML assertion.) This property is synonymous with the global variable <span class="Code">LoginUsername</span>.</div>
+      <div class="Heading2_Property">
+        <span class="StepNumber">Property:  </span><a name="1164799">GroupNames</a></div>
+      <div class="Abstract"><a name="1164800">Groups in which the user is a direct member. </a></div>
+      <div class="Reference_Heading"><a name="1164801">Syntax</a></div>
+      <div class="Declaration"><a name="1164682">loginuser.GroupNames</a></div>
+      <div class="Reference_Heading"><a name="1164874">Return value</a></div>
+      <div class="Body"><a name="1164875">An array of names of groups in which the user is a direct member.</a></div>
+      <div class="Reference_Heading"><a name="1164837">Discussion</a></div>
+      <div class="Body"><a name="1164838">The groups come from the user’s account in the organization’s Active Directory.</a></div>
+      <div class="Heading2_Property">
+        <span class="StepNumber">Property:  </span><a name="1164951">EffectiveGroupNames</a></div>
+      <div class="Abstract"><a name="1164953">Groups in which the user is an effective member. </a></div>
+      <div class="Reference_Heading"><a name="1164954">Syntax</a></div>
+      <div class="Declaration"><a name="1164955">loginuser.EffectiveGroupNames</a></div>
+      <div class="Reference_Heading"><a name="1164956">Return value</a></div>
+      <div class="Body"><a name="1164957">An array of names of groups in which the user is a direct member.</a></div>
+      <div class="Reference_Heading"><a name="1165038">Discussion</a></div>
+      <div class="Body"><a name="1165039">The effective groups come from the user’s account in the organization’s Active Directory. </a>An effective member of a group is either a direct member of the group or a member of a group that is in turn a direct or nested member of the group.</div>
+      <div class="Heading2_Property">
+        <span class="StepNumber">Property:  </span><a name="1165152">GroupDNs</a></div>
+      <div class="Abstract"><a name="1165154">Distinguished names of groups in which the user is a direct member. </a></div>
+      <div class="Reference_Heading"><a name="1165155">Syntax</a></div>
+      <div class="Declaration"><a name="1165156">loginuser.GroupDNs</a></div>
+      <div class="Reference_Heading"><a name="1165157">Return value</a></div>
+      <div class="Body"><a name="1165158">An array of distinguished names of groups in which the user is a direct member.</a></div>
+      <div class="Reference_Heading"><a name="1165159">Discussion</a></div>
+      <div class="Body"><a name="1165160">The groups come from the user’s account in the organization’s Active Directory.</a></div>
+      <div class="Heading2_Property">
+        <span class="StepNumber">Property:  </span><a name="1165275">EffectiveGroupDNs</a></div>
+      <div class="Abstract"><a name="1165277">Distinguished names of groups in which the user is an effective member. </a></div>
+      <div class="Reference_Heading"><a name="1165278">Syntax</a></div>
+      <div class="Declaration"><a name="1165279">loginuser.EffectiveGroupDNs</a></div>
+      <div class="Reference_Heading"><a name="1165280">Return value</a></div>
+      <div class="Body"><a name="1165281">An array of distinguished names of groups in which the user is a direct member.</a></div>
+      <div class="Reference_Heading"><a name="1165282">Discussion</a></div>
+      <div class="Body"><a name="1165283">The effective groups come from the user’s account in the organization’s Active Directory. </a>An effective member of a group is either a direct member of the group or a member of a group that is in turn a direct or nested member of the group.</div>
+      <div class="Heading2_Method" style="color: #000000; font-style: normal; font-variant: normal; font-weight: normal; margin-top: 17.5pt; text-transform: none; vertical-align: baseline">
+        <span class="StepNumber">Method:  </span><span style="color: #000000; font-family: &quot;Myriad Condensed Web&quot;; font-size: 14.5pt; font-style: normal; font-variant: normal; font-weight: normal; text-transform: none; vertical-align: baseline"><a name="1165402">Get</a></span></div>
+      <div class="Abstract"><a name="1165404">Returns an attribute from Active Directory.</a></div>
+      <div class="Reference_Heading"><a name="1165407">Syntax</a></div>
+      <div class="Declaration"><a name="1165411">LoginUser.Get(</a><span class="Variable">ADKey</span>)</div>
+      <div class="Reference_Heading"><a name="1165414">Parameters</a></div>
+      <div class="Term_Ref" style="color: #000000; font-style: normal; font-variant: normal; font-weight: normal; margin-top: 3.0pt; text-transform: none; vertical-align: baseline"><span class="Variable"><a name="1165415">ADKey</a></span></div>
+      <div class="Definition_Ref"><a name="1165416">A string specifying the name of the attribute to retrieve.</a></div>
+      <div class="Reference_Heading"><a name="1165417">Return value</a></div>
+      <div class="Body"><a name="1165418">A string value corresponding to the key specified in the parameter.</a></div>
+      <div class="Heading1_Class">
+        <span class="StepNumber">Class:  </span><a name="1143400">Application</a></div>
+      <div class="Abstract"><a name="1143401">Contains the properties of the SAML service as they’re defined in the SAML application </a>profile.</div>
+      <div class="Body"><a name="1143406">The </a><span class="Code">Application</span> object is read-only. A script accesses the object’s properties using the object’s single public method.</div>
+      <table class="Standard_Indent" style="margin-left: 46.8pt; text-align: left" cellspacing="0" summary="">
+        <caption></caption>
+        <tr>
+          <td style="border-bottom-color: Black; border-bottom-style: solid; border-bottom-width: thin; border-left-color: Black; border-left-style: solid; border-left-width: thin; border-right-color: Black; border-right-style: solid; border-right-width: thin; border-top-color: Black; border-top-style: solid; border-top-width: thin; padding-bottom: 2pt; padding-left: 2pt; padding-right: 2pt; padding-top: 6pt; vertical-align: top">
+            <div class="CellHeading"><a name="1143409">Method Name</a></div>
+          </td>
+          <td style="border-bottom-color: Black; border-bottom-style: solid; border-bottom-width: thin; border-left-color: Black; border-left-style: solid; border-left-width: thin; border-right-color: Black; border-right-style: solid; border-right-width: thin; border-top-color: Black; border-top-style: solid; border-top-width: thin; padding-bottom: 2pt; padding-left: 2pt; padding-right: 2pt; padding-top: 6pt; vertical-align: top">
+            <div class="CellHeading"><a name="1143411">Description</a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-bottom-color: Black; border-bottom-style: solid; border-bottom-width: thin; border-left-color: Black; border-left-style: solid; border-left-width: thin; border-right-color: Black; border-right-style: solid; border-right-width: thin; border-top-color: Black; border-top-style: solid; border-top-width: thin; padding-bottom: 2pt; padding-left: 2pt; padding-right: 2pt; padding-top: 6pt; vertical-align: top">
+            <div class="CellBody"><span class="Jump_X-ref"><a href="#1165805" title="Scripting environment reference" name="1143413">Get</a></span></div>
+          </td>
+          <td style="border-bottom-color: Black; border-bottom-style: solid; border-bottom-width: thin; border-left-color: Black; border-left-style: solid; border-left-width: thin; border-right-color: Black; border-right-style: solid; border-right-width: thin; border-top-color: Black; border-top-style: solid; border-top-width: thin; padding-bottom: 2pt; padding-left: 2pt; padding-right: 2pt; padding-top: 6pt; vertical-align: top">
+            <div class="CellBody"><span class="Jump_X-ref"><a href="#1165807" title="Scripting environment reference" name="1143415">Returns a property value from the </a></span><span class="Jump_X-ref"><a href="#1165807" title="Scripting environment reference">Application</a></span><span class="Jump_X-ref"><a href="#1165807" title="Scripting environment reference"> object.</a></span></div>
+          </td>
+        </tr>
+      </table>
+      <div class="Reference_Heading"><a name="1143416">Discussion</a></div>
+      <div class="Body"><a name="1165754">Centrify Cloud Service creates a single </a><span class="Code">Application</span> object for each SAML user session. The object is an instance of the <span class="Code">ReadOnlyDataEntity</span> class, and is a read-only object.</div>
+      <div class="Body"><a name="1165755">The </a><span class="Code">Application</span> object’s properties describe the SAML service as it’s defined in the SAML application profile. Create a SAML application profile in Cloud Manager using the Generic SAML application template (as described in <span class="Jump_X-ref"><a href="Mobile_SDK_SAML_scripting.18.2.html#1175463" title="Configure the SAML interface">“Configure the SAML interface” on page&nbsp;229</a></span>).</div>
+      <div class="Body"><a name="1165750">The following section describes the property arguments this method can take.</a></div>
+      <div class="Heading2_Method" style="color: #000000; font-style: normal; font-variant: normal; font-weight: normal; margin-top: 17.5pt; text-transform: none; vertical-align: baseline">
+        <span class="StepNumber">Method:  </span><span style="color: #000000; font-family: &quot;Myriad Condensed Web&quot;; font-size: 14.5pt; font-style: normal; font-variant: normal; font-weight: normal; text-transform: none; vertical-align: baseline"><a name="1165805">Get</a></span></div>
+      <div class="Abstract"><a name="1165807">Returns a property value from the </a><span class="Code">Application</span> object.</div>
+      <div class="Reference_Heading"><a name="1165808">Syntax</a></div>
+      <div class="Declaration"><a name="1165809">Application.Get(</a><span class="Variable">property</span>)</div>
+      <div class="Reference_Heading"><a name="1165810">Parameters</a></div>
+      <div class="Term_Ref" style="color: #000000; font-style: normal; font-variant: normal; font-weight: normal; margin-top: 3.0pt; text-transform: none; vertical-align: baseline"><span class="Variable"><a name="1165811">property</a></span></div>
+      <div class="Definition_Ref"><a name="1165812">The object property for which you want a value. Properties for which you can get </a>values are shown in the following table. The property names are case sensitive.</div>
+      <table class="Standard_Indent" style="margin-left: 46.8pt; text-align: left" cellspacing="0" summary="">
+        <caption></caption>
+        <tr>
+          <td style="border-bottom-color: Black; border-bottom-style: solid; border-bottom-width: thin; border-left-color: Black; border-left-style: solid; border-left-width: thin; border-right-color: Black; border-right-style: solid; border-right-width: thin; border-top-color: Black; border-top-style: solid; border-top-width: thin; padding-bottom: 2pt; padding-left: 2pt; padding-right: 2pt; padding-top: 6pt; vertical-align: top">
+            <div class="CellHeading"><a name="1166084">Property Name</a></div>
+          </td>
+          <td style="border-bottom-color: Black; border-bottom-style: solid; border-bottom-width: thin; border-left-color: Black; border-left-style: solid; border-left-width: thin; border-right-color: Black; border-right-style: solid; border-right-width: thin; border-top-color: Black; border-top-style: solid; border-top-width: thin; padding-bottom: 2pt; padding-left: 2pt; padding-right: 2pt; padding-top: 6pt; vertical-align: top">
+            <div class="CellHeading"><a name="1166086">Description</a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-bottom-color: Black; border-bottom-style: solid; border-bottom-width: thin; border-left-color: Black; border-left-style: solid; border-left-width: thin; border-right-color: Black; border-right-style: solid; border-right-width: thin; border-top-color: Black; border-top-style: solid; border-top-width: thin; padding-bottom: 2pt; padding-left: 2pt; padding-right: 2pt; padding-top: 6pt; vertical-align: top">
+            <div class="CellBody"><a name="1166088">_PartitionKey</a></div>
+          </td>
+          <td style="border-bottom-color: Black; border-bottom-style: solid; border-bottom-width: thin; border-left-color: Black; border-left-style: solid; border-left-width: thin; border-right-color: Black; border-right-style: solid; border-right-width: thin; border-top-color: Black; border-top-style: solid; border-top-width: thin; padding-bottom: 2pt; padding-left: 2pt; padding-right: 2pt; padding-top: 6pt; vertical-align: top">
+            <div class="CellBody"><a name="1166090">The customer ID used to establish the user session. Example: BZ284.</a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-bottom-color: Black; border-bottom-style: solid; border-bottom-width: thin; border-left-color: Black; border-left-style: solid; border-left-width: thin; border-right-color: Black; border-right-style: solid; border-right-width: thin; border-top-color: Black; border-top-style: solid; border-top-width: thin; padding-bottom: 2pt; padding-left: 2pt; padding-right: 2pt; padding-top: 6pt; vertical-align: top">
+            <div class="CellBody"><a name="1166092">_RowKey</a></div>
+          </td>
+          <td style="border-bottom-color: Black; border-bottom-style: solid; border-bottom-width: thin; border-left-color: Black; border-left-style: solid; border-left-width: thin; border-right-color: Black; border-right-style: solid; border-right-width: thin; border-top-color: Black; border-top-style: solid; border-top-width: thin; padding-bottom: 2pt; padding-left: 2pt; padding-right: 2pt; padding-top: 6pt; vertical-align: top">
+            <div class="CellBody"><a name="1166094">The UUID (universally unique identifier) of the application.</a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-bottom-color: Black; border-bottom-style: solid; border-bottom-width: thin; border-left-color: Black; border-left-style: solid; border-left-width: thin; border-right-color: Black; border-right-style: solid; border-right-width: thin; border-top-color: Black; border-top-style: solid; border-top-width: thin; padding-bottom: 2pt; padding-left: 2pt; padding-right: 2pt; padding-top: 6pt; vertical-align: top">
+            <div class="CellBody"><a name="1166096">Description</a></div>
+          </td>
+          <td style="border-bottom-color: Black; border-bottom-style: solid; border-bottom-width: thin; border-left-color: Black; border-left-style: solid; border-left-width: thin; border-right-color: Black; border-right-style: solid; border-right-width: thin; border-top-color: Black; border-top-style: solid; border-top-width: thin; padding-bottom: 2pt; padding-left: 2pt; padding-right: 2pt; padding-top: 6pt; vertical-align: top">
+            <div class="CellBody"><a name="1166098">The text description of the web application entered in the description field of the </a><span class="bold">Application </span><span class="bold">Settings</span> tab.</div>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-bottom-color: Black; border-bottom-style: solid; border-bottom-width: thin; border-left-color: Black; border-left-style: solid; border-left-width: thin; border-right-color: Black; border-right-style: solid; border-right-width: thin; border-top-color: Black; border-top-style: solid; border-top-width: thin; padding-bottom: 2pt; padding-left: 2pt; padding-right: 2pt; padding-top: 6pt; vertical-align: top">
+            <div class="CellBody"><a name="1166100">Icon</a></div>
+          </td>
+          <td style="border-bottom-color: Black; border-bottom-style: solid; border-bottom-width: thin; border-left-color: Black; border-left-style: solid; border-left-width: thin; border-right-color: Black; border-right-style: solid; border-right-width: thin; border-top-color: Black; border-top-style: solid; border-top-width: thin; padding-bottom: 2pt; padding-left: 2pt; padding-right: 2pt; padding-top: 6pt; vertical-align: top">
+            <div class="CellBody"><a name="1166102">The graphic file used as the icon for this application as set by the </a><span class="bold">Upload New Image</span> interface on the <span class="bold">Application Settings</span> tab.</div>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-bottom-color: Black; border-bottom-style: solid; border-bottom-width: thin; border-left-color: Black; border-left-style: solid; border-left-width: thin; border-right-color: Black; border-right-style: solid; border-right-width: thin; border-top-color: Black; border-top-style: solid; border-top-width: thin; padding-bottom: 2pt; padding-left: 2pt; padding-right: 2pt; padding-top: 6pt; vertical-align: top">
+            <div class="CellBody"><a name="1166104">Issuer</a></div>
+          </td>
+          <td style="border-bottom-color: Black; border-bottom-style: solid; border-bottom-width: thin; border-left-color: Black; border-left-style: solid; border-left-width: thin; border-right-color: Black; border-right-style: solid; border-right-width: thin; border-top-color: Black; border-top-style: solid; border-top-width: thin; padding-bottom: 2pt; padding-left: 2pt; padding-right: 2pt; padding-top: 6pt; vertical-align: top">
+            <div class="CellBody"><a name="1166106">The entity ID specified in the </a><span class="bold">Issuer</span> field of the <span class="bold">Application Settings</span> tab. This is typically a URL that identifies the Centrify Cloud Service as the SAML assertion’s issuer. Synonymous with the global variable <span class="Cell_Code">Issuer</span>.</div>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-bottom-color: Black; border-bottom-style: solid; border-bottom-width: thin; border-left-color: Black; border-left-style: solid; border-left-width: thin; border-right-color: Black; border-right-style: solid; border-right-width: thin; border-top-color: Black; border-top-style: solid; border-top-width: thin; padding-bottom: 2pt; padding-left: 2pt; padding-right: 2pt; padding-top: 6pt; vertical-align: top">
+            <div class="CellBody"><a name="1166108">Name</a></div>
+          </td>
+          <td style="border-bottom-color: Black; border-bottom-style: solid; border-bottom-width: thin; border-left-color: Black; border-left-style: solid; border-left-width: thin; border-right-color: Black; border-right-style: solid; border-right-width: thin; border-top-color: Black; border-top-style: solid; border-top-width: thin; padding-bottom: 2pt; padding-left: 2pt; padding-right: 2pt; padding-top: 6pt; vertical-align: top">
+            <div class="CellBody"><a name="1166110">The name of the application as entered in the </a><span class="bold">Application Settings</span> tab.</div>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-bottom-color: Black; border-bottom-style: solid; border-bottom-width: thin; border-left-color: Black; border-left-style: solid; border-left-width: thin; border-right-color: Black; border-right-style: solid; border-right-width: thin; border-top-color: Black; border-top-style: solid; border-top-width: thin; padding-bottom: 2pt; padding-left: 2pt; padding-right: 2pt; padding-top: 6pt; vertical-align: top">
+            <div class="CellBody"><a name="1166112">SamlScript</a></div>
+          </td>
+          <td style="border-bottom-color: Black; border-bottom-style: solid; border-bottom-width: thin; border-left-color: Black; border-left-style: solid; border-left-width: thin; border-right-color: Black; border-right-style: solid; border-right-width: thin; border-top-color: Black; border-top-style: solid; border-top-width: thin; padding-bottom: 2pt; padding-left: 2pt; padding-right: 2pt; padding-top: 6pt; vertical-align: top">
+            <div class="CellBody"><a name="1166114">The custom SAML script set in the </a><span class="bold">Advanced</span> tab.</div>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-bottom-color: Black; border-bottom-style: solid; border-bottom-width: thin; border-left-color: Black; border-left-style: solid; border-left-width: thin; border-right-color: Black; border-right-style: solid; border-right-width: thin; border-top-color: Black; border-top-style: solid; border-top-width: thin; padding-bottom: 2pt; padding-left: 2pt; padding-right: 2pt; padding-top: 6pt; vertical-align: top">
+            <div class="CellBody"><a name="1166116">TemplateName</a></div>
+          </td>
+          <td style="border-bottom-color: Black; border-bottom-style: solid; border-bottom-width: thin; border-left-color: Black; border-left-style: solid; border-left-width: thin; border-right-color: Black; border-right-style: solid; border-right-width: thin; border-top-color: Black; border-top-style: solid; border-top-width: thin; padding-bottom: 2pt; padding-left: 2pt; padding-right: 2pt; padding-top: 6pt; vertical-align: top">
+            <div class="CellBody"><a name="1166118">The type of generic application template used to define this web application’s profile. Possible </a>return values:</div>
+            <div class="CellBullets_outer" style="margin-left: 0pt; margin-bottom: 1.0pt; vertical-align: baseline">
+              <table border="0" cellspacing="0" cellpadding="0" summary="">
+                <tr style="vertical-align: baseline">
+                  <td>
+                    <div class="CellBullets_inner" style="width: 9pt; white-space: nowrap; color: #000000; font-style: normal; font-variant: normal; font-weight: normal; text-transform: none">•	</div>
+                  </td>
+                  <td width="100%">
+                    <div class="CellBullets_inner" style="color: #000000; font-style: normal; font-variant: normal; font-weight: normal; text-transform: none"><span class="Cell_Code"><a name="1166119">Generic SAML</a></span></div>
+                  </td>
+                </tr>
+              </table>
+            </div>
+            <div class="CellBullets_outer" style="margin-left: 0pt; margin-bottom: 1.0pt; vertical-align: baseline">
+              <table border="0" cellspacing="0" cellpadding="0" summary="">
+                <tr style="vertical-align: baseline">
+                  <td>
+                    <div class="CellBullets_inner" style="width: 9pt; white-space: nowrap; color: #000000; font-style: normal; font-variant: normal; font-weight: normal; text-transform: none">•	</div>
+                  </td>
+                  <td width="100%">
+                    <div class="CellBullets_inner" style="color: #000000; font-style: normal; font-variant: normal; font-weight: normal; text-transform: none"><span class="Cell_Code"><a name="1166120">Generic User-Password</a></span></div>
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-bottom-color: Black; border-bottom-style: solid; border-bottom-width: thin; border-left-color: Black; border-left-style: solid; border-left-width: thin; border-right-color: Black; border-right-style: solid; border-right-width: thin; border-top-color: Black; border-top-style: solid; border-top-width: thin; padding-bottom: 2pt; padding-left: 2pt; padding-right: 2pt; padding-top: 6pt; vertical-align: top">
+            <div class="CellBody"><a name="1166122">Url</a></div>
+          </td>
+          <td style="border-bottom-color: Black; border-bottom-style: solid; border-bottom-width: thin; border-left-color: Black; border-left-style: solid; border-left-width: thin; border-right-color: Black; border-right-style: solid; border-right-width: thin; border-top-color: Black; border-top-style: solid; border-top-width: thin; padding-bottom: 2pt; padding-left: 2pt; padding-right: 2pt; padding-top: 6pt; vertical-align: top">
+            <div class="CellBody"><a name="1166124">The contact URL specified in the </a><span class="bold">URL</span> field in the <span class="bold">Application Settings</span> tab. This is typically the URL to which the SAML assertion (in its enclosing SAML response) is sent. Synonymous with the global variable <span class="Cell_Code">ServiceUrl</span>.</div>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-bottom-color: Black; border-bottom-style: solid; border-bottom-width: thin; border-left-color: Black; border-left-style: solid; border-left-width: thin; border-right-color: Black; border-right-style: solid; border-right-width: thin; border-top-color: Black; border-top-style: solid; border-top-width: thin; padding-bottom: 2pt; padding-left: 2pt; padding-right: 2pt; padding-top: 6pt; vertical-align: top">
+            <div class="CellBody"><a name="1166126">UserName Strategy</a></div>
+          </td>
+          <td style="border-bottom-color: Black; border-bottom-style: solid; border-bottom-width: thin; border-left-color: Black; border-left-style: solid; border-left-width: thin; border-right-color: Black; border-right-style: solid; border-right-width: thin; border-top-color: Black; border-top-style: solid; border-top-width: thin; padding-bottom: 2pt; padding-left: 2pt; padding-right: 2pt; padding-top: 6pt; vertical-align: top">
+            <div class="CellBody"><a name="1166128">The technique specified in the </a><span class="bold">Application Settings </span>tab to determine the user name (user identity) for a user session. Possible return values:</div>
+            <div class="CellBullets_outer" style="margin-left: 0pt">
+              <table border="0" cellspacing="0" cellpadding="0" summary="">
+                <tr style="vertical-align: baseline">
+                  <td>
+                    <div class="CellBullets_inner" style="width: 9pt; white-space: nowrap">•	</div>
+                  </td>
+                  <td width="100%">
+                    <div class="CellBullets_inner"><span class="Cell_Code"><a name="1166129">ADAttribute</a></span>: Centrify Cloud Service sets the user name to the specified AD attribute of the current user. Centrify Cloud Service queries the AD proxy for the AD attribute. Centrify Cloud Service caches the user name so that it doesn’t have to query the proxy for this user’s future sessions.</div>
+                  </td>
+                </tr>
+              </table>
+            </div>
+            <div class="CellBullets_outer" style="margin-left: 0pt">
+              <table border="0" cellspacing="0" cellpadding="0" summary="">
+                <tr style="vertical-align: baseline">
+                  <td>
+                    <div class="CellBullets_inner" style="width: 9pt; white-space: nowrap">•	</div>
+                  </td>
+                  <td width="100%">
+                    <div class="CellBullets_inner"><span class="Cell_Code"><a name="1166130">Fixed</a></span>: Centrify Cloud Service sets the user name to the value entered in the <span class="bold">Application </span><span class="bold">Settings </span>tab. </div>
+                  </td>
+                </tr>
+              </table>
+            </div>
+            <div class="CellBullets_outer" style="margin-left: 0pt">
+              <table border="0" cellspacing="0" cellpadding="0" summary="">
+                <tr style="vertical-align: baseline">
+                  <td>
+                    <div class="CellBullets_inner" style="width: 9pt; white-space: nowrap">•	</div>
+                  </td>
+                  <td width="100%">
+                    <div class="CellBullets_inner"><span class="Cell_Code"><a name="1166131">UseScript</a></span>: Centrify Cloud Service executes the user map script to determine the user name.</div>
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-bottom-color: Black; border-bottom-style: solid; border-bottom-width: thin; border-left-color: Black; border-left-style: solid; border-left-width: thin; border-right-color: Black; border-right-style: solid; border-right-width: thin; border-top-color: Black; border-top-style: solid; border-top-width: thin; padding-bottom: 2pt; padding-left: 2pt; padding-right: 2pt; padding-top: 6pt; vertical-align: top">
+            <div class="CellBody"><a name="1166133">WebAppType</a></div>
+          </td>
+          <td style="border-bottom-color: Black; border-bottom-style: solid; border-bottom-width: thin; border-left-color: Black; border-left-style: solid; border-left-width: thin; border-right-color: Black; border-right-style: solid; border-right-width: thin; border-top-color: Black; border-top-style: solid; border-top-width: thin; padding-bottom: 2pt; padding-left: 2pt; padding-right: 2pt; padding-top: 6pt; vertical-align: top">
+            <div class="CellBody"><a name="1166135">The authentication method used by the web application. Possible return values:</a></div>
+            <div class="CellBullets_outer" style="margin-left: 0pt; margin-bottom: 0.0pt; vertical-align: baseline">
+              <table border="0" cellspacing="0" cellpadding="0" summary="">
+                <tr style="vertical-align: baseline">
+                  <td>
+                    <div class="CellBullets_inner" style="width: 9pt; white-space: nowrap; color: #000000; font-style: normal; font-variant: normal; font-weight: normal; text-transform: none">•	</div>
+                  </td>
+                  <td width="100%">
+                    <div class="CellBullets_inner" style="color: #000000; font-style: normal; font-variant: normal; font-weight: normal; text-transform: none"><span class="Cell_Code"><a name="1166136">SAML</a></span></div>
+                  </td>
+                </tr>
+              </table>
+            </div>
+            <div class="CellBullets_outer" style="margin-left: 0pt; margin-bottom: 1.0pt; vertical-align: baseline">
+              <table border="0" cellspacing="0" cellpadding="0" summary="">
+                <tr style="vertical-align: baseline">
+                  <td>
+                    <div class="CellBullets_inner" style="width: 9pt; white-space: nowrap; color: #000000; font-style: normal; font-variant: normal; font-weight: normal; text-transform: none">•	</div>
+                  </td>
+                  <td width="100%">
+                    <div class="CellBullets_inner" style="color: #000000; font-style: normal; font-variant: normal; font-weight: normal; text-transform: none"><span class="Cell_Code"><a name="1166137">UsernamePassword</a></span></div>
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </td>
+        </tr>
+      </table>
+      <div class="Reference_Heading"><a name="1165815">Discussion</a></div>
+      <div class="Body"><a name="1165816">Use the property values returned by this method to obtain values you wish to provide in the </a>SAML response, then use the global functions described in <span class="Jump_X-ref"><a href="#1143498" title="Scripting environment reference">“Global functions” on page&nbsp;239</a></span> to add the values to the response. For example, to add the issuer of the SAML assertion to the SAML response, you could use:</div>
+      <div class="Code1"><a name="1166708">setIssuer(Application.Get('Issuer'))</a></div>
+      <div class="Heading1_Ref">
+        <span class="StepNumber">       </span><a name="1143475">Global variables</a></div>
+      <div class="Body"><a name="1143476">Centrify Cloud Service creates a set of global variables for each SAML user session. These </a>variables are synonyms for common attributes of the <span class="Code">LoginUser</span> and <span class="Code">Application</span> objects, and are a convenience: you can use a global variable instead of specifying a <span class="Code">LoginUser</span> attribute or using <span class="Code">Application.get</span> to read an <span class="Code">Application</span> attribute.</div>
+      <table class="Standard_Indent" style="margin-left: 46.8pt; text-align: left" cellspacing="0" summary="">
+        <caption></caption>
+        <tr>
+          <td style="border-bottom-color: Black; border-bottom-style: solid; border-bottom-width: thin; border-left-color: Black; border-left-style: solid; border-left-width: thin; border-right-color: Black; border-right-style: solid; border-right-width: thin; border-top-color: Black; border-top-style: solid; border-top-width: thin; padding-bottom: 2pt; padding-left: 2pt; padding-right: 2pt; padding-top: 6pt; vertical-align: top">
+            <div class="CellHeading"><a name="1143479">Global Variable</a></div>
+          </td>
+          <td style="border-bottom-color: Black; border-bottom-style: solid; border-bottom-width: thin; border-left-color: Black; border-left-style: solid; border-left-width: thin; border-right-color: Black; border-right-style: solid; border-right-width: thin; border-top-color: Black; border-top-style: solid; border-top-width: thin; padding-bottom: 2pt; padding-left: 2pt; padding-right: 2pt; padding-top: 6pt; vertical-align: top">
+            <div class="CellHeading"><a name="1143481">Description</a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-bottom-color: Black; border-bottom-style: solid; border-bottom-width: thin; border-left-color: Black; border-left-style: solid; border-left-width: thin; border-right-color: Black; border-right-style: solid; border-right-width: thin; border-top-color: Black; border-top-style: solid; border-top-width: thin; padding-bottom: 2pt; padding-left: 2pt; padding-right: 2pt; padding-top: 6pt; vertical-align: top">
+            <div class="CellBody"><a name="1143483">ApplicationUrl</a></div>
+          </td>
+          <td style="border-bottom-color: Black; border-bottom-style: solid; border-bottom-width: thin; border-left-color: Black; border-left-style: solid; border-left-width: thin; border-right-color: Black; border-right-style: solid; border-right-width: thin; border-top-color: Black; border-top-style: solid; border-top-width: thin; padding-bottom: 2pt; padding-left: 2pt; padding-right: 2pt; padding-top: 6pt; vertical-align: top">
+            <div class="CellBody"><a name="1143485">A read-only variable that contains the contact URL specified in the URL field in the </a><span class="bold">Application Settings</span> tab. Synonymous with the <span class="Code">Application</span> attribute <span class="Cell_Code">Url</span>.</div>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-bottom-color: Black; border-bottom-style: solid; border-bottom-width: thin; border-left-color: Black; border-left-style: solid; border-left-width: thin; border-right-color: Black; border-right-style: solid; border-right-width: thin; border-top-color: Black; border-top-style: solid; border-top-width: thin; padding-bottom: 2pt; padding-left: 2pt; padding-right: 2pt; padding-top: 6pt; vertical-align: top">
+            <div class="CellBody"><a name="1143487">Issuer</a></div>
+          </td>
+          <td style="border-bottom-color: Black; border-bottom-style: solid; border-bottom-width: thin; border-left-color: Black; border-left-style: solid; border-left-width: thin; border-right-color: Black; border-right-style: solid; border-right-width: thin; border-top-color: Black; border-top-style: solid; border-top-width: thin; padding-bottom: 2pt; padding-left: 2pt; padding-right: 2pt; padding-top: 6pt; vertical-align: top">
+            <div class="CellBody"><a name="1143489">A read-only variable that contains the entity ID specified in the </a><span class="bold">Issuer</span> field of the <span class="bold">Application Settings </span>tab. Synonymous with the <span class="Code">Application</span> attribute <span class="Cell_Code">Issuer</span>.</div>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-bottom-color: Black; border-bottom-style: solid; border-bottom-width: thin; border-left-color: Black; border-left-style: solid; border-left-width: thin; border-right-color: Black; border-right-style: solid; border-right-width: thin; border-top-color: Black; border-top-style: solid; border-top-width: thin; padding-bottom: 2pt; padding-left: 2pt; padding-right: 2pt; padding-top: 6pt; vertical-align: top">
+            <div class="CellBody"><a name="1143491">LoginUsername</a></div>
+          </td>
+          <td style="border-bottom-color: Black; border-bottom-style: solid; border-bottom-width: thin; border-left-color: Black; border-left-style: solid; border-left-width: thin; border-right-color: Black; border-right-style: solid; border-right-width: thin; border-top-color: Black; border-top-style: solid; border-top-width: thin; padding-bottom: 2pt; padding-left: 2pt; padding-right: 2pt; padding-top: 6pt; vertical-align: top">
+            <div class="CellBody"><a name="1143493">A read-write variable that contains the user identity (user name) presented in the </a>SAML assertion to the SAML service. Centrify Cloud Service determines the user name for this user session depending on the <span class="bold">Map to User Accounts</span> setting in the <span class="bold">Application Settings</span> tab. Synonymous with the attribute <span class="Code">LoginUser.Username</span>.</div>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-bottom-color: Black; border-bottom-style: solid; border-bottom-width: thin; border-left-color: Black; border-left-style: solid; border-left-width: thin; border-right-color: Black; border-right-style: solid; border-right-width: thin; border-top-color: Black; border-top-style: solid; border-top-width: thin; padding-bottom: 2pt; padding-left: 2pt; padding-right: 2pt; padding-top: 6pt; vertical-align: top">
+            <div class="CellBody"><a name="1143495">ServiceUrl</a></div>
+          </td>
+          <td style="border-bottom-color: Black; border-bottom-style: solid; border-bottom-width: thin; border-left-color: Black; border-left-style: solid; border-left-width: thin; border-right-color: Black; border-right-style: solid; border-right-width: thin; border-top-color: Black; border-top-style: solid; border-top-width: thin; padding-bottom: 2pt; padding-left: 2pt; padding-right: 2pt; padding-top: 6pt; vertical-align: top">
+            <div class="CellBody"><a name="1143497">A read-only variable that contains the contact URL specified in the </a><span class="bold">URL</span> field in the <span class="bold">Application Settings</span> tab. Synonymous with the <span class="Code">Application</span> attribute <span class="Cell_Code">Url</span>.</div>
+          </td>
+        </tr>
+      </table>
+      <div class="Heading1_Ref">
+        <span class="StepNumber">       </span><a name="1143498">Global functions</a></div>
+      <div class="Body"><a name="1143499">Centrify Cloud Service provides a set of global functions available in a SAML user session </a>that specify elements within a SAML assertion.</div>
+      <div class="Body"><a name="1143502">The private assertion object specifies how Centrify Cloud Service constructs the SAML </a>assertion for a SAML user session. Assertion-set functions set the attributes of the private SAML assertion object. Most of these functions take as an argument the value for a specific SAML assertion element. The <span class="Code">setIssuer</span> function, for example, accepts an entity ID and uses it to specify the issuer URL in the SAML assertion.</div>
+      <div class="Body"><a name="1143503">Two of the assertion set functions, </a><span class="Code">setAttribute</span> and <span class="Code">setAttributeArray</span> specify a SAML response attribute by name and then specify a value for that attribute that is either a single argument or an array. Use these functions to add SAML assertion elements that can’t be specified by any of the other assertion set functions.</div>
+      <div class="Body"><a name="1143565">The following table lists global assertion-set functions available in a user session.</a></div>
+      <table class="Standard_Indent" style="margin-left: 46.8pt; text-align: left" cellspacing="0" summary="">
+        <caption></caption>
+        <tr>
+          <td style="border-bottom-color: Black; border-bottom-style: solid; border-bottom-width: thin; border-left-color: Black; border-left-style: solid; border-left-width: thin; border-right-color: Black; border-right-style: solid; border-right-width: thin; border-top-color: Black; border-top-style: solid; border-top-width: thin; padding-bottom: 2pt; padding-left: 2pt; padding-right: 2pt; padding-top: 6pt; vertical-align: top">
+            <div class="CellHeading"><a name="1143506">global function</a></div>
+          </td>
+          <td style="border-bottom-color: Black; border-bottom-style: solid; border-bottom-width: thin; border-left-color: Black; border-left-style: solid; border-left-width: thin; border-right-color: Black; border-right-style: solid; border-right-width: thin; border-top-color: Black; border-top-style: solid; border-top-width: thin; padding-bottom: 2pt; padding-left: 2pt; padding-right: 2pt; padding-top: 6pt; vertical-align: top">
+            <div class="CellHeading"><a name="1143508">Description</a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-bottom-color: Black; border-bottom-style: solid; border-bottom-width: thin; border-left-color: Black; border-left-style: solid; border-left-width: thin; border-right-color: Black; border-right-style: solid; border-right-width: thin; border-top-color: Black; border-top-style: solid; border-top-width: thin; padding-bottom: 2pt; padding-left: 2pt; padding-right: 2pt; padding-top: 6pt; vertical-align: top">
+            <div class="CellBody"><span class="Jump_X-ref"><a href="#1167032" title="Scripting environment reference" name="1143510">setAttribute</a></span></div>
+          </td>
+          <td style="border-bottom-color: Black; border-bottom-style: solid; border-bottom-width: thin; border-left-color: Black; border-left-style: solid; border-left-width: thin; border-right-color: Black; border-right-style: solid; border-right-width: thin; border-top-color: Black; border-top-style: solid; border-top-width: thin; padding-bottom: 2pt; padding-left: 2pt; padding-right: 2pt; padding-top: 6pt; vertical-align: top">
+            <div class="CellBody"><span class="Jump_X-ref"><a href="#1167033" title="Scripting environment reference" name="1143512">Sets a specified SAML assertion element to a value.</a></span></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-bottom-color: Black; border-bottom-style: solid; border-bottom-width: thin; border-left-color: Black; border-left-style: solid; border-left-width: thin; border-right-color: Black; border-right-style: solid; border-right-width: thin; border-top-color: Black; border-top-style: solid; border-top-width: thin; padding-bottom: 2pt; padding-left: 2pt; padding-right: 2pt; padding-top: 6pt; vertical-align: top">
+            <div class="CellBody"><span class="Jump_X-ref"><a href="#1167389" title="Scripting environment reference" name="1143514">setAttributeArray</a></span></div>
+          </td>
+          <td style="border-bottom-color: Black; border-bottom-style: solid; border-bottom-width: thin; border-left-color: Black; border-left-style: solid; border-left-width: thin; border-right-color: Black; border-right-style: solid; border-right-width: thin; border-top-color: Black; border-top-style: solid; border-top-width: thin; padding-bottom: 2pt; padding-left: 2pt; padding-right: 2pt; padding-top: 6pt; vertical-align: top">
+            <div class="CellBody"><span class="Jump_X-ref"><a href="#1167391" title="Scripting environment reference" name="1143516">Sets a specified SAML assertion element to an array.</a></span></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-bottom-color: Black; border-bottom-style: solid; border-bottom-width: thin; border-left-color: Black; border-left-style: solid; border-left-width: thin; border-right-color: Black; border-right-style: solid; border-right-width: thin; border-top-color: Black; border-top-style: solid; border-top-width: thin; padding-bottom: 2pt; padding-left: 2pt; padding-right: 2pt; padding-top: 6pt; vertical-align: top">
+            <div class="CellBody"><span class="Jump_X-ref"><a href="#1167580" title="Scripting environment reference" name="1143518">setAudience</a></span></div>
+          </td>
+          <td style="border-bottom-color: Black; border-bottom-style: solid; border-bottom-width: thin; border-left-color: Black; border-left-style: solid; border-left-width: thin; border-right-color: Black; border-right-style: solid; border-right-width: thin; border-top-color: Black; border-top-style: solid; border-top-width: thin; padding-bottom: 2pt; padding-left: 2pt; padding-right: 2pt; padding-top: 6pt; vertical-align: top">
+            <div class="CellBody"><span class="Jump_X-ref"><a href="#1167582" title="Scripting environment reference" name="1143520">Specifies the audience in an audience restriction in the SAML assertion.</a></span></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-bottom-color: Black; border-bottom-style: solid; border-bottom-width: thin; border-left-color: Black; border-left-style: solid; border-left-width: thin; border-right-color: Black; border-right-style: solid; border-right-width: thin; border-top-color: Black; border-top-style: solid; border-top-width: thin; padding-bottom: 2pt; padding-left: 2pt; padding-right: 2pt; padding-top: 6pt; vertical-align: top">
+            <div class="CellBody"><span class="Jump_X-ref"><a href="#1167834" title="Scripting environment reference" name="1143522">setAuthenticationMethod</a></span></div>
+          </td>
+          <td style="border-bottom-color: Black; border-bottom-style: solid; border-bottom-width: thin; border-left-color: Black; border-left-style: solid; border-left-width: thin; border-right-color: Black; border-right-style: solid; border-right-width: thin; border-top-color: Black; border-top-style: solid; border-top-width: thin; padding-bottom: 2pt; padding-left: 2pt; padding-right: 2pt; padding-top: 6pt; vertical-align: top">
+            <div class="CellBody"><span class="Jump_X-ref"><a href="#1167836" title="Scripting environment reference" name="1143524">Specifies the type of authentication used to authenticate the user.</a></span></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-bottom-color: Black; border-bottom-style: solid; border-bottom-width: thin; border-left-color: Black; border-left-style: solid; border-left-width: thin; border-right-color: Black; border-right-style: solid; border-right-width: thin; border-top-color: Black; border-top-style: solid; border-top-width: thin; padding-bottom: 2pt; padding-left: 2pt; padding-right: 2pt; padding-top: 6pt; vertical-align: top">
+            <div class="CellBody"><span class="Jump_X-ref"><a href="#1168064" title="Scripting environment reference" name="1143526">setHttpDestination</a></span></div>
+          </td>
+          <td style="border-bottom-color: Black; border-bottom-style: solid; border-bottom-width: thin; border-left-color: Black; border-left-style: solid; border-left-width: thin; border-right-color: Black; border-right-style: solid; border-right-width: thin; border-top-color: Black; border-top-style: solid; border-top-width: thin; padding-bottom: 2pt; padding-left: 2pt; padding-right: 2pt; padding-top: 6pt; vertical-align: top">
+            <div class="CellBody"><span class="Jump_X-ref"><a href="#1168066" title="Scripting environment reference" name="1143528">Specifies the URL to which to post the SAML response.</a></span></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-bottom-color: Black; border-bottom-style: solid; border-bottom-width: thin; border-left-color: Black; border-left-style: solid; border-left-width: thin; border-right-color: Black; border-right-style: solid; border-right-width: thin; border-top-color: Black; border-top-style: solid; border-top-width: thin; padding-bottom: 2pt; padding-left: 2pt; padding-right: 2pt; padding-top: 6pt; vertical-align: top">
+            <div class="CellBody"><span class="Jump_X-ref"><a href="#1168428" title="Scripting environment reference" name="1143530">setIssuer</a></span></div>
+          </td>
+          <td style="border-bottom-color: Black; border-bottom-style: solid; border-bottom-width: thin; border-left-color: Black; border-left-style: solid; border-left-width: thin; border-right-color: Black; border-right-style: solid; border-right-width: thin; border-top-color: Black; border-top-style: solid; border-top-width: thin; padding-bottom: 2pt; padding-left: 2pt; padding-right: 2pt; padding-top: 6pt; vertical-align: top">
+            <div class="CellBody"><span class="Jump_X-ref"><a href="#1168430" title="Scripting environment reference" name="1143532">Specifies the issuer in the SAML assertion.</a></span></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-bottom-color: Black; border-bottom-style: solid; border-bottom-width: thin; border-left-color: Black; border-left-style: solid; border-left-width: thin; border-right-color: Black; border-right-style: solid; border-right-width: thin; border-top-color: Black; border-top-style: solid; border-top-width: thin; padding-bottom: 2pt; padding-left: 2pt; padding-right: 2pt; padding-top: 6pt; vertical-align: top">
+            <div class="CellBody"><span class="Jump_X-ref"><a href="#1168898" title="Scripting environment reference" name="1143534">setNameFormat</a></span></div>
+          </td>
+          <td style="border-bottom-color: Black; border-bottom-style: solid; border-bottom-width: thin; border-left-color: Black; border-left-style: solid; border-left-width: thin; border-right-color: Black; border-right-style: solid; border-right-width: thin; border-top-color: Black; border-top-style: solid; border-top-width: thin; padding-bottom: 2pt; padding-left: 2pt; padding-right: 2pt; padding-top: 6pt; vertical-align: top">
+            <div class="CellBody"><span class="Jump_X-ref"><a href="#1168900" title="Scripting environment reference" name="1143536">Specifies the format value in the SAML assertion’s </a></span><span class="Jump_X-ref"><a href="#1168900" title="Scripting environment reference">NameID</a></span><span class="Jump_X-ref"><a href="#1168900" title="Scripting environment reference"> element.</a></span></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-bottom-color: Black; border-bottom-style: solid; border-bottom-width: thin; border-left-color: Black; border-left-style: solid; border-left-width: thin; border-right-color: Black; border-right-style: solid; border-right-width: thin; border-top-color: Black; border-top-style: solid; border-top-width: thin; padding-bottom: 2pt; padding-left: 2pt; padding-right: 2pt; padding-top: 6pt; vertical-align: top">
+            <div class="CellBody"><span class="Jump_X-ref"><a href="#1172939" title="Scripting environment reference" name="1143538">setRecipient</a></span></div>
+          </td>
+          <td style="border-bottom-color: Black; border-bottom-style: solid; border-bottom-width: thin; border-left-color: Black; border-left-style: solid; border-left-width: thin; border-right-color: Black; border-right-style: solid; border-right-width: thin; border-top-color: Black; border-top-style: solid; border-top-width: thin; padding-bottom: 2pt; padding-left: 2pt; padding-right: 2pt; padding-top: 6pt; vertical-align: top">
+            <div class="CellBody"><span class="Jump_X-ref"><a href="#1172941" title="Scripting environment reference" name="1143540">Specifies the recipient in the SAML assertion.</a></span></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-bottom-color: Black; border-bottom-style: solid; border-bottom-width: thin; border-left-color: Black; border-left-style: solid; border-left-width: thin; border-right-color: Black; border-right-style: solid; border-right-width: thin; border-top-color: Black; border-top-style: solid; border-top-width: thin; padding-bottom: 2pt; padding-left: 2pt; padding-right: 2pt; padding-top: 6pt; vertical-align: top">
+            <div class="CellBody"><span class="Jump_X-ref"><a href="#1169737" title="Scripting environment reference" name="1143542">setRelayState</a></span></div>
+          </td>
+          <td style="border-bottom-color: Black; border-bottom-style: solid; border-bottom-width: thin; border-left-color: Black; border-left-style: solid; border-left-width: thin; border-right-color: Black; border-right-style: solid; border-right-width: thin; border-top-color: Black; border-top-style: solid; border-top-width: thin; padding-bottom: 2pt; padding-left: 2pt; padding-right: 2pt; padding-top: 6pt; vertical-align: top">
+            <div class="CellBody"><span class="Jump_X-ref"><a href="#1169739" title="Scripting environment reference" name="1143544">Specifies a </a></span><span class="Jump_X-ref"><a href="#1169739" title="Scripting environment reference">RelayState</a></span><span class="Jump_X-ref"><a href="#1169739" title="Scripting environment reference"> parameter to send with the SAML response.</a></span></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-bottom-color: Black; border-bottom-style: solid; border-bottom-width: thin; border-left-color: Black; border-left-style: solid; border-left-width: thin; border-right-color: Black; border-right-style: solid; border-right-width: thin; border-top-color: Black; border-top-style: solid; border-top-width: thin; padding-bottom: 2pt; padding-left: 2pt; padding-right: 2pt; padding-top: 6pt; vertical-align: top">
+            <div class="CellBody"><span class="Jump_X-ref"><a href="#1170897" title="Scripting environment reference" name="1143546">setServiceUrl</a></span></div>
+          </td>
+          <td style="border-bottom-color: Black; border-bottom-style: solid; border-bottom-width: thin; border-left-color: Black; border-left-style: solid; border-left-width: thin; border-right-color: Black; border-right-style: solid; border-right-width: thin; border-top-color: Black; border-top-style: solid; border-top-width: thin; padding-bottom: 2pt; padding-left: 2pt; padding-right: 2pt; padding-top: 6pt; vertical-align: top">
+            <div class="CellBody"><span class="Jump_X-ref"><a href="#1170898" title="Scripting environment reference" name="1143548">Specifies the resource to which the user is requesting access.</a></span></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-bottom-color: Black; border-bottom-style: solid; border-bottom-width: thin; border-left-color: Black; border-left-style: solid; border-left-width: thin; border-right-color: Black; border-right-style: solid; border-right-width: thin; border-top-color: Black; border-top-style: solid; border-top-width: thin; padding-bottom: 2pt; padding-left: 2pt; padding-right: 2pt; padding-top: 6pt; vertical-align: top">
+            <div class="CellBody"><span class="Jump_X-ref"><a href="#1171465" title="Scripting environment reference" name="1143550">setSignatureType</a></span></div>
+          </td>
+          <td style="border-bottom-color: Black; border-bottom-style: solid; border-bottom-width: thin; border-left-color: Black; border-left-style: solid; border-left-width: thin; border-right-color: Black; border-right-style: solid; border-right-width: thin; border-top-color: Black; border-top-style: solid; border-top-width: thin; padding-bottom: 2pt; padding-left: 2pt; padding-right: 2pt; padding-top: 6pt; vertical-align: top">
+            <div class="CellBody"><span class="Jump_X-ref"><a href="#1171467" title="Scripting environment reference" name="1143552">Specifies what should be signed: the SAML assertion or the SAML response.</a></span></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-bottom-color: Black; border-bottom-style: solid; border-bottom-width: thin; border-left-color: Black; border-left-style: solid; border-left-width: thin; border-right-color: Black; border-right-style: solid; border-right-width: thin; border-top-color: Black; border-top-style: solid; border-top-width: thin; padding-bottom: 2pt; padding-left: 2pt; padding-right: 2pt; padding-top: 6pt; vertical-align: top">
+            <div class="CellBody"><span class="Jump_X-ref"><a href="#1171840" title="Scripting environment reference" name="1143554">setSubjectConfirmationMethod</a></span></div>
+          </td>
+          <td style="border-bottom-color: Black; border-bottom-style: solid; border-bottom-width: thin; border-left-color: Black; border-left-style: solid; border-left-width: thin; border-right-color: Black; border-right-style: solid; border-right-width: thin; border-top-color: Black; border-top-style: solid; border-top-width: thin; padding-bottom: 2pt; padding-left: 2pt; padding-right: 2pt; padding-top: 6pt; vertical-align: top">
+            <div class="CellBody"><span class="Jump_X-ref"><a href="#1171842" title="Scripting environment reference" name="1143556">Specifies the SAML subject confirmation method.</a></span></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-bottom-color: Black; border-bottom-style: solid; border-bottom-width: thin; border-left-color: Black; border-left-style: solid; border-left-width: thin; border-right-color: Black; border-right-style: solid; border-right-width: thin; border-top-color: Black; border-top-style: solid; border-top-width: thin; padding-bottom: 2pt; padding-left: 2pt; padding-right: 2pt; padding-top: 6pt; vertical-align: top">
+            <div class="CellBody"><span class="Jump_X-ref"><a href="#1172379" title="Scripting environment reference" name="1143558">setSubjectName</a></span></div>
+          </td>
+          <td style="border-bottom-color: Black; border-bottom-style: solid; border-bottom-width: thin; border-left-color: Black; border-left-style: solid; border-left-width: thin; border-right-color: Black; border-right-style: solid; border-right-width: thin; border-top-color: Black; border-top-style: solid; border-top-width: thin; padding-bottom: 2pt; padding-left: 2pt; padding-right: 2pt; padding-top: 6pt; vertical-align: top">
+            <div class="CellBody"><span class="Jump_X-ref"><a href="#1172380" title="Scripting environment reference" name="1143560">Specifies the user identity presented to the SAML service.</a></span></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-bottom-color: Black; border-bottom-style: solid; border-bottom-width: thin; border-left-color: Black; border-left-style: solid; border-left-width: thin; border-right-color: Black; border-right-style: solid; border-right-width: thin; border-top-color: Black; border-top-style: solid; border-top-width: thin; padding-bottom: 2pt; padding-left: 2pt; padding-right: 2pt; padding-top: 6pt; vertical-align: top">
+            <div class="CellBody"><span class="Jump_X-ref"><a href="#1172607" title="Scripting environment reference" name="1143562">setVersion</a></span></div>
+          </td>
+          <td style="border-bottom-color: Black; border-bottom-style: solid; border-bottom-width: thin; border-left-color: Black; border-left-style: solid; border-left-width: thin; border-right-color: Black; border-right-style: solid; border-right-width: thin; border-top-color: Black; border-top-style: solid; border-top-width: thin; padding-bottom: 2pt; padding-left: 2pt; padding-right: 2pt; padding-top: 6pt; vertical-align: top">
+            <div class="CellBody"><span class="Jump_X-ref"><a href="#1172609" title="Scripting environment reference" name="1143564">Specifies the version of the SAML assertion.</a></span></div>
+          </td>
+        </tr>
+      </table>
+      <div class="Heading2_Function">
+        <span class="StepNumber">Function:  </span><a name="1167032">setAttribute</a></div>
+      <div class="Abstract"><a name="1167033">Sets a specified SAML assertion element to a value. </a></div>
+      <div class="Reference_Heading"><a name="1167034">Syntax</a></div>
+      <div class="Declaration"><a name="1166888">setAttribute(</a><span class="Variable">elementName</span>, <span class="Variable">elementValue</span>)</div>
+      <div class="Reference_Heading"><a name="1166889">Parameters</a></div>
+      <div class="Term_Ref" style="color: #000000; font-style: normal; font-variant: normal; font-weight: normal; margin-top: 3.0pt; text-transform: none; vertical-align: baseline"><span class="Variable"><a name="1166981">elementName</a></span></div>
+      <div class="Definition_Ref"><a name="1166982">A string that specifies the name of a SAML assertion element to set.</a></div>
+      <div class="Term_Ref" style="color: #000000; font-style: normal; font-variant: normal; font-weight: normal; margin-top: 3.0pt; text-transform: none; vertical-align: baseline"><span class="Variable"><a name="1166989">elementValue</a></span></div>
+      <div class="Definition_Ref"><a name="1167265">The value to set for the attribute.</a></div>
+      <div class="Reference_Heading"><a name="1167266">Discussion</a></div>
+      <div class="Body"><a name="1167267">Use this function to set a single value for an attribute in the SAML response when there is </a>no function specific to that attribute.</div>
+      <div class="Reference_Heading"><a name="1167274">Example</a></div>
+      <div class="Code1"><a name="1167275">setAttribute("Email", LoginUser.Get("mail")); </a></div>
+      <div class="Body"><a name="1167309">Specifies the SAML assertion element named </a><span class="Code">Email</span> to be set to the current user’s email address in Active Directory.</div>
+      <div class="Heading2_Function">
+        <span class="StepNumber">Function:  </span><a name="1167389">setAttributeArray</a></div>
+      <div class="Abstract"><a name="1167391">Sets a specified SAML assertion element to an array. </a></div>
+      <div class="Reference_Heading"><a name="1167392">Syntax</a></div>
+      <div class="Declaration"><a name="1167393">setAttributeArray(</a><span class="Variable">elementName</span>, <span class="Variable">elementArray</span>)</div>
+      <div class="Reference_Heading"><a name="1167394">Parameters</a></div>
+      <div class="Term_Ref" style="color: #000000; font-style: normal; font-variant: normal; font-weight: normal; margin-top: 3.0pt; text-transform: none; vertical-align: baseline"><span class="Variable"><a name="1167395">elementName</a></span></div>
+      <div class="Definition_Ref"><a name="1167396">A string that specifies the name of a SAML assertion element to set.</a></div>
+      <div class="Term_Ref" style="color: #000000; font-style: normal; font-variant: normal; font-weight: normal; margin-top: 3.0pt; text-transform: none; vertical-align: baseline"><span class="Variable"><a name="1167397">elementArray</a></span></div>
+      <div class="Definition_Ref"><a name="1167398">The array to set for the attribute.</a></div>
+      <div class="Reference_Heading"><a name="1167399">Discussion</a></div>
+      <div class="Body"><a name="1167400">Use this function to set an array value for an attribute in the SAML response when there is </a>no function specific to that attribute.</div>
+      <div class="Reference_Heading"><a name="1167401">Example</a></div>
+      <div class="Code1"><a name="1167403">setAttributeArray('Groups', LoginUser.GroupNames); </a></div>
+      <div class="Body"><a name="1167494">Specifies the SAML assertion element named </a><span class="Code">Groups</span> to be set to an array of names of groups in which the current user is a direct member.</div>
+      <div class="Heading2_Function">
+        <span class="StepNumber">Function:  </span><a name="1167580">setAudience</a></div>
+      <div class="Abstract"><a name="1167582">Specifies the audience in an audience restriction in the SAML assertion. </a></div>
+      <div class="Reference_Heading"><a name="1167583">Syntax</a></div>
+      <div class="Declaration"><a name="1167584">setAudience(</a><span class="Variable">audience</span>)</div>
+      <div class="Reference_Heading"><a name="1167585">Parameters</a></div>
+      <div class="Term_Ref" style="color: #000000; font-style: normal; font-variant: normal; font-weight: normal; margin-top: 3.0pt; text-transform: none; vertical-align: baseline"><span class="Variable"><a name="1167586">audience</a></span></div>
+      <div class="Definition_Ref"><a name="1167587">The audience to which you want to restrict the assertion. Typically a URL.</a></div>
+      <div class="Reference_Heading"><a name="1167759">Example</a></div>
+      <div class="Code1"><a name="1167760">setAudience("https://login/myapp.com"); </a></div>
+      <div class="Heading2_Function">
+        <span class="StepNumber">Function:  </span><a name="1167834">setAuthenticationMethod</a></div>
+      <div class="Abstract"><a name="1167836">Specifies the type of authentication used to authenticate the user. </a></div>
+      <div class="Reference_Heading"><a name="1167837">Syntax</a></div>
+      <div class="Declaration"><a name="1167859">setAuthenticationMethod(</a><span class="Variable">authenticationUri</span>)</div>
+      <div class="Reference_Heading"><a name="1167839">Parameters</a></div>
+      <div class="Term_Ref" style="color: #000000; font-style: normal; font-variant: normal; font-weight: normal; margin-top: 3.0pt; text-transform: none; vertical-align: baseline"><span class="Variable"><a name="1167840">authenticationUri</a></span></div>
+      <div class="Definition_Ref"><a name="1167841">A URI as described in section 2.4.3 of the SAML 2.0 core </a>specification. The same specification lists possible URI values in section 7.1.</div>
+      <div class="Reference_Heading"><a name="1167842">Example</a></div>
+      <div class="Code1"><a name="1167843">setAuthenticationMethod("urn:oasis:names:tc:SAML:1.0:am:password"); </a></div>
+      <div class="Body"><a name="1167956">Specifies that the user was authenticated with a password.</a></div>
+      <div class="Heading2_Function">
+        <span class="StepNumber">Function:  </span><a name="1168064">setHttpDestination</a></div>
+      <div class="Abstract"><a name="1168066">Specifies the URL to which to post the SAML response. </a></div>
+      <div class="Reference_Heading"><a name="1168067">Syntax</a></div>
+      <div class="Declaration"><a name="1168068">setHttpDestination(</a><span class="Variable">responseUrl</span>)</div>
+      <div class="Reference_Heading"><a name="1168069">Parameters</a></div>
+      <div class="Term_Ref" style="color: #000000; font-style: normal; font-variant: normal; font-weight: normal; margin-top: 3.0pt; text-transform: none; vertical-align: baseline"><span class="Variable"><a name="1168070">responseUrl</a></span></div>
+      <div class="Definition_Ref"><a name="1168071">The URL to which to post the response.</a></div>
+      <div class="Reference_Heading"><a name="1168072">Description</a></div>
+      <div class="Body"><a name="1168074">This function specifies the URL to use in the response’s HTTP POST binding (the value in </a>the <span class="Code">action=</span> argument). Normally you can get this URL by retrieving the <span class="Code">Application</span> property <span class="Code">Url</span> or by using the property’s synonymous variable <span class="Code">ServiceUrl</span>.</div>
+      <div class="Reference_Heading"><a name="1168298">Example</a></div>
+      <div class="Code1"><a name="1168299">setHttpDestination(Application.Get('Url')); </a></div>
+      <div class="Heading2_Function">
+        <span class="StepNumber">Function:  </span><a name="1168428">setIssuer</a></div>
+      <div class="Abstract"><a name="1168430">Specifies the issuer in the SAML assertion. </a></div>
+      <div class="Reference_Heading"><a name="1168431">Syntax</a></div>
+      <div class="Declaration"><a name="1168432">setIssuer(</a><span class="Variable">issuer</span>)</div>
+      <div class="Reference_Heading"><a name="1168433">Parameters</a></div>
+      <div class="Term_Ref" style="color: #000000; font-style: normal; font-variant: normal; font-weight: normal; margin-top: 3.0pt; text-transform: none; vertical-align: baseline"><span class="Variable"><a name="1168434">issuer</a></span></div>
+      <div class="Definition_Ref"><a name="1168435">The URL of the issuer of the SAML response.</a></div>
+      <div class="Reference_Heading"><a name="1168436">Description</a></div>
+      <div class="Body"><a name="1168437">This function specifies the URL of the issuer to use in the SAML assertion. Normally you </a>can get this URL by retrieving the Application property <span class="Code">Issuer</span> or by using the property’s synonymous variable <span class="Code">Issuer</span>.</div>
+      <div class="Reference_Heading"><a name="1168438">Example</a></div>
+      <div class="Code1"><a name="1168439">setIssuer(Issuer); </a></div>
+      <div class="Heading2_Function">
+        <span class="StepNumber">Function:  </span><a name="1168898">setNameFormat</a></div>
+      <div class="Abstract"><a name="1168900">Specifies the format value in the SAML assertion’s </a><span class="Code">NameID</span> element. </div>
+      <div class="Reference_Heading"><a name="1168901">Syntax</a></div>
+      <div class="Declaration"><a name="1168902">setNameFormat(</a><span class="Variable">format</span>)</div>
+      <div class="Reference_Heading"><a name="1168903">Parameters</a></div>
+      <div class="Term_Ref" style="color: #000000; font-style: normal; font-variant: normal; font-weight: normal; margin-top: 3.0pt; text-transform: none; vertical-align: baseline"><span class="Variable"><a name="1168904">format</a></span></div>
+      <div class="Definition_Ref"><a name="1168905">The format for the </a><span class="Code">NameID</span> element.</div>
+      <div class="Reference_Heading"><a name="1168906">Description</a></div>
+      <div class="Body"><a name="1168907">This function specifies the format value (the value following </a><span class="Code">Format=</span>) in the SAML assertion’s <span class="Code">NameID</span> element. This element is only used in a SAML 2.0 assertion.</div>
+      <div class="Heading2_Function">
+        <span class="StepNumber">Function:  </span><a name="1172939">setRecipient</a></div>
+      <div class="Abstract"><a name="1172941">Specifies the recipient in the SAML assertion. </a></div>
+      <div class="Reference_Heading"><a name="1172942">Syntax</a></div>
+      <div class="Declaration"><a name="1169138">setRecipient(</a><span class="Variable">recipient</span>)</div>
+      <div class="Reference_Heading"><a name="1169139">Parameters</a></div>
+      <div class="Term_Ref" style="color: #000000; font-style: normal; font-variant: normal; font-weight: normal; margin-top: 3.0pt; text-transform: none; vertical-align: baseline"><span class="Variable"><a name="1169140">recipient</a></span></div>
+      <div class="Definition_Ref"><a name="1169141">The recipient for the SAML assertion.</a></div>
+      <div class="Reference_Heading"><a name="1169142">Description</a></div>
+      <div class="Body"><a name="1169143">A </a>web browser or a mobile application with a SAML-enabled SaaS back-end requests the security token (SAML response) from Centrify Cloud Service and then forwards it to the SaaS application. This function sets the value in the SAML assertion’s <span class="Code">SubjectConfirmationData</span> element that the mobile application or the web browser reads in order to get the ultimate destination of the assertion. The recipient is typically a URL such as <span class="Code">https://login/myapp.com</span>.</div>
+      <div class="Heading2_Function">
+        <span class="StepNumber">Function:  </span><a name="1169737">setRelayState</a></div>
+      <div class="Abstract"><a name="1169739">Specifies a </a><span class="Code">RelayState</span> parameter to send with the SAML response. </div>
+      <div class="Reference_Heading"><a name="1169740">Syntax</a></div>
+      <div class="Declaration"><a name="1169741">setRelayState(</a><span class="Variable">relayState</span>)</div>
+      <div class="Reference_Heading"><a name="1169790">Parameters</a></div>
+      <div class="Term_Ref" style="color: #000000; font-style: normal; font-variant: normal; font-weight: normal; margin-top: 3.0pt; text-transform: none; vertical-align: baseline"><span class="Variable"><a name="1170059">relayState</a></span></div>
+      <div class="Definition_Ref"><a name="1170060">The value of the </a><span class="Code">relayState</span> parameter, as specified by the service provider.</div>
+      <div class="Reference_Heading"><a name="1169948">Description</a></div>
+      <div class="Body"><a name="1169949">The </a><span class="Code">RelayState</span> parameter is a mechanism for conveying state information needed by the service provider. You must set this attribute only if the service provider (that is, the SaaS vendor) requires it. In that case, you must get the value from the SaaS vendor, as discussed in <span class="Jump_X-ref"><a href="Mobile_SDK_SAML_scripting.18.3.html#1153143" title="Provide help for administrators">“Provide help for administrators” on page&nbsp;230</a></span>.</div>
+      <div class="Body"><a name="1170218">The </a><span class="Code">RelayState</span> parameter is specified in bindings and profiles specifications for SAML (see <span class="Jump_X-ref"><a href="http://saml.xml.org/saml-specifications" target="external_window">http://saml.xml.org/saml-specifications</a></span>).</div>
+      <div class="Heading2_Function">
+        <span class="StepNumber">Function:  </span><a name="1170897">setServiceUrl</a></div>
+      <div class="Abstract"><a name="1170898">Specifies the resource to which the user is requesting access.</a></div>
+      <div class="Reference_Heading"><a name="1170899">Syntax</a></div>
+      <div class="Declaration"><a name="1170298">setServiceUrl(</a><span class="Variable">targetUrl</span>)</div>
+      <div class="Reference_Heading"><a name="1170299">Parameters</a></div>
+      <div class="Term_Ref" style="color: #000000; font-style: normal; font-variant: normal; font-weight: normal; margin-top: 3.0pt; text-transform: none; vertical-align: baseline"><span class="Variable"><a name="1170300">targetUrl</a></span></div>
+      <div class="Definition_Ref"><a name="1170301">The URL of the resource to which the user is requesting access.</a></div>
+      <div class="Reference_Heading"><a name="1170490">Description</a></div>
+      <div class="Body"><a name="1170491">This method sets the value of the </a><span class="Code">TARGET</span> attribute in the HTML <span class="Code">form</span> element of the document used to transmit the SAML response. The <span class="Code">TARGET</span> attribute specifies the resource (such as a web page, file, or service) to which the user of the application is requesting access. Typically, this is the same URL as the destination to which the SAML response is sent (see <span class="Jump_X-ref"><a href="#1168064" title="Scripting environment reference">setHttpDestination</a></span>), but they can be different if so specified by the service provider.</div>
+      <div class="Heading2_Function">
+        <span class="StepNumber">Function:  </span><a name="1171465">setSignatureType</a></div>
+      <div class="Abstract"><a name="1171467">Specifies what should be signed: the SAML assertion or the SAML response. </a></div>
+      <div class="Reference_Heading"><a name="1171468">Syntax</a></div>
+      <div class="Declaration"><a name="1171469">setSignatureType(</a><span class="Variable">signingPref</span>)</div>
+      <div class="Reference_Heading"><a name="1171470">Parameters</a></div>
+      <div class="Term_Ref" style="color: #000000; font-style: normal; font-variant: normal; font-weight: normal; margin-top: 3.0pt; text-transform: none; vertical-align: baseline"><span class="Variable"><a name="1171471">signingPref</a></span></div>
+      <div class="Definition_Ref"><a name="1171472">A value indicating what should be signed: </a><span class="Code">Response</span> or <span class="Code">Assertion</span>. </div>
+      <div class="Reference_Heading"><a name="1171473">Description</a></div>
+      <div class="Body"><a name="1171474">Either the SAML assertion or the containing SAML response can be signed, as specified by </a>this method. If this method is not included in the script, the default is <span class="Code">Response</span>.</div>
+      <div class="Heading2_Function">
+        <span class="StepNumber">Function:  </span><a name="1171840">setSubjectConfirmationMethod</a></div>
+      <div class="Abstract"><a name="1171842">Specifies the SAML subject confirmation method. </a></div>
+      <div class="Reference_Heading"><a name="1171843">Syntax</a></div>
+      <div class="Declaration"><a name="1171861">setSubjectConfirmationMethod(</a><span class="Variable">methodUri</span>)</div>
+      <div class="Reference_Heading"><a name="1171845">Parameters</a></div>
+      <div class="Term_Ref" style="color: #000000; font-style: normal; font-variant: normal; font-weight: normal; margin-top: 3.0pt; text-transform: none; vertical-align: baseline"><span class="Variable"><a name="1171846">methodUri</a></span></div>
+      <div class="Definition_Ref"><a name="1171847">A URI indicating what SAML confirmation method should be used. </a></div>
+      <div class="Reference_Heading"><a name="1171848">Description</a></div>
+      <div class="Body"><a name="1173034"> This function specifies the SAML subject confirmation method identifier for the SAML </a>assertion’s binding. The SAML subject confirmation method is described in bindings and profiles specifications for SAML (see <span class="Jump_X-ref"><a href="http://saml.xml.org/saml-specifications" target="external_window">http://saml.xml.org/saml-specifications</a></span>). </div>
+      <div class="Reference_Heading"><a name="1171990">Example</a></div>
+      <div class="Body"><a name="1172016">The following line specifies the Bearer confirmation method.</a></div>
+      <div class="Code1"><a name="1171991">&nbsp;</a></div>
+      <div class="Code1"><a name="1172057">setSubjectConfirmationMethod(""urn:oasis:names:tc:SAML:2.0:cm:bearer"&gt;</a></div>
+      <div class="Code1"><a name="1172220">&lt;SubjectConfirmationData InResponseTo="_1234567890"</a></div>
+      <div class="Code1"><a name="1172221">Recipient="https://www.serviceprovider.com/saml/consumer"</a></div>
+      <div class="Code1"><a name="1172215">NotOnOrAfter="2004-03-19T13:27:00Z"</a></div>
+      <div class="Code1"><a name="1172233">&lt;/SubjectConfirmationData")</a></div>
+      <div class="Heading2_Function">
+        <span class="StepNumber">Function:  </span><a name="1172379">setSubjectName</a></div>
+      <div class="Abstract"><a name="1172380">Specifies the user identity presented to the SAML service. </a></div>
+      <div class="Reference_Heading"><a name="1172381">Syntax</a></div>
+      <div class="Declaration"><a name="1172317">setSubjectName(</a><span class="Variable">username</span>)</div>
+      <div class="Reference_Heading"><a name="1172318">Parameters</a></div>
+      <div class="Term_Ref" style="color: #000000; font-style: normal; font-variant: normal; font-weight: normal; margin-top: 3.0pt; text-transform: none; vertical-align: baseline"><span class="Variable"><a name="1172319">username</a></span></div>
+      <div class="Definition_Ref"><a name="1172320">The user name presented to the service provider. </a></div>
+      <div class="Reference_Heading"><a name="1172321">Description</a></div>
+      <div class="Body"><a name="1172322">This method specifies the subject in the SAML assertion, which is the user identity (that is, </a>the user name) presented to the SAML service. You can get this name by retrieving the <span class="Code">LoginUser.Username</span> property or by using the property’s synonymous variable <span class="Code">LoginUsername</span>. </div>
+      <div class="Heading2_Function">
+        <span class="StepNumber">Function:  </span><a name="1172607">setVersion</a></div>
+      <div class="Abstract"><a name="1172609">Specifies the version of the SAML assertion. </a></div>
+      <div class="Reference_Heading"><a name="1172610">Syntax</a></div>
+      <div class="Declaration"><a name="1172611">setVersion(</a><span class="Variable">samlVersion</span>)</div>
+      <div class="Reference_Heading"><a name="1172612">Parameters</a></div>
+      <div class="Term_Ref" style="color: #000000; font-style: normal; font-variant: normal; font-weight: normal; margin-top: 3.0pt; text-transform: none; vertical-align: baseline"><span class="Variable"><a name="1172613">samlVersion</a></span></div>
+      <div class="Definition_Ref"><a name="1172614">The SAML version number. Specify </a><span class="Code">1</span> for version 1.1 or <span class="Code">2</span> for version 2.0. </div>
+      <div class="Reference_Heading"><a name="1172615">Description</a></div>
+      <div class="Body"><a name="1172616">The default SAML version number is 2.0 if this method isn’t present in the script.</a></div>
+      <div class="Body" style="color: #000000; font-style: normal; font-variant: normal; font-weight: normal; margin-top: 3.0pt; text-transform: none; vertical-align: baseline"><a name="1143348">&nbsp;</a></div>
+    </blockquote>
+    <hr align="left" />
+    <table align="right">
+      <tr>
+        <td class="WebWorks_Company_Logo_Bottom">
+          <a href="http://www.centrify.com" target="external_window"><img src="centrifylogo.gif" border="0" /></a>
+        </td>
+      </tr>
+      <tr>
+        <td class="WebWorks_Company_Name_Bottom">
+          <a href="http://www.centrify.com" target="external_window">Centrify Corporation</a>
+        </td>
+      </tr>
+      <tr>
+        <td class="WebWorks_Company_Email_Bottom">
+          <a href="mailto:support@centrify.com">support@centrify.com</a>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>

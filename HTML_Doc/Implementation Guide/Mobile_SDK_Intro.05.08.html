@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <!-- MOTW-DISABLED saved from url=(0014)about:internet -->
+    <title>The SAML application profile is customized for each organization</title>
+    <link rel="StyleSheet" href="css/Mobile_SDK_Intro.css" type="text/css" media="all" />
+    <link rel="StyleSheet" href="css/webworks.css" type="text/css" media="all" />
+    <script type="text/javascript" language="JavaScript1.2" src="scripts/expand.js"></script>
+    <script type="text/javascript" language="JavaScript1.2">
+      <!--
+        var  WebWorksRootPath = "";
+      // -->
+    </script>
+  </head>
+  <body>
+    <div style="text-align: left;">
+      <table cellspacing="0" summary="">
+        <tr>
+          <td>
+            <a href="toc.html"><img src="images/toc.gif" alt="Table of Contents" border="0" /></a>
+          </td>
+          <td>
+            <a href="Mobile_SDK_Intro.05.07.html"><img src="images/prev.gif" alt="Previous" border="0" /></a>
+          </td>
+          <td>
+            <a href="Mobile_SDK_Intro.05.09.html"><img src="images/next.gif" alt="Next" border="0" /></a>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <br />
+    <div class="WebWorks_Breadcrumbs" style="text-align: left;">
+      <a class="WebWorks_Breadcrumb_Link" href="Mobile_SDK_Intro.05.01.html#1104601">Introduction</a> : <a class="WebWorks_Breadcrumb_Link" href="Mobile_SDK_Intro.05.05.html#1104601">Provide a SAML application profile to enable authentication tokens</a> : The SAML application profile is customized for each organization</div>
+    <hr align="left" />
+    <blockquote>
+      <div class="Heading2"><a name="1104601">The SAML application profile is customized for each organization</a></div>
+      <div class="Body"><a name="1104602">A SAML application profile defines many properties that are the same for all organizations </a>using a SAML-enabled service provider. The SAML script, for example, defines the SAML elements and values required by the SAML service, and they don’t typically vary from organization to organization. Each organization can, however, customize the SAML assertion to serve their particular needs. The organization may, for example, specify a special user-name mapping or a non-Centrify security certificate.</div>
+      <div class="Body"><a name="1104603">Because of this, each organization using Centrify Cloud Service for single-sign-on creates its </a>own SAML application profile for each SAML-enabled service provider it uses. To do so, an organization’s administrator uses a generic SAML application template in Cloud Manager to create and then configure a new application profile. The administrator can specify in the new profile how to determine a user name within the SAML assertion and what certificate and key to use for the assertion.</div>
+      <div class="Body"><a name="1104604">The new SAML application profile also presents a unique set of information that the </a>organization gives to the SAML-enabled service provider to define direct communication between the SAML service and Centrify Cloud Service. That information includes the certificate and key used to sign the SAML assertion and the identity provider URLs (sign-on, sign-off, and error).</div>
+      <div class="Body"><a name="1104605">Each organization must set up a SAML application profile for every SAML-enabled service </a>its users connect to, directly or indirectly. Therefore, when the organization configures Cloud Manager to install an application that uses the Centrify MAS SDK to read or pass on a SAML authentication token, it must provide a SAML application profile customized for the consumer of the authentication token. For example, if the FabricCustomizer mobile application calls <span class="Code">getSecurityToken</span> in order to pass an authentication token to the SAML interface of the Threadbare Fabrics SaaS application, the administrator for each organization that wants to provide SSO to Threadbare Fabrics through the FabricCustomizer application must not only configure the FabricCustomizer mobile application profile in Centrify Cloud Manager, they must also create and configure a SAML application profile for Threadbare Fabrics. Without a profile in place for a mobile application’s associated SAML-enabled web service, an organization’s users won’t be able to use the mobile application.</div>
+      <div class="Body"><a name="1115316">For details on SAML application profiles, see </a><span class="Jump_X-ref"><a href="Mobile_SDK_SAML_scripting.18.1.html#1103098" title="Creating a SAML application profile">Chapter 14, “Creating a SAML application profile.”</a></span></div>
+    </blockquote>
+    <hr align="left" />
+    <table align="right">
+      <tr>
+        <td class="WebWorks_Company_Logo_Bottom">
+          <a href="http://www.centrify.com" target="external_window"><img src="centrifylogo.gif" border="0" /></a>
+        </td>
+      </tr>
+      <tr>
+        <td class="WebWorks_Company_Name_Bottom">
+          <a href="http://www.centrify.com" target="external_window">Centrify Corporation</a>
+        </td>
+      </tr>
+      <tr>
+        <td class="WebWorks_Company_Email_Bottom">
+          <a href="mailto:support@centrify.com">support@centrify.com</a>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>

@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <!-- MOTW-DISABLED saved from url=(0014)about:internet -->
+    <title>Use the SAML SaaS API to add SSO to SaaS applications</title>
+    <link rel="StyleSheet" href="css/Mobile_SDK_Intro.css" type="text/css" media="all" />
+    <link rel="StyleSheet" href="css/webworks.css" type="text/css" media="all" />
+    <script type="text/javascript" language="JavaScript1.2" src="scripts/expand.js"></script>
+    <script type="text/javascript" language="JavaScript1.2">
+      <!--
+        var  WebWorksRootPath = "";
+      // -->
+    </script>
+  </head>
+  <body>
+    <div style="text-align: left;">
+      <table cellspacing="0" summary="">
+        <tr>
+          <td>
+            <a href="toc.html"><img src="images/toc.gif" alt="Table of Contents" border="0" /></a>
+          </td>
+          <td>
+            <a href="Mobile_SDK_Intro.05.10.html"><img src="images/prev.gif" alt="Previous" border="0" /></a>
+          </td>
+          <td>
+            <a href="Mobile_SDK_Intro.05.12.html"><img src="images/next.gif" alt="Next" border="0" /></a>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <br />
+    <div class="WebWorks_Breadcrumbs" style="text-align: left;">
+      <a class="WebWorks_Breadcrumb_Link" href="Mobile_SDK_Intro.05.01.html#1078623">Introduction</a> : Use the SAML SaaS API to add SSO to SaaS applications</div>
+    <hr align="left" />
+    <blockquote>
+      <div class="Heading1"><a name="1078623">Use the SAML SaaS API to add SSO to SaaS applications</a></div>
+      <div class="Body"><a name="1087564">SaaS applications can use Security Assertion Markup Language (SAML) to authenticate </a>users. You can use the Centrify SAML SaaS API to add this capability to your SaaS application if it doesn’t already support SAML.</div>
+      <div class="Body"><a name="1139366">Although Centrify Cloud Service can securely store a user’s username and password and use </a>that data to log in a user to a SaaS application, a true single-sign-on implementation requires SAML. With a username-password SaaS application, the first time the user opens the application through the Centrify user portal (or through a mobile application), the user is required to enter a username and password. Centrify Cloud Service then saves that information so that it can log in the user automatically after that. However, with such an application, even when it appears to be single-sign-on to the user, Centrify Cloud Service has to send the username and password to the SaaS application to log the user on. Therefore, both Centrify Cloud Service and the SaaS application have to store the username and password. If the user should change the password, the single-sign-on would fail.</div>
+      <div class="Body"><a name="1087566">With SAML, a user logs in once to Active Directory (or unlocks their mobile device) and </a>selects a SaaS application or a mobile application that provides access to a web service. Centrify Cloud Service authenticates the user through Active Directory and returns a SAML response message indicating the user is authenticated. The browser or mobile application forwards the response to the SaaS application, which validates the response and, if it’s valid, automatically logs the user in. In this case, neither Centrify Cloud Service nor the SaaS application needs to store the user’s password.</div>
+      <div class="Note">
+        <span class="Note">Note	</span><a name="1075890">The message that carries the authentication information is referred to in SAML </a>protocol terminology as a <span class="bold">response</span>, although an authentication message of this type need not be in response to a request. Because it can be used to forward authentication information from one location to another, it’s sometimes referred to as a <span class="bold">token</span> or an <span class="bold">authentication </span><span class="bold">token</span>. </div>
+      <div class="Body"><a name="1068132">If your SaaS application currently authenticates using usernames and passwords, adding a </a>SAML interface with the Centrify SaaS API means that you shift the authentication burden to Centrify Cloud Service, which uses the users’ Active Directory identities to authenticate them. In this case, because it’s the users’ company or organization that has the license to use your SaaS application, not the individual user, you do not have to authenticate or authorize the user—instead, you can accept a token from Centrify Cloud Service that certifies that the user is authorized to use your application. The token ensures that the user both belongs to an organization that has a valid license and that the user has been authenticated. The token can also contain any additional information you need about the user. Once you’ve added the SAML interface, your SaaS application does not need to ask for usernames or store passwords for these users. In addition, the users need to log in only once to Active Directory to get access to all the SaaS applications for which their company or organization has a license.</div>
+      <div class="Body"><a name="1139371">The situation is a bit different for stand-alone mobile applications. The first time the </a>Centrify application or any mobile application that uses the Centrify MAS API calls a method that requires authentication, Centrify Cloud Service presents the user with a dialog requesting Active Directory credentials. Centrify Cloud Service contacts the Centrify Cloud Proxy Server on the network of the organization to which the user belongs, authenticates the user, and grants the user’s device zero sign-on (ZSO) privileges. That is, once the user has logged into the device, the user never needs to log in again to any MAS application or to any SAML-enabled web service available through that application. </div>
+      <div class="Note">
+        <span class="Note">Note	</span><a name="1139377">Because any user of the device gains access to the web service</a> without further authentication, it is highly recommended that you use a mobile device management (MDM) solution, such as Centrify Cloud Manager, to require a secure passcode and auto-lock policy for the mobile device.</div>
+      <div class="Body"><a name="1089832">When a mobile application </a>or SAML-enabled SaaS application requests authentication through a Centrify API, Centrify Cloud Service provides a SAML response signed with a private key. By default, Centrify Cloud Services uses Centrify’s signing certificate and private key; however a software vendor can provide a private key and certificate for this purpose. The SAML response includes any information needed by the SaaS application or web service to authorize the user. </div>
+      <div class="Body"><a name="1048476">The </a>web browser or mobile application passes the response on to the SaaS application or web service, which verifies the signature using the appropriate certificate. If the signature is valid, then the SaaS application or web service can assume that the user has been authenticated and is authorized to use the service. The SaaS application or web service uses the information in the SAML response to log in the user. The user can then use the SaaS application or mobile application in the same way as if he or she had logged on with a username and password. </div>
+      <div class="Body"><a name="1017602">When using Centrify Cloud Service with SAML authentication, there is never a need for the </a>SaaS application or web service to contact Active Directory directly or to store usernames and passwords.</div>
+      <div class="Body"><a name="1139428">From the point of view of the SAML-enabled service provider, there are three possible </a>scenarios for user authentication using Centrify Cloud Service:</div>
+      <div class="Bullet1_outer" style="margin-left: 46.8pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="Bullet1_inner" style="width: 14.400000000000005pt; white-space: nowrap">
+                <span class="HeaderSymbols">l	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="Bullet1_inner"><a name="1139429">Identity-provider-initiated login using the Centrify portal on a computer or mobile </a>device. Centrify Cloud Service is the identity provider (IdP).</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="Bullet1_outer" style="margin-left: 46.8pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="Bullet1_inner" style="width: 14.400000000000005pt; white-space: nowrap">
+                <span class="HeaderSymbols">l	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="Bullet1_inner"><a name="1139430">Service-provider-initiated login using a browser on a computer or mobile device. The </a>SaaS application is the service provider (SP).</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="Bullet1_outer" style="margin-left: 46.8pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="Bullet1_inner" style="width: 14.400000000000005pt; white-space: nowrap">
+                <span class="HeaderSymbols">l	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="Bullet1_inner"><a name="1139431">Service-provider-initiated login using a mobile application that provides access to the </a>web service. </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="Body"><a name="1049181">For each of these scenarios, there </a>are several ways to use the SAML SaaS API:</div>
+      <div class="Bullet1_outer" style="margin-left: 46.8pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="Bullet1_inner" style="width: 14.400000000000005pt; white-space: nowrap">
+                <span class="HeaderSymbols">l	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="Bullet1_inner"><a name="1049259">Using the high-level J2EE (Java Platform, Enterprise Edition) API, which does most of </a>the work of dealing with SAML responses for you</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="Bullet1_outer" style="margin-left: 46.8pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="Bullet1_inner" style="width: 14.400000000000005pt; white-space: nowrap">
+                <span class="HeaderSymbols">l	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="Bullet1_inner"><a name="1049403">Using the lower-level Java API to retrieve the SAML metadata for you and using that to </a>generate SAML requests and validate responses</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="Bullet1_outer" style="margin-left: 46.8pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="Bullet1_inner" style="width: 14.400000000000005pt; white-space: nowrap">
+                <span class="HeaderSymbols">l	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="Bullet1_inner"><a name="1131197">Using your own means to obtain the SAML metadata and using the lower-level Java API </a>to generate SAML requests and validate responses</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </blockquote>
+    <hr align="left" />
+    <table align="right">
+      <tr>
+        <td class="WebWorks_Company_Logo_Bottom">
+          <a href="http://www.centrify.com" target="external_window"><img src="centrifylogo.gif" border="0" /></a>
+        </td>
+      </tr>
+      <tr>
+        <td class="WebWorks_Company_Name_Bottom">
+          <a href="http://www.centrify.com" target="external_window">Centrify Corporation</a>
+        </td>
+      </tr>
+      <tr>
+        <td class="WebWorks_Company_Email_Bottom">
+          <a href="mailto:support@centrify.com">support@centrify.com</a>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>

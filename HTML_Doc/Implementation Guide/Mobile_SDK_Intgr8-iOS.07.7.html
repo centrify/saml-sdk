@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <!-- MOTW-DISABLED saved from url=(0014)about:internet -->
+    <title>Use the sample project to write your app</title>
+    <link rel="StyleSheet" href="css/Mobile_SDK_Intgr8-iOS.css" type="text/css" media="all" />
+    <link rel="StyleSheet" href="css/webworks.css" type="text/css" media="all" />
+    <script type="text/javascript" language="JavaScript1.2" src="scripts/expand.js"></script>
+    <script type="text/javascript" language="JavaScript1.2">
+      <!--
+        var  WebWorksRootPath = "";
+      // -->
+    </script>
+  </head>
+  <body>
+    <div style="text-align: left;">
+      <table cellspacing="0" summary="">
+        <tr>
+          <td>
+            <a href="toc.html"><img src="images/toc.gif" alt="Table of Contents" border="0" /></a>
+          </td>
+          <td>
+            <a href="Mobile_SDK_Intgr8-iOS.07.6.html"><img src="images/prev.gif" alt="Previous" border="0" /></a>
+          </td>
+          <td>
+            <a href="Mobile_SDK_Intgr8-iOS.07.8.html"><img src="images/next.gif" alt="Next" border="0" /></a>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <br />
+    <div class="WebWorks_Breadcrumbs" style="text-align: left;">
+      <a class="WebWorks_Breadcrumb_Link" href="Mobile_SDK_Intgr8-iOS.07.1.html#1100088">Integration of iOS MAS Apps</a> : Use the sample project to write your app</div>
+    <hr align="left" />
+    <blockquote>
+      <div class="Heading1"><a name="1100088">Use the sample project to write your app</a></div>
+      <div class="Step1_outer" style="margin-left: 46.8pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="Step1_inner" style="width: 14.400000000000005pt; white-space: nowrap">
+                <span class="StepNumber">1	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="Step1_inner"><a name="1083507">Open the source code for </a><span class="Code">CentrifySDKSample.</span></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="StepNum_outer" style="margin-left: 46.8pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="StepNum_inner" style="width: 14.400000000000005pt; white-space: nowrap">
+                <span class="StepNumber">2	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="StepNum_inner"><a name="1083508">Find the </a><span class="Code">getSecurityTokenForTarget:</span> call in the files <span class="Code">AppDelegate.m</span> and <span class="Code">HomeViewController.m</span>. This method retrieves the authentication token for the app. For example:</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="Code2_tabs"><a name="1109346">	</a>- (IBAction)getAccessToken:(id)sender</div>
+      <div class="Code2_tabs"><a name="1109347">	</a>{</div>
+      <div class="Code2_tabs"><a name="1109348">	</a>	self.accessToken = nil;</div>
+      <div class="Code2_tabs"><a name="1109349">	</a>	[EnterpriseAuthentication getSecurityTokenForTarget:@"sdkdemo" </div>
+      <div class="Code2_tabs"><a name="1109396">	</a>		alwaysUseFreshToken:NO completionHandler:^(CentrifySDKResult *result) {</div>
+      <div class="Code2_tabs"><a name="1109350">	</a>			[self getSecurityTokenHandler:result];</div>
+      <div class="Code2_tabs"><a name="1109351">	</a>	}];</div>
+      <div class="Code2_tabs"><a name="1104741">	</a>}</div>
+      <div class="StepText"><a name="1087264">Notice that, in the sample app, the app name passed to the </a><span class="Code">getSecurityTokenForTarget:</span> method is <span class="Code">"sdkdemo"</span>. This call will work only if you have an app named sdkdemo in Centrify Cloud Manager created using the Generic SAML template. Centrify Cloud Services uses the SAML script specified in the Generic SAML template to generate the token.</div>
+      <div class="StepNum_outer" style="margin-left: 46.8pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="StepNum_inner" style="width: 14.400000000000005pt; white-space: nowrap">
+                <span class="StepNumber">3	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="StepNum_inner"><a name="1093299">Write your app using the </a>MAS iOS API to authenticate the user and parse the authentication token. Be sure that your call to <span class="Code">getSecurityTokenForTarget:</span> uses the same app name as you used in your Generic SAML template for your web service.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="StepNote">
+        <span class="Note">Note	</span><a name="1094074">You will need to get some parameter values for the methods in the API from Cloud </a>Manager. See the API descriptions in <span class="Jump_X-ref"><a href="Mobile_SDK_iOS_Ref.html#1385998" title="Mobile Authentication Service iOS Reference">Chapter 8, “Mobile Authentication Service iOS Reference”</a></span> for details. </div>
+    </blockquote>
+    <hr align="left" />
+    <table align="right">
+      <tr>
+        <td class="WebWorks_Company_Logo_Bottom">
+          <a href="http://www.centrify.com" target="external_window"><img src="centrifylogo.gif" border="0" /></a>
+        </td>
+      </tr>
+      <tr>
+        <td class="WebWorks_Company_Name_Bottom">
+          <a href="http://www.centrify.com" target="external_window">Centrify Corporation</a>
+        </td>
+      </tr>
+      <tr>
+        <td class="WebWorks_Company_Email_Bottom">
+          <a href="mailto:support@centrify.com">support@centrify.com</a>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>

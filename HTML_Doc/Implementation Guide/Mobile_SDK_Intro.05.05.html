@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <!-- MOTW-DISABLED saved from url=(0014)about:internet -->
+    <title>Provide a SAML application profile to enable authentication tokens</title>
+    <link rel="StyleSheet" href="css/Mobile_SDK_Intro.css" type="text/css" media="all" />
+    <link rel="StyleSheet" href="css/webworks.css" type="text/css" media="all" />
+    <script type="text/javascript" language="JavaScript1.2" src="scripts/expand.js"></script>
+    <script type="text/javascript" language="JavaScript1.2">
+      <!--
+        var  WebWorksRootPath = "";
+      // -->
+    </script>
+  </head>
+  <body>
+    <div style="text-align: left;">
+      <table cellspacing="0" summary="">
+        <tr>
+          <td>
+            <a href="toc.html"><img src="images/toc.gif" alt="Table of Contents" border="0" /></a>
+          </td>
+          <td>
+            <a href="Mobile_SDK_Intro.05.04.html"><img src="images/prev.gif" alt="Previous" border="0" /></a>
+          </td>
+          <td>
+            <a href="Mobile_SDK_Intro.05.06.html"><img src="images/next.gif" alt="Next" border="0" /></a>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <br />
+    <div class="WebWorks_Breadcrumbs" style="text-align: left;">
+      <a class="WebWorks_Breadcrumb_Link" href="Mobile_SDK_Intro.05.01.html#1104391">Introduction</a> : Provide a SAML application profile to enable authentication tokens</div>
+    <hr align="left" />
+    <blockquote>
+      <div class="Heading1"><a name="1104391">Provide a SAML application profile to enable authentication tokens</a></div>
+      <div class="Body"><a name="1104401">An organization’s network administrator uses Centrify Cloud Manager to configure the </a>mobile and SaaS applications that the organization has licensed. The developer who is writing the mobile application that requires an authentication token, the SaaS application, or the web service defines what SAML information the application or service requires in the SAML response (token) presented to the application or service. The organization’s administrator configures a SAML application profile in Centrify Cloud Manager for the application or service by using a generic SAML application template to create a custom SAML application profile. Whenever a user in the organization opens an application that requires a SAML response, Centrify Cloud Service uses the SAML application profile to create the response and sends it to the service. For example, your web service might require the user’s telephone number attribute from their Active Directory account. The custom SAML script adds this attribute to the SAML response sent by Centrify Cloud Service.</div>
+      <div class="Body"><a name="1104402">Note that this need for application-specific information in the SAML interface means that </a>some coordination and exchange of information is needed between the administrator who is adding the SaaS application to Centrify Cloud Manager and the developer or web service provider who is writing or maintaining the SAML interface for the application or web service.</div>
+      <div class="Body"><span class="Jump_X-ref"><a href="#1104412" title="Provide a SAML application profile to enable authentication tokens" name="1104406">Figure 3. Centrify Cloud Manager</a></span> shows some of the input fields in Centrify Cloud Manager for the generic SAML template.</div>
+      <div class="Body"><a name="1104407">&nbsp;</a></div>
+      <div class="Figure_caption">Figure 3.  <a name="1104412">Centrify Cloud Manager <img class="Default" src="images/CloudMgr.png" width="681" height="410" style="display: block; float: none; left: 0.0; top: 0.0" alt="" /> </a></div>
+      <div class="Body"><a name="1139300">When a user logs onto the Centrify user portal, the user gains single sign-on access to the </a>applications configured by the administrator. <span class="Jump_X-ref"><a href="#1139309" title="Provide a SAML application profile to enable authentication tokens">Figure 4. Centrify user portal</a></span> shows the Centrify user portal. The Centrify mobile application has a similar list of applications to choose from. </div>
+      <div class="Body"><a name="1139304">&nbsp;</a></div>
+      <div class="Figure_caption">Figure 4.  <a name="1139309">Centrify user portal<img class="Default" src="images/MyCentrify.png" width="505" height="320" style="display: block; float: none; left: 0.0; top: 0.0" alt="" /></a></div>
+    </blockquote>
+    <hr align="left" />
+    <table align="right">
+      <tr>
+        <td class="WebWorks_Company_Logo_Bottom">
+          <a href="http://www.centrify.com" target="external_window"><img src="centrifylogo.gif" border="0" /></a>
+        </td>
+      </tr>
+      <tr>
+        <td class="WebWorks_Company_Name_Bottom">
+          <a href="http://www.centrify.com" target="external_window">Centrify Corporation</a>
+        </td>
+      </tr>
+      <tr>
+        <td class="WebWorks_Company_Email_Bottom">
+          <a href="mailto:support@centrify.com">support@centrify.com</a>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>

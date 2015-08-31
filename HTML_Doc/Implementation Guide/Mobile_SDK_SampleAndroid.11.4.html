@@ -1,0 +1,582 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <!-- MOTW-DISABLED saved from url=(0014)about:internet -->
+    <title>SalesRecordsActivity</title>
+    <link rel="StyleSheet" href="css/Mobile_SDK_SampleAndroid.css" type="text/css" media="all" />
+    <link rel="StyleSheet" href="css/webworks.css" type="text/css" media="all" />
+    <script type="text/javascript" language="JavaScript1.2" src="scripts/expand.js"></script>
+    <script type="text/javascript" language="JavaScript1.2">
+      <!--
+        var  WebWorksRootPath = "";
+      // -->
+    </script>
+  </head>
+  <body>
+    <div style="text-align: left;">
+      <table cellspacing="0" summary="">
+        <tr>
+          <td>
+            <a href="toc.html"><img src="images/toc.gif" alt="Table of Contents" border="0" /></a>
+          </td>
+          <td>
+            <a href="Mobile_SDK_SampleAndroid.11.3.html"><img src="images/prev.gif" alt="Previous" border="0" /></a>
+          </td>
+          <td>
+            <a href="Mobile_SDK_SampleAndroid.11.5.html"><img src="images/next.gif" alt="Next" border="0" /></a>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <br />
+    <div class="WebWorks_Breadcrumbs" style="text-align: left;">
+      <a class="WebWorks_Breadcrumb_Link" href="Mobile_SDK_SampleAndroid.11.1.html#1093984">Android MAS Sample Code</a> : SalesRecordsActivity</div>
+    <hr align="left" />
+    <blockquote>
+      <div class="Heading1"><a name="1093984">SalesRecordsActivity</a></div>
+      <div class="Body"><a name="1096443">The </a><span class="Code">SalesRecordsActivity.java</span> file of the Android SSO Demo1 sample application illustrates the use of the methods of the Android MAS API to get a SAML response from Centrify cloud and pass it to the web service to authenticate the user and obtain data. The code, shown below, performs the following actions:</div>
+      <div class="Step1_outer" style="margin-left: 46.8pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="Step1_inner" style="width: 14.400000000000005pt; white-space: nowrap">
+                <span class="StepNumber">1	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="Step1_inner"><a name="1096448">Imports Java libraries. </a><span class="Jump_X-ref"><a href="#1097239" title="SalesRecordsActivity"> Step&nbsp;1</a></span></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="StepNum_outer" style="margin-left: 46.8pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="StepNum_inner" style="width: 14.400000000000005pt; white-space: nowrap">
+                <span class="StepNumber">2	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="StepNum_inner"><a name="1097627">Imports Apache libraries. </a><span class="Jump_X-ref"><a href="#1097677" title="SalesRecordsActivity"> Step&nbsp;2</a></span></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="StepNum_outer" style="margin-left: 46.8pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="StepNum_inner" style="width: 14.400000000000005pt; white-space: nowrap">
+                <span class="StepNumber">3	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="StepNum_inner"><a name="1097709">Imports Json libraries. </a><span class="Jump_X-ref"><a href="#1097697" title="SalesRecordsActivity"> Step&nbsp;3</a></span></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="StepNum_outer" style="margin-left: 46.8pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="StepNum_inner" style="width: 14.400000000000005pt; white-space: nowrap">
+                <span class="StepNumber">4	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="StepNum_inner"><a name="1097711">Imports Android libraries. </a><span class="Jump_X-ref"><a href="#1097819" title="SalesRecordsActivity"> Step&nbsp;4</a></span></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="StepNum_outer" style="margin-left: 46.8pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="StepNum_inner" style="width: 14.400000000000005pt; white-space: nowrap">
+                <span class="StepNumber">5	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="StepNum_inner"><a name="1097848">Imports Centrify libraries. </a><span class="Jump_X-ref"><a href="#1097909" title="SalesRecordsActivity"> Step&nbsp;5</a></span></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="StepNum_outer" style="margin-left: 46.8pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="StepNum_inner" style="width: 14.400000000000005pt; white-space: nowrap">
+                <span class="StepNumber">6	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="StepNum_inner"><a name="1097926">Defines a new class, </a><span class="Code">SalesRecordsActivity</span>, by extending the Android <span class="Code">Activity</span> class. <span class="Jump_X-ref"><a href="#1097962" title="SalesRecordsActivity"> Step&nbsp;6</a></span></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="StepNum_outer" style="margin-left: 46.8pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="StepNum_inner" style="width: 14.400000000000005pt; white-space: nowrap">
+                <span class="StepNumber">7	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="StepNum_inner"><a name="1096453">Initializes the interface with saved state information. </a><span class="Jump_X-ref"><a href="#1098011" title="SalesRecordsActivity"> Step&nbsp;7</a></span></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="StepNum_outer" style="margin-left: 46.8pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="StepNum_inner" style="width: 14.400000000000005pt; white-space: nowrap">
+                <span class="StepNumber">8	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="StepNum_inner"><a name="1098210">If the token has not been downloaded already, executes the code to download the token. </a><span class="Jump_X-ref"><a href="#1098191" title="SalesRecordsActivity"> Step&nbsp;8</a></span></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="StepNum_outer" style="margin-left: 46.8pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="StepNum_inner" style="width: 14.400000000000005pt; white-space: nowrap">
+                <span class="StepNumber">9	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="StepNum_inner"><a name="1098320">Gets the token in the background as an asynchronous task. </a><span class="Jump_X-ref"><a href="#1098360" title="SalesRecordsActivity"> Step&nbsp;9</a></span></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="StepNum_outer" style="margin-left: 46.8pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="StepNum_inner" style="width: 14.400000000000005pt; white-space: nowrap">
+                <span class="StepNumber">10	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="StepNum_inner"><a name="1098393">Creates a new </a><span class="Code">EnterpriseAuthentication</span> object (see <span class="Jump_X-ref"><a href="Mobile_SDK_Ref.html#1386698" title="Mobile Authentication Service Android Reference">“EnterpriseAuthentication” on page&nbsp;56</a></span>), which can be used to return the SAML response and calls <span class="Code">EnterpriseAuthentication.getSecurityToken</span> to get the SAML response (see <span class="Jump_X-ref"><a href="Mobile_SDK_Ref.html#1396469" title="Mobile Authentication Service Android Reference">“SecurityToken” on page&nbsp;67</a></span>). The first parameter is the name of the application as defined in Centrify Cloud Manager. The second parameter specifies that the token does not need to be downloaded if it is already cached. The third parameter is the Android context.<span class="Jump_X-ref"><a href="#1098378" title="SalesRecordsActivity"> Step&nbsp;10</a></span></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BulletText"><a name="1098571">If the user is not already authenticated, Centrify Cloud Services displays an authentication </a>dialog requesting the user’s Active Directory credentials. This is a blocking call, so it does not return until the user has responded.</div>
+      <div class="StepNum_outer" style="margin-left: 46.8pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="StepNum_inner" style="width: 14.400000000000005pt; white-space: nowrap">
+                <span class="StepNumber">11	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="StepNum_inner"><a name="1098409">Calls the </a><span class="Code">ssoRequest</span> method (see <span class="Jump_X-ref"><a href="#1099309" title="SalesRecordsActivity"> Step&nbsp;14</a></span>), which sends the SAML authentication response to the web application and requests the sales data. <span class="Jump_X-ref"><a href="#1098870" title="SalesRecordsActivity"> Step&nbsp;11</a></span></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="StepNum_outer" style="margin-left: 46.8pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="StepNum_inner" style="width: 14.400000000000005pt; white-space: nowrap">
+                <span class="StepNumber">12	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="StepNum_inner"><a name="1099080">Updates the progress indicator as the background task executes. </a><span class="Jump_X-ref"><a href="#1099064" title="SalesRecordsActivity"> Step&nbsp;12</a></span></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="StepNum_outer" style="margin-left: 46.8pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="StepNum_inner" style="width: 14.400000000000005pt; white-space: nowrap">
+                <span class="StepNumber">13	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="StepNum_inner"><a name="1099168">Calls the </a><span class="Code">displayRecords</span> method (see <span class="Jump_X-ref"><a href="#1099938" title="SalesRecordsActivity"> Step&nbsp;18</a></span>) to display the results when the task completes. <span class="Jump_X-ref"><a href="#1099189" title="SalesRecordsActivity"> Step&nbsp;13</a></span></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="StepNum_outer" style="margin-left: 46.8pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="StepNum_inner" style="width: 14.400000000000005pt; white-space: nowrap">
+                <span class="StepNumber">14	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="StepNum_inner"><a name="1099321">Sends the SAML authentication response to the web application, requests the sales data, </a>and receives the results. <span class="Jump_X-ref"><a href="#1099309" title="SalesRecordsActivity"> Step&nbsp;14</a></span></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="StepNum_outer" style="margin-left: 46.8pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="StepNum_inner" style="width: 14.400000000000005pt; white-space: nowrap">
+                <span class="StepNumber">15	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="StepNum_inner"><a name="1101667">Gets the URL of the web service and begins to format a message. </a><span class="Jump_X-ref"><a href="#1101569" title="SalesRecordsActivity"> Step&nbsp;15</a></span></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="StepNum_outer" style="margin-left: 46.8pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="StepNum_inner" style="width: 14.400000000000005pt; white-space: nowrap">
+                <span class="StepNumber">16	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="StepNum_inner"><a name="1101672">Adds the SAML response to the message header. The code shows both use of a REST </a>interface and a POST message to send the SAML response.<span class="Jump_X-ref"><a href="#1101599" title="SalesRecordsActivity"> Step&nbsp;16</a></span></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="StepNum_outer" style="margin-left: 46.8pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="StepNum_inner" style="width: 14.400000000000005pt; white-space: nowrap">
+                <span class="StepNumber">17	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="StepNum_inner"><a name="1101677">Receives the response and concatenates it into a string. </a><span class="Jump_X-ref"><a href="#1101817" title="SalesRecordsActivity"> Step&nbsp;17</a></span></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="StepNum_outer" style="margin-left: 46.8pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="StepNum_inner" style="width: 14.400000000000005pt; white-space: nowrap">
+                <span class="StepNumber">18	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="StepNum_inner"><a name="1099950">Formats and displays the results. </a><span class="Jump_X-ref"><a href="#1099938" title="SalesRecordsActivity"> Step&nbsp;18</a></span></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="Code2_tabs"><a name="1096483">	</a>						</div>
+      <div class="Code2_tabs"><a name="1097232">&nbsp;</a></div>
+      <div class="Code2_tabs"><a name="1097233">package com.centrify.sso.demo1;</a></div>
+      <div class="Code2_tabs"><a name="1097234">/*</a></div>
+      <div class="Code2_tabs"><span class="Jump_X-ref"><a href="#1096448" title="SalesRecordsActivity" name="1097239">Step&nbsp;1</a></span></div>
+      <div class="Code2_tabs"><a name="1097240">*/</a></div>
+      <div class="Code2_tabs"><a name="1101961">import java.util.ArrayList;</a></div>
+      <div class="Code2_tabs"><a name="1097672">import java.util.List;</a></div>
+      <div class="Code2_tabs"><a name="1101977">/*</a></div>
+      <div class="Code2_tabs"><span class="Jump_X-ref"><a href="#1097627" title="SalesRecordsActivity" name="1097677">Step&nbsp;2</a></span></div>
+      <div class="Code2_tabs"><a name="1097678">*/</a></div>
+      <div class="Code2_tabs"><a name="1101834">import org.apache.http.HttpResponse;</a></div>
+      <div class="Code2_tabs"><a name="1101835">import org.apache.http.HttpStatus;</a></div>
+      <div class="Code2_tabs"><a name="1101836">import org.apache.http.NameValuePair;</a></div>
+      <div class="Code2_tabs"><a name="1101837">import org.apache.http.client.entity.UrlEncodedFormEntity;</a></div>
+      <div class="Code2_tabs"><a name="1101838">import org.apache.http.client.methods.HttpPost;</a></div>
+      <div class="Code2_tabs"><a name="1101839">import org.apache.http.impl.client.DefaultHttpClient;</a></div>
+      <div class="Code2_tabs"><a name="1101840">import org.apache.http.message.BasicNameValuePair;</a></div>
+      <div class="Code2_tabs"><a name="1097693">import org.apache.http.util.EntityUtils;</a></div>
+      <div class="Code2_tabs"><a name="1101852">/*</a></div>
+      <div class="Code2_tabs"><span class="Jump_X-ref"><a href="#1097709" title="SalesRecordsActivity" name="1097697">Step&nbsp;3</a></span></div>
+      <div class="Code2_tabs"><a name="1097698">*/</a></div>
+      <div class="Code2_tabs"><a name="1097247">import org.json.JSONArray;</a></div>
+      <div class="Code2_tabs"><a name="1097248">import org.json.JSONException;</a></div>
+      <div class="Code2_tabs"><a name="1097249">import org.json.JSONObject;</a></div>
+      <div class="Code2_tabs"><a name="1097814">/*</a></div>
+      <div class="Code2_tabs"><span class="Jump_X-ref"><a href="#1097711" title="SalesRecordsActivity" name="1097819">Step&nbsp;4</a></span></div>
+      <div class="Code2_tabs"><a name="1097820">*/</a></div>
+      <div class="Code2_tabs"><a name="1097251">import android.app.Activity;</a></div>
+      <div class="Code2_tabs"><a name="1097252">import android.content.Context;</a></div>
+      <div class="Code2_tabs"><a name="1097253">import android.content.Intent;</a></div>
+      <div class="Code2_tabs"><a name="1097254">import android.graphics.Color;</a></div>
+      <div class="Code2_tabs"><a name="1097255">import android.os.AsyncTask;</a></div>
+      <div class="Code2_tabs"><a name="1097256">import android.os.Bundle;</a></div>
+      <div class="Code2_tabs"><a name="1097257">import android.util.Log;</a></div>
+      <div class="Code2_tabs"><a name="1101981">import android.view.View;</a></div>
+      <div class="Code2_tabs"><a name="1101982">import android.webkit.WebView;</a></div>
+      <div class="Code2_tabs"><a name="1097259">import android.widget.TableLayout;</a></div>
+      <div class="Code2_tabs"><a name="1097260">import android.widget.TableRow;</a></div>
+      <div class="Code2_tabs"><a name="1097261">import android.widget.TextView;</a></div>
+      <div class="Code2_tabs"><a name="1097262">import android.widget.Toast;</a></div>
+      <div class="Code2_tabs"><a name="1097904">/*</a></div>
+      <div class="Code2_tabs"><span class="Jump_X-ref"><a href="#1097848" title="SalesRecordsActivity" name="1097909">Step&nbsp;5</a></span></div>
+      <div class="Code2_tabs"><a name="1097910">*/</a></div>
+      <div class="Code2_tabs"><a name="1103853">import com.centrify.auth.EnterpriseAuthentication;</a></div>
+      <div class="Code2_tabs"><a name="1103854">import com.centrify.auth.TargetApplicationNotSupportedException;</a></div>
+      <div class="Code2_tabs"><a name="1101994">import com.centrify.auth.demo1.http.HttpClientHelper;</a></div>
+      <div class="Code2_tabs"><a name="1097957">/*</a></div>
+      <div class="Code2_tabs"><span class="Jump_X-ref"><a href="#1097926" title="SalesRecordsActivity" name="1097962">Step&nbsp;6</a></span></div>
+      <div class="Code2_tabs"><a name="1097963">*/</a></div>
+      <div class="Code2_tabs"><a name="1097267">public class SalesRecordsActivity extends Activity {</a></div>
+      <div class="Code2_tabs"><a name="1097268">	</a>protected static final String TAG = "SalesRecordsActivity";</div>
+      <div class="Code2_tabs"><a name="1097269">	</a></div>
+      <div class="Code2_tabs"><a name="1097270">	</a>private AsyncTask&lt;Void, String, String&gt; loadTask;</div>
+      <div class="Code2_tabs"><a name="1097271">	</a>private TextView bodyText;</div>
+      <div class="Code2_tabs"><a name="1097272">	</a>private String samlToken = "";</div>
+      <div class="Code2_tabs"><a name="1097273">	</a>private String ssoResult = "";</div>
+      <div class="Code2_tabs"><a name="1097274">	</a></div>
+      <div class="Code2_tabs"><a name="1097275">	</a>public static void startActivity(Context ctx) {</div>
+      <div class="Code2_tabs"><a name="1097276">	</a>	ctx.startActivity(new Intent(ctx, SalesRecordsActivity.class));</div>
+      <div class="Code2_tabs"><a name="1097277">	</a>}</div>
+      <div class="Code2_tabs"><a name="1098006">/*</a></div>
+      <div class="Code2_tabs"><span class="Jump_X-ref"><a href="#1096453" title="SalesRecordsActivity" name="1098011">Step&nbsp;7</a></span></div>
+      <div class="Code2_tabs"><a name="1097280">Called when the activity is first created. </a></div>
+      <div class="Code2_tabs"><a name="1098032">*/</a></div>
+      <div class="Code2_tabs"><a name="1097281">	</a>@Override</div>
+      <div class="Code2_tabs"><a name="1097282">	</a>public void onCreate(Bundle savedInstanceState) {</div>
+      <div class="Code2_tabs"><a name="1097283">	</a>	super.onCreate(savedInstanceState);</div>
+      <div class="Code2_tabs"><a name="1097284">	</a>	setContentView(R.layout.sales_records);</div>
+      <div class="Code2_tabs"><a name="1097285">	</a>	bodyText = (TextView)this.findViewById(R.id.bodyText);</div>
+      <div class="Code2_tabs"><a name="1097286">	</a>}</div>
+      <div class="Code2_tabs"><a name="1098186">/*</a></div>
+      <div class="Code2_tabs"><span class="Jump_X-ref"><a href="#1098210" title="SalesRecordsActivity" name="1098191">Step&nbsp;8</a></span></div>
+      <div class="Code2_tabs"><a name="1098193">*/</a></div>
+      <div class="Code2_tabs"><a name="1097288">	</a>@Override</div>
+      <div class="Code2_tabs"><a name="1097289">	</a>protected void onStart() {</div>
+      <div class="Code2_tabs"><a name="1097290">	</a>	super.onStart();</div>
+      <div class="Code2_tabs"><a name="1097291">	</a>	if (loadTask == null) {</div>
+      <div class="Code2_tabs"><a name="1097292">	</a>		getToken();</div>
+      <div class="Code2_tabs"><a name="1097293">	</a>	}</div>
+      <div class="Code2_tabs"><a name="1097294">	</a>}</div>
+      <div class="Code2_tabs"><a name="1098355">/*</a></div>
+      <div class="Code2_tabs"><span class="Jump_X-ref"><a href="#1098320" title="SalesRecordsActivity" name="1098360">Step&nbsp;9</a></span></div>
+      <div class="Code2_tabs"><a name="1098361">*/</a></div>
+      <div class="Code2_tabs"><a name="1097296">	</a>private void getToken() {</div>
+      <div class="Code2_tabs"><a name="1097297">	</a>	Log.i(TAG, "Enter getToken");</div>
+      <div class="Code2_tabs"><a name="1097298">	</a>	loadTask = new AsyncTask&lt;Void, String, String&gt;() {</div>
+      <div class="Code2_tabs"><a name="1097299">&nbsp;</a></div>
+      <div class="Code2_tabs"><a name="1097300">	</a>		@Override</div>
+      <div class="Code2_tabs"><a name="1097301">	</a>		protected String doInBackground(Void... params) {</div>
+      <div class="Code2_tabs"><a name="1098374">/*</a></div>
+      <div class="Code2_tabs"><span class="Jump_X-ref"><a href="#1098393" title="SalesRecordsActivity" name="1098378">Step&nbsp;10</a></span></div>
+      <div class="Code2_tabs"><a name="1098379">*/</a></div>
+      <div class="Code2_tabs"><a name="1103885">	</a>			try {</div>
+      <div class="Code2_tabs"><a name="1103907">	</a>			    String target = Preferences.getTarget(SalesRecordsActivity.this);</div>
+      <div class="Code2_tabs"><a name="1103956">	</a>				samlToken = EnterpriseAuthentication.getSecurityToken</div>
+      <div class="Code2_tabs"><a name="1103957">	</a>					(target, false, SalesRecordsActivity.this);</div>
+      <div class="Code2_tabs"><a name="1103939">	</a>				if (samlToken == null || samlToken.length() == 0) {</div>
+      <div class="Code2_tabs"><a name="1097307">	</a>					Toast.makeText(SalesRecordsActivity.this, "No saml token found", </div>
+      <div class="Code2_tabs"><a name="1097308">	</a>						Toast.LENGTH_SHORT).show();</div>
+      <div class="Code2_tabs"><a name="1097309">	</a>					return null;</div>
+      <div class="Code2_tabs"><a name="1097310">	</a>				}</div>
+      <div class="Code2_tabs"><a name="1097312">	</a>				publishProgress("Auth token obtained, start to fetch sales </div>
+      <div class="Code2_tabs"><a name="1097313">	</a>					records...");</div>
+      <div class="Code2_tabs"><a name="1098865">/*</a></div>
+      <div class="Code2_tabs"><span class="Jump_X-ref"><a href="#1098409" title="SalesRecordsActivity" name="1098870">Step&nbsp;11</a></span></div>
+      <div class="Code2_tabs"><a name="1098871">*/</a></div>
+      <div class="Code2_tabs"><a name="1097314">	</a>				ssoRequest();</div>
+      <div class="Code2_tabs"><a name="1098858">&nbsp;</a></div>
+      <div class="Code2_tabs"><a name="1097315">	</a>			} catch (TargetApplicationNotSupportedException e) {</div>
+      <div class="Code2_tabs"><a name="1097316">	</a>				publishProgress("Sales record fetched.");</div>
+      <div class="Code2_tabs"><a name="1097317">	</a>				Log.w(TAG, "Get token failed:" + e);</div>
+      <div class="Code2_tabs"><a name="1097318">	</a>				publishProgress("Failed to obtain token:" + e);</div>
+      <div class="Code2_tabs"><a name="1097319">	</a>			} catch (Exception e) {</div>
+      <div class="Code2_tabs"><a name="1097320">	</a>				Log.w(TAG, "Get token failed:" + e);</div>
+      <div class="Code2_tabs"><a name="1097321">	</a>				publishProgress("Failed to obtain token:" + e);</div>
+      <div class="Code2_tabs"><a name="1097322">	</a>			}</div>
+      <div class="Code2_tabs"><a name="1097323">	</a>			// Auth failed</div>
+      <div class="Code2_tabs"><a name="1097324">	</a>			return null;</div>
+      <div class="Code2_tabs"><a name="1097325">	</a>		}</div>
+      <div class="Code2_tabs"><a name="1099059">/*</a></div>
+      <div class="Code2_tabs"><span class="Jump_X-ref"><a href="#1099080" title="SalesRecordsActivity" name="1099064">Step&nbsp;12</a></span></div>
+      <div class="Code2_tabs"><a name="1099065">*/</a></div>
+      <div class="Code2_tabs"><a name="1097327">	</a>		@Override</div>
+      <div class="Code2_tabs"><a name="1097328">	</a>		protected void onProgressUpdate(String... values) {</div>
+      <div class="Code2_tabs"><a name="1097329">	</a>			bodyText.setText(values[0]);</div>
+      <div class="Code2_tabs"><a name="1097330">	</a>		}</div>
+      <div class="Code2_tabs"><a name="1099184">/*</a></div>
+      <div class="Code2_tabs"><span class="Jump_X-ref"><a href="#1099168" title="SalesRecordsActivity" name="1099189">Step&nbsp;13</a></span></div>
+      <div class="Code2_tabs"><a name="1099190">*/</a></div>
+      <div class="Code2_tabs"><a name="1097332">	</a>		@Override</div>
+      <div class="Code2_tabs"><a name="1097333">	</a>		protected void onPostExecute(String result) {</div>
+      <div class="Code2_tabs"><a name="1097334">	</a>			super.onPostExecute(result);</div>
+      <div class="Code2_tabs"><a name="1102039">	</a>			if (Preferences.getMethod(SalesRecordsActivity.this).</div>
+      <div class="Code2_tabs"><a name="1102055">	</a>				equals(Preferences.METHOD_REST)) {</div>
+      <div class="Code2_tabs"><a name="1102040">	</a>			    displayRestRecords();</div>
+      <div class="Code2_tabs"><a name="1102041">	</a>			} else if (Preferences.getMethod(SalesRecordsActivity.this).</div>
+      <div class="Code2_tabs"><a name="1102063">	</a>				equals(Preferences.METHOD_POST)) {</div>
+      <div class="Code2_tabs"><a name="1102042">	</a>			    displayPostRecords();</div>
+      <div class="Code2_tabs"><a name="1102043">	</a>			}				</div>
+      <div class="Code2_tabs"><a name="1097336">	</a>		}</div>
+      <div class="Code2_tabs"><a name="1097337">	</a>	};</div>
+      <div class="Code2_tabs"><a name="1097338">	</a>	Log.i(TAG, "Start to load sales records");</div>
+      <div class="Code2_tabs"><a name="1097339">	</a>	loadTask.execute();</div>
+      <div class="Code2_tabs"><a name="1097340">	</a>}</div>
+      <div class="Code2_tabs"><a name="1099304">/*</a></div>
+      <div class="Code2_tabs"><span class="Jump_X-ref"><a href="#1099321" title="SalesRecordsActivity" name="1099309">Step&nbsp;14</a></span></div>
+      <div class="Code2_tabs"><a name="1099310">*/</a></div>
+      <div class="Code2_tabs"><a name="1101493">	</a>private void ssoRequest() {</div>
+      <div class="Code2_tabs"><a name="1101494">	</a>	DefaultHttpClient httpClient = HttpClientHelper.createHttpClient(true);</div>
+      <div class="Code2_tabs"><a name="1101564">/*</a></div>
+      <div class="Code2_tabs"><span class="Jump_X-ref"><a href="#1101667" title="SalesRecordsActivity" name="1101569">Step&nbsp;15</a></span></div>
+      <div class="Code2_tabs"><a name="1101570">*/</a></div>
+      <div class="Code2_tabs"><a name="1101495">	</a>	try {</div>
+      <div class="Code2_tabs"><a name="1101496">	</a>		String url = Preferences.getRemoteServer(this);    	 </div>
+      <div class="Code2_tabs"><a name="1101500">	</a>		HttpUriRequest request = null;</div>
+      <div class="Code2_tabs"><a name="1101594">/*</a></div>
+      <div class="Code2_tabs"><span class="Jump_X-ref"><a href="#1101672" title="SalesRecordsActivity" name="1101599">Step&nbsp;16</a></span></div>
+      <div class="Code2_tabs"><a name="1101600">*/</a></div>
+      <div class="Code2_tabs"><a name="1104026">	</a>		if (Preferences.getMethod(this).equals(Preferences.METHOD_REST)) {</div>
+      <div class="Code2_tabs"><a name="1104155">	</a>			HttpGet httpGet = new HttpGet(url);</div>
+      <div class="Code2_tabs"><a name="1104156">	</a>			httpGet.addHeader("SAMLResponse", samlToken);</div>
+      <div class="Code2_tabs"><a name="1104157">	</a>			request = httpGet;</div>
+      <div class="Code2_tabs"><a name="1104030">	</a>		} else if (Preferences.getMethod(this).equals(Preferences.METHOD_POST)) {</div>
+      <div class="Code2_tabs"><a name="1104031">	</a>			HttpPost httpPost = new HttpPost(url);</div>
+      <div class="Code2_tabs"><a name="1104032">	</a>			List&lt;NameValuePair&gt; nameValuePairs = new ArrayList&lt;NameValuePair&gt;(1);</div>
+      <div class="Code2_tabs"><a name="1104033">	</a>			nameValuePairs.add(new BasicNameValuePair("SAMLResponse", samlToken));</div>
+      <div class="Code2_tabs"><a name="1104034">	</a>			httpPost.setEntity(new UrlEncodedFormEntity(nameValuePairs));</div>
+      <div class="Code2_tabs"><a name="1104035">	</a>			request = httpPost;</div>
+      <div class="Code2_tabs"><a name="1104036">	</a>		}</div>
+      <div class="Code2_tabs"><a name="1104037">&nbsp;</a></div>
+      <div class="Code2_tabs"><a name="1101812">	</a>		HttpResponse httpResponse = httpClient.execute(request);/*</div>
+      <div class="Code2_tabs"><a name="1104394">/*</a></div>
+      <div class="Code2_tabs"><span class="Jump_X-ref"><a href="#1101677" title="SalesRecordsActivity" name="1101817">Step&nbsp;17</a></span></div>
+      <div class="Code2_tabs"><a name="1101818">*/</a></div>
+      <div class="Code2_tabs"><a name="1101513">	</a>		if (httpResponse.getStatusLine().getStatusCode() == HttpStatus.SC_OK) {</div>
+      <div class="Code2_tabs"><a name="1101514">	</a>			ssoResult = EntityUtils.toString(httpResponse.getEntity());</div>
+      <div class="Code2_tabs"><a name="1101515">	</a>		} else {</div>
+      <div class="Code2_tabs"><a name="1101516">	</a>			Log.w(TAG, "Http request failed, " + </div>
+      <div class="Code2_tabs"><a name="1101950">	</a>				httpResponse.getStatusLine().toString());</div>
+      <div class="Code2_tabs"><a name="1101517">	</a>			ssoResult = httpResponse.getStatusLine().toString();</div>
+      <div class="Code2_tabs"><a name="1101518">	</a>			httpResponse.getEntity().consumeContent();</div>
+      <div class="Code2_tabs"><a name="1101519">	</a>		}</div>
+      <div class="Code2_tabs"><a name="1101520">	</a>		Log.d(TAG, "getcustomers response:\n" + ssoResult);</div>
+      <div class="Code2_tabs"><a name="1101521">	</a>	} catch (Exception ex) {</div>
+      <div class="Code2_tabs"><a name="1101522">	</a>		Log.w(TAG, "Failed to send sso request" , ex);</div>
+      <div class="Code2_tabs"><a name="1101523">	</a>	}</div>
+      <div class="Code2_tabs"><a name="1101489">	</a>}</div>
+      <div class="Code2_tabs"><a name="1099933">/*</a></div>
+      <div class="Code2_tabs"><span class="Jump_X-ref"><a href="#1099950" title="SalesRecordsActivity" name="1099938">Step&nbsp;18</a></span></div>
+      <div class="Code2_tabs"><a name="1099939">*/</a></div>
+      <div class="Code2_tabs"><a name="1102072">	</a></div>
+      <div class="Code2_tabs"><a name="1102073">	</a>private void displayPostRecords() {</div>
+      <div class="Code2_tabs"><a name="1102074">	</a>    WebView view = (WebView)findViewById(R.id.html_view);</div>
+      <div class="Code2_tabs"><a name="1102075">	</a>    view.setVisibility(View.VISIBLE);</div>
+      <div class="Code2_tabs"><a name="1102076">	</a>    if (ssoResult != null) {</div>
+      <div class="Code2_tabs"><a name="1102077">	</a>        view.loadData(ssoResult, "text/html", "utf-8");</div>
+      <div class="Code2_tabs"><a name="1102078">	</a>    }</div>
+      <div class="Code2_tabs"><a name="1102079">	</a>}</div>
+      <div class="Code2_tabs"><a name="1102080">&nbsp;</a></div>
+      <div class="Code2_tabs"><a name="1102081">    private void displayRestRecords() {</a></div>
+      <div class="Code2_tabs"><a name="1097369">/*</a></div>
+      <div class="Code2_tabs"><a name="1099462">The data returned by this sample application is:</a></div>
+      <div class="Code2_tabs"><a name="1099473">S[{"Name":"AcmeWidgets","SalesMan":null,"Sales":20},{"Name":"BigMines","SalesMan":null,</a></div>
+      <div class="Code2_tabs"><a name="1097370">	</a>"Sales":40},{"Name":"FastPlanes","SalesMan":null,"Sales":100}]</div>
+      <div class="Code2_tabs"><a name="1097371">*/</a></div>
+      <div class="Code2_tabs"><a name="1097372">	</a>	Log.d(TAG, "Display records");</div>
+      <div class="Code2_tabs"><a name="1097373">	</a>	TableLayout table = (TableLayout)findViewById(R.id.salesRecordTable);</div>
+      <div class="Code2_tabs"><a name="1102094">	</a>	table.setVisibility(View.VISIBLE);</div>
+      <div class="Code2_tabs"><a name="1097375">	</a>	try {</div>
+      <div class="Code2_tabs"><a name="1097376">	</a>		JSONObject resultObj = new JSONObject(ssoResult);</div>
+      <div class="Code2_tabs"><a name="1097377">&nbsp;</a></div>
+      <div class="Code2_tabs"><a name="1097378">	</a>		boolean success = resultObj.getBoolean("success");</div>
+      <div class="Code2_tabs"><a name="1097379">&nbsp;</a></div>
+      <div class="Code2_tabs"><a name="1097380">	</a>		// Message </div>
+      <div class="Code2_tabs"><a name="1097381">	</a>		String message = resultObj.getString("message");</div>
+      <div class="Code2_tabs"><a name="1097382">	</a>		TextView messageView = new TextView(this);</div>
+      <div class="Code2_tabs"><a name="1097383">	</a>		messageView.setText(message);</div>
+      <div class="Code2_tabs"><a name="1097384">	</a>		TableRow row = new TableRow(this);</div>
+      <div class="Code2_tabs"><a name="1097385">	</a>		row.addView(messageView);</div>
+      <div class="Code2_tabs"><a name="1097386">	</a>		table.addView(row);</div>
+      <div class="Code2_tabs"><a name="1097387">&nbsp;</a></div>
+      <div class="Code2_tabs"><a name="1097388">	</a>		if (success) {</div>
+      <div class="Code2_tabs"><a name="1097389">	</a>			// Title</div>
+      <div class="Code2_tabs"><a name="1097390">	</a>			TableRow titleRow = new TableRow(this);</div>
+      <div class="Code2_tabs"><a name="1097391">	</a>			TextView columnView1 = new TextView(this);</div>
+      <div class="Code2_tabs"><a name="1097392">	</a>			columnView1.setText("Customer");</div>
+      <div class="Code2_tabs"><a name="1097393">	</a>			titleRow.addView(columnView1);</div>
+      <div class="Code2_tabs"><a name="1097394">	</a>			TextView columnView2 = new TextView(this);</div>
+      <div class="Code2_tabs"><a name="1097395">	</a>			columnView2.setText("Sales");</div>
+      <div class="Code2_tabs"><a name="1097396">	</a>			titleRow.addView(columnView2);</div>
+      <div class="Code2_tabs"><a name="1097397">	</a>			table.addView(titleRow);</div>
+      <div class="Code2_tabs"><a name="1097398">	</a>			titleRow.setBackgroundColor(Color.YELLOW);</div>
+      <div class="Code2_tabs"><a name="1097399">&nbsp;</a></div>
+      <div class="Code2_tabs"><a name="1097400">	</a>			JSONArray recordsObj = resultObj.getJSONArray("payload");</div>
+      <div class="Code2_tabs"><a name="1097401">	</a>			for (int i = 0; i &lt; recordsObj.length(); i++) {</div>
+      <div class="Code2_tabs"><a name="1097402">	</a>				JSONObject record = new JSONObject(recordsObj.getString(i));</div>
+      <div class="Code2_tabs"><a name="1097403">	</a>				String name = record.getString("Name");</div>
+      <div class="Code2_tabs"><a name="1097404">	</a>				String number = record.getString("Sales");</div>
+      <div class="Code2_tabs"><a name="1097405">	</a>				row = new TableRow(this);</div>
+      <div class="Code2_tabs"><a name="1097406">	</a>				row.setBackgroundColor(i % 2 == 0 ? Color.GRAY : Color.LTGRAY);</div>
+      <div class="Code2_tabs"><a name="1097407">	</a>				TextView nameView = new TextView(this);</div>
+      <div class="Code2_tabs"><a name="1097408">	</a>				nameView.setText(name);</div>
+      <div class="Code2_tabs"><a name="1097409">//</a>					nameView.setLayoutParams(new LayoutParams(100, 100));</div>
+      <div class="Code2_tabs"><a name="1097410">	</a>				row.addView(nameView);</div>
+      <div class="Code2_tabs"><a name="1097411">&nbsp;</a></div>
+      <div class="Code2_tabs"><a name="1097412">	</a>				TextView numberView = new TextView(this);</div>
+      <div class="Code2_tabs"><a name="1097413">	</a>				numberView.setText(number);</div>
+      <div class="Code2_tabs"><a name="1097414">//</a>					numberView.setLayoutParams(new LayoutParams(100, 100));</div>
+      <div class="Code2_tabs"><a name="1097415">	</a>				row.addView(numberView);</div>
+      <div class="Code2_tabs"><a name="1097416">&nbsp;</a></div>
+      <div class="Code2_tabs"><a name="1097417">	</a>				table.addView(row);</div>
+      <div class="Code2_tabs"><a name="1097418">	</a>			}</div>
+      <div class="Code2_tabs"><a name="1097419">	</a>		}</div>
+      <div class="Code2_tabs"><a name="1097420">	</a>	} catch (JSONException e) {</div>
+      <div class="Code2_tabs"><a name="1097421">	</a>		// TODO Auto-generated catch block</div>
+      <div class="Code2_tabs"><a name="1097422">	</a>		e.printStackTrace();</div>
+      <div class="Code2_tabs"><a name="1102117">&nbsp;</a></div>
+      <div class="Code2_tabs"><a name="1102118">	</a>		TableRow row = new TableRow(this);</div>
+      <div class="Code2_tabs"><a name="1102119">	</a>		TextView messageView = new TextView(this);</div>
+      <div class="Code2_tabs"><a name="1102120">	</a>		messageView.setText(ssoResult);</div>
+      <div class="Code2_tabs"><a name="1102121">	</a>		row.addView(messageView);</div>
+      <div class="Code2_tabs"><a name="1102122">	</a>		table.addView(row);</div>
+      <div class="Code2_tabs"><a name="1097423">	</a>	}</div>
+      <div class="Code2_tabs"><a name="1097424">	</a>}</div>
+      <div class="Code2_tabs"><a name="1097425">}</a></div>
+      <div class="Code2_tabs"><a name="1097426">&nbsp;</a></div>
+      <div class="Code2_tabs"><a name="1096495">&nbsp;</a></div>
+    </blockquote>
+    <hr align="left" />
+    <table align="right">
+      <tr>
+        <td class="WebWorks_Company_Logo_Bottom">
+          <a href="http://www.centrify.com" target="external_window"><img src="centrifylogo.gif" border="0" /></a>
+        </td>
+      </tr>
+      <tr>
+        <td class="WebWorks_Company_Name_Bottom">
+          <a href="http://www.centrify.com" target="external_window">Centrify Corporation</a>
+        </td>
+      </tr>
+      <tr>
+        <td class="WebWorks_Company_Email_Bottom">
+          <a href="mailto:support@centrify.com">support@centrify.com</a>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>

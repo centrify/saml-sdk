@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <!-- MOTW-DISABLED saved from url=(0014)about:internet -->
+    <title>The SAML application profile specifies the contents of the token</title>
+    <link rel="StyleSheet" href="css/Mobile_SDK_Intro.css" type="text/css" media="all" />
+    <link rel="StyleSheet" href="css/webworks.css" type="text/css" media="all" />
+    <script type="text/javascript" language="JavaScript1.2" src="scripts/expand.js"></script>
+    <script type="text/javascript" language="JavaScript1.2">
+      <!--
+        var  WebWorksRootPath = "";
+      // -->
+    </script>
+  </head>
+  <body>
+    <div style="text-align: left;">
+      <table cellspacing="0" summary="">
+        <tr>
+          <td>
+            <a href="toc.html"><img src="images/toc.gif" alt="Table of Contents" border="0" /></a>
+          </td>
+          <td>
+            <a href="Mobile_SDK_Intro.05.06.html"><img src="images/prev.gif" alt="Previous" border="0" /></a>
+          </td>
+          <td>
+            <a href="Mobile_SDK_Intro.05.08.html"><img src="images/next.gif" alt="Next" border="0" /></a>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <br />
+    <div class="WebWorks_Breadcrumbs" style="text-align: left;">
+      <a class="WebWorks_Breadcrumb_Link" href="Mobile_SDK_Intro.05.01.html#1104589">Introduction</a> : <a class="WebWorks_Breadcrumb_Link" href="Mobile_SDK_Intro.05.05.html#1104589">Provide a SAML application profile to enable authentication tokens</a> : The SAML application profile specifies the contents of the token</div>
+    <hr align="left" />
+    <blockquote>
+      <div class="Heading2"><a name="1104589">The SAML application profile specifies the contents of the token</a></div>
+      <div class="Body"><a name="1104590">Whether an application requests a authentication token (SAML response) for itself or in </a>order to pass it on to another application, Centrify Cloud Service must know what information (in the form of SAML elements) to include in the SAML assertion. To create the SAML response, Centrify Cloud Service refers to a stored SAML application profile that defines the SAML assertion elements required for a specific application. </div>
+      <div class="Body"><a name="1104591">A SAML application profile defines:</a></div>
+      <div class="Bullet1_outer" style="margin-left: 46.8pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="Bullet1_inner" style="width: 14.400000000000005pt; white-space: nowrap">
+                <span class="HeaderSymbols">l	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="Bullet1_inner"><a name="1104592">All SAML elements that must be present in the SAML assertion and a value for each of </a>those elements. A piece of Javascript called the SAML script defines all these elements and how values are determined for each element. Centrify Cloud Service executes the SAML script whenever Centrify Cloud Service must create a SAML response and its enclosed SAML assertion. The script may or may not use other properties of the SAML application profile to provide values for the SAML elements in the SAML assertion.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="Bullet1_outer" style="margin-left: 46.8pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="Bullet1_inner" style="width: 14.400000000000005pt; white-space: nowrap">
+                <span class="HeaderSymbols">l	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="Bullet1_inner"><a name="1104593">A URL to which to send the SAML response.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="Bullet1_outer" style="margin-left: 46.8pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="Bullet1_inner" style="width: 14.400000000000005pt; white-space: nowrap">
+                <span class="HeaderSymbols">l	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="Bullet1_inner"><a name="1104594">A URL that identifies Centrify Cloud Service as the SAML identity provider.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="Bullet1_outer" style="margin-left: 46.8pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="Bullet1_inner" style="width: 14.400000000000005pt; white-space: nowrap">
+                <span class="HeaderSymbols">l	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="Bullet1_inner"><a name="1104595">The user name of the user being presented for a SAML-authenticated session.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="BulletText"><a name="1104596">Although Centrify Cloud Service requires the user’s Active Directory login name for </a>authentication, the user name presented to the web service can be something else. For example, the Threadbare.com web service might use a single user name to authenticate all of Acme Widget’s users (<span style="font-family: &quot;Lucida Console&quot;; font-size: 8.5pt">Employee@AcmeWidgets)</span>. When John Doe of Acme Widgets uses the Threadbare mobile application for the first time, Centrify cloud requires him to provide his Active Directory login name (<span style="font-family: &quot;Lucida Console&quot;; font-size: 8.5pt">John.Doe@AcmeWidgets.com</span>) for authentication purposes, but when Centrify Cloud Service prepares the SAML assertion, it substitutes <span style="font-family: &quot;Lucida Console&quot;; font-size: 8.5pt">Employee@AcmeWidgets</span> for <span style="font-family: &quot;Lucida Console&quot;; font-size: 8.5pt">John.Doe@AcmeWidgets.com</span>.</div>
+      <div class="Bullet1_outer" style="margin-left: 46.8pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="Bullet1_inner" style="width: 14.400000000000005pt; white-space: nowrap">
+                <span class="HeaderSymbols">l	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="Bullet1_inner"><a name="1104597">The security certificate and key used to sign the SAML assertion (or its enclosing SAML </a>response). By default, this is Centrify’s certificate and key, but an organization’s administrator may specify that the SAML assertion be signed using a different certificate and key—the organization’s own certificate and key, for example.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="Bullet1_outer" style="margin-left: 46.8pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="Bullet1_inner" style="width: 14.400000000000005pt; white-space: nowrap">
+                <span class="HeaderSymbols">l	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="Bullet1_inner"><a name="1106318">The identity provider URLs that the SAML service can contact for identity provider </a>sign-in, sign-out, and error reporting. Centrify Cloud Service is the identity provider. These URLs are for direct communication between the SAML service and Centrify Cloud Service; the mobile application or web browser isn’t involved. The URLs include unique identifiers for each application profile so Centrify Cloud Service knows what organization the communication concerns.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="Bullet1_outer" style="margin-left: 46.8pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="Bullet1_inner" style="width: 14.400000000000005pt; white-space: nowrap">
+                <span class="HeaderSymbols">l	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="Bullet1_inner"><a name="1104599">A SAML application ID that uniquely identifies this application profile for an </a>organization—“Threadbare Fabrics,” for example. The <span class="Code">target</span> argument for <span class="Code">getSecurityToken</span> <span class="Code">or </span><span class="Code">getSecurityTokenForTarget:alwaysUseFreshToken:completionHandler:</span> must match this name exactly so Centrify Cloud Service knows which SAML application profile to use to create the SAML response.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="Bullet1_outer" style="margin-left: 46.8pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="Bullet1_inner" style="width: 14.400000000000005pt; white-space: nowrap">
+                <span class="HeaderSymbols">l	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="Bullet1_inner"><a name="1104600">A variety of other application profile properties such as an icon and a service description </a>that help administrators work with their organization’s application profiles within Centrify Cloud Manager. </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </blockquote>
+    <hr align="left" />
+    <table align="right">
+      <tr>
+        <td class="WebWorks_Company_Logo_Bottom">
+          <a href="http://www.centrify.com" target="external_window"><img src="centrifylogo.gif" border="0" /></a>
+        </td>
+      </tr>
+      <tr>
+        <td class="WebWorks_Company_Name_Bottom">
+          <a href="http://www.centrify.com" target="external_window">Centrify Corporation</a>
+        </td>
+      </tr>
+      <tr>
+        <td class="WebWorks_Company_Email_Bottom">
+          <a href="mailto:support@centrify.com">support@centrify.com</a>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>

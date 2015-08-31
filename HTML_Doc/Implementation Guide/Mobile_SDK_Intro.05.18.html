@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <!-- MOTW-DISABLED saved from url=(0014)about:internet -->
+    <title>Use the MAS API to add SSO to your mobile application</title>
+    <link rel="StyleSheet" href="css/Mobile_SDK_Intro.css" type="text/css" media="all" />
+    <link rel="StyleSheet" href="css/webworks.css" type="text/css" media="all" />
+    <script type="text/javascript" language="JavaScript1.2" src="scripts/expand.js"></script>
+    <script type="text/javascript" language="JavaScript1.2">
+      <!--
+        var  WebWorksRootPath = "";
+      // -->
+    </script>
+  </head>
+  <body>
+    <div style="text-align: left;">
+      <table cellspacing="0" summary="">
+        <tr>
+          <td>
+            <a href="toc.html"><img src="images/toc.gif" alt="Table of Contents" border="0" /></a>
+          </td>
+          <td>
+            <a href="Mobile_SDK_Intro.05.17.html"><img src="images/prev.gif" alt="Previous" border="0" /></a>
+          </td>
+          <td>
+            <a href="Mobile_SDK_Intro.05.19.html"><img src="images/next.gif" alt="Next" border="0" /></a>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <br />
+    <div class="WebWorks_Breadcrumbs" style="text-align: left;">
+      <a class="WebWorks_Breadcrumb_Link" href="Mobile_SDK_Intro.05.01.html#1064075">Introduction</a> : Use the MAS API to add SSO to your mobile application</div>
+    <hr align="left" />
+    <blockquote>
+      <div class="Heading1"><a name="1064075">Use the MAS API to add SSO to your mobile application</a></div>
+      <div class="Body"><a name="1064104">If </a>your organization uses the Centrify mobile application for iOS or Android—or a browser—to access your web service, and you do not want to write your own mobile application, you do not need the Mobile Authentication Service (MAS) API. However, if you want to write a mobile application that uses Centrify Cloud Service to authenticate users through Active Directory, the Mobile Authentication Service (MAS) API provides some features that make the task much easier.</div>
+      <div class="Body"><a name="1064598">The MAS API is available from Centrify</a> or from the Appcelerator marketplace at appcelerator.com.</div>
+      <div class="Body"><a name="1139537">The main classes in the MAS Android API are:</a></div>
+      <table class="Standard" style="margin-bottom: 17.5pt; text-align: left" cellspacing="0" summary="">
+        <caption></caption>
+        <tr>
+          <td style="border-bottom-color: Black; border-bottom-style: solid; border-bottom-width: 1px; border-left-color: Black; border-left-style: solid; border-left-width: thin; border-right-color: Black; border-right-style: solid; border-right-width: thin; border-top-color: Black; border-top-style: solid; border-top-width: thin; padding-bottom: 2pt; padding-left: 2pt; padding-right: 2pt; padding-top: 6pt; vertical-align: top">
+            <div class="CellHeading"><a name="1139518">Class</a></div>
+          </td>
+          <td style="border-bottom-color: Black; border-bottom-style: solid; border-bottom-width: 1px; border-left-color: Black; border-left-style: solid; border-left-width: thin; border-right-color: Black; border-right-style: solid; border-right-width: thin; border-top-color: Black; border-top-style: solid; border-top-width: thin; padding-bottom: 2pt; padding-left: 2pt; padding-right: 2pt; padding-top: 6pt; vertical-align: top">
+            <div class="CellHeading"><a name="1139520">Description</a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-bottom-color: Black; border-bottom-style: solid; border-bottom-width: thin; border-left-color: Black; border-left-style: solid; border-left-width: thin; border-right-color: Black; border-right-style: solid; border-right-width: thin; border-top-color: Black; border-top-style: solid; border-top-width: thin; padding-bottom: 2pt; padding-left: 2pt; padding-right: 2pt; padding-top: 6pt; vertical-align: top">
+            <div class="CellCode" style="color: #000000; font-style: normal; font-variant: normal; font-weight: normal; text-transform: none; vertical-align: baseline"><span class="Cell_Code"><a name="1139522">EnterpriseAuthentication</a></span></div>
+          </td>
+          <td style="border-bottom-color: Black; border-bottom-style: solid; border-bottom-width: thin; border-left-color: Black; border-left-style: solid; border-left-width: thin; border-right-color: Black; border-right-style: solid; border-right-width: thin; border-top-color: Black; border-top-style: solid; border-top-width: thin; padding-bottom: 2pt; padding-left: 2pt; padding-right: 2pt; padding-top: 6pt; vertical-align: top">
+            <div class="CellBody"><a name="1139524">Returns authentication information and attributes for a specified user and a </a>SAML response for a specified application.</div>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-bottom-color: Black; border-bottom-style: solid; border-bottom-width: thin; border-left-color: Black; border-left-style: solid; border-left-width: thin; border-right-color: Black; border-right-style: solid; border-right-width: thin; border-top-color: Black; border-top-style: solid; border-top-width: thin; padding-bottom: 2pt; padding-left: 2pt; padding-right: 2pt; padding-top: 6pt; vertical-align: top">
+            <div class="CellCode"><a name="1139526">SecurityToken</a></div>
+          </td>
+          <td style="border-bottom-color: Black; border-bottom-style: solid; border-bottom-width: thin; border-left-color: Black; border-left-style: solid; border-left-width: thin; border-right-color: Black; border-right-style: solid; border-right-width: thin; border-top-color: Black; border-top-style: solid; border-top-width: thin; padding-bottom: 2pt; padding-left: 2pt; padding-right: 2pt; padding-top: 6pt; vertical-align: top">
+            <div class="CellBody"><a name="1139528">Gets and sets the information in a SAML response.</a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-bottom-color: Black; border-bottom-style: solid; border-bottom-width: thin; border-left-color: Black; border-left-style: solid; border-left-width: thin; border-right-color: Black; border-right-style: solid; border-right-width: thin; border-top-color: Black; border-top-style: solid; border-top-width: thin; padding-bottom: 2pt; padding-left: 2pt; padding-right: 2pt; padding-top: 6pt; vertical-align: top">
+            <div class="CellCode" style="color: #000000; font-style: normal; font-variant: normal; font-weight: normal; text-transform: none; vertical-align: baseline"><span class="Cell_Code"><a name="1139530">UserAttributes</a></span></div>
+          </td>
+          <td style="border-bottom-color: Black; border-bottom-style: solid; border-bottom-width: thin; border-left-color: Black; border-left-style: solid; border-left-width: thin; border-right-color: Black; border-right-style: solid; border-right-width: thin; border-top-color: Black; border-top-style: solid; border-top-width: thin; padding-bottom: 2pt; padding-left: 2pt; padding-right: 2pt; padding-top: 6pt; vertical-align: top">
+            <div class="CellBody"><a name="1139532">Gets a user’s Active Directory attributes such as name and address.</a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-bottom-color: Black; border-bottom-style: solid; border-bottom-width: thin; border-left-color: Black; border-left-style: solid; border-left-width: thin; border-right-color: Black; border-right-style: solid; border-right-width: thin; border-top-color: Black; border-top-style: solid; border-top-width: thin; padding-bottom: 2pt; padding-left: 2pt; padding-right: 2pt; padding-top: 6pt; vertical-align: top">
+            <div class="CellCode" style="color: #000000; font-style: normal; font-variant: normal; font-weight: normal; text-transform: none; vertical-align: baseline"><span class="Cell_Code"><a name="1139534">UserInformation</a></span></div>
+          </td>
+          <td style="border-bottom-color: Black; border-bottom-style: solid; border-bottom-width: thin; border-left-color: Black; border-left-style: solid; border-left-width: thin; border-right-color: Black; border-right-style: solid; border-right-width: thin; border-top-color: Black; border-top-style: solid; border-top-width: thin; padding-bottom: 2pt; padding-left: 2pt; padding-right: 2pt; padding-top: 6pt; vertical-align: top">
+            <div class="CellBody"><a name="1139536">Gets a user’s authentication information.</a></div>
+          </td>
+        </tr>
+      </table>
+      <div class="Body"><a name="1139559">The main classes in the MAS iOS API are:</a></div>
+      <table class="Standard" style="margin-bottom: 17.5pt; text-align: left" cellspacing="0" summary="">
+        <caption></caption>
+        <tr>
+          <td style="border-bottom-color: Black; border-bottom-style: solid; border-bottom-width: 1px; border-left-color: Black; border-left-style: solid; border-left-width: thin; border-right-color: Black; border-right-style: solid; border-right-width: thin; border-top-color: Black; border-top-style: solid; border-top-width: thin; padding-bottom: 2pt; padding-left: 2pt; padding-right: 2pt; padding-top: 6pt; vertical-align: top">
+            <div class="CellHeading"><a name="1139540">Class</a></div>
+          </td>
+          <td style="border-bottom-color: Black; border-bottom-style: solid; border-bottom-width: 1px; border-left-color: Black; border-left-style: solid; border-left-width: thin; border-right-color: Black; border-right-style: solid; border-right-width: thin; border-top-color: Black; border-top-style: solid; border-top-width: thin; padding-bottom: 2pt; padding-left: 2pt; padding-right: 2pt; padding-top: 6pt; vertical-align: top">
+            <div class="CellHeading"><a name="1139542">Description</a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-bottom-color: Black; border-bottom-style: solid; border-bottom-width: thin; border-left-color: Black; border-left-style: solid; border-left-width: thin; border-right-color: Black; border-right-style: solid; border-right-width: thin; border-top-color: Black; border-top-style: solid; border-top-width: thin; padding-bottom: 2pt; padding-left: 2pt; padding-right: 2pt; padding-top: 6pt; vertical-align: top">
+            <div class="CellCode" style="color: #000000; font-style: normal; font-variant: normal; font-weight: normal; text-transform: none; vertical-align: baseline"><span class="Cell_Code"><a name="1139544">EnterpriseAuthentication</a></span></div>
+          </td>
+          <td style="border-bottom-color: Black; border-bottom-style: solid; border-bottom-width: thin; border-left-color: Black; border-left-style: solid; border-left-width: thin; border-right-color: Black; border-right-style: solid; border-right-width: thin; border-top-color: Black; border-top-style: solid; border-top-width: thin; padding-bottom: 2pt; padding-left: 2pt; padding-right: 2pt; padding-top: 6pt; vertical-align: top">
+            <div class="CellBody"><a name="1139546">Returns authentication information and attributes for a specified user and a </a>SAML response for a specified application.</div>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-bottom-color: Black; border-bottom-style: solid; border-bottom-width: thin; border-left-color: Black; border-left-style: solid; border-left-width: thin; border-right-color: Black; border-right-style: solid; border-right-width: thin; border-top-color: Black; border-top-style: solid; border-top-width: thin; padding-bottom: 2pt; padding-left: 2pt; padding-right: 2pt; padding-top: 6pt; vertical-align: top">
+            <div class="CellCode"><a name="1139548">CentrifySecurityToken</a></div>
+          </td>
+          <td style="border-bottom-color: Black; border-bottom-style: solid; border-bottom-width: thin; border-left-color: Black; border-left-style: solid; border-left-width: thin; border-right-color: Black; border-right-style: solid; border-right-width: thin; border-top-color: Black; border-top-style: solid; border-top-width: thin; padding-bottom: 2pt; padding-left: 2pt; padding-right: 2pt; padding-top: 6pt; vertical-align: top">
+            <div class="CellBody"><a name="1139550">Gets and sets the information in a SAML response.</a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-bottom-color: Black; border-bottom-style: solid; border-bottom-width: thin; border-left-color: Black; border-left-style: solid; border-left-width: thin; border-right-color: Black; border-right-style: solid; border-right-width: thin; border-top-color: Black; border-top-style: solid; border-top-width: thin; padding-bottom: 2pt; padding-left: 2pt; padding-right: 2pt; padding-top: 6pt; vertical-align: top">
+            <div class="CellCode" style="color: #000000; font-style: normal; font-variant: normal; font-weight: normal; text-transform: none; vertical-align: baseline"><span class="Cell_Code"><a name="1139552">UserAttributes</a></span></div>
+          </td>
+          <td style="border-bottom-color: Black; border-bottom-style: solid; border-bottom-width: thin; border-left-color: Black; border-left-style: solid; border-left-width: thin; border-right-color: Black; border-right-style: solid; border-right-width: thin; border-top-color: Black; border-top-style: solid; border-top-width: thin; padding-bottom: 2pt; padding-left: 2pt; padding-right: 2pt; padding-top: 6pt; vertical-align: top">
+            <div class="CellBody"><a name="1139554">Gets a user’s Active Directory attributes such as name and address.</a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-bottom-color: Black; border-bottom-style: solid; border-bottom-width: thin; border-left-color: Black; border-left-style: solid; border-left-width: thin; border-right-color: Black; border-right-style: solid; border-right-width: thin; border-top-color: Black; border-top-style: solid; border-top-width: thin; padding-bottom: 2pt; padding-left: 2pt; padding-right: 2pt; padding-top: 6pt; vertical-align: top">
+            <div class="CellCode" style="color: #000000; font-style: normal; font-variant: normal; font-weight: normal; text-transform: none; vertical-align: baseline"><span class="Cell_Code"><a name="1139556">UserInformation</a></span></div>
+          </td>
+          <td style="border-bottom-color: Black; border-bottom-style: solid; border-bottom-width: thin; border-left-color: Black; border-left-style: solid; border-left-width: thin; border-right-color: Black; border-right-style: solid; border-right-width: thin; border-top-color: Black; border-top-style: solid; border-top-width: thin; padding-bottom: 2pt; padding-left: 2pt; padding-right: 2pt; padding-top: 6pt; vertical-align: top">
+            <div class="CellBody"><a name="1139558">Gets a user’s authentication information.</a></div>
+          </td>
+        </tr>
+      </table>
+      <div class="Body"><a name="1065139">When your mobile application calls one of the methods of the </a><span class="Code">EnterpriseAuthentication</span> class, Centrify Cloud Service checks to make sure the user is authenticated and then returns the requested information. If the user is not authenticated, Centrify Cloud Service prompts the user to enter Active Directory credentials. </div>
+      <div class="Body"><a name="1066921">You can use the </a><span class="Code">userAttributes</span> and <span class="Code">userInformation</span> objects returned by the <span class="Code">userLookup</span> and <span class="Code">getUserInformation</span> methods (Android) or <span class="Code">userLookupForAdditionalAttributes:completionHandler:</span> and <span class="Code">getUserInformation:</span> methods (iOS) to check a user’s attributes in Active Directory, their user name, and the time they were last authenticated.</div>
+      <div class="Body"><a name="1128571">To log the user in to a SaaS application, call </a><span class="Code">EnterpriseAuthentication.getSecurityToken</span> with the name of the SaaS application. The method returns the SAML response, which you can then post to the SAML interface of the SaaS application. The SaaS application validates the response and, if it’s valid, logs in the user.</div>
+      <div class="Body"><a name="1077498">To examine the SAML response returned to a mobile application, call </a><span class="Code">EnterpriseAuthentication.getSecurityToken</span> with the name of the mobile application. Then, pass the SAML response returned by that method to <span class="Code">EnterpriseAuthentication.parseSecurityToken</span>. That method validates the response and, if the user is authenticated, returns a <span class="Code">SecurityToken</span> object. You can then use the methods of the <span class="Code">SecurityToken</span> class to read the contents of the SAML response. </div>
+      <div class="Body"><a name="1078421">You can customize the SAML response to return information from Active Directory that </a>your application needs. The SAML response contains the attributes that are specified by an application-specific SAML script run by Centrify Cloud Service when the user opens the single-sign-on SaaS or mobile application. The script is created by the administrator when configuring the Generic SAML template in Centrify Cloud Manager for the application. See <span class="Jump_X-ref"><a href="Mobile_SDK_SAML_scripting.18.1.html#1103098" title="Creating a SAML application profile">Chapter 14, “Creating a SAML application profile”</a></span> for instructions on using the Generic SAML template.</div>
+    </blockquote>
+    <hr align="left" />
+    <table align="right">
+      <tr>
+        <td class="WebWorks_Company_Logo_Bottom">
+          <a href="http://www.centrify.com" target="external_window"><img src="centrifylogo.gif" border="0" /></a>
+        </td>
+      </tr>
+      <tr>
+        <td class="WebWorks_Company_Name_Bottom">
+          <a href="http://www.centrify.com" target="external_window">Centrify Corporation</a>
+        </td>
+      </tr>
+      <tr>
+        <td class="WebWorks_Company_Email_Bottom">
+          <a href="mailto:support@centrify.com">support@centrify.com</a>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>

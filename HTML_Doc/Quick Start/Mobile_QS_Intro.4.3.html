@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <!-- MOTW-DISABLED saved from url=(0014)about:internet -->
+    <title>Use the MAS API to add SSO to mobile applications</title>
+    <link rel="StyleSheet" href="css/Mobile_QS_Intro.css" type="text/css" media="all" />
+    <link rel="StyleSheet" href="css/webworks.css" type="text/css" media="all" />
+    <script type="text/javascript" language="JavaScript1.2" src="scripts/expand.js"></script>
+    <script type="text/javascript" language="JavaScript1.2">
+      <!--
+        var  WebWorksRootPath = "";
+      // -->
+    </script>
+  </head>
+  <body>
+    <div style="text-align: left;">
+      <table cellspacing="0" summary="">
+        <tr>
+          <td>
+            <a href="toc.html"><img src="images/toc.gif" alt="Table of Contents" border="0" /></a>
+          </td>
+          <td>
+            <a href="Mobile_QS_Intro.4.2.html"><img src="images/prev.gif" alt="Previous" border="0" /></a>
+          </td>
+          <td>
+            <a href="Mobile_QS_Integrate.5.1.html"><img src="images/next.gif" alt="Next" border="0" /></a>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <br />
+    <div class="WebWorks_Breadcrumbs" style="text-align: left;">
+      <a class="WebWorks_Breadcrumb_Link" href="Mobile_QS_Intro.4.1.html#1013665">Introduction</a> : Use the MAS API to add SSO to mobile applications</div>
+    <hr align="left" />
+    <blockquote>
+      <div class="Heading1"><a name="1013665">Use the MAS API to add SSO to mobile applications</a></div>
+      <div class="Body"><a name="1127113">Mobile applications can use the Centrify Mobile Authentication Service (MAS) API</a>s to authenticate with Centrify Cloud Service. </div>
+      <div class="Body"><a name="1128979">On an Android or iOS device, the user installs the Centrify application to obtain access to </a>Centrify Cloud Service. The Centrify application establishes a certificate-based trust relationship with Centrify Cloud Service. The first time the user opens the Centrify application or any other application on the device uses the MAS API to authenticate the user, Centrify Cloud Service prompts the user for Active Directory credentials, authenticates the user of the device, validates that the user has a current Active Directory account, and looks up the user’s roles to determine which applications the user is allowed to run. After that, whenever an application calls the MAS API, the Centrify application provides the user’s authentication information. The Centrify application uses the trust relationship it has established with Centrify Cloud Service to get Active Directory and authentication information without any further interaction with the user. The user experience can be described as “zero sign-on” since, after initial enrollment, the user is never required to enter credentials.</div>
+      <div class="Body"><a name="1127115">Centrify Cloud Service and the Centrify MAS APIs use SAML to authenticate users. The </a>authentication token returned by Centrify Cloud Service to the application is a SAML response. However, because the MAS APIs take care of validating and parsing the token, you do not need to know anything about SAML to implement SSO using the MAS APIs.</div>
+      <div class="Body"><a name="1080560">The MAS APIs provide general information about the user read by Centrify Cloud Service </a>from the user’s Active Directory entry, such as the login user name, the user’s address and telephone number, and their email address. If you need other attributes from Active Directory, you can add them to the authentication token using an application-specific SAML script run by Centrify Cloud Service when the user first opens the mobile application. The script is created by the administrator when configuring the Generic SAML template in Centrify Cloud Manager for the application. See <span class="Book_Titles">Centrify Mobile Authentication Services SDK </span><span class="Book_Titles">Implementation Guide</span> for instructions on using the Generic SAML template.</div>
+      <div class="Body"><a name="1129957">When the login sequence is initiated by the user opening a mobile application, the sequence </a>of events is as shown in the following figure.</div>
+      <div class="Code3"><a name="1129961"><img class="Default" src="images/Centrify%20cloud-mobile%20app.png" width="486" height="362" style="display: block; float: none; left: 0.0; top: 0.0" alt="" /></a></div>
+      <div class="Body"><a name="1129962">When the user installs and starts up a mobile application that uses the Centrify MAS API, </a>Centrify Cloud Service requests Active Directory credentials from the user and uses them to authenticate and authorize the user. After that the device is recognized by Centrify Cloud Service. </div>
+      <div class="Step1_outer" style="margin-left: 46.8pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="Step1_inner" style="width: 14.400000000000005pt; white-space: nowrap">
+                <span class="StepNumber">1	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="Step1_inner"><a name="1129293">The user opens the mobile application and the application requests authentication </a>information using the MAS API. </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="StepNum_outer" style="margin-left: 46.8pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="StepNum_inner" style="width: 14.400000000000005pt; white-space: nowrap">
+                <span class="StepNumber">2	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="StepNum_inner"><a name="1129294">This information might be cached, but if the cached information has expired, the Centrify </a>application contacts Centrify Cloud Service to obtain it using the certificate-based trust relationship set up earlier. In either case, the process is invisible to the user.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="StepNote">
+        <span class="Note">Note	</span><a name="1129295">In order for Centrify Cloud Service to generate an authentication token, an </a>administrator must use Centrify Cloud Manager to create and configure an application-specific SAML application profile and script. See <span class="Book_Titles">Centrify Mobile Authentication Services SDK </span><span class="Book_Titles">Implementation Guide </span>for instructions on configuring a SAML application profile.</div>
+      <div class="StepNum_outer" style="margin-left: 46.8pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="StepNum_inner" style="width: 14.400000000000005pt; white-space: nowrap">
+                <span class="StepNumber">3	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="StepNum_inner"><a name="1129299">The Centrify application returns the information, including the authentication token if </a>requested, to the application.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="StepNum_outer" style="margin-left: 46.8pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="StepNum_inner" style="width: 14.400000000000005pt; white-space: nowrap">
+                <span class="StepNumber">4	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="StepNum_inner"><a name="1129300">The application passes the authentication token to its web service and requests resources </a>for the user.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="StepNum_outer" style="margin-left: 46.8pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="StepNum_inner" style="width: 14.400000000000005pt; white-space: nowrap">
+                <span class="StepNumber">5	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="StepNum_inner"><a name="1129301">The application’s web service uses the token to authenticate the user and returns the </a>user’s data for the application to display.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="StepText"><a name="1127926">The user can now use the mobile application.</a></div>
+    </blockquote>
+    <hr align="left" />
+    <table align="right">
+      <tr>
+        <td class="WebWorks_Company_Logo_Bottom">
+          <a href="http://centrify.com" target="external_window"><img src="centrifylogo.gif" border="0" /></a>
+        </td>
+      </tr>
+      <tr>
+        <td class="WebWorks_Company_Name_Bottom">
+          <a href="http://centrify.com" target="external_window">Centrify Corporation</a>
+        </td>
+      </tr>
+      <tr>
+        <td class="WebWorks_Company_Email_Bottom">
+          <a href="mailto:support@centrify.com">support@centrify.com</a>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>

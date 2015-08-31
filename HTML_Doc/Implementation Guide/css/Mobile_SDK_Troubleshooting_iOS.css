@@ -1,0 +1,4430 @@
+div.Abstract
+{
+  color: #000000;
+  font-family: Arial, Sans-Serif, Myriad Web;
+  font-size: 10pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  margin-bottom: 0.0pt;
+  margin-left: 46.8pt;
+  margin-right: 9pt;
+  margin-top: 5.0pt;
+  text-align: Left;
+  text-indent: 0pt;
+  text-transform: none;
+  vertical-align: baseline;
+}
+
+.Abstract_outer
+{
+  margin-bottom: 0.0pt;
+  margin-right: 9pt;
+  margin-top: 5.0pt;
+}
+
+.Abstract_inner
+{
+  color: #000000;
+  font-family: Arial, Sans-Serif, Myriad Web;
+  font-size: 10pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-align: Left;
+  text-transform: none;
+  vertical-align: baseline;
+  margin-left: 0pt;
+  margin-right: 0pt;
+  margin-top: 0pt;
+  margin-bottom: 0pt;
+  padding-left: 0pt;
+  padding-right: 0pt;
+  padding-top: 0pt;
+  padding-bottom: 0pt;
+}
+
+div.Answer
+{
+  color: #000000;
+  font-family: Arial, Sans-Serif, Myriad Web;
+  font-size: 10pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  margin-bottom: 4.0pt;
+  margin-left: 61.2pt;
+  margin-right: 9pt;
+  margin-top: 3.0pt;
+  text-align: Left;
+  text-indent: -14.400000000000005pt;
+  text-transform: none;
+  vertical-align: baseline;
+}
+
+.Answer_outer
+{
+  margin-bottom: 4.0pt;
+  margin-right: 9pt;
+  margin-top: 3.0pt;
+}
+
+.Answer_inner
+{
+  color: #000000;
+  font-family: Arial, Sans-Serif, Myriad Web;
+  font-size: 10pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-align: Left;
+  text-transform: none;
+  vertical-align: baseline;
+  margin-left: 0pt;
+  margin-right: 0pt;
+  margin-top: 0pt;
+  margin-bottom: 0pt;
+  padding-left: 0pt;
+  padding-right: 0pt;
+  padding-top: 0pt;
+  padding-bottom: 0pt;
+}
+
+div.Body
+{
+  color: #000000;
+  font-family: Arial, Sans-Serif, 'Myriad Web';
+  font-size: 10pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  margin-bottom: 0.0pt;
+  margin-left: 46.8pt;
+  margin-right: 9pt;
+  margin-top: 5.0pt;
+  text-align: Left;
+  text-indent: 0pt;
+  text-transform: none;
+  vertical-align: baseline;
+}
+
+.Body_outer
+{
+  margin-bottom: 0.0pt;
+  margin-right: 9pt;
+  margin-top: 5.0pt;
+}
+
+.Body_inner
+{
+  color: #000000;
+  font-family: Arial, Sans-Serif, 'Myriad Web';
+  font-size: 10pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-align: Left;
+  text-transform: none;
+  vertical-align: baseline;
+  margin-left: 0pt;
+  margin-right: 0pt;
+  margin-top: 0pt;
+  margin-bottom: 0pt;
+  padding-left: 0pt;
+  padding-right: 0pt;
+  padding-top: 0pt;
+  padding-bottom: 0pt;
+}
+
+div.Bullet1
+{
+  color: #000000;
+  font-family: Arial, 'Myriad Web', Sans-Serif;
+  font-size: 10pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  margin-bottom: 4.0pt;
+  margin-left: 61.2pt;
+  margin-right: 9pt;
+  margin-top: 3.0pt;
+  text-align: Left;
+  text-indent: -14.400000000000005pt;
+  text-transform: none;
+  vertical-align: baseline;
+}
+
+.Bullet1_outer
+{
+  margin-bottom: 4.0pt;
+  margin-right: 9pt;
+  margin-top: 3.0pt;
+}
+
+.Bullet1_inner
+{
+  color: #000000;
+  font-family: Arial, 'Myriad Web', Sans-Serif;
+  font-size: 10pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-align: Left;
+  text-transform: none;
+  vertical-align: baseline;
+  margin-left: 0pt;
+  margin-right: 0pt;
+  margin-top: 0pt;
+  margin-bottom: 0pt;
+  padding-left: 0pt;
+  padding-right: 0pt;
+  padding-top: 0pt;
+  padding-bottom: 0pt;
+}
+
+div.Bulleted
+{
+  color: #000000;
+  font-family: Arial, Sans-Serif, Myriad Web;
+  font-size: 10pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  margin-bottom: 0.0pt;
+  margin-left: 18pt;
+  margin-right: 0pt;
+  margin-top: 0.0pt;
+  text-align: Left;
+  text-indent: -18pt;
+  text-transform: none;
+  vertical-align: baseline;
+}
+
+.Bulleted_outer
+{
+  margin-bottom: 0.0pt;
+  margin-right: 0pt;
+  margin-top: 0.0pt;
+}
+
+.Bulleted_inner
+{
+  color: #000000;
+  font-family: Arial, Sans-Serif, Myriad Web;
+  font-size: 10pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-align: Left;
+  text-transform: none;
+  vertical-align: baseline;
+  margin-left: 0pt;
+  margin-right: 0pt;
+  margin-top: 0pt;
+  margin-bottom: 0pt;
+  padding-left: 0pt;
+  padding-right: 0pt;
+  padding-top: 0pt;
+  padding-bottom: 0pt;
+}
+
+div.BulletNote
+{
+  color: #000000;
+  font-family: Arial, Sans-Serif, Myriad Web;
+  font-size: 10pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  margin-bottom: 2.0pt;
+  margin-left: 61.2pt;
+  margin-right: 9pt;
+  margin-top: 8.0pt;
+  text-align: Left;
+  text-indent: 0pt;
+  text-transform: none;
+  vertical-align: baseline;
+}
+
+.BulletNote_outer
+{
+  margin-bottom: 2.0pt;
+  margin-right: 9pt;
+  margin-top: 8.0pt;
+}
+
+.BulletNote_inner
+{
+  color: #000000;
+  font-family: Arial, Sans-Serif, Myriad Web;
+  font-size: 10pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-align: Left;
+  text-transform: none;
+  vertical-align: baseline;
+  margin-left: 0pt;
+  margin-right: 0pt;
+  margin-top: 0pt;
+  margin-bottom: 0pt;
+  padding-left: 0pt;
+  padding-right: 0pt;
+  padding-top: 0pt;
+  padding-bottom: 0pt;
+}
+
+div.BulletText
+{
+  color: #000000;
+  font-family: Arial, Sans-Serif, Myriad Web;
+  font-size: 10pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  margin-bottom: 8.0pt;
+  margin-left: 61.2pt;
+  margin-right: 9pt;
+  margin-top: 0.0pt;
+  text-align: Left;
+  text-indent: 0pt;
+  text-transform: none;
+  vertical-align: baseline;
+}
+
+.BulletText_outer
+{
+  margin-bottom: 8.0pt;
+  margin-right: 9pt;
+  margin-top: 0.0pt;
+}
+
+.BulletText_inner
+{
+  color: #000000;
+  font-family: Arial, Sans-Serif, Myriad Web;
+  font-size: 10pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-align: Left;
+  text-transform: none;
+  vertical-align: baseline;
+  margin-left: 0pt;
+  margin-right: 0pt;
+  margin-top: 0pt;
+  margin-bottom: 0pt;
+  padding-left: 0pt;
+  padding-right: 0pt;
+  padding-top: 0pt;
+  padding-bottom: 0pt;
+}
+
+div.CalloutCenter
+{
+  color: #000000;
+  font-family: Arial, Sans-Serif, Myriad Web;
+  font-size: 10pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  margin-bottom: 2.0pt;
+  margin-left: 0pt;
+  margin-right: 0pt;
+  margin-top: 9.0pt;
+  text-align: Center;
+  text-indent: 0pt;
+  text-transform: none;
+  vertical-align: baseline;
+}
+
+.CalloutCenter_outer
+{
+  margin-bottom: 2.0pt;
+  margin-right: 0pt;
+  margin-top: 9.0pt;
+}
+
+.CalloutCenter_inner
+{
+  color: #000000;
+  font-family: Arial, Sans-Serif, Myriad Web;
+  font-size: 10pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-align: Center;
+  text-transform: none;
+  vertical-align: baseline;
+  margin-left: 0pt;
+  margin-right: 0pt;
+  margin-top: 0pt;
+  margin-bottom: 0pt;
+  padding-left: 0pt;
+  padding-right: 0pt;
+  padding-top: 0pt;
+  padding-bottom: 0pt;
+}
+
+div.CalloutCode
+{
+  color: #000000;
+  font-family: Arial, Sans-Serif, Myriad Web;
+  font-size: 10pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  margin-bottom: 0.0pt;
+  margin-left: 0pt;
+  margin-right: 0pt;
+  margin-top: 0.0pt;
+  text-align: Center;
+  text-indent: 0pt;
+  text-transform: none;
+  vertical-align: baseline;
+}
+
+.CalloutCode_outer
+{
+  margin-bottom: 0.0pt;
+  margin-right: 0pt;
+  margin-top: 0.0pt;
+}
+
+.CalloutCode_inner
+{
+  color: #000000;
+  font-family: Arial, Sans-Serif, Myriad Web;
+  font-size: 10pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-align: Center;
+  text-transform: none;
+  vertical-align: baseline;
+  margin-left: 0pt;
+  margin-right: 0pt;
+  margin-top: 0pt;
+  margin-bottom: 0pt;
+  padding-left: 0pt;
+  padding-right: 0pt;
+  padding-top: 0pt;
+  padding-bottom: 0pt;
+}
+
+div.CalloutLeft
+{
+  color: #000000;
+  font-family: Arial, Sans-Serif, Myriad Web;
+  font-size: 10pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  margin-bottom: 2.0pt;
+  margin-left: 0pt;
+  margin-right: 0pt;
+  margin-top: 9.0pt;
+  text-align: Left;
+  text-indent: 0pt;
+  text-transform: none;
+  vertical-align: baseline;
+}
+
+.CalloutLeft_outer
+{
+  margin-bottom: 2.0pt;
+  margin-right: 0pt;
+  margin-top: 9.0pt;
+}
+
+.CalloutLeft_inner
+{
+  color: #000000;
+  font-family: Arial, Sans-Serif, Myriad Web;
+  font-size: 10pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-align: Left;
+  text-transform: none;
+  vertical-align: baseline;
+  margin-left: 0pt;
+  margin-right: 0pt;
+  margin-top: 0pt;
+  margin-bottom: 0pt;
+  padding-left: 0pt;
+  padding-right: 0pt;
+  padding-top: 0pt;
+  padding-bottom: 0pt;
+}
+
+div.CalloutRight
+{
+  color: #000000;
+  font-family: Arial, Sans-Serif, Myriad Web;
+  font-size: 10pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  margin-bottom: 2.0pt;
+  margin-left: 0pt;
+  margin-right: 0pt;
+  margin-top: 9.0pt;
+  text-align: Right;
+  text-indent: 0pt;
+  text-transform: none;
+  vertical-align: baseline;
+}
+
+.CalloutRight_outer
+{
+  margin-bottom: 2.0pt;
+  margin-right: 0pt;
+  margin-top: 9.0pt;
+}
+
+.CalloutRight_inner
+{
+  color: #000000;
+  font-family: Arial, Sans-Serif, Myriad Web;
+  font-size: 10pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-align: Right;
+  text-transform: none;
+  vertical-align: baseline;
+  margin-left: 0pt;
+  margin-right: 0pt;
+  margin-top: 0pt;
+  margin-bottom: 0pt;
+  padding-left: 0pt;
+  padding-right: 0pt;
+  padding-top: 0pt;
+  padding-bottom: 0pt;
+}
+
+div.CellBody
+{
+  color: #000000;
+  font-family: Arial, Sans-Serif, Myriad Web;
+  font-size: 10pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  margin-bottom: 0.0pt;
+  margin-left: 0pt;
+  margin-right: 0pt;
+  margin-top: 2.0pt;
+  text-align: Left;
+  text-indent: 0pt;
+  text-transform: none;
+  vertical-align: baseline;
+}
+
+.CellBody_outer
+{
+  margin-bottom: 0.0pt;
+  margin-right: 0pt;
+  margin-top: 2.0pt;
+}
+
+.CellBody_inner
+{
+  color: #000000;
+  font-family: Arial, Sans-Serif, Myriad Web;
+  font-size: 10pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-align: Left;
+  text-transform: none;
+  vertical-align: baseline;
+  margin-left: 0pt;
+  margin-right: 0pt;
+  margin-top: 0pt;
+  margin-bottom: 0pt;
+  padding-left: 0pt;
+  padding-right: 0pt;
+  padding-top: 0pt;
+  padding-bottom: 0pt;
+}
+
+div.CellBullets
+{
+  color: #000000;
+  font-family: Arial, Sans-Serif, Myriad Web;
+  font-size: 10pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  margin-bottom: 2.0pt;
+  margin-left: 9pt;
+  margin-right: 0pt;
+  margin-top: 0.0pt;
+  text-align: Left;
+  text-indent: -9pt;
+  text-transform: none;
+  vertical-align: baseline;
+}
+
+.CellBullets_outer
+{
+  margin-bottom: 2.0pt;
+  margin-right: 0pt;
+  margin-top: 0.0pt;
+}
+
+.CellBullets_inner
+{
+  color: #000000;
+  font-family: Arial, Sans-Serif, Myriad Web;
+  font-size: 10pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-align: Left;
+  text-transform: none;
+  vertical-align: baseline;
+  margin-left: 0pt;
+  margin-right: 0pt;
+  margin-top: 0pt;
+  margin-bottom: 0pt;
+  padding-left: 0pt;
+  padding-right: 0pt;
+  padding-top: 0pt;
+  padding-bottom: 0pt;
+}
+
+div.CellBulletText
+{
+  color: #000000;
+  font-family: Arial, Sans-Serif, Myriad Web;
+  font-size: 10pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  margin-bottom: 2.0pt;
+  margin-left: 9pt;
+  margin-right: 0pt;
+  margin-top: 0.0pt;
+  text-align: Left;
+  text-indent: 0pt;
+  text-transform: none;
+  vertical-align: baseline;
+}
+
+.CellBulletText_outer
+{
+  margin-bottom: 2.0pt;
+  margin-right: 0pt;
+  margin-top: 0.0pt;
+}
+
+.CellBulletText_inner
+{
+  color: #000000;
+  font-family: Arial, Sans-Serif, Myriad Web;
+  font-size: 10pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-align: Left;
+  text-transform: none;
+  vertical-align: baseline;
+  margin-left: 0pt;
+  margin-right: 0pt;
+  margin-top: 0pt;
+  margin-bottom: 0pt;
+  padding-left: 0pt;
+  padding-right: 0pt;
+  padding-top: 0pt;
+  padding-bottom: 0pt;
+}
+
+div.CellCode
+{
+  color: #000000;
+  font-family: 'Lucida Console', 'Courier New', Monospace;
+  font-size: 8pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  margin-bottom: 0.0pt;
+  margin-left: 0pt;
+  margin-right: 0pt;
+  margin-top: 1.0pt;
+  text-align: Left;
+  text-indent: 0pt;
+  text-transform: none;
+  vertical-align: baseline;
+}
+
+.CellCode_outer
+{
+  margin-bottom: 0.0pt;
+  margin-right: 0pt;
+  margin-top: 1.0pt;
+}
+
+.CellCode_inner
+{
+  color: #000000;
+  font-family: 'Lucida Console', 'Courier New', Monospace;
+  font-size: 8pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-align: Left;
+  text-transform: none;
+  vertical-align: baseline;
+  margin-left: 0pt;
+  margin-right: 0pt;
+  margin-top: 0pt;
+  margin-bottom: 0pt;
+  padding-left: 0pt;
+  padding-right: 0pt;
+  padding-top: 0pt;
+  padding-bottom: 0pt;
+}
+
+div.CellCodeSmall
+{
+  color: #000000;
+  font-family: Arial, Sans-Serif, Myriad Web;
+  font-size: 9pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  margin-bottom: 0.0pt;
+  margin-left: 0pt;
+  margin-right: 0pt;
+  margin-top: 0.0pt;
+  text-align: Left;
+  text-indent: 0pt;
+  text-transform: none;
+  vertical-align: baseline;
+}
+
+.CellCodeSmall_outer
+{
+  margin-bottom: 0.0pt;
+  margin-right: 0pt;
+  margin-top: 0.0pt;
+}
+
+.CellCodeSmall_inner
+{
+  color: #000000;
+  font-family: Arial, Sans-Serif, Myriad Web;
+  font-size: 9pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-align: Left;
+  text-transform: none;
+  vertical-align: baseline;
+  margin-left: 0pt;
+  margin-right: 0pt;
+  margin-top: 0pt;
+  margin-bottom: 0pt;
+  padding-left: 0pt;
+  padding-right: 0pt;
+  padding-top: 0pt;
+  padding-bottom: 0pt;
+}
+
+div.CellCodeValues
+{
+  color: #000000;
+  font-family: Arial, Sans-Serif, Myriad Web;
+  font-size: 10pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  margin-bottom: 0.0pt;
+  margin-left: 0pt;
+  margin-right: 0pt;
+  margin-top: 0.0pt;
+  text-align: Center;
+  text-indent: 0pt;
+  text-transform: none;
+  vertical-align: baseline;
+}
+
+.CellCodeValues_outer
+{
+  margin-bottom: 0.0pt;
+  margin-right: 0pt;
+  margin-top: 0.0pt;
+}
+
+.CellCodeValues_inner
+{
+  color: #000000;
+  font-family: Arial, Sans-Serif, Myriad Web;
+  font-size: 10pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-align: Center;
+  text-transform: none;
+  vertical-align: baseline;
+  margin-left: 0pt;
+  margin-right: 0pt;
+  margin-top: 0pt;
+  margin-bottom: 0pt;
+  padding-left: 0pt;
+  padding-right: 0pt;
+  padding-top: 0pt;
+  padding-bottom: 0pt;
+}
+
+div.CellHeading
+{
+  color: #000000;
+  font-family: Arial, Sans-Serif, Myriad Web;
+  font-size: 10pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: bold;
+  margin-bottom: 0.0pt;
+  margin-left: 0pt;
+  margin-right: 0pt;
+  margin-top: 2.0pt;
+  text-align: Left;
+  text-indent: 0pt;
+  text-transform: none;
+  vertical-align: baseline;
+}
+
+.CellHeading_outer
+{
+  margin-bottom: 0.0pt;
+  margin-right: 0pt;
+  margin-top: 2.0pt;
+}
+
+.CellHeading_inner
+{
+  color: #000000;
+  font-family: Arial, Sans-Serif, Myriad Web;
+  font-size: 10pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: bold;
+  text-align: Left;
+  text-transform: none;
+  vertical-align: baseline;
+  margin-left: 0pt;
+  margin-right: 0pt;
+  margin-top: 0pt;
+  margin-bottom: 0pt;
+  padding-left: 0pt;
+  padding-right: 0pt;
+  padding-top: 0pt;
+  padding-bottom: 0pt;
+}
+
+div.CellStep1
+{
+  color: #000000;
+  font-family: Arial, Sans-Serif, Myriad Web;
+  font-size: 10pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  margin-bottom: 2.0pt;
+  margin-left: 9pt;
+  margin-right: 0pt;
+  margin-top: 0.0pt;
+  text-align: Left;
+  text-indent: -9pt;
+  text-transform: none;
+  vertical-align: baseline;
+}
+
+.CellStep1_outer
+{
+  margin-bottom: 2.0pt;
+  margin-right: 0pt;
+  margin-top: 0.0pt;
+}
+
+.CellStep1_inner
+{
+  color: #000000;
+  font-family: Arial, Sans-Serif, Myriad Web;
+  font-size: 10pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-align: Left;
+  text-transform: none;
+  vertical-align: baseline;
+  margin-left: 0pt;
+  margin-right: 0pt;
+  margin-top: 0pt;
+  margin-bottom: 0pt;
+  padding-left: 0pt;
+  padding-right: 0pt;
+  padding-top: 0pt;
+  padding-bottom: 0pt;
+}
+
+div.CellStepNum
+{
+  color: #000000;
+  font-family: Arial, Sans-Serif, Myriad Web;
+  font-size: 10pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  margin-bottom: 2.0pt;
+  margin-left: 9pt;
+  margin-right: 0pt;
+  margin-top: 0.0pt;
+  text-align: Left;
+  text-indent: -9pt;
+  text-transform: none;
+  vertical-align: baseline;
+}
+
+.CellStepNum_outer
+{
+  margin-bottom: 2.0pt;
+  margin-right: 0pt;
+  margin-top: 0.0pt;
+}
+
+.CellStepNum_inner
+{
+  color: #000000;
+  font-family: Arial, Sans-Serif, Myriad Web;
+  font-size: 10pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-align: Left;
+  text-transform: none;
+  vertical-align: baseline;
+  margin-left: 0pt;
+  margin-right: 0pt;
+  margin-top: 0pt;
+  margin-bottom: 0pt;
+  padding-left: 0pt;
+  padding-right: 0pt;
+  padding-top: 0pt;
+  padding-bottom: 0pt;
+}
+
+div.CellValues
+{
+  color: #000000;
+  font-family: Arial, Sans-Serif, Myriad Web;
+  font-size: 10pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  margin-bottom: 1.0pt;
+  margin-left: 9pt;
+  margin-right: 0pt;
+  margin-top: 0.0pt;
+  text-align: Left;
+  text-indent: -9pt;
+  text-transform: none;
+  vertical-align: baseline;
+}
+
+.CellValues_outer
+{
+  margin-bottom: 1.0pt;
+  margin-right: 0pt;
+  margin-top: 0.0pt;
+}
+
+.CellValues_inner
+{
+  color: #000000;
+  font-family: Arial, Sans-Serif, Myriad Web;
+  font-size: 10pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-align: Left;
+  text-transform: none;
+  vertical-align: baseline;
+  margin-left: 0pt;
+  margin-right: 0pt;
+  margin-top: 0pt;
+  margin-bottom: 0pt;
+  padding-left: 0pt;
+  padding-right: 0pt;
+  padding-top: 0pt;
+  padding-bottom: 0pt;
+}
+
+div.ChapNum
+{
+  color: #000000;
+  font-family: Arial, Sans-Serif, Myriad Web;
+  font-size: 10pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  margin-bottom: 6.0pt;
+  margin-left: 0pt;
+  margin-right: 0pt;
+  margin-top: 0.0pt;
+  text-align: Right;
+  text-indent: 0pt;
+  text-transform: none;
+  vertical-align: baseline;
+}
+
+.ChapNum_outer
+{
+  margin-bottom: 6.0pt;
+  margin-right: 0pt;
+  margin-top: 0.0pt;
+}
+
+.ChapNum_inner
+{
+  color: #000000;
+  font-family: Arial, Sans-Serif, Myriad Web;
+  font-size: 10pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-align: Right;
+  text-transform: none;
+  vertical-align: baseline;
+  margin-left: 0pt;
+  margin-right: 0pt;
+  margin-top: 0pt;
+  margin-bottom: 0pt;
+  padding-left: 0pt;
+  padding-right: 0pt;
+  padding-top: 0pt;
+  padding-bottom: 0pt;
+}
+
+div.ChapTitle
+{
+  color: Black;
+  font-family: Arial, Sans-Serif, Myriad Web;
+  font-size: 20pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  margin-bottom: 19.0pt;
+  margin-left: 0pt;
+  margin-right: 0pt;
+  margin-top: 17.0pt;
+  text-align: Left;
+  text-indent: 0pt;
+  text-transform: none;
+  vertical-align: baseline;
+}
+
+.ChapTitle_outer
+{
+  margin-bottom: 19.0pt;
+  margin-right: 0pt;
+  margin-top: 17.0pt;
+}
+
+.ChapTitle_inner
+{
+  color: Black;
+  font-family: Arial, Sans-Serif, Myriad Web;
+  font-size: 20pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-align: Left;
+  text-transform: none;
+  vertical-align: baseline;
+  margin-left: 0pt;
+  margin-right: 0pt;
+  margin-top: 0pt;
+  margin-bottom: 0pt;
+  padding-left: 0pt;
+  padding-right: 0pt;
+  padding-top: 0pt;
+  padding-bottom: 0pt;
+}
+
+div.Checkbox
+{
+  color: #000000;
+  font-family: Arial, Sans-Serif, Myriad Web;
+  font-size: 10pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  margin-bottom: 2.0pt;
+  margin-left: 61.2pt;
+  margin-right: 9pt;
+  margin-top: 0.0pt;
+  text-align: Left;
+  text-indent: -14.400000000000005pt;
+  text-transform: none;
+  vertical-align: baseline;
+}
+
+.Checkbox_outer
+{
+  margin-bottom: 2.0pt;
+  margin-right: 9pt;
+  margin-top: 0.0pt;
+}
+
+.Checkbox_inner
+{
+  color: #000000;
+  font-family: Arial, Sans-Serif, Myriad Web;
+  font-size: 10pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-align: Left;
+  text-transform: none;
+  vertical-align: baseline;
+  margin-left: 0pt;
+  margin-right: 0pt;
+  margin-top: 0pt;
+  margin-bottom: 0pt;
+  padding-left: 0pt;
+  padding-right: 0pt;
+  padding-top: 0pt;
+  padding-bottom: 0pt;
+}
+
+div.Code1
+{
+  color: #000000;
+  font-family: 'Lucida Console', 'Courier New', Monospace;
+  font-size: 10pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  margin-bottom: 0.0pt;
+  margin-left: 46.8pt;
+  margin-right: 0pt;
+  margin-top: 0.0pt;
+  text-align: Left;
+  text-indent: 0pt;
+  text-transform: none;
+  vertical-align: baseline;
+}
+
+.Code1_outer
+{
+  margin-bottom: 0.0pt;
+  margin-right: 0pt;
+  margin-top: 0.0pt;
+}
+
+.Code1_inner
+{
+  color: #000000;
+  font-family: 'Lucida Console', 'Courier New', Monospace;
+  font-size: 10pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-align: Left;
+  text-transform: none;
+  vertical-align: baseline;
+  margin-left: 0pt;
+  margin-right: 0pt;
+  margin-top: 0pt;
+  margin-bottom: 0pt;
+  padding-left: 0pt;
+  padding-right: 0pt;
+  padding-top: 0pt;
+  padding-bottom: 0pt;
+}
+
+div.Code2
+{
+  color: #000000;
+  font-family: 'Lucida Console', 'Courier New', Monospace;
+  font-size: 10pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  margin-bottom: 0.0pt;
+  margin-left: 46.8pt;
+  margin-right: 0pt;
+  margin-top: 0.0pt;
+  text-align: Left;
+  text-indent: 0pt;
+  text-transform: none;
+  vertical-align: baseline;
+}
+
+.Code2_outer
+{
+  margin-bottom: 0.0pt;
+  margin-right: 0pt;
+  margin-top: 0.0pt;
+}
+
+.Code2_inner
+{
+  color: #000000;
+  font-family: 'Lucida Console', 'Courier New', Monospace;
+  font-size: 10pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-align: Left;
+  text-transform: none;
+  vertical-align: baseline;
+  margin-left: 0pt;
+  margin-right: 0pt;
+  margin-top: 0pt;
+  margin-bottom: 0pt;
+  padding-left: 0pt;
+  padding-right: 0pt;
+  padding-top: 0pt;
+  padding-bottom: 0pt;
+}
+
+div.Code3
+{
+  color: #000000;
+  font-family: 'Lucida Console', 'Courier New', Monospace;
+  font-size: 10pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  margin-bottom: 0.0pt;
+  margin-left: 61.2pt;
+  margin-right: 0pt;
+  margin-top: 0.0pt;
+  text-align: Left;
+  text-indent: 0pt;
+  text-transform: none;
+  vertical-align: baseline;
+}
+
+.Code3_outer
+{
+  margin-bottom: 0.0pt;
+  margin-right: 0pt;
+  margin-top: 0.0pt;
+}
+
+.Code3_inner
+{
+  color: #000000;
+  font-family: 'Lucida Console', 'Courier New', Monospace;
+  font-size: 10pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-align: Left;
+  text-transform: none;
+  vertical-align: baseline;
+  margin-left: 0pt;
+  margin-right: 0pt;
+  margin-top: 0pt;
+  margin-bottom: 0pt;
+  padding-left: 0pt;
+  padding-right: 0pt;
+  padding-top: 0pt;
+  padding-bottom: 0pt;
+}
+
+div.ContextTopic
+{
+  color: #000000;
+  font-family: Arial, Sans-Serif, Myriad Web;
+  font-size: 10pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  margin-bottom: 2.0pt;
+  margin-left: 46.8pt;
+  margin-right: 0pt;
+  margin-top: 14.0pt;
+  text-align: Left;
+  text-indent: 0pt;
+  text-transform: none;
+  vertical-align: baseline;
+}
+
+.ContextTopic_outer
+{
+  margin-bottom: 2.0pt;
+  margin-right: 0pt;
+  margin-top: 14.0pt;
+}
+
+.ContextTopic_inner
+{
+  color: #000000;
+  font-family: Arial, Sans-Serif, Myriad Web;
+  font-size: 10pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-align: Left;
+  text-transform: none;
+  vertical-align: baseline;
+  margin-left: 0pt;
+  margin-right: 0pt;
+  margin-top: 0pt;
+  margin-bottom: 0pt;
+  padding-left: 0pt;
+  padding-right: 0pt;
+  padding-top: 0pt;
+  padding-bottom: 0pt;
+}
+
+div.Declaration
+{
+  color: #000000;
+  font-family: Arial, Sans-Serif, Myriad Web;
+  font-size: 10pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  margin-bottom: 0.0pt;
+  margin-left: 46.8pt;
+  margin-right: 9pt;
+  margin-top: 5.0pt;
+  text-align: Left;
+  text-indent: 0pt;
+  text-transform: none;
+  vertical-align: baseline;
+}
+
+.Declaration_outer
+{
+  margin-bottom: 0.0pt;
+  margin-right: 9pt;
+  margin-top: 5.0pt;
+}
+
+.Declaration_inner
+{
+  color: #000000;
+  font-family: Arial, Sans-Serif, Myriad Web;
+  font-size: 10pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-align: Left;
+  text-transform: none;
+  vertical-align: baseline;
+  margin-left: 0pt;
+  margin-right: 0pt;
+  margin-top: 0pt;
+  margin-bottom: 0pt;
+  padding-left: 0pt;
+  padding-right: 0pt;
+  padding-top: 0pt;
+  padding-bottom: 0pt;
+}
+
+div.DeclarationContinuation
+{
+  color: #000000;
+  font-family: Arial, Sans-Serif, Myriad Web;
+  font-size: 10pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  margin-bottom: 0.0pt;
+  margin-left: 46.8pt;
+  margin-right: 9pt;
+  margin-top: 0.0pt;
+  text-align: Left;
+  text-indent: 0pt;
+  text-transform: none;
+  vertical-align: baseline;
+}
+
+.DeclarationContinuation_outer
+{
+  margin-bottom: 0.0pt;
+  margin-right: 9pt;
+  margin-top: 0.0pt;
+}
+
+.DeclarationContinuation_inner
+{
+  color: #000000;
+  font-family: Arial, Sans-Serif, Myriad Web;
+  font-size: 10pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-align: Left;
+  text-transform: none;
+  vertical-align: baseline;
+  margin-left: 0pt;
+  margin-right: 0pt;
+  margin-top: 0pt;
+  margin-bottom: 0pt;
+  padding-left: 0pt;
+  padding-right: 0pt;
+  padding-top: 0pt;
+  padding-bottom: 0pt;
+}
+
+div.Definition_Ref
+{
+  color: #000000;
+  font-family: Arial, Sans-Serif, Myriad Web;
+  font-size: 10pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  margin-bottom: 0.0pt;
+  margin-left: 61.2pt;
+  margin-right: 0pt;
+  margin-top: 0.0pt;
+  text-align: Left;
+  text-indent: 3pt;
+  text-transform: none;
+  vertical-align: baseline;
+}
+
+.Definition_Ref_outer
+{
+  margin-bottom: 0.0pt;
+  margin-right: 0pt;
+  margin-top: 0.0pt;
+}
+
+.Definition_Ref_inner
+{
+  color: #000000;
+  font-family: Arial, Sans-Serif, Myriad Web;
+  font-size: 10pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-align: Left;
+  text-transform: none;
+  vertical-align: baseline;
+  margin-left: 0pt;
+  margin-right: 0pt;
+  margin-top: 0pt;
+  margin-bottom: 0pt;
+  padding-left: 0pt;
+  padding-right: 0pt;
+  padding-top: 0pt;
+  padding-bottom: 0pt;
+}
+
+div.DialogBoxTopic
+{
+  color: #000000;
+  font-family: Arial, Sans-Serif, Myriad Web;
+  font-size: 16pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  margin-bottom: 4.0pt;
+  margin-left: 61.2pt;
+  margin-right: 0pt;
+  margin-top: 17.0pt;
+  text-align: Left;
+  text-indent: 0pt;
+  text-transform: none;
+  vertical-align: baseline;
+}
+
+.DialogBoxTopic_outer
+{
+  margin-bottom: 4.0pt;
+  margin-right: 0pt;
+  margin-top: 17.0pt;
+}
+
+.DialogBoxTopic_inner
+{
+  color: #000000;
+  font-family: Arial, Sans-Serif, Myriad Web;
+  font-size: 16pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-align: Left;
+  text-transform: none;
+  vertical-align: baseline;
+  margin-left: 0pt;
+  margin-right: 0pt;
+  margin-top: 0pt;
+  margin-bottom: 0pt;
+  padding-left: 0pt;
+  padding-right: 0pt;
+  padding-top: 0pt;
+  padding-bottom: 0pt;
+}
+
+div.DropDownBody
+{
+  color: #000000;
+  font-family: Arial, Sans-Serif, Myriad Web;
+  font-size: 10pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  margin-bottom: 0.0pt;
+  margin-left: 61.2pt;
+  margin-right: 0pt;
+  margin-top: 5.0pt;
+  text-align: Left;
+  text-indent: 0pt;
+  text-transform: none;
+  vertical-align: baseline;
+}
+
+.DropDownBody_outer
+{
+  margin-bottom: 0.0pt;
+  margin-right: 0pt;
+  margin-top: 5.0pt;
+}
+
+.DropDownBody_inner
+{
+  color: #000000;
+  font-family: Arial, Sans-Serif, Myriad Web;
+  font-size: 10pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-align: Left;
+  text-transform: none;
+  vertical-align: baseline;
+  margin-left: 0pt;
+  margin-right: 0pt;
+  margin-top: 0pt;
+  margin-bottom: 0pt;
+  padding-left: 0pt;
+  padding-right: 0pt;
+  padding-top: 0pt;
+  padding-bottom: 0pt;
+}
+
+div.Figure
+{
+  color: #000000;
+  font-family: Arial, Sans-Serif, Myriad Web;
+  font-size: 10pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  margin-bottom: 20.0pt;
+  margin-left: 61.2pt;
+  margin-right: 0pt;
+  margin-top: 0.0pt;
+  text-align: Left;
+  text-indent: 0pt;
+  text-transform: none;
+  vertical-align: baseline;
+}
+
+.Figure_outer
+{
+  margin-bottom: 20.0pt;
+  margin-right: 0pt;
+  margin-top: 0.0pt;
+}
+
+.Figure_inner
+{
+  color: #000000;
+  font-family: Arial, Sans-Serif, Myriad Web;
+  font-size: 10pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-align: Left;
+  text-transform: none;
+  vertical-align: baseline;
+  margin-left: 0pt;
+  margin-right: 0pt;
+  margin-top: 0pt;
+  margin-bottom: 0pt;
+  padding-left: 0pt;
+  padding-right: 0pt;
+  padding-top: 0pt;
+  padding-bottom: 0pt;
+}
+
+div.Figure_caption
+{
+  color: #000000;
+  font-family: Arial, Sans-Serif, Myriad Web;
+  font-size: 10pt;
+  font-style: italic;
+  font-variant: normal;
+  font-weight: normal;
+  margin-bottom: 0.0pt;
+  margin-left: 46.8pt;
+  margin-right: 0pt;
+  margin-top: 0.0pt;
+  text-align: justify;
+  text-indent: 0pt;
+  text-transform: none;
+  vertical-align: baseline;
+}
+
+.Figure_caption_outer
+{
+  margin-bottom: 0.0pt;
+  margin-right: 0pt;
+  margin-top: 0.0pt;
+}
+
+.Figure_caption_inner
+{
+  color: #000000;
+  font-family: Arial, Sans-Serif, Myriad Web;
+  font-size: 10pt;
+  font-style: italic;
+  font-variant: normal;
+  font-weight: normal;
+  text-align: justify;
+  text-transform: none;
+  vertical-align: baseline;
+  margin-left: 0pt;
+  margin-right: 0pt;
+  margin-top: 0pt;
+  margin-bottom: 0pt;
+  padding-left: 0pt;
+  padding-right: 0pt;
+  padding-top: 0pt;
+  padding-bottom: 0pt;
+}
+
+div.FigureOLH
+{
+  color: #000000;
+  font-family: Arial, Sans-Serif, Myriad Web;
+  font-size: 10pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  margin-bottom: 20.0pt;
+  margin-left: 61.2pt;
+  margin-right: 0pt;
+  margin-top: 0.0pt;
+  text-align: Left;
+  text-indent: 0pt;
+  text-transform: none;
+  vertical-align: baseline;
+}
+
+.FigureOLH_outer
+{
+  margin-bottom: 20.0pt;
+  margin-right: 0pt;
+  margin-top: 0.0pt;
+}
+
+.FigureOLH_inner
+{
+  color: #000000;
+  font-family: Arial, Sans-Serif, Myriad Web;
+  font-size: 10pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-align: Left;
+  text-transform: none;
+  vertical-align: baseline;
+  margin-left: 0pt;
+  margin-right: 0pt;
+  margin-top: 0pt;
+  margin-bottom: 0pt;
+  padding-left: 0pt;
+  padding-right: 0pt;
+  padding-top: 0pt;
+  padding-bottom: 0pt;
+}
+
+div.Footer
+{
+  color: #000000;
+  font-family: Arial, Sans-Serif, Myriad Web;
+  font-size: 10pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  margin-bottom: 0.0pt;
+  margin-left: 0pt;
+  margin-right: 0pt;
+  margin-top: 0.0pt;
+  text-align: Left;
+  text-indent: 0pt;
+  text-transform: none;
+  vertical-align: baseline;
+}
+
+.Footer_outer
+{
+  margin-bottom: 0.0pt;
+  margin-right: 0pt;
+  margin-top: 0.0pt;
+}
+
+.Footer_inner
+{
+  color: #000000;
+  font-family: Arial, Sans-Serif, Myriad Web;
+  font-size: 10pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-align: Left;
+  text-transform: none;
+  vertical-align: baseline;
+  margin-left: 0pt;
+  margin-right: 0pt;
+  margin-top: 0pt;
+  margin-bottom: 0pt;
+  padding-left: 0pt;
+  padding-right: 0pt;
+  padding-top: 0pt;
+  padding-bottom: 0pt;
+}
+
+div.Footnote
+{
+  color: #000000;
+  font-family: Arial, Sans-Serif, Myriad Web;
+  font-size: 10pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  margin-bottom: 0.0pt;
+  margin-left: 30.00024pt;
+  margin-right: 18pt;
+  margin-top: 0.0pt;
+  text-align: Left;
+  text-indent: -12.000240000000001pt;
+  text-transform: none;
+  vertical-align: baseline;
+}
+
+.Footnote_outer
+{
+  margin-bottom: 0.0pt;
+  margin-right: 18pt;
+  margin-top: 0.0pt;
+}
+
+.Footnote_inner
+{
+  color: #000000;
+  font-family: Arial, Sans-Serif, Myriad Web;
+  font-size: 10pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-align: Left;
+  text-transform: none;
+  vertical-align: baseline;
+  margin-left: 0pt;
+  margin-right: 0pt;
+  margin-top: 0pt;
+  margin-bottom: 0pt;
+  padding-left: 0pt;
+  padding-right: 0pt;
+  padding-top: 0pt;
+  padding-bottom: 0pt;
+}
+
+div.HangingIndent
+{
+  color: #000000;
+  font-family: Arial, Sans-Serif, Myriad Web;
+  font-size: 10pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  margin-bottom: 0.0pt;
+  margin-left: 75.6pt;
+  margin-right: 0pt;
+  margin-top: 5.0pt;
+  text-align: Left;
+  text-indent: -14.399999999999991pt;
+  text-transform: none;
+  vertical-align: baseline;
+}
+
+.HangingIndent_outer
+{
+  margin-bottom: 0.0pt;
+  margin-right: 0pt;
+  margin-top: 5.0pt;
+}
+
+.HangingIndent_inner
+{
+  color: #000000;
+  font-family: Arial, Sans-Serif, Myriad Web;
+  font-size: 10pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-align: Left;
+  text-transform: none;
+  vertical-align: baseline;
+  margin-left: 0pt;
+  margin-right: 0pt;
+  margin-top: 0pt;
+  margin-bottom: 0pt;
+  padding-left: 0pt;
+  padding-right: 0pt;
+  padding-top: 0pt;
+  padding-bottom: 0pt;
+}
+
+div.HangingIndent2
+{
+  color: #000000;
+  font-family: Arial, Sans-Serif, Myriad Web;
+  font-size: 10pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  margin-bottom: 7.0pt;
+  margin-left: 93.6pt;
+  margin-right: 0pt;
+  margin-top: 0.0pt;
+  text-align: Left;
+  text-indent: -18pt;
+  text-transform: none;
+  vertical-align: baseline;
+}
+
+.HangingIndent2_outer
+{
+  margin-bottom: 7.0pt;
+  margin-right: 0pt;
+  margin-top: 0.0pt;
+}
+
+.HangingIndent2_inner
+{
+  color: #000000;
+  font-family: Arial, Sans-Serif, Myriad Web;
+  font-size: 10pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-align: Left;
+  text-transform: none;
+  vertical-align: baseline;
+  margin-left: 0pt;
+  margin-right: 0pt;
+  margin-top: 0pt;
+  margin-bottom: 0pt;
+  padding-left: 0pt;
+  padding-right: 0pt;
+  padding-top: 0pt;
+  padding-bottom: 0pt;
+}
+
+div.Header
+{
+  color: #000000;
+  font-family: Arial, Sans-Serif, Myriad Web;
+  font-size: 18pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  margin-bottom: 0.0pt;
+  margin-left: 0pt;
+  margin-right: 0pt;
+  margin-top: 0.0pt;
+  text-align: justify;
+  text-indent: 0pt;
+  text-transform: none;
+  vertical-align: baseline;
+}
+
+.Header_outer
+{
+  margin-bottom: 0.0pt;
+  margin-right: 0pt;
+  margin-top: 0.0pt;
+}
+
+.Header_inner
+{
+  color: #000000;
+  font-family: Arial, Sans-Serif, Myriad Web;
+  font-size: 18pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-align: justify;
+  text-transform: none;
+  vertical-align: baseline;
+  margin-left: 0pt;
+  margin-right: 0pt;
+  margin-top: 0pt;
+  margin-bottom: 0pt;
+  padding-left: 0pt;
+  padding-right: 0pt;
+  padding-top: 0pt;
+  padding-bottom: 0pt;
+}
+
+div.Heading1
+{
+  color: #000000;
+  font-family: Arial, Sans-Serif;
+  font-size: 18pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  margin-bottom: 6.0pt;
+  margin-left: 0pt;
+  margin-right: 0pt;
+  margin-top: 23.0pt;
+  text-align: Left;
+  text-indent: 0pt;
+  text-transform: none;
+  vertical-align: baseline;
+}
+
+.Heading1_outer
+{
+  margin-bottom: 6.0pt;
+  margin-right: 0pt;
+  margin-top: 23.0pt;
+}
+
+.Heading1_inner
+{
+  color: #000000;
+  font-family: Arial, Sans-Serif;
+  font-size: 18pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-align: Left;
+  text-transform: none;
+  vertical-align: baseline;
+  margin-left: 0pt;
+  margin-right: 0pt;
+  margin-top: 0pt;
+  margin-bottom: 0pt;
+  padding-left: 0pt;
+  padding-right: 0pt;
+  padding-top: 0pt;
+  padding-bottom: 0pt;
+}
+
+div.Heading1-Top
+{
+  color: #000000;
+  font-family: Arial, Sans-Serif, Myriad Web;
+  font-size: 18pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  margin-bottom: 6.0pt;
+  margin-left: 0pt;
+  margin-right: 0pt;
+  margin-top: 0.0pt;
+  text-align: Left;
+  text-indent: 0pt;
+  text-transform: none;
+  vertical-align: baseline;
+}
+
+.Heading1-Top_outer
+{
+  margin-bottom: 6.0pt;
+  margin-right: 0pt;
+  margin-top: 0.0pt;
+}
+
+.Heading1-Top_inner
+{
+  color: #000000;
+  font-family: Arial, Sans-Serif, Myriad Web;
+  font-size: 18pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-align: Left;
+  text-transform: none;
+  vertical-align: baseline;
+  margin-left: 0pt;
+  margin-right: 0pt;
+  margin-top: 0pt;
+  margin-bottom: 0pt;
+  padding-left: 0pt;
+  padding-right: 0pt;
+  padding-top: 0pt;
+  padding-bottom: 0pt;
+}
+
+div.Heading1_Class
+{
+  color: #000000;
+  font-family: Arial, Sans-Serif, Myriad Web;
+  font-size: 18pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  margin-bottom: 6.0pt;
+  margin-left: 0pt;
+  margin-right: 0pt;
+  margin-top: 23.0pt;
+  text-align: Left;
+  text-indent: 0pt;
+  text-transform: none;
+  vertical-align: baseline;
+}
+
+.Heading1_Class_outer
+{
+  margin-bottom: 6.0pt;
+  margin-right: 0pt;
+  margin-top: 23.0pt;
+}
+
+.Heading1_Class_inner
+{
+  color: #000000;
+  font-family: Arial, Sans-Serif, Myriad Web;
+  font-size: 18pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-align: Left;
+  text-transform: none;
+  vertical-align: baseline;
+  margin-left: 0pt;
+  margin-right: 0pt;
+  margin-top: 0pt;
+  margin-bottom: 0pt;
+  padding-left: 0pt;
+  padding-right: 0pt;
+  padding-top: 0pt;
+  padding-bottom: 0pt;
+}
+
+div.Heading2
+{
+  color: #000000;
+  font-family: Arial, Sans-Serif, Myriad Web;
+  font-size: 14pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  margin-bottom: 3.0pt;
+  margin-left: 61.2pt;
+  margin-right: 0pt;
+  margin-top: 17.5pt;
+  text-align: Left;
+  text-indent: -14.400000000000005pt;
+  text-transform: none;
+  vertical-align: baseline;
+}
+
+.Heading2_outer
+{
+  margin-bottom: 3.0pt;
+  margin-right: 0pt;
+  margin-top: 17.5pt;
+}
+
+.Heading2_inner
+{
+  color: #000000;
+  font-family: Arial, Sans-Serif, Myriad Web;
+  font-size: 14pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-align: Left;
+  text-transform: none;
+  vertical-align: baseline;
+  margin-left: 0pt;
+  margin-right: 0pt;
+  margin-top: 0pt;
+  margin-bottom: 0pt;
+  padding-left: 0pt;
+  padding-right: 0pt;
+  padding-top: 0pt;
+  padding-bottom: 0pt;
+}
+
+div.Heading2_Constructor
+{
+  color: #000000;
+  font-family: Arial, Sans-Serif, Myriad Web;
+  font-size: 14pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  margin-bottom: 3.0pt;
+  margin-left: 72pt;
+  margin-right: 0pt;
+  margin-top: 17.5pt;
+  text-align: Left;
+  text-indent: 1pt;
+  text-transform: none;
+  vertical-align: baseline;
+}
+
+.Heading2_Constructor_outer
+{
+  margin-bottom: 3.0pt;
+  margin-right: 0pt;
+  margin-top: 17.5pt;
+}
+
+.Heading2_Constructor_inner
+{
+  color: #000000;
+  font-family: Arial, Sans-Serif, Myriad Web;
+  font-size: 14pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-align: Left;
+  text-transform: none;
+  vertical-align: baseline;
+  margin-left: 0pt;
+  margin-right: 0pt;
+  margin-top: 0pt;
+  margin-bottom: 0pt;
+  padding-left: 0pt;
+  padding-right: 0pt;
+  padding-top: 0pt;
+  padding-bottom: 0pt;
+}
+
+div.Heading2_Field
+{
+  color: #000000;
+  font-family: Arial, Sans-Serif, Myriad Web;
+  font-size: 14pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  margin-bottom: 3.0pt;
+  margin-left: 72pt;
+  margin-right: 0pt;
+  margin-top: 17.5pt;
+  text-align: Left;
+  text-indent: 1pt;
+  text-transform: none;
+  vertical-align: baseline;
+}
+
+.Heading2_Field_outer
+{
+  margin-bottom: 3.0pt;
+  margin-right: 0pt;
+  margin-top: 17.5pt;
+}
+
+.Heading2_Field_inner
+{
+  color: #000000;
+  font-family: Arial, Sans-Serif, Myriad Web;
+  font-size: 14pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-align: Left;
+  text-transform: none;
+  vertical-align: baseline;
+  margin-left: 0pt;
+  margin-right: 0pt;
+  margin-top: 0pt;
+  margin-bottom: 0pt;
+  padding-left: 0pt;
+  padding-right: 0pt;
+  padding-top: 0pt;
+  padding-bottom: 0pt;
+}
+
+div.Heading2_Method
+{
+  color: #000000;
+  font-family: Arial, Sans-Serif, Myriad Web;
+  font-size: 14pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  margin-bottom: 3.0pt;
+  margin-left: 72pt;
+  margin-right: 0pt;
+  margin-top: 17.5pt;
+  text-align: Left;
+  text-indent: 1pt;
+  text-transform: none;
+  vertical-align: baseline;
+}
+
+.Heading2_Method_outer
+{
+  margin-bottom: 3.0pt;
+  margin-right: 0pt;
+  margin-top: 17.5pt;
+}
+
+.Heading2_Method_inner
+{
+  color: #000000;
+  font-family: Arial, Sans-Serif, Myriad Web;
+  font-size: 14pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-align: Left;
+  text-transform: none;
+  vertical-align: baseline;
+  margin-left: 0pt;
+  margin-right: 0pt;
+  margin-top: 0pt;
+  margin-bottom: 0pt;
+  padding-left: 0pt;
+  padding-right: 0pt;
+  padding-top: 0pt;
+  padding-bottom: 0pt;
+}
+
+div.Heading2_Property
+{
+  color: #000000;
+  font-family: Arial, Sans-Serif, Myriad Web;
+  font-size: 14pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  margin-bottom: 3.0pt;
+  margin-left: 72pt;
+  margin-right: 0pt;
+  margin-top: 17.5pt;
+  text-align: Left;
+  text-indent: 1pt;
+  text-transform: none;
+  vertical-align: baseline;
+}
+
+.Heading2_Property_outer
+{
+  margin-bottom: 3.0pt;
+  margin-right: 0pt;
+  margin-top: 17.5pt;
+}
+
+.Heading2_Property_inner
+{
+  color: #000000;
+  font-family: Arial, Sans-Serif, Myriad Web;
+  font-size: 14pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-align: Left;
+  text-transform: none;
+  vertical-align: baseline;
+  margin-left: 0pt;
+  margin-right: 0pt;
+  margin-top: 0pt;
+  margin-bottom: 0pt;
+  padding-left: 0pt;
+  padding-right: 0pt;
+  padding-top: 0pt;
+  padding-bottom: 0pt;
+}
+
+div.Heading3
+{
+  color: #000000;
+  font-family: Arial, Sans-Serif, Myriad Web;
+  font-size: 12pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: bold;
+  margin-bottom: 1.0pt;
+  margin-left: 46.8pt;
+  margin-right: 0pt;
+  margin-top: 13.5pt;
+  text-align: Left;
+  text-indent: 0pt;
+  text-transform: none;
+  vertical-align: baseline;
+}
+
+.Heading3_outer
+{
+  margin-bottom: 1.0pt;
+  margin-right: 0pt;
+  margin-top: 13.5pt;
+}
+
+.Heading3_inner
+{
+  color: #000000;
+  font-family: Arial, Sans-Serif, Myriad Web;
+  font-size: 12pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: bold;
+  text-align: Left;
+  text-transform: none;
+  vertical-align: baseline;
+  margin-left: 0pt;
+  margin-right: 0pt;
+  margin-top: 0pt;
+  margin-bottom: 0pt;
+  padding-left: 0pt;
+  padding-right: 0pt;
+  padding-top: 0pt;
+  padding-bottom: 0pt;
+}
+
+div.Heading4
+{
+  color: #000000;
+  font-family: Arial, Sans-Serif, Myriad Web;
+  font-size: 10pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: bold;
+  margin-bottom: 5.0pt;
+  margin-left: 46.8pt;
+  margin-right: 0pt;
+  margin-top: 9.0pt;
+  text-align: Left;
+  text-indent: 0pt;
+  text-transform: none;
+  vertical-align: baseline;
+}
+
+.Heading4_outer
+{
+  margin-bottom: 5.0pt;
+  margin-right: 0pt;
+  margin-top: 9.0pt;
+}
+
+.Heading4_inner
+{
+  color: #000000;
+  font-family: Arial, Sans-Serif, Myriad Web;
+  font-size: 10pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: bold;
+  text-align: Left;
+  text-transform: none;
+  vertical-align: baseline;
+  margin-left: 0pt;
+  margin-right: 0pt;
+  margin-top: 0pt;
+  margin-bottom: 0pt;
+  padding-left: 0pt;
+  padding-right: 0pt;
+  padding-top: 0pt;
+  padding-bottom: 0pt;
+}
+
+div.HeadingRunIn
+{
+  color: #000000;
+  font-family: Arial, Sans-Serif, Myriad Web;
+  font-size: 10pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: bold;
+  margin-bottom: 0.0pt;
+  margin-left: 0pt;
+  margin-right: 0pt;
+  margin-top: 6.0pt;
+  text-align: Left;
+  text-indent: 0pt;
+  text-transform: none;
+  vertical-align: baseline;
+}
+
+.HeadingRunIn_outer
+{
+  margin-bottom: 0.0pt;
+  margin-right: 0pt;
+  margin-top: 6.0pt;
+}
+
+.HeadingRunIn_inner
+{
+  color: #000000;
+  font-family: Arial, Sans-Serif, Myriad Web;
+  font-size: 10pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: bold;
+  text-align: Left;
+  text-transform: none;
+  vertical-align: baseline;
+  margin-left: 0pt;
+  margin-right: 0pt;
+  margin-top: 0pt;
+  margin-bottom: 0pt;
+  padding-left: 0pt;
+  padding-right: 0pt;
+  padding-top: 0pt;
+  padding-bottom: 0pt;
+}
+
+div.Hide_Heading1
+{
+  color: #000000;
+  font-family: Arial, Sans-Serif, Myriad Web;
+  font-size: 10pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  margin-bottom: 6.0pt;
+  margin-left: 0pt;
+  margin-right: 0pt;
+  margin-top: 23.0pt;
+  text-align: Left;
+  text-indent: 0pt;
+  text-transform: none;
+  vertical-align: baseline;
+}
+
+.Hide_Heading1_outer
+{
+  margin-bottom: 6.0pt;
+  margin-right: 0pt;
+  margin-top: 23.0pt;
+}
+
+.Hide_Heading1_inner
+{
+  color: #000000;
+  font-family: Arial, Sans-Serif, Myriad Web;
+  font-size: 10pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-align: Left;
+  text-transform: none;
+  vertical-align: baseline;
+  margin-left: 0pt;
+  margin-right: 0pt;
+  margin-top: 0pt;
+  margin-bottom: 0pt;
+  padding-left: 0pt;
+  padding-right: 0pt;
+  padding-top: 0pt;
+  padding-bottom: 0pt;
+}
+
+div.Indented
+{
+  color: #000000;
+  font-family: Arial, Sans-Serif, Myriad Web;
+  font-size: 10pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  margin-bottom: 0.0pt;
+  margin-left: 18pt;
+  margin-right: 0pt;
+  margin-top: 0.0pt;
+  text-align: Left;
+  text-indent: 0pt;
+  text-transform: none;
+  vertical-align: baseline;
+}
+
+.Indented_outer
+{
+  margin-bottom: 0.0pt;
+  margin-right: 0pt;
+  margin-top: 0.0pt;
+}
+
+.Indented_inner
+{
+  color: #000000;
+  font-family: Arial, Sans-Serif, Myriad Web;
+  font-size: 10pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-align: Left;
+  text-transform: none;
+  vertical-align: baseline;
+  margin-left: 0pt;
+  margin-right: 0pt;
+  margin-top: 0pt;
+  margin-bottom: 0pt;
+  padding-left: 0pt;
+  padding-right: 0pt;
+  padding-top: 0pt;
+  padding-bottom: 0pt;
+}
+
+div.Mapping_Table_Cell
+{
+  color: #000000;
+  font-family: Arial, Sans-Serif, Myriad Web;
+  font-size: 10pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  margin-bottom: 2.0pt;
+  margin-left: 0pt;
+  margin-right: 0pt;
+  margin-top: 2.0pt;
+  text-align: Left;
+  text-indent: 0pt;
+  text-transform: none;
+  vertical-align: baseline;
+}
+
+.Mapping_Table_Cell_outer
+{
+  margin-bottom: 2.0pt;
+  margin-right: 0pt;
+  margin-top: 2.0pt;
+}
+
+.Mapping_Table_Cell_inner
+{
+  color: #000000;
+  font-family: Arial, Sans-Serif, Myriad Web;
+  font-size: 10pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-align: Left;
+  text-transform: none;
+  vertical-align: baseline;
+  margin-left: 0pt;
+  margin-right: 0pt;
+  margin-top: 0pt;
+  margin-bottom: 0pt;
+  padding-left: 0pt;
+  padding-right: 0pt;
+  padding-top: 0pt;
+  padding-bottom: 0pt;
+}
+
+div.Mapping_Table_Title
+{
+  color: #000000;
+  font-family: Arial, Sans-Serif, Myriad Web;
+  font-size: 10pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  margin-bottom: 2.0pt;
+  margin-left: 0pt;
+  margin-right: 0pt;
+  margin-top: 2.0pt;
+  text-align: Left;
+  text-indent: 0pt;
+  text-transform: none;
+  vertical-align: baseline;
+}
+
+.Mapping_Table_Title_outer
+{
+  margin-bottom: 2.0pt;
+  margin-right: 0pt;
+  margin-top: 2.0pt;
+}
+
+.Mapping_Table_Title_inner
+{
+  color: #000000;
+  font-family: Arial, Sans-Serif, Myriad Web;
+  font-size: 10pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-align: Left;
+  text-transform: none;
+  vertical-align: baseline;
+  margin-left: 0pt;
+  margin-right: 0pt;
+  margin-top: 0pt;
+  margin-bottom: 0pt;
+  padding-left: 0pt;
+  padding-right: 0pt;
+  padding-top: 0pt;
+  padding-bottom: 0pt;
+}
+
+div.Method_Property_Names
+{
+  color: #000000;
+  font-family: Arial, Sans-Serif, Myriad Web;
+  font-size: 10pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  margin-bottom: 3.0pt;
+  margin-left: 72pt;
+  margin-right: 0pt;
+  margin-top: 17.5pt;
+  text-align: Left;
+  text-indent: -27pt;
+  text-transform: none;
+  vertical-align: baseline;
+}
+
+.Method_Property_Names_outer
+{
+  margin-bottom: 3.0pt;
+  margin-right: 0pt;
+  margin-top: 17.5pt;
+}
+
+.Method_Property_Names_inner
+{
+  color: #000000;
+  font-family: Arial, Sans-Serif, Myriad Web;
+  font-size: 10pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-align: Left;
+  text-transform: none;
+  vertical-align: baseline;
+  margin-left: 0pt;
+  margin-right: 0pt;
+  margin-top: 0pt;
+  margin-bottom: 0pt;
+  padding-left: 0pt;
+  padding-right: 0pt;
+  padding-top: 0pt;
+  padding-bottom: 0pt;
+}
+
+div.NoChapterNumber
+{
+  color: #000000;
+  font-family: Arial, Sans-Serif, Myriad Web;
+  font-size: 10pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  margin-bottom: 2.0pt;
+  margin-left: 0pt;
+  margin-right: 0pt;
+  margin-top: 0.0pt;
+  text-align: Right;
+  text-indent: 0pt;
+  text-transform: none;
+  vertical-align: baseline;
+}
+
+.NoChapterNumber_outer
+{
+  margin-bottom: 2.0pt;
+  margin-right: 0pt;
+  margin-top: 0.0pt;
+}
+
+.NoChapterNumber_inner
+{
+  color: #000000;
+  font-family: Arial, Sans-Serif, Myriad Web;
+  font-size: 10pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-align: Right;
+  text-transform: none;
+  vertical-align: baseline;
+  margin-left: 0pt;
+  margin-right: 0pt;
+  margin-top: 0pt;
+  margin-bottom: 0pt;
+  padding-left: 0pt;
+  padding-right: 0pt;
+  padding-top: 0pt;
+  padding-bottom: 0pt;
+}
+
+div.Note
+{
+  color: #000000;
+  font-family: Arial, Sans-Serif, Myriad Web;
+  font-size: 10pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  margin-bottom: 10.0pt;
+  margin-left: 46.8pt;
+  margin-right: 9pt;
+  margin-top: 7.0pt;
+  text-align: Left;
+  text-indent: 0pt;
+  text-transform: none;
+  vertical-align: baseline;
+}
+
+.Note_outer
+{
+  margin-bottom: 10.0pt;
+  margin-right: 9pt;
+  margin-top: 7.0pt;
+}
+
+.Note_inner
+{
+  color: #000000;
+  font-family: Arial, Sans-Serif, Myriad Web;
+  font-size: 10pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-align: Left;
+  text-transform: none;
+  vertical-align: baseline;
+  margin-left: 0pt;
+  margin-right: 0pt;
+  margin-top: 0pt;
+  margin-bottom: 0pt;
+  padding-left: 0pt;
+  padding-right: 0pt;
+  padding-top: 0pt;
+  padding-bottom: 0pt;
+}
+
+div.NoteBeforeCode
+{
+  color: #000000;
+  font-family: Arial, Sans-Serif, Myriad Web;
+  font-size: 10pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  margin-bottom: 0.0pt;
+  margin-left: 61.2pt;
+  margin-right: 0pt;
+  margin-top: 7.0pt;
+  text-align: Left;
+  text-indent: 0pt;
+  text-transform: none;
+  vertical-align: baseline;
+}
+
+.NoteBeforeCode_outer
+{
+  margin-bottom: 0.0pt;
+  margin-right: 0pt;
+  margin-top: 7.0pt;
+}
+
+.NoteBeforeCode_inner
+{
+  color: #000000;
+  font-family: Arial, Sans-Serif, Myriad Web;
+  font-size: 10pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-align: Left;
+  text-transform: none;
+  vertical-align: baseline;
+  margin-left: 0pt;
+  margin-right: 0pt;
+  margin-top: 0pt;
+  margin-bottom: 0pt;
+  padding-left: 0pt;
+  padding-right: 0pt;
+  padding-top: 0pt;
+  padding-bottom: 0pt;
+}
+
+div.NotesBulletLast
+{
+  color: #000000;
+  font-family: Arial, Sans-Serif, Myriad Web;
+  font-size: 10pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  margin-bottom: 10.0pt;
+  margin-left: 61.2pt;
+  margin-right: 0pt;
+  margin-top: 0.0pt;
+  text-align: Left;
+  text-indent: -14.400000000000005pt;
+  text-transform: none;
+  vertical-align: baseline;
+}
+
+.NotesBulletLast_outer
+{
+  margin-bottom: 10.0pt;
+  margin-right: 0pt;
+  margin-top: 0.0pt;
+}
+
+.NotesBulletLast_inner
+{
+  color: #000000;
+  font-family: Arial, Sans-Serif, Myriad Web;
+  font-size: 10pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-align: Left;
+  text-transform: none;
+  vertical-align: baseline;
+  margin-left: 0pt;
+  margin-right: 0pt;
+  margin-top: 0pt;
+  margin-bottom: 0pt;
+  padding-left: 0pt;
+  padding-right: 0pt;
+  padding-top: 0pt;
+  padding-bottom: 0pt;
+}
+
+div.NotesMultipleFirst
+{
+  color: #000000;
+  font-family: Arial, Sans-Serif, Myriad Web;
+  font-size: 10pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  margin-bottom: 0.0pt;
+  margin-left: 46.8pt;
+  margin-right: 0pt;
+  margin-top: 7.0pt;
+  text-align: Left;
+  text-indent: 0pt;
+  text-transform: none;
+  vertical-align: baseline;
+}
+
+.NotesMultipleFirst_outer
+{
+  margin-bottom: 0.0pt;
+  margin-right: 0pt;
+  margin-top: 7.0pt;
+}
+
+.NotesMultipleFirst_inner
+{
+  color: #000000;
+  font-family: Arial, Sans-Serif, Myriad Web;
+  font-size: 10pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-align: Left;
+  text-transform: none;
+  vertical-align: baseline;
+  margin-left: 0pt;
+  margin-right: 0pt;
+  margin-top: 0pt;
+  margin-bottom: 0pt;
+  padding-left: 0pt;
+  padding-right: 0pt;
+  padding-top: 0pt;
+  padding-bottom: 0pt;
+}
+
+div.NotesMultipleLast
+{
+  color: #000000;
+  font-family: Arial, Sans-Serif, Myriad Web;
+  font-size: 10pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  margin-bottom: 10.0pt;
+  margin-left: 46.8pt;
+  margin-right: 0pt;
+  margin-top: 6.0pt;
+  text-align: Left;
+  text-indent: 0pt;
+  text-transform: none;
+  vertical-align: baseline;
+}
+
+.NotesMultipleLast_outer
+{
+  margin-bottom: 10.0pt;
+  margin-right: 0pt;
+  margin-top: 6.0pt;
+}
+
+.NotesMultipleLast_inner
+{
+  color: #000000;
+  font-family: Arial, Sans-Serif, Myriad Web;
+  font-size: 10pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-align: Left;
+  text-transform: none;
+  vertical-align: baseline;
+  margin-left: 0pt;
+  margin-right: 0pt;
+  margin-top: 0pt;
+  margin-bottom: 0pt;
+  padding-left: 0pt;
+  padding-right: 0pt;
+  padding-top: 0pt;
+  padding-bottom: 0pt;
+}
+
+div.Numbered
+{
+  color: #000000;
+  font-family: Arial, Sans-Serif, Myriad Web;
+  font-size: 10pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  margin-bottom: 0.0pt;
+  margin-left: 18pt;
+  margin-right: 0pt;
+  margin-top: 0.0pt;
+  text-align: Left;
+  text-indent: -18pt;
+  text-transform: none;
+  vertical-align: baseline;
+}
+
+.Numbered_outer
+{
+  margin-bottom: 0.0pt;
+  margin-right: 0pt;
+  margin-top: 0.0pt;
+}
+
+.Numbered_inner
+{
+  color: #000000;
+  font-family: Arial, Sans-Serif, Myriad Web;
+  font-size: 10pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-align: Left;
+  text-transform: none;
+  vertical-align: baseline;
+  margin-left: 0pt;
+  margin-right: 0pt;
+  margin-top: 0pt;
+  margin-bottom: 0pt;
+  padding-left: 0pt;
+  padding-right: 0pt;
+  padding-top: 0pt;
+  padding-bottom: 0pt;
+}
+
+div.Numbered1
+{
+  color: #000000;
+  font-family: Arial, Sans-Serif, Myriad Web;
+  font-size: 10pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  margin-bottom: 0.0pt;
+  margin-left: 18pt;
+  margin-right: 0pt;
+  margin-top: 0.0pt;
+  text-align: Left;
+  text-indent: -18pt;
+  text-transform: none;
+  vertical-align: baseline;
+}
+
+.Numbered1_outer
+{
+  margin-bottom: 0.0pt;
+  margin-right: 0pt;
+  margin-top: 0.0pt;
+}
+
+.Numbered1_inner
+{
+  color: #000000;
+  font-family: Arial, Sans-Serif, Myriad Web;
+  font-size: 10pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-align: Left;
+  text-transform: none;
+  vertical-align: baseline;
+  margin-left: 0pt;
+  margin-right: 0pt;
+  margin-top: 0pt;
+  margin-bottom: 0pt;
+  padding-left: 0pt;
+  padding-right: 0pt;
+  padding-top: 0pt;
+  padding-bottom: 0pt;
+}
+
+div.ObjectHeading1
+{
+  color: #000000;
+  font-family: Arial, Sans-Serif, Myriad Web;
+  font-size: 10pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  margin-bottom: 6.0pt;
+  margin-left: 0pt;
+  margin-right: 0pt;
+  margin-top: 23.0pt;
+  text-align: Left;
+  text-indent: 0pt;
+  text-transform: none;
+  vertical-align: baseline;
+}
+
+.ObjectHeading1_outer
+{
+  margin-bottom: 6.0pt;
+  margin-right: 0pt;
+  margin-top: 23.0pt;
+}
+
+.ObjectHeading1_inner
+{
+  color: #000000;
+  font-family: Arial, Sans-Serif, Myriad Web;
+  font-size: 10pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-align: Left;
+  text-transform: none;
+  vertical-align: baseline;
+  margin-left: 0pt;
+  margin-right: 0pt;
+  margin-top: 0pt;
+  margin-bottom: 0pt;
+  padding-left: 0pt;
+  padding-right: 0pt;
+  padding-top: 0pt;
+  padding-bottom: 0pt;
+}
+
+div.PopupText
+{
+  color: Blue;
+  font-family: Perpetua;
+  font-size: 10pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  margin-bottom: 0.0pt;
+  margin-left: 61.2pt;
+  margin-right: 0pt;
+  margin-top: 5.0pt;
+  text-align: Left;
+  text-indent: 0pt;
+  text-transform: none;
+  vertical-align: baseline;
+}
+
+.PopupText_outer
+{
+  margin-bottom: 0.0pt;
+  margin-right: 0pt;
+  margin-top: 5.0pt;
+}
+
+.PopupText_inner
+{
+  color: Blue;
+  font-family: Perpetua;
+  font-size: 10pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-align: Left;
+  text-transform: none;
+  vertical-align: baseline;
+  margin-left: 0pt;
+  margin-right: 0pt;
+  margin-top: 0pt;
+  margin-bottom: 0pt;
+  padding-left: 0pt;
+  padding-right: 0pt;
+  padding-top: 0pt;
+  padding-bottom: 0pt;
+}
+
+div.Procedure
+{
+  color: #000000;
+  font-family: Arial, Sans-Serif, Myriad Web;
+  font-size: 10pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: bold;
+  margin-bottom: 0.0pt;
+  margin-left: 46.8pt;
+  margin-right: 0pt;
+  margin-top: 12.0pt;
+  text-align: Left;
+  text-indent: 0pt;
+  text-transform: none;
+  vertical-align: baseline;
+}
+
+.Procedure_outer
+{
+  margin-bottom: 0.0pt;
+  margin-right: 0pt;
+  margin-top: 12.0pt;
+}
+
+.Procedure_inner
+{
+  color: #000000;
+  font-family: Arial, Sans-Serif, Myriad Web;
+  font-size: 10pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: bold;
+  text-align: Left;
+  text-transform: none;
+  vertical-align: baseline;
+  margin-left: 0pt;
+  margin-right: 0pt;
+  margin-top: 0pt;
+  margin-bottom: 0pt;
+  padding-left: 0pt;
+  padding-right: 0pt;
+  padding-top: 0pt;
+  padding-bottom: 0pt;
+}
+
+div.Question
+{
+  color: #000000;
+  font-family: Arial, Sans-Serif, Myriad Web;
+  font-size: 10pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  margin-bottom: 4.0pt;
+  margin-left: 61.2pt;
+  margin-right: 9pt;
+  margin-top: 15.0pt;
+  text-align: Left;
+  text-indent: -14.400000000000005pt;
+  text-transform: none;
+  vertical-align: baseline;
+}
+
+.Question_outer
+{
+  margin-bottom: 4.0pt;
+  margin-right: 9pt;
+  margin-top: 15.0pt;
+}
+
+.Question_inner
+{
+  color: #000000;
+  font-family: Arial, Sans-Serif, Myriad Web;
+  font-size: 10pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-align: Left;
+  text-transform: none;
+  vertical-align: baseline;
+  margin-left: 0pt;
+  margin-right: 0pt;
+  margin-top: 0pt;
+  margin-bottom: 0pt;
+  padding-left: 0pt;
+  padding-right: 0pt;
+  padding-top: 0pt;
+  padding-bottom: 0pt;
+}
+
+div.Reference_Heading
+{
+  color: #000000;
+  font-family: Arial, Sans-Serif, Myriad Web;
+  font-size: 10pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  margin-bottom: 5.0pt;
+  margin-left: 46.8pt;
+  margin-right: 0pt;
+  margin-top: 11.0pt;
+  text-align: Left;
+  text-indent: 0pt;
+  text-transform: none;
+  vertical-align: baseline;
+}
+
+.Reference_Heading_outer
+{
+  margin-bottom: 5.0pt;
+  margin-right: 0pt;
+  margin-top: 11.0pt;
+}
+
+.Reference_Heading_inner
+{
+  color: #000000;
+  font-family: Arial, Sans-Serif, Myriad Web;
+  font-size: 10pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-align: Left;
+  text-transform: none;
+  vertical-align: baseline;
+  margin-left: 0pt;
+  margin-right: 0pt;
+  margin-top: 0pt;
+  margin-bottom: 0pt;
+  padding-left: 0pt;
+  padding-right: 0pt;
+  padding-top: 0pt;
+  padding-bottom: 0pt;
+}
+
+div.RefHeading
+{
+  color: #000000;
+  font-family: Arial, Sans-Serif, Myriad Web;
+  font-size: 15pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: bold;
+  margin-bottom: 3.0pt;
+  margin-left: 61.2pt;
+  margin-right: 0pt;
+  margin-top: 16.0pt;
+  text-align: Left;
+  text-indent: -14.400000000000005pt;
+  text-transform: none;
+  vertical-align: baseline;
+}
+
+.RefHeading_outer
+{
+  margin-bottom: 3.0pt;
+  margin-right: 0pt;
+  margin-top: 16.0pt;
+}
+
+.RefHeading_inner
+{
+  color: #000000;
+  font-family: Arial, Sans-Serif, Myriad Web;
+  font-size: 15pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: bold;
+  text-align: Left;
+  text-transform: none;
+  vertical-align: baseline;
+  margin-left: 0pt;
+  margin-right: 0pt;
+  margin-top: 0pt;
+  margin-bottom: 0pt;
+  padding-left: 0pt;
+  padding-right: 0pt;
+  padding-top: 0pt;
+  padding-bottom: 0pt;
+}
+
+div.RelatedTopicHeading
+{
+  color: #000000;
+  font-family: Arial, Sans-Serif, Myriad Web;
+  font-size: 12pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: bold;
+  margin-bottom: 2.0pt;
+  margin-left: 46.8pt;
+  margin-right: 0pt;
+  margin-top: 14.0pt;
+  text-align: Left;
+  text-indent: 0pt;
+  text-transform: none;
+  vertical-align: baseline;
+}
+
+.RelatedTopicHeading_outer
+{
+  margin-bottom: 2.0pt;
+  margin-right: 0pt;
+  margin-top: 14.0pt;
+}
+
+.RelatedTopicHeading_inner
+{
+  color: #000000;
+  font-family: Arial, Sans-Serif, Myriad Web;
+  font-size: 12pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: bold;
+  text-align: Left;
+  text-transform: none;
+  vertical-align: baseline;
+  margin-left: 0pt;
+  margin-right: 0pt;
+  margin-top: 0pt;
+  margin-bottom: 0pt;
+  padding-left: 0pt;
+  padding-right: 0pt;
+  padding-top: 0pt;
+  padding-bottom: 0pt;
+}
+
+div.RelatedTopicItem
+{
+  color: #000000;
+  font-family: Arial, Sans-Serif, Myriad Web;
+  font-size: 10pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  margin-bottom: 0.0pt;
+  margin-left: 61.2pt;
+  margin-right: 0pt;
+  margin-top: 0.0pt;
+  text-align: Left;
+  text-indent: -14.400000000000005pt;
+  text-transform: none;
+  vertical-align: baseline;
+}
+
+.RelatedTopicItem_outer
+{
+  margin-bottom: 0.0pt;
+  margin-right: 0pt;
+  margin-top: 0.0pt;
+}
+
+.RelatedTopicItem_inner
+{
+  color: #000000;
+  font-family: Arial, Sans-Serif, Myriad Web;
+  font-size: 10pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-align: Left;
+  text-transform: none;
+  vertical-align: baseline;
+  margin-left: 0pt;
+  margin-right: 0pt;
+  margin-top: 0pt;
+  margin-bottom: 0pt;
+  padding-left: 0pt;
+  padding-right: 0pt;
+  padding-top: 0pt;
+  padding-bottom: 0pt;
+}
+
+div.SeparatorStyle
+{
+  color: #ff0000;
+  font-family: Arial, Sans-Serif, Myriad Web;
+  font-size: 10pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  margin-bottom: 6.0pt;
+  margin-left: 0pt;
+  margin-right: 0pt;
+  margin-top: 23.0pt;
+  text-align: Left;
+  text-indent: 0pt;
+  text-transform: none;
+  vertical-align: baseline;
+}
+
+.SeparatorStyle_outer
+{
+  margin-bottom: 6.0pt;
+  margin-right: 0pt;
+  margin-top: 23.0pt;
+}
+
+.SeparatorStyle_inner
+{
+  color: #ff0000;
+  font-family: Arial, Sans-Serif, Myriad Web;
+  font-size: 10pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-align: Left;
+  text-transform: none;
+  vertical-align: baseline;
+  margin-left: 0pt;
+  margin-right: 0pt;
+  margin-top: 0pt;
+  margin-bottom: 0pt;
+  padding-left: 0pt;
+  padding-right: 0pt;
+  padding-top: 0pt;
+  padding-bottom: 0pt;
+}
+
+div.SeparatorStyle2
+{
+  color: #ff0000;
+  font-family: Arial, Sans-Serif, Myriad Web;
+  font-size: 10pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  margin-bottom: 6.0pt;
+  margin-left: 61.2pt;
+  margin-right: 0pt;
+  margin-top: 23.0pt;
+  text-align: Left;
+  text-indent: 0pt;
+  text-transform: none;
+  vertical-align: baseline;
+}
+
+.SeparatorStyle2_outer
+{
+  margin-bottom: 6.0pt;
+  margin-right: 0pt;
+  margin-top: 23.0pt;
+}
+
+.SeparatorStyle2_inner
+{
+  color: #ff0000;
+  font-family: Arial, Sans-Serif, Myriad Web;
+  font-size: 10pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-align: Left;
+  text-transform: none;
+  vertical-align: baseline;
+  margin-left: 0pt;
+  margin-right: 0pt;
+  margin-top: 0pt;
+  margin-bottom: 0pt;
+  padding-left: 0pt;
+  padding-right: 0pt;
+  padding-top: 0pt;
+  padding-bottom: 0pt;
+}
+
+div.Step1
+{
+  color: #000000;
+  font-family: Arial, 'Myriad Web', Sans-Serif;
+  font-size: 10pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  margin-bottom: 2.0pt;
+  margin-left: 61.2pt;
+  margin-right: 9pt;
+  margin-top: 8.0pt;
+  text-align: Left;
+  text-indent: -14.400000000000005pt;
+  text-transform: none;
+  vertical-align: baseline;
+}
+
+.Step1_outer
+{
+  margin-bottom: 2.0pt;
+  margin-right: 9pt;
+  margin-top: 8.0pt;
+}
+
+.Step1_inner
+{
+  color: #000000;
+  font-family: Arial, 'Myriad Web', Sans-Serif;
+  font-size: 10pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-align: Left;
+  text-transform: none;
+  vertical-align: baseline;
+  margin-left: 0pt;
+  margin-right: 0pt;
+  margin-top: 0pt;
+  margin-bottom: 0pt;
+  padding-left: 0pt;
+  padding-right: 0pt;
+  padding-top: 0pt;
+  padding-bottom: 0pt;
+}
+
+div.StepA1
+{
+  color: #000000;
+  font-family: Arial, Sans-Serif, Myriad Web;
+  font-size: 10pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  margin-bottom: 2.0pt;
+  margin-left: 86.4pt;
+  margin-right: 9pt;
+  margin-top: 4.0pt;
+  text-align: Left;
+  text-indent: -14.400000000000005pt;
+  text-transform: none;
+  vertical-align: baseline;
+}
+
+.StepA1_outer
+{
+  margin-bottom: 2.0pt;
+  margin-right: 9pt;
+  margin-top: 4.0pt;
+}
+
+.StepA1_inner
+{
+  color: #000000;
+  font-family: Arial, Sans-Serif, Myriad Web;
+  font-size: 10pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-align: Left;
+  text-transform: none;
+  vertical-align: baseline;
+  margin-left: 0pt;
+  margin-right: 0pt;
+  margin-top: 0pt;
+  margin-bottom: 0pt;
+  padding-left: 0pt;
+  padding-right: 0pt;
+  padding-top: 0pt;
+  padding-bottom: 0pt;
+}
+
+div.StepANext
+{
+  color: #000000;
+  font-family: Arial, Sans-Serif, Myriad Web;
+  font-size: 10pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  margin-bottom: 2.0pt;
+  margin-left: 86.4pt;
+  margin-right: 9pt;
+  margin-top: 4.0pt;
+  text-align: Left;
+  text-indent: -14.400000000000005pt;
+  text-transform: none;
+  vertical-align: baseline;
+}
+
+.StepANext_outer
+{
+  margin-bottom: 2.0pt;
+  margin-right: 9pt;
+  margin-top: 4.0pt;
+}
+
+.StepANext_inner
+{
+  color: #000000;
+  font-family: Arial, Sans-Serif, Myriad Web;
+  font-size: 10pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-align: Left;
+  text-transform: none;
+  vertical-align: baseline;
+  margin-left: 0pt;
+  margin-right: 0pt;
+  margin-top: 0pt;
+  margin-bottom: 0pt;
+  padding-left: 0pt;
+  padding-right: 0pt;
+  padding-top: 0pt;
+  padding-bottom: 0pt;
+}
+
+div.StepBullet
+{
+  color: #000000;
+  font-family: Arial, Sans-Serif, Myriad Web;
+  font-size: 10pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  margin-bottom: 2.0pt;
+  margin-left: 72pt;
+  margin-right: 9pt;
+  margin-top: 4.0pt;
+  text-align: Left;
+  text-indent: -10.799999999999997pt;
+  text-transform: none;
+  vertical-align: baseline;
+}
+
+.StepBullet_outer
+{
+  margin-bottom: 2.0pt;
+  margin-right: 9pt;
+  margin-top: 4.0pt;
+}
+
+.StepBullet_inner
+{
+  color: #000000;
+  font-family: Arial, Sans-Serif, Myriad Web;
+  font-size: 10pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-align: Left;
+  text-transform: none;
+  vertical-align: baseline;
+  margin-left: 0pt;
+  margin-right: 0pt;
+  margin-top: 0pt;
+  margin-bottom: 0pt;
+  padding-left: 0pt;
+  padding-right: 0pt;
+  padding-top: 0pt;
+  padding-bottom: 0pt;
+}
+
+div.StepBulletText
+{
+  color: #000000;
+  font-family: Arial, Sans-Serif, Myriad Web;
+  font-size: 10pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  margin-bottom: 2.0pt;
+  margin-left: 72pt;
+  margin-right: 9pt;
+  margin-top: 4.0pt;
+  text-align: Left;
+  text-indent: 0pt;
+  text-transform: none;
+  vertical-align: baseline;
+}
+
+.StepBulletText_outer
+{
+  margin-bottom: 2.0pt;
+  margin-right: 9pt;
+  margin-top: 4.0pt;
+}
+
+.StepBulletText_inner
+{
+  color: #000000;
+  font-family: Arial, Sans-Serif, Myriad Web;
+  font-size: 10pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-align: Left;
+  text-transform: none;
+  vertical-align: baseline;
+  margin-left: 0pt;
+  margin-right: 0pt;
+  margin-top: 0pt;
+  margin-bottom: 0pt;
+  padding-left: 0pt;
+  padding-right: 0pt;
+  padding-top: 0pt;
+  padding-bottom: 0pt;
+}
+
+div.StepCode
+{
+  color: #000000;
+  font-family: 'Courier New', Monospace;
+  font-size: 10pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  margin-bottom: 2.0pt;
+  margin-left: 61.2pt;
+  margin-right: 9pt;
+  margin-top: 4.0pt;
+  text-align: Left;
+  text-indent: 0pt;
+  text-transform: none;
+  vertical-align: baseline;
+}
+
+.StepCode_outer
+{
+  margin-bottom: 2.0pt;
+  margin-right: 9pt;
+  margin-top: 4.0pt;
+}
+
+.StepCode_inner
+{
+  color: #000000;
+  font-family: 'Courier New', Monospace;
+  font-size: 10pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-align: Left;
+  text-transform: none;
+  vertical-align: baseline;
+  margin-left: 0pt;
+  margin-right: 0pt;
+  margin-top: 0pt;
+  margin-bottom: 0pt;
+  padding-left: 0pt;
+  padding-right: 0pt;
+  padding-top: 0pt;
+  padding-bottom: 0pt;
+}
+
+div.StepNote
+{
+  color: #000000;
+  font-family: Arial, Sans-Serif, Myriad Web;
+  font-size: 10pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  margin-bottom: 2.0pt;
+  margin-left: 61.2pt;
+  margin-right: 9pt;
+  margin-top: 8.0pt;
+  text-align: Left;
+  text-indent: 0pt;
+  text-transform: none;
+  vertical-align: baseline;
+}
+
+.StepNote_outer
+{
+  margin-bottom: 2.0pt;
+  margin-right: 9pt;
+  margin-top: 8.0pt;
+}
+
+.StepNote_inner
+{
+  color: #000000;
+  font-family: Arial, Sans-Serif, Myriad Web;
+  font-size: 10pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-align: Left;
+  text-transform: none;
+  vertical-align: baseline;
+  margin-left: 0pt;
+  margin-right: 0pt;
+  margin-top: 0pt;
+  margin-bottom: 0pt;
+  padding-left: 0pt;
+  padding-right: 0pt;
+  padding-top: 0pt;
+  padding-bottom: 0pt;
+}
+
+div.StepNum
+{
+  color: #000000;
+  font-family: Arial, Sans-Serif, Myriad Web;
+  font-size: 10pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  margin-bottom: 1.0pt;
+  margin-left: 61.2pt;
+  margin-right: 9pt;
+  margin-top: 7.0pt;
+  text-align: Left;
+  text-indent: -14.400000000000005pt;
+  text-transform: none;
+  vertical-align: baseline;
+}
+
+.StepNum_outer
+{
+  margin-bottom: 1.0pt;
+  margin-right: 9pt;
+  margin-top: 7.0pt;
+}
+
+.StepNum_inner
+{
+  color: #000000;
+  font-family: Arial, Sans-Serif, Myriad Web;
+  font-size: 10pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-align: Left;
+  text-transform: none;
+  vertical-align: baseline;
+  margin-left: 0pt;
+  margin-right: 0pt;
+  margin-top: 0pt;
+  margin-bottom: 0pt;
+  padding-left: 0pt;
+  padding-right: 0pt;
+  padding-top: 0pt;
+  padding-bottom: 0pt;
+}
+
+div.StepText
+{
+  color: #000000;
+  font-family: Arial, Sans-Serif, Myriad Web;
+  font-size: 10pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  margin-bottom: 2.0pt;
+  margin-left: 61.2pt;
+  margin-right: 9pt;
+  margin-top: 8.0pt;
+  text-align: Left;
+  text-indent: 0pt;
+  text-transform: none;
+  vertical-align: baseline;
+}
+
+.StepText_outer
+{
+  margin-bottom: 2.0pt;
+  margin-right: 9pt;
+  margin-top: 8.0pt;
+}
+
+.StepText_inner
+{
+  color: #000000;
+  font-family: Arial, Sans-Serif, Myriad Web;
+  font-size: 10pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-align: Left;
+  text-transform: none;
+  vertical-align: baseline;
+  margin-left: 0pt;
+  margin-right: 0pt;
+  margin-top: 0pt;
+  margin-bottom: 0pt;
+  padding-left: 0pt;
+  padding-right: 0pt;
+  padding-top: 0pt;
+  padding-bottom: 0pt;
+}
+
+div.StepTip
+{
+  color: #000000;
+  font-family: Arial, Sans-Serif, Myriad Web;
+  font-size: 10pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  margin-bottom: 2.0pt;
+  margin-left: 61.2pt;
+  margin-right: 9pt;
+  margin-top: 8.0pt;
+  text-align: Left;
+  text-indent: 0pt;
+  text-transform: none;
+  vertical-align: baseline;
+}
+
+.StepTip_outer
+{
+  margin-bottom: 2.0pt;
+  margin-right: 9pt;
+  margin-top: 8.0pt;
+}
+
+.StepTip_inner
+{
+  color: #000000;
+  font-family: Arial, Sans-Serif, Myriad Web;
+  font-size: 10pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-align: Left;
+  text-transform: none;
+  vertical-align: baseline;
+  margin-left: 0pt;
+  margin-right: 0pt;
+  margin-top: 0pt;
+  margin-bottom: 0pt;
+  padding-left: 0pt;
+  padding-right: 0pt;
+  padding-top: 0pt;
+  padding-bottom: 0pt;
+}
+
+div.TableFootnote
+{
+  color: #000000;
+  font-family: Arial, Sans-Serif, Myriad Web;
+  font-size: 10pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  margin-bottom: 0.0pt;
+  margin-left: 30.00024pt;
+  margin-right: 18pt;
+  margin-top: 0.0pt;
+  text-align: Left;
+  text-indent: -12.000240000000001pt;
+  text-transform: none;
+  vertical-align: baseline;
+}
+
+.TableFootnote_outer
+{
+  margin-bottom: 0.0pt;
+  margin-right: 18pt;
+  margin-top: 0.0pt;
+}
+
+.TableFootnote_inner
+{
+  color: #000000;
+  font-family: Arial, Sans-Serif, Myriad Web;
+  font-size: 10pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-align: Left;
+  text-transform: none;
+  vertical-align: baseline;
+  margin-left: 0pt;
+  margin-right: 0pt;
+  margin-top: 0pt;
+  margin-bottom: 0pt;
+  padding-left: 0pt;
+  padding-right: 0pt;
+  padding-top: 0pt;
+  padding-bottom: 0pt;
+}
+
+div.TableTitle
+{
+  color: #000000;
+  font-family: Arial, Sans-Serif, Myriad Web;
+  font-size: 10pt;
+  font-style: italic;
+  font-variant: normal;
+  font-weight: bold;
+  margin-bottom: 0.0pt;
+  margin-left: 46.8pt;
+  margin-right: 0pt;
+  margin-top: 2.0pt;
+  text-align: justify;
+  text-indent: 0pt;
+  text-transform: none;
+  vertical-align: baseline;
+}
+
+.TableTitle_outer
+{
+  margin-bottom: 0.0pt;
+  margin-right: 0pt;
+  margin-top: 2.0pt;
+}
+
+.TableTitle_inner
+{
+  color: #000000;
+  font-family: Arial, Sans-Serif, Myriad Web;
+  font-size: 10pt;
+  font-style: italic;
+  font-variant: normal;
+  font-weight: bold;
+  text-align: justify;
+  text-transform: none;
+  vertical-align: baseline;
+  margin-left: 0pt;
+  margin-right: 0pt;
+  margin-top: 0pt;
+  margin-bottom: 0pt;
+  padding-left: 0pt;
+  padding-right: 0pt;
+  padding-top: 0pt;
+  padding-bottom: 0pt;
+}
+
+div.Term_Ref
+{
+  color: #000000;
+  font-family: Arial, Sans-Serif, Myriad Web;
+  font-size: 10pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  margin-bottom: 0.0pt;
+  margin-left: 46.8pt;
+  margin-right: 9pt;
+  margin-top: 5.0pt;
+  text-align: Left;
+  text-indent: 0pt;
+  text-transform: none;
+  vertical-align: baseline;
+}
+
+.Term_Ref_outer
+{
+  margin-bottom: 0.0pt;
+  margin-right: 9pt;
+  margin-top: 5.0pt;
+}
+
+.Term_Ref_inner
+{
+  color: #000000;
+  font-family: Arial, Sans-Serif, Myriad Web;
+  font-size: 10pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-align: Left;
+  text-transform: none;
+  vertical-align: baseline;
+  margin-left: 0pt;
+  margin-right: 0pt;
+  margin-top: 0pt;
+  margin-bottom: 0pt;
+  padding-left: 0pt;
+  padding-right: 0pt;
+  padding-top: 0pt;
+  padding-bottom: 0pt;
+}
+
+div.Tip
+{
+  color: #000000;
+  font-family: Arial, Sans-Serif, Myriad Web;
+  font-size: 10pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  margin-bottom: 10.0pt;
+  margin-left: 46.8pt;
+  margin-right: 9pt;
+  margin-top: 7.0pt;
+  text-align: Left;
+  text-indent: 0pt;
+  text-transform: none;
+  vertical-align: baseline;
+}
+
+.Tip_outer
+{
+  margin-bottom: 10.0pt;
+  margin-right: 9pt;
+  margin-top: 7.0pt;
+}
+
+.Tip_inner
+{
+  color: #000000;
+  font-family: Arial, Sans-Serif, Myriad Web;
+  font-size: 10pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-align: Left;
+  text-transform: none;
+  vertical-align: baseline;
+  margin-left: 0pt;
+  margin-right: 0pt;
+  margin-top: 0pt;
+  margin-bottom: 0pt;
+  padding-left: 0pt;
+  padding-right: 0pt;
+  padding-top: 0pt;
+  padding-bottom: 0pt;
+}
+
+div.Title
+{
+  color: #000000;
+  font-family: Arial, Sans-Serif, Myriad Web;
+  font-size: 10pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: bold;
+  margin-bottom: 12.0pt;
+  margin-left: 0pt;
+  margin-right: 0pt;
+  margin-top: 24.0pt;
+  text-align: Center;
+  text-indent: 0pt;
+  text-transform: none;
+  vertical-align: baseline;
+}
+
+.Title_outer
+{
+  margin-bottom: 12.0pt;
+  margin-right: 0pt;
+  margin-top: 24.0pt;
+}
+
+.Title_inner
+{
+  color: #000000;
+  font-family: Arial, Sans-Serif, Myriad Web;
+  font-size: 10pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: bold;
+  text-align: Center;
+  text-transform: none;
+  vertical-align: baseline;
+  margin-left: 0pt;
+  margin-right: 0pt;
+  margin-top: 0pt;
+  margin-bottom: 0pt;
+  padding-left: 0pt;
+  padding-right: 0pt;
+  padding-top: 0pt;
+  padding-bottom: 0pt;
+}
+
+div.WhatIsThis
+{
+  color: #000000;
+  font-family: Arial, Sans-Serif, Myriad Web;
+  font-size: 10pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  margin-bottom: 0.0pt;
+  margin-left: 61.2pt;
+  margin-right: 0pt;
+  margin-top: 5.0pt;
+  text-align: Left;
+  text-indent: 0pt;
+  text-transform: none;
+  vertical-align: baseline;
+}
+
+.WhatIsThis_outer
+{
+  margin-bottom: 0.0pt;
+  margin-right: 0pt;
+  margin-top: 5.0pt;
+}
+
+.WhatIsThis_inner
+{
+  color: #000000;
+  font-family: Arial, Sans-Serif, Myriad Web;
+  font-size: 10pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-align: Left;
+  text-transform: none;
+  vertical-align: baseline;
+  margin-left: 0pt;
+  margin-right: 0pt;
+  margin-top: 0pt;
+  margin-bottom: 0pt;
+  padding-left: 0pt;
+  padding-right: 0pt;
+  padding-top: 0pt;
+  padding-bottom: 0pt;
+}
+
+span.bold
+{
+  font-weight: bold;
+}
+
+span.Book_Titles
+{
+  font-style: italic;
+  font-variant: normal;
+  text-transform: none;
+  vertical-align: baseline;
+}
+
+span.BulletSymbol
+{
+  font-family: Wingdings;
+}
+
+span.Cell_Code
+{
+  color: #000000;
+  font-family: "Lucida Console";
+  font-size: 8.0pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-transform: none;
+  vertical-align: baseline;
+}
+
+span.Code
+{
+  color: #000000;
+  font-family: 'Lucida Console', 'Courier New', Monospace;
+  font-size: 8.5pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-transform: none;
+  vertical-align: baseline;
+}
+
+span.Emphasis
+{
+  font-style: italic;
+  font-variant: normal;
+  text-transform: none;
+  vertical-align: baseline;
+}
+
+span.EquationVariables
+{
+  font-style: italic;
+}
+
+span.GUI_Actions
+{
+  font-weight: bold;
+}
+
+span.HeaderSymbols
+{
+  color: #000000;
+  font-family: Wingdings;
+  font-size: 5.0pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-transform: none;
+  vertical-align: baseline;
+}
+
+span.Jump_X-ref
+{
+  color: #0000ff;
+  font-family: Arial, 'Myriad Web', Sans-Serif;
+  font-size: 10pt;
+  font-variant: normal;
+  text-transform: none;
+  vertical-align: baseline;
+}
+
+span.Note
+{
+  color: #000000;
+  font-family: "Myriad Condensed Web";
+  font-size: 9.5pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: bold;
+  text-transform: none;
+  vertical-align: baseline;
+}
+
+span.SmallCaps
+{
+  color: #000000;
+  font-family: Garamond;
+  font-size: 9.0pt;
+  font-style: normal;
+  font-weight: normal;
+  vertical-align: baseline;
+}
+
+span.StepNumber
+{
+  color: #000000;
+  font-family: "Myriad Condensed Web";
+  font-size: 11.0pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: bold;
+  text-transform: none;
+  vertical-align: baseline;
+}
+
+span.Term
+{
+  font-variant: normal;
+  font-weight: bold;
+  text-transform: none;
+  vertical-align: baseline;
+}
+
+span.Trademark
+{
+  color: #000000;
+  font-family: Perpetua;
+  font-size: 8.0pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-transform: none;
+  vertical-align: super;
+}
+
+span.Variable
+{
+  color: #000000;
+  font-family: "Lucida Console";
+  font-size: 8.5pt;
+  font-style: italic;
+  font-variant: normal;
+  font-weight: normal;
+  text-transform: none;
+  vertical-align: baseline;
+}
+
+table.Format_A
+{
+  border-collapse: collapse;
+  margin-bottom: 12.0pt;
+  margin-left: 0pt;
+  margin-right: 0pt;
+  margin-top: 12.0pt;
+  padding-bottom: 4pt;
+  padding-left: 6pt;
+  padding-right: 6pt;
+  padding-top: 6pt;
+  text-align: left;
+}
+
+table.Format_B
+{
+  border-collapse: collapse;
+  margin-bottom: 12.0pt;
+  margin-left: 0pt;
+  margin-right: 0pt;
+  margin-top: 12.0pt;
+  padding-bottom: 4pt;
+  padding-left: 6pt;
+  padding-right: 6pt;
+  padding-top: 6pt;
+  text-align: center;
+}
+
+table.UnstructMasterPageMaps
+{
+  border-collapse: collapse;
+  margin-bottom: 6.0pt;
+  margin-left: 0pt;
+  margin-right: 0pt;
+  margin-top: 6.0pt;
+  padding-bottom: 3pt;
+  padding-left: 3pt;
+  padding-right: 3pt;
+  padding-top: 3pt;
+  text-align: left;
+}
+
+table.Standard_Indent
+{
+  border-bottom-color: Black;
+  border-bottom-style: solid;
+  border-bottom-width: thin;
+  border-collapse: collapse;
+  border-left-color: Black;
+  border-left-style: solid;
+  border-left-width: thin;
+  border-right-color: Black;
+  border-right-style: solid;
+  border-right-width: thin;
+  border-top-color: Black;
+  border-top-style: solid;
+  border-top-width: thin;
+  margin-bottom: 4.0pt;
+  margin-left: 61.2pt;
+  margin-right: 0pt;
+  margin-top: 10.0pt;
+  padding-bottom: 2pt;
+  padding-left: 2pt;
+  padding-right: 2pt;
+  padding-top: 6pt;
+  text-align: left;
+  width: 80%;
+}
+
+table.Standard
+{
+  border-bottom-color: Black;
+  border-bottom-style: solid;
+  border-bottom-width: thin;
+  border-collapse: collapse;
+  border-left-color: Black;
+  border-left-style: solid;
+  border-left-width: thin;
+  border-right-color: Black;
+  border-right-style: solid;
+  border-right-width: thin;
+  border-top-color: Black;
+  border-top-style: solid;
+  border-top-width: thin;
+  margin-bottom: 17.5pt;
+  margin-left: 46.8pt;
+  margin-right: 0pt;
+  margin-top: 10.0pt;
+  padding-bottom: 2pt;
+  padding-left: 2pt;
+  padding-right: 2pt;
+  padding-top: 6pt;
+  text-align: left;
+  width: 80%;
+}
+

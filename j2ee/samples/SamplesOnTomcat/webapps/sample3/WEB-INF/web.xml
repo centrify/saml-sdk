@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app 
+		id="sample3" 
+		version="2.4" 
+		xmlns="http://java.sun.com/xml/ns/j2ee" 
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+		xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
+	<display-name>sample3</display-name>
+
+	
+	<servlet>
+		<display-name>CentrifySamlInitalizer</display-name>
+		<servlet-name>CentrifySamlInitalizer</servlet-name>
+		<servlet-class>com.centrify.cloud.saas.example.CentrifySamlInitalizer</servlet-class>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+	<servlet>
+		<description>
+		</description>
+		<display-name>SdkdemoServlet</display-name>
+		<servlet-name>SdkdemoServlet</servlet-name>
+		<servlet-class>com.centrify.cloud.saas.example.SdkdemoServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>SdkdemoServlet</servlet-name>
+		<url-pattern>/GetCustomers</url-pattern>
+	</servlet-mapping>
+	
+	
+	
+	<welcome-file-list>
+		<welcome-file>index.jsp</welcome-file>
+		<welcome-file>welcome.jsp</welcome-file>
+	</welcome-file-list>
+	
+
+</web-app>

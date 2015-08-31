@@ -1,0 +1,73 @@
+<project name="CentrifySaasJavaSDK sample" default="run-samples">
+	<property name="sdk-dir" value=".."/>
+
+	<path id="compile.classpath">
+		<fileset dir="${sdk-dir}/lib">
+			<include name="centrify-saas-java-sdk.jar"/>
+			<include name="jcl-over-slf4j-1.6.4.jar" />
+			<include name="joda-time-1.6.2.jar" />
+			<include name="json.jar" />
+			<include name="opensaml-2.5.3.jar" />
+			<include name="slf4j-api-1.6.4.jar" />
+			<include name="xmlsec-1.4.5.jar" />
+			<include name="xmltooling-1.3.4.jar" />
+		</fileset>
+	</path>
+
+	<target name="compile">
+		<mkdir dir="build/classes"/>
+		<javac srcdir="." 
+			destdir="build/classes" 
+			classpathref="compile.classpath" 
+			includeantruntime="false"
+			debug="true"
+		/>
+	</target>
+
+	<target name="run-samples" depends="compile">
+		<echo>Calling com.centrify.SamlResponseValidatorExample1 with valid-response</echo>
+		<java classname="com.centrify.SamlResponseValidatorExample1"
+		    classpath="build/classes" classpathref="compile.classpath">
+			<arg value="valid-response"/>
+		</java>
+		
+		<echo>Calling com.centrify.SamlResponseValidatorExample2 with valid-response</echo>
+		<java classname="com.centrify.SamlResponseValidatorExample2"
+		    classpath="build/classes" classpathref="compile.classpath">
+			<arg value="valid-response"/>
+		</java>
+
+		<echo>Calling com.centrify.SamlResponseValidatorExample1 with valid-response2</echo>
+		<java classname="com.centrify.SamlResponseValidatorExample1"
+		    classpath="build/classes" classpathref="compile.classpath">
+			<arg value="valid-response2"/>
+		</java>
+		
+		<echo>Calling com.centrify.SamlResponseValidatorExample2 with valid-response2</echo>
+		<java classname="com.centrify.SamlResponseValidatorExample2"
+		    classpath="build/classes" classpathref="compile.classpath">
+			<arg value="valid-response2"/>
+		</java>
+
+	</target>
+
+	<target name="run-CentrifySaasServiceExample" depends="compile">
+		<echo>Calling com.centrify.CentrifySaasServiceExample</echo>
+		<input message="Please enter the Centrify cloud url: " addproperty="example.url" defaultvalue="https://cloud.centrify.com/"/>
+		<input message="Please enter customer id: " addproperty="example.customerId" />
+		<input message="Please enter username: " addproperty="example.username" />
+		<input message="Please enter password: " addproperty="example.password" />
+		<input message="Please enter appKey: " addproperty="example.appKey" defaultvalue="pas"/>
+		<input message="Please enter spAudience " addproperty="example.spAudience" defaultvalue="http://sample.mydomain.com"/>
+		<java classname="com.centrify.CentrifySaasServiceExample"
+		    classpath="build/classes" classpathref="compile.classpath">
+			<arg value="${example.url}"/>
+			<arg value="${example.customerId}"/>
+			<arg value="${example.username}"/>
+			<arg value="${example.password}"/>
+			<arg value="${example.appKey}"/>
+			<arg value="${example.spAudience}"/>
+		</java>
+	</target>
+</project>
+

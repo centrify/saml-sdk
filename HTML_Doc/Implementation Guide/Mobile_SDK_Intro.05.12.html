@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <!-- MOTW-DISABLED saved from url=(0014)about:internet -->
+    <title>A user can log in to a SaaS application from the Centrify App</title>
+    <link rel="StyleSheet" href="css/Mobile_SDK_Intro.css" type="text/css" media="all" />
+    <link rel="StyleSheet" href="css/webworks.css" type="text/css" media="all" />
+    <script type="text/javascript" language="JavaScript1.2" src="scripts/expand.js"></script>
+    <script type="text/javascript" language="JavaScript1.2">
+      <!--
+        var  WebWorksRootPath = "";
+      // -->
+    </script>
+  </head>
+  <body>
+    <div style="text-align: left;">
+      <table cellspacing="0" summary="">
+        <tr>
+          <td>
+            <a href="toc.html"><img src="images/toc.gif" alt="Table of Contents" border="0" /></a>
+          </td>
+          <td>
+            <a href="Mobile_SDK_Intro.05.11.html"><img src="images/prev.gif" alt="Previous" border="0" /></a>
+          </td>
+          <td>
+            <a href="Mobile_SDK_Intro.05.13.html"><img src="images/next.gif" alt="Next" border="0" /></a>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <br />
+    <div class="WebWorks_Breadcrumbs" style="text-align: left;">
+      <a class="WebWorks_Breadcrumb_Link" href="Mobile_SDK_Intro.05.01.html#1139438">Introduction</a> : <a class="WebWorks_Breadcrumb_Link" href="Mobile_SDK_Intro.05.11.html#1139438">Use the SAML SaaS API to add SSO to SaaS applications</a> : A user can log in to a SaaS application from the Centrify App</div>
+    <hr align="left" />
+    <blockquote>
+      <div class="Heading2"><a name="1139438">A user can log in to a SaaS application from the Centrify App</a></div>
+      <div class="Body"><a name="1139439">The sequence of events when a user initiates the login from the Centrify application is </a>indicated by the numbered arrows in <span class="Jump_X-ref"><a href="#1139454" title="A user can log in to a SaaS application from the Centrify App">Figure 6. IdP-initiated login</a></span>. Before starting the sequence shown in the figure, the user logs into the Centrify user portal, or logs into their mobile device and opens the Centrify mobile application. Centrify Cloud Service authenticates the user with the Active Directory server of the user’s organization. The authentication is done in the background and indicated with blue arrows in the figure. </div>
+      <div class="Step1_outer" style="margin-left: 46.8pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="Step1_inner" style="width: 14.400000000000005pt; white-space: nowrap">
+                <span class="StepNumber">1	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="Step1_inner"><a name="1139443">The user selects a SaaS application in the Centrify user portal. </a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="StepNum_outer" style="margin-left: 46.8pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="StepNum_inner" style="width: 14.400000000000005pt; white-space: nowrap">
+                <span class="StepNumber">2	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="StepNum_inner"><a name="1139444">Centrify Cloud Service reads a custom SAML application profile specific to the </a>application that specifies what contents are needed for the SAML response and prepares the response. </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="StepNote">
+        <span class="Note">Note	</span><a name="1139445">The application-specific SAML script is created by the administrator when </a>configuring the SaaS application in Centrify Cloud Manager. See Centrify Application Configuration Help for instructions on configuring a SaaS application.</div>
+      <div class="StepText"><a name="1139446">Centrify Cloud Service signs the SAML response using the private key specified in </a>Centrify Cloud Manager for that application and sends the response back to the user’s browser.</div>
+      <div class="StepNum_outer" style="margin-left: 46.8pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="StepNum_inner" style="width: 14.400000000000005pt; white-space: nowrap">
+                <span class="StepNumber">3	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="StepNum_inner"><a name="1139447">The browser sends the SAML response on to the SaaS application, which uses the SAML </a>SaaS API to validate the response and extract the data the SaaS application needs to log in the user.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="StepNum_outer" style="margin-left: 46.8pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="StepNum_inner" style="width: 14.400000000000005pt; white-space: nowrap">
+                <span class="StepNumber">4	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="StepNum_inner"><a name="1139448">The user is now logged in and can use the SaaS application.</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="Body"><a name="1139449">&nbsp;</a></div>
+      <div class="Figure_caption">Figure 6.  <a name="1139454">IdP-initiated login<img class="Default" src="images/Centrify%20cloud%20IdP-init.png" width="400" height="373" style="display: block; float: none; left: 0.0; top: 0.0" alt="" /></a></div>
+    </blockquote>
+    <hr align="left" />
+    <table align="right">
+      <tr>
+        <td class="WebWorks_Company_Logo_Bottom">
+          <a href="http://www.centrify.com" target="external_window"><img src="centrifylogo.gif" border="0" /></a>
+        </td>
+      </tr>
+      <tr>
+        <td class="WebWorks_Company_Name_Bottom">
+          <a href="http://www.centrify.com" target="external_window">Centrify Corporation</a>
+        </td>
+      </tr>
+      <tr>
+        <td class="WebWorks_Company_Email_Bottom">
+          <a href="mailto:support@centrify.com">support@centrify.com</a>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>

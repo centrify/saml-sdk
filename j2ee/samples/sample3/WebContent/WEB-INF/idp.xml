@@ -1,0 +1,34 @@
+<EntityDescriptor xmlns="urn:oasis:names:tc:SAML:2.0:metadata"
+		xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion"
+		xmlns:ds="http://www.w3.org/2000/09/xmldsig#"
+		entityID="Centrify">
+	<IDPSSODescriptor WantAuthnRequestsSigned="false"
+			protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
+		 <KeyDescriptor use="signing">
+            <ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+                <ds:X509Data>
+                    <ds:X509Certificate>
+MIICwzCCAaugAwIBAgIERZrkFzANBgkqhkiG9w0BAQsFADARMQ8wDQYDVQQDEwZzY
+W1wbGUwIBcNMDAwMTAxMjE1NDA4WhgPMjA5OTEyMzEyMTU0MDhaMBExDzANBgNVBA
+MTBnNhbXBsZTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAMOWUNnWTy4
+lStzEj169KzFyx1UxPCvTEB0o/l/nrAXV9hcCMeaWSumvT3Ed5LRgJSuzKujMB/HP
+N9fCtryqkP+rVCqC3Iuw9KMeOGfk2och0eQZ3D9FVakrsy7zl+z/QKu5gTM0p8LNE
+2edYFytx8bI0C1SLFBgJ5JdvtcOxkcO0fOrvpDgfG5qnB1h04SDebt/1aiy+WdQBo
+wlVMxUqfrHOre5cpvFtLGQF9jvRC5myM58Px1ZzFGHIId50TGqLuUQuHu20FJw1Rc
+EZODRx2XS4hmVQECxEM+jan44/hK5YlOCYl8V7axnV8Ve0T9Rp+qa5QFwdP8NkPi9
+plikK4ECAwEAAaMhMB8wHQYDVR0OBBYEFO8ff/KqwCWPnpn9eDI/aaJ7yEPhMA0GC
+SqGSIb3DQEBCwUAA4IBAQCKgxSTsoLqG6M2uazopmOMHOmpTf0VOdVbM7f5M2AXfn
+lJ/TOlTbzGNsmDU/Y3nlnx12G1sAEgEilP+SGQSFw0PIHFmRNg1e4RKwrM2SwW+5D
+/QiE1yB4b1pBCaJeUzLHzxaUWAXimbJx8y0Rmgs5yOryAEZqcNn6MnW+odvK0Y5XX
+oC6m1CYvGf1veupHJbRR1pqfpifipLG+/tLu6jwmeUEfW2vB02DO1UOMnevLAEIIf
+SrvZihb7mNTFGxD1N2lyQAcuUQawwr2v9OcJS/fGhxIMVahHLIL+ExrFPBbxRGGIf
+0DHxwMIo+sNQojO1KxWZO97K6rIeyTZ9cuaPWa
+                    </ds:X509Certificate>
+                </ds:X509Data>
+            </ds:KeyInfo>
+        </KeyDescriptor>
+		<SingleSignOnService
+				Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST"
+				Location="https://HTTP_POST_URL_TO_IDP_HOST"/>
+	</IDPSSODescriptor>
+</EntityDescriptor>

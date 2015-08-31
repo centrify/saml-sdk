@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<EntityDescriptor xmlns="urn:oasis:names:tc:SAML:2.0:metadata" entityID="Centrify" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+        <IDPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
+                <KeyDescriptor><KeyInfo xmlns="http://www.w3.org/2000/09/xmldsig#">
+                        <X509Data><X509Certificate>
+MIIBuzCCASQCAQAwDQYJKoZIhvcNAQELBQAwJjEkMCIGA1UEAxMbQ2VudHJpZnlTYWFzSmF2YVNESyBleGFtcGxlMB4XDTEyMDIwMTA4MDAwMFoXDTIyMDIwMTA4MDAwMFowJjEkMCIGA1UEAxMbQ2VudHJpZnlTYWFzSmF2YVNESyBleGFtcGxlMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCMaOEV69wjR0ujO8FbLeex7gCVZrxnzCIfwhqvQ/WtW48ZUmpHy/6KG+u3CNhKagKHaWDioqNPEw/eKE21dlBUg/+N+/mgUw8QrDNw+SdhJsiskxxLMxtFqjyYWQKB8A+/TJ2cD3PrFs5yUGlVZI7TeFkEXxgZuiOO8aj3MhEs7QIDAQABMA0GCSqGSIb3DQEBCwUAA4GBAGWlBh4fVMonm8U//yky1tUkp7tGZtoVWp3Gr+5VgceAoncaFxGa+YtTiLzERF1hClaInkQYYKNZTVHrQpUqxDlGJcDdasbjS6NLVkagSEVR6tNm1uFd8iiHyZtbkoK16grYegqNz/WGnURopcWXlVUOGUcR2tzjl5BohhB/N8KA
+                        </X509Certificate></X509Data>
+                </KeyInfo></KeyDescriptor>
+                <NameIDFormat>urn:oasis:names:tc:SAML:1.1:nameid-format:emailAddress</NameIDFormat>
+                <SingleSignOnService Location="https://cloud.centrify.com/my?appkey=MyUniqueAppName&amp;customerid=MyCustomerId" Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST"/>
+                <SingleSignOnService Location="https://cloud.centrify.com/my?appkey=MyUniqueAppName&amp;customerid=MyCustomerId" Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect"/>
+                <Attribute xmlns="urn:oasis:names:tc:SAML:2.0:assertion" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:basic" Name="Email Address"/>
+        </IDPSSODescriptor>
+</EntityDescriptor>
+

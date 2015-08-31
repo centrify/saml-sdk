@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <!-- MOTW-DISABLED saved from url=(0014)about:internet -->
+    <title>Android MAS API Troubleshooting and Debugging</title>
+    <link rel="StyleSheet" href="css/Mobile_SDK_Troubleshooting_Android.css" type="text/css" media="all" />
+    <link rel="StyleSheet" href="css/webworks.css" type="text/css" media="all" />
+    <script type="text/javascript" language="JavaScript1.2" src="scripts/expand.js"></script>
+    <script type="text/javascript" language="JavaScript1.2">
+      <!--
+        var  WebWorksRootPath = "";
+      // -->
+    </script>
+  </head>
+  <body>
+    <div style="text-align: left;">
+      <table cellspacing="0" summary="">
+        <tr>
+          <td>
+            <a href="toc.html"><img src="images/toc.gif" alt="Table of Contents" border="0" /></a>
+          </td>
+          <td>
+            <a href="Mobile_SDK_Intgr8-iOS.07.9.html"><img src="images/prev.gif" alt="Previous" border="0" /></a>
+          </td>
+          <td>
+            <a href="Mobile_SDK_Troubleshooting_iOS.html"><img src="images/next.gif" alt="Next" border="0" /></a>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <br />
+    <div class="WebWorks_Breadcrumbs" style="text-align: left;">Android MAS API Troubleshooting and Debugging</div>
+    <hr align="left" />
+    <blockquote>
+      <div class="ChapTitle"><a name="1413362">Android MAS API Troubleshooting and Debugging</a></div>
+      <div class="Body"><a name="1417534">This chapter answers common questions that arise while trying to test or integrate a mobile </a>application written using the Android MAS API.</div>
+      <div class="Question_outer" style="margin-left: 46.8pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="Question_inner" style="width: 14.400000000000005pt; white-space: nowrap">
+                <span class="bold">Q	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="Question_inner"><a name="1417535">Why did my method call return </a><span class="Code">SecurityProviderNotFoundException</span>?</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="Answer_outer" style="margin-left: 46.8pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="Answer_inner" style="width: 14.400000000000005pt; white-space: nowrap">
+                <span class="bold">A	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="Answer_inner"><a name="1417536">The method is expecting security information to be provided by the Centrify mobile </a>application. For testing purposes, you must install the Centrify mobile application before running your application.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="Question_outer" style="margin-left: 46.8pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="Question_inner" style="width: 14.400000000000005pt; white-space: nowrap">
+                <span class="bold">Q	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="Question_inner"><a name="1414661">Why can’t I enroll my device using the credential I have?</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="Answer_outer" style="margin-left: 46.8pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="Answer_inner" style="width: 14.400000000000005pt; white-space: nowrap">
+                <span class="bold">A	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="Answer_inner"><a name="1414905">Make sure the server URL points to the cloud portal; for example, </a><span class="Code">https://</span><span class="Code">cloud.centrify.com</span>. This URL is under <span class="bold">Settings</span> in the enroll dialog, or it can be set in the Centrify application.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="Question_outer" style="margin-left: 46.8pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="Question_inner" style="width: 14.400000000000005pt; white-space: nowrap">
+                <span class="bold">Q	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="Question_inner"><a name="1415048">Why does the </a><span class="Code">getSecurityToken</span> method fail with <span class="Code">TargetApplicationNotSupportedException</span>?</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="Answer_outer" style="margin-left: 46.8pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="Answer_inner" style="width: 14.400000000000005pt; white-space: nowrap">
+                <span class="bold">A	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="Answer_inner"><a name="1415131">Make sure that the user to whom the device is registered has been assigned an </a>application with the exact name of the <span class="Code">target</span> argument in the <span class="Code">getSecurityToken</span> call. Check the name of the application in Cloud Manager.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="Question_outer" style="margin-left: 46.8pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="Question_inner" style="width: 14.400000000000005pt; white-space: nowrap">
+                <span class="bold">Q	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="Question_inner"><a name="1415397">How can I query an arbitrary Active Directory attribute, such as </a><span class="Code">userPrincipalName</span>?</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="Answer_outer" style="margin-left: 46.8pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="Answer_inner" style="width: 14.400000000000005pt; white-space: nowrap">
+                <span class="bold">A	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="Answer_inner"><span class="Code"><a name="1415483">userLookup(context, new </a></span><span class="Code"><br /></span><span class="Code">&nbsp;</span><span class="Code">&nbsp;</span><span class="Code">String[]{"userPrincipalName"}).getAdditionalAttributes().get(</span><span class="Code"><br /></span><span class="Code">&nbsp;</span><span class="Code">&nbsp;</span><span class="Code">"userPrincipalName")</span></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="Question_outer" style="margin-left: 46.8pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="Question_inner" style="width: 14.400000000000005pt; white-space: nowrap">
+                <span class="bold">Q	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="Question_inner"><a name="1415521">How can I embed Active Directory user information in the SAML response </a>(authentication token)?</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="Answer_outer" style="margin-left: 46.8pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="Answer_inner" style="width: 14.400000000000005pt; white-space: nowrap">
+                <span class="bold">A	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="Answer_inner"><a name="1415617">Find the application in Cloud Manager, click on the application and go to the </a><span class="bold">Advanced</span> tab. Use the script to customize the response. See <span class="Book_Titles">Cloud Manager online help</span> for instructions on writing a SAML script to customize the authentication token.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="Question_outer" style="margin-left: 46.8pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="Question_inner" style="width: 14.400000000000005pt; white-space: nowrap">
+                <span class="bold">Q	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="Question_inner"><a name="1415811">How can I read the information in the SAML response?</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="Answer_outer" style="margin-left: 46.8pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="Answer_inner" style="width: 14.400000000000005pt; white-space: nowrap">
+                <span class="bold">A	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="Answer_inner"><a name="1415869">Use the </a><span class="Code">EnterpriseAuthentication.parseSecurityToken</span> method to validate the SAML response and read the information in it.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="Question_outer" style="margin-left: 46.8pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="Question_inner" style="width: 14.400000000000005pt; white-space: nowrap">
+                <span class="bold">Q	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="Question_inner"><a name="1416007">Why do I keep getting the same token from the </a><span class="Code">getSecurityToken</span> method, even though I’ve updated the token?</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="Answer_outer" style="margin-left: 46.8pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="Answer_inner" style="width: 14.400000000000005pt; white-space: nowrap">
+                <span class="bold">A	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="Answer_inner"><a name="1416128">Set the </a><span class="Code">alwaysUseFreshToken</span> parameter to <span class="Code">true</span> in your call to <span class="Code">getSecurityToken</span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="Question_outer" style="margin-left: 46.8pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="Question_inner" style="width: 14.400000000000005pt; white-space: nowrap">
+                <span class="bold">Q	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="Question_inner"><a name="1416219">How can we ensure that our back-end web server trusts the SAML response?</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="Answer_outer" style="margin-left: 46.8pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="Answer_inner" style="width: 14.400000000000005pt; white-space: nowrap">
+                <span class="bold">A	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="Answer_inner"><a name="1416589">Your web server validates the token by checking that its signature is valid. By default, </a>SAML responses are signed with Centrify’s signing key. To download the certificate you need to validate the signature, go to Cloud Manager, find the page for your application, open the <span class="bold">Application Settings</span> tab, and click the <span class="bold">Download</span> button in the <span class="bold">Security </span><span class="bold">Certificate</span> section.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="Question_outer" style="margin-left: 46.8pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="Question_inner" style="width: 14.400000000000005pt; white-space: nowrap">
+                <span class="bold">Q	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="Question_inner"><a name="1416809">How can I use our enterprise signing key rather than the default key?</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="Answer_outer" style="margin-left: 46.8pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="Answer_inner" style="width: 14.400000000000005pt; white-space: nowrap">
+                <span class="bold">A	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="Answer_inner"><a name="1416811">If you want to provide your own certificate and private key, go to Cloud Manager, find </a>the page for your application, open the <span class="bold">Application Settings</span> tab, and click the <span class="bold">Replace</span> button in the <span class="bold">Security Certificate</span> section. Note that you must provide both your signing certificate and the associated private key in a PKCS #12 (<span class="Code">*.p12</span> or <span class="Code">*.pfx</span>) file.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="Question_outer" style="margin-left: 46.8pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="Question_inner" style="width: 14.400000000000005pt; white-space: nowrap">
+                <span class="bold">Q	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="Question_inner"><a name="1417041">What do I do after integration is finished and the application has been tested </a>successfully?</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="Answer_outer" style="margin-left: 46.8pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="Answer_inner" style="width: 14.400000000000005pt; white-space: nowrap">
+                <span class="bold">A	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="Answer_inner"><a name="1417135">Submit the application binary (</a><span class="Code">*.apk</span> file) to Centrify at <span class="Jump_X-ref"><a href="devsupport@centrify.com" target="external_window">devsupport@centrify.com</a></span>. Centrify will contact you if they encounter any problems.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="Definition_Ref"><a name="1385137">&nbsp;</a></div>
+    </blockquote>
+    <hr align="left" />
+    <table align="right">
+      <tr>
+        <td class="WebWorks_Company_Logo_Bottom">
+          <a href="http://www.centrify.com" target="external_window"><img src="centrifylogo.gif" border="0" /></a>
+        </td>
+      </tr>
+      <tr>
+        <td class="WebWorks_Company_Name_Bottom">
+          <a href="http://www.centrify.com" target="external_window">Centrify Corporation</a>
+        </td>
+      </tr>
+      <tr>
+        <td class="WebWorks_Company_Email_Bottom">
+          <a href="mailto:support@centrify.com">support@centrify.com</a>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <!-- MOTW-DISABLED saved from url=(0014)about:internet -->
+    <title>Creating a SAML application profile</title>
+    <link rel="StyleSheet" href="css/Mobile_SDK_SAML_scripting.css" type="text/css" media="all" />
+    <link rel="StyleSheet" href="css/webworks.css" type="text/css" media="all" />
+    <script type="text/javascript" language="JavaScript1.2" src="scripts/expand.js"></script>
+    <script type="text/javascript" language="JavaScript1.2">
+      <!--
+        var  WebWorksRootPath = "";
+      // -->
+    </script>
+  </head>
+  <body>
+    <div style="text-align: left;">
+      <table cellspacing="0" summary="">
+        <tr>
+          <td>
+            <a href="toc.html"><img src="images/toc.gif" alt="Table of Contents" border="0" /></a>
+          </td>
+          <td>
+            <a href="Mobile_SDK_SampleJ2EE-SAML.17.3.html"><img src="images/prev.gif" alt="Previous" border="0" /></a>
+          </td>
+          <td>
+            <a href="Mobile_SDK_SAML_scripting.18.2.html"><img src="images/next.gif" alt="Next" border="0" /></a>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <br />
+    <div class="WebWorks_Breadcrumbs" style="text-align: left;">Creating a SAML application profile</div>
+    <hr align="left" />
+    <blockquote>
+      <div class="ChapTitle"><a name="1103098">Creating a SAML application profile</a></div>
+      <div class="Body"><a name="1137913">If an application that uses Centrify Cloud Service to implement single-sign-on (SSO) </a>requests a security token (that is, a SAML response) in order to authenticate a user, the Centrify Cloud Service must have a SAML application profile in place for the token to work. This chapter documents how to configure the Generic SAML template in Centrify Cloud Manager to create a SAML application profile. See <span class="Jump_X-ref"><a href="Mobile_SDK_Intro.05.09.html#1107748" title="SAML authentication involves receiving and validating a token">“SAML authentication involves receiving and validating a token” on page&nbsp;24</a></span> for a general introduction to SAML.</div>
+      <div class="Body"><a name="1174047">If you are an administrator </a>adding a SAML-enabled SaaS application to MyCentrify, or if you are adding a mobile application to the Centrify application and that mobile application has a SAML-enabled web service as a back-end, then you must configure the Generic SAML template for that application. The <span class="bold">Advanced</span> tab of that template requires a script, written in Javascript, that specifies the contents of the SAML response. Centrify Cloud Service executes the SAML script when generating the security token for the SAML-enabled application or web service. Without the SAML application profile and SAML script in the Generic SAML template, Centrify Cloud Service cannot generate the security token.</div>
+      <div class="Body"><a name="1181391">Note that this means that in order to install a mobile application in the Centrify </a>application—if the mobile application has a SAML-enabled SaaS back-end—you must configure both the mobile application template (which creates a button for the application visible to users) and the Generic SAML template (which is not visible to users, but is necessary for the SAML interface).</div>
+      <div class="Body"><a name="1181394">Either the vendor of the SaaS application or the</a> vendor of the mobile application that has a web-service back-end must provide configuration information to the administrator, including the SAML script for the <span class="bold">Advanced</span> tab of the template. </div>
+      <div class="Body"><a name="1181395">This chapter describes the SAML application profile, explains the steps needed to put </a>SAML profiles in place for either a SaaS application or a mobile application with a web back-end, and documents the methods, variables, and functions needed in order to write a SAML script. The chapter includes these sections:</div>
+      <div class="Bullet1_outer" style="margin-left: 46.8pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="Bullet1_inner" style="width: 14.400000000000005pt; white-space: nowrap">
+                <span class="HeaderSymbols">l	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="Bullet1_inner"><span class="Jump_X-ref"><a href="Mobile_SDK_SAML_scripting.18.2.html#1175463" title="Configure the SAML interface" name="1142875">Configure the SAML interface</a></span> describes the information needed for a SAML application profile.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="Bullet1_outer" style="margin-left: 46.8pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="Bullet1_inner" style="width: 14.400000000000005pt; white-space: nowrap">
+                <span class="HeaderSymbols">l	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="Bullet1_inner"><span class="Jump_X-ref"><a href="Mobile_SDK_SAML_scripting.18.3.html#1153143" title="Provide help for administrators" name="1181677">Provide help for administrators</a></span> shows the steps required to support an administrator who needs to configure a SAML application profile and provides a sample set of instructions that a software vendor can adapt to help an administrator install their product in Cloud Manager.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="Bullet1_outer" style="margin-left: 46.8pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="Bullet1_inner" style="width: 14.400000000000005pt; white-space: nowrap">
+                <span class="HeaderSymbols">l	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="Bullet1_inner"><span class="Jump_X-ref"><a href="Mobile_SDK_SAML_scripting.18.5.html#1143607" title="Debugging your scripts" name="1143745">Debugging your scripts</a></span> provides some information that can help in finding problems in the SAML interface.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="Bullet1_outer" style="margin-left: 46.8pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="Bullet1_inner" style="width: 14.400000000000005pt; white-space: nowrap">
+                <span class="HeaderSymbols">l	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="Bullet1_inner"><span class="Jump_X-ref"><a href="Mobile_SDK_SAML_scripting.18.6.html#1143357" title="Scripting environment reference" name="1138327">Scripting environment reference</a></span> documents the classes, methods, properties, and functions provided for use in SAML scripts.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="Body"><a name="1175459">To write a SAML script, you need to know how to write code in Javascript. You also need to </a>know the basics of SAML authentication to understand how to specify a SAML assertion. This chapter provides some guidance about SAML configuration values, but for specifics you can consult the SAML specifications provided at <span class="Jump_X-ref"><a href="http://saml.xml.org/saml-specifications" target="external_window">http://saml.xml.org/saml-specifications</a></span>. For an introduction to SAML, try the overviews provided at <span class="Jump_X-ref"><a href="http://saml.xml.org/wiki/saml-introduction" target="external_window">http://saml.xml.org/wiki/saml-introduction</a></span>. In addition, Jeff Hodges, Neustar, <span class="Book_Titles">How to Study and </span><span class="Book_Titles">Learn SAML</span><a href="http://identitymeme.org/doc/draft-hodges-learning-saml-00.html" target="external_window">, 2006 (</a><span class="Jump_X-ref">http://identitymeme.org/doc/draft-hodges-learning-saml-00.html</span>) defines SAML terms and concepts and provides a reading list.</div>
+    </blockquote>
+    <hr align="left" />
+    <table align="right">
+      <tr>
+        <td class="WebWorks_Company_Logo_Bottom">
+          <a href="http://www.centrify.com" target="external_window"><img src="centrifylogo.gif" border="0" /></a>
+        </td>
+      </tr>
+      <tr>
+        <td class="WebWorks_Company_Name_Bottom">
+          <a href="http://www.centrify.com" target="external_window">Centrify Corporation</a>
+        </td>
+      </tr>
+      <tr>
+        <td class="WebWorks_Company_Email_Bottom">
+          <a href="mailto:support@centrify.com">support@centrify.com</a>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>

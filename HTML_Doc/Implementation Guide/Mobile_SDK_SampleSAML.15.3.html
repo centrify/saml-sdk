@@ -1,0 +1,441 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <!-- MOTW-DISABLED saved from url=(0014)about:internet -->
+    <title>SamlResponseValidatorExample1</title>
+    <link rel="StyleSheet" href="css/Mobile_SDK_SampleSAML.css" type="text/css" media="all" />
+    <link rel="StyleSheet" href="css/webworks.css" type="text/css" media="all" />
+    <script type="text/javascript" language="JavaScript1.2" src="scripts/expand.js"></script>
+    <script type="text/javascript" language="JavaScript1.2">
+      <!--
+        var  WebWorksRootPath = "";
+      // -->
+    </script>
+  </head>
+  <body>
+    <div style="text-align: left;">
+      <table cellspacing="0" summary="">
+        <tr>
+          <td>
+            <a href="toc.html"><img src="images/toc.gif" alt="Table of Contents" border="0" /></a>
+          </td>
+          <td>
+            <a href="Mobile_SDK_SampleSAML.15.2.html"><img src="images/prev.gif" alt="Previous" border="0" /></a>
+          </td>
+          <td>
+            <a href="Mobile_SDK_J2EE_Ref.html"><img src="images/next.gif" alt="Next" border="0" /></a>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <br />
+    <div class="WebWorks_Breadcrumbs" style="text-align: left;">
+      <a class="WebWorks_Breadcrumb_Link" href="Mobile_SDK_SampleSAML.15.1.html#1103971">SAML Java Sample Code</a> : SamlResponseValidatorExample1</div>
+    <hr align="left" />
+    <blockquote>
+      <div class="Heading1"><a name="1103971">SamlResponseValidatorExample1</a></div>
+      <div class="Body"><a name="1106764">This sample hows how to create a </a><span class="Code">SamlResponseValidator</span> object and use it to validate a SAML response.</div>
+      <div class="Body"><a name="1106550">The sample code file </a><span class="Code">SamlResponseValidatorExample1.java</span> performs the following actions:</div>
+      <div class="Step1_outer" style="margin-left: 46.8pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="Step1_inner" style="width: 14.400000000000005pt; white-space: nowrap">
+                <span class="StepNumber">1	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="Step1_inner"><a name="1094053">Imports Java libraries. </a><span class="Jump_X-ref"><a href="#1097445" title="SamlResponseValidatorExample1">Step&nbsp;1</a></span></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="StepNum_outer" style="margin-left: 46.8pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="StepNum_inner" style="width: 14.400000000000005pt; white-space: nowrap">
+                <span class="StepNumber">2	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="StepNum_inner"><a name="1094237">Imports an Apache security library. </a><span class="Jump_X-ref"><a href="#1106649" title="SamlResponseValidatorExample1">Step&nbsp;2</a></span></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="StepNum_outer" style="margin-left: 46.8pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="StepNum_inner" style="width: 14.400000000000005pt; white-space: nowrap">
+                <span class="StepNumber">3	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="StepNum_inner"><a name="1094276">Imports Centrify libraries. </a><span class="Jump_X-ref"><a href="#1106674" title="SamlResponseValidatorExample1">Step&nbsp;3</a></span></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="StepNum_outer" style="margin-left: 46.8pt; vertical-align: baseline">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="StepNum_inner" style="width: 14.400000000000005pt; white-space: nowrap; color: #000000; font-style: normal; font-variant: normal; font-weight: normal; text-transform: none">
+                <span class="StepNumber">4	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="StepNum_inner" style="color: #000000; font-style: normal; font-variant: normal; font-weight: normal; text-transform: none"><span style="color: #000000; font-family: Perpetua; font-size: 12.0pt; font-style: normal; font-variant: normal; font-weight: normal; text-transform: none; vertical-align: baseline"><a name="1106865">Defines the </a></span><span class="Code">main</span> routine, which reads a base64-encoded SAML response from a file, validates the response, and displays the parsed result. <span class="Jump_X-ref"><a href="#1106848" title="SamlResponseValidatorExample1">Step&nbsp;4</a></span></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="StepNum_outer" style="margin-left: 46.8pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="StepNum_inner" style="width: 14.400000000000005pt; white-space: nowrap">
+                <span class="StepNumber">5	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="StepNum_inner"><a name="1108791">Calls the </a><span class="Code">getCertificate</span> subroutine (<span class="Jump_X-ref"><a href="#1094878" title="SamlResponseValidatorExample1">Step&nbsp;15</a></span>) to load the X509 certificate from a file. This certificate is used to validate the SAML response. <span class="Jump_X-ref"><a href="#1108612" title="SamlResponseValidatorExample1">Step&nbsp;5</a></span></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="StepNum_outer" style="margin-left: 46.8pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="StepNum_inner" style="width: 14.400000000000005pt; white-space: nowrap">
+                <span class="StepNumber">6	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="StepNum_inner"><a name="1107412">Instantiates a </a><span class="Code">SamlResponseValidator</span> object (see <span class="Jump_X-ref"><a href="Mobile_SDK_SAML_Ref.html#1430555" title="SAML Java Reference">“SamlResponseValidator” on page&nbsp;176</a></span>). <span class="Jump_X-ref"><a href="#1108576" title="SamlResponseValidatorExample1">Step&nbsp;6</a></span></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="StepNum_outer" style="margin-left: 46.8pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="StepNum_inner" style="width: 14.400000000000005pt; white-space: nowrap">
+                <span class="StepNumber">7	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="StepNum_inner"><a name="1107418">Calls the </a><span class="Code">getBase64SamlResponse</span> subroutine (<span class="Jump_X-ref"><a href="#1108194" title="SamlResponseValidatorExample1">Step&nbsp;16</a></span>) to load the Base64-encoded SAML response from a file. This file could have been sent to your web service from your mobile application, for example. <span class="Jump_X-ref"><a href="#1107209" title="SamlResponseValidatorExample1">Step&nbsp;7</a></span></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="StepNum_outer" style="margin-left: 46.8pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="StepNum_inner" style="width: 14.400000000000005pt; white-space: nowrap">
+                <span class="StepNumber">8	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="StepNum_inner"><a name="1107489">Validates and parses the SAML response. If the </a><span class="Code">processSamlResponse</span> method does not throw an exception, the validation was successful. <span class="Jump_X-ref"><a href="#1107474" title="SamlResponseValidatorExample1">Step&nbsp;8</a></span></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="StepNote">
+        <span class="Note">Note	</span><a name="1107510">If the SAML response is in XML format, call the </a><span class="Code">processSamlResponseXML</span> method instead</div>
+      <div class="StepNum_outer" style="margin-left: 46.8pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="StepNum_inner" style="width: 14.400000000000005pt; white-space: nowrap">
+                <span class="StepNumber">9	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="StepNum_inner"><a name="1094668">Calls the </a><span class="Code">displaySamlResponse</span> subroutine (<span class="Jump_X-ref"><a href="#1107874" title="SamlResponseValidatorExample1">Step&nbsp;10</a></span>) to display the contents of the SAML response. <span class="Jump_X-ref"><a href="#1107699" title="SamlResponseValidatorExample1">Step&nbsp;9</a></span></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="StepNum_outer" style="margin-left: 46.8pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="StepNum_inner" style="width: 14.400000000000005pt; white-space: nowrap">
+                <span class="StepNumber">10	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="StepNum_inner"><a name="1107874">Defines a subroutine to display the data returned in the SAML response. </a><span class="Jump_X-ref"><a href="#1107816" title="SamlResponseValidatorExample1">Step&nbsp;10</a></span></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="StepNum_outer" style="margin-left: 46.8pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="StepNum_inner" style="width: 14.400000000000005pt; white-space: nowrap">
+                <span class="StepNumber">11	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="StepNum_inner"><a name="1107832">Uses methods of the </a><span class="Code">SamlResponse</span> class (see <span class="Jump_X-ref"><a href="Mobile_SDK_SAML_Ref.html#1399338" title="SAML Java Reference">“SamlResponse” on page&nbsp;162</a></span>) to get the name identifier and the Active Directory Email attribute from the SAML response. <span class="Jump_X-ref"><a href="#1107907" title="SamlResponseValidatorExample1">Step&nbsp;11</a></span></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="StepNum_outer" style="margin-left: 46.8pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="StepNum_inner" style="width: 14.400000000000005pt; white-space: nowrap">
+                <span class="StepNumber">12	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="StepNum_inner"><a name="1107839">Uses methods of the </a><span class="Code">SamlResponse.Attribute</span> subclass (see <span class="Jump_X-ref"><a href="Mobile_SDK_SAML_Ref.html#1402952" title="SAML Java Reference">“SamlResponse.Attribute” on page&nbsp;168</a></span>) to get the format and values of the Email attribute. <span class="Jump_X-ref"><a href="#1107960" title="SamlResponseValidatorExample1">Step&nbsp;12</a></span></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="StepNum_outer" style="margin-left: 46.8pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="StepNum_inner" style="width: 14.400000000000005pt; white-space: nowrap">
+                <span class="StepNumber">13	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="StepNum_inner"><a name="1107848">Illustrates the use of the </a><span class="Code">Attribute.getStringValues</span> method (<span class="Jump_X-ref"><a href="Mobile_SDK_SAML_Ref.html#1430341" title="SAML Java Reference">page&nbsp;171</a></span>) to get the values of the Email attribute without the format. <span class="Jump_X-ref"><a href="#1107942" title="SamlResponseValidatorExample1">Step&nbsp;13</a></span>.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="StepNum_outer" style="margin-left: 46.8pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="StepNum_inner" style="width: 14.400000000000005pt; white-space: nowrap">
+                <span class="StepNumber">14	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="StepNum_inner"><a name="1107856">Illustrates the use of the </a><span class="Code">SamlResponse.GetAttributeValues</span> method (<span class="Jump_X-ref"><a href="Mobile_SDK_SAML_Ref.html#1430083" title="SAML Java Reference">page&nbsp;165</a></span>) to get the values of an attribute. <span class="Jump_X-ref"><a href="#1107978" title="SamlResponseValidatorExample1">Step&nbsp;14</a></span></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="StepNote">
+        <span class="Note">Note	</span><a name="1108060">If you only need to get the attribute values, you can call the </a><span class="Code">response.getAttributeString</span> method instead.</div>
+      <div class="StepNum_outer" style="margin-left: 46.8pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="StepNum_inner" style="width: 14.400000000000005pt; white-space: nowrap">
+                <span class="StepNumber">15	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="StepNum_inner"><a name="1094878">Defines a subroutine that uses the Java </a><span class="Code">CertificateFactory</span> class to load the signing certificate from a file. <span class="Jump_X-ref"><a href="#1108110" title="SamlResponseValidatorExample1">Step&nbsp;15</a></span></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="StepNum_outer" style="margin-left: 46.8pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="StepNum_inner" style="width: 14.400000000000005pt; white-space: nowrap">
+                <span class="StepNumber">16	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="StepNum_inner"><a name="1108194">Defines a subroutine that loads a SAML response from a file into a string. </a><span class="Jump_X-ref"><a href="#1108265" title="SamlResponseValidatorExample1">Step&nbsp;16</a></span></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="StepNote">
+        <span class="Note">Note	</span><a name="1108490">The path to the SAML response file is provided in the call to the </a><span class="Code">main</span> routine (<span class="Jump_X-ref"><a href="#1106848" title="SamlResponseValidatorExample1">Step&nbsp;4</a></span>).</div>
+      <div class="Code2_tabs"><a name="1108040">	</a>						</div>
+      <div class="Code2_tabs"><a name="1097439">package com.centrify;</a></div>
+      <div class="Code2_tabs"><a name="1097440">/*</a></div>
+      <div class="Code2_tabs"><span class="Jump_X-ref"><a href="#1094053" title="SamlResponseValidatorExample1" name="1097445">Step&nbsp;1</a></span></div>
+      <div class="Code2_tabs"><a name="1098153">*/</a></div>
+      <div class="Code2_tabs"><a name="1101987">import java.io.FileInputStream;</a></div>
+      <div class="Code2_tabs"><a name="1101988">import java.io.FileReader;</a></div>
+      <div class="Code2_tabs"><a name="1101989">import java.io.IOException;</a></div>
+      <div class="Code2_tabs"><a name="1101990">import java.security.PublicKey;</a></div>
+      <div class="Code2_tabs"><a name="1101991">import java.security.cert.CertificateFactory;</a></div>
+      <div class="Code2_tabs"><a name="1101992">import java.security.cert.X509Certificate;</a></div>
+      <div class="Code2_tabs"><a name="1101993">import java.util.List;</a></div>
+      <div class="Code2_tabs"><a name="1106644">/*</a></div>
+      <div class="Code2_tabs"><span class="Jump_X-ref"><a href="#1094237" title="SamlResponseValidatorExample1" name="1106649">Step&nbsp;2</a></span></div>
+      <div class="Code2_tabs"><a name="1106650">*/</a></div>
+      <div class="Code2_tabs"><a name="1101995">import org.apache.xml.security.keys.content.x509.XMLX509Certificate;</a></div>
+      <div class="Code2_tabs"><a name="1106669">/*</a></div>
+      <div class="Code2_tabs"><span class="Jump_X-ref"><a href="#1094276" title="SamlResponseValidatorExample1" name="1106674">Step&nbsp;3</a></span></div>
+      <div class="Code2_tabs"><a name="1106675">*/</a></div>
+      <div class="Code2_tabs"><a name="1101997">import com.centrify.cloud.saas.ISamlResponseValidator;</a></div>
+      <div class="Code2_tabs"><a name="1101998">import com.centrify.cloud.saas.SamlResponse;</a></div>
+      <div class="Code2_tabs"><a name="1101999">import com.centrify.cloud.saas.SamlResponseValidator;</a></div>
+      <div class="Code2_tabs"><a name="1102000">&nbsp;</a></div>
+      <div class="Code2_tabs"><a name="1102005">public class SamlResponseValidatorExample1 {</a></div>
+      <div class="Code2_tabs"><a name="1106843">/*</a></div>
+      <div class="Code2_tabs"><span class="Jump_X-ref"><a href="#1106865" title="SamlResponseValidatorExample1" name="1106848">Step&nbsp;4</a></span></div>
+      <div class="Code2_tabs"><a name="1106849">*/</a></div>
+      <div class="Code2_tabs"><a name="1106757">	</a>public static void main(String[] args) throws Exception {</div>
+      <div class="Code2_tabs"><a name="1106758">	</a>	if (args == null || args.length != 1) {</div>
+      <div class="Code2_tabs"><a name="1102016">	</a>		System.out.println("Usage: &lt;file path to base64 SAML response&gt;");</div>
+      <div class="Code2_tabs"><a name="1102017">	</a>		return;</div>
+      <div class="Code2_tabs"><a name="1102018">	</a>	}</div>
+      <div class="Code2_tabs"><a name="1102020">	</a>	// The public key that matches the private key used to sign the SAML Response</div>
+      <div class="Code2_tabs"><a name="1108608">/*</a></div>
+      <div class="Code2_tabs"><span class="Jump_X-ref"><a href="#1108791" title="SamlResponseValidatorExample1" name="1108612">Step&nbsp;5</a></span></div>
+      <div class="Code2_tabs"><a name="1108613">*/</a></div>
+      <div class="Code2_tabs"><a name="1102021">	</a>	PublicKey idpPublicKey = getCertificate().getPublicKey();</div>
+      <div class="Code2_tabs"><a name="1102022">	</a>	</div>
+      <div class="Code2_tabs"><a name="1102023">	</a>	// Case-sensitive. This value must match the Issuer field of the </div>
+      <div class="Code2_tabs"><a name="1107165">	</a>	// Application Settings tab for the application in Centrify Cloud Manager.</div>
+      <div class="Code2_tabs"><a name="1102024">	</a>	String idpIssuerName = "Centrify";</div>
+      <div class="Code2_tabs"><a name="1102025">	</a>	</div>
+      <div class="Code2_tabs"><a name="1102026">	</a>	// Case-sensitive. The URI of the audience to which the response is addressed.</div>
+      <div class="Code2_tabs"><a name="1102027">	</a>	String audience = "https://sp.centrify.com/login"; </div>
+      <div class="Code2_tabs"><a name="1108571">/*</a></div>
+      <div class="Code2_tabs"><span class="Jump_X-ref"><a href="#1107412" title="SamlResponseValidatorExample1" name="1108576">Step&nbsp;6</a></span></div>
+      <div class="Code2_tabs"><a name="1108577">*/</a></div>
+      <div class="Code2_tabs"><a name="1102029">	</a>	// Create the SamlResponseValidator</div>
+      <div class="Code2_tabs"><a name="1102030">	</a>	ISamlResponseValidator validator = new SamlResponseValidator(</div>
+      <div class="Code2_tabs"><a name="1102031">	</a>			idpPublicKey, idpIssuerName, audience);</div>
+      <div class="Code2_tabs"><a name="1107204">/*</a></div>
+      <div class="Code2_tabs"><span class="Jump_X-ref"><a href="#1107418" title="SamlResponseValidatorExample1" name="1107209">Step&nbsp;7</a></span></div>
+      <div class="Code2_tabs"><a name="1107210">*/</a></div>
+      <div class="Code2_tabs"><a name="1102034">	</a>	String base64SamlResponse = getBase64SamlResponse(args[0]);</div>
+      <div class="Code2_tabs"><a name="1107469">/*</a></div>
+      <div class="Code2_tabs"><span class="Jump_X-ref"><a href="#1107489" title="SamlResponseValidatorExample1" name="1107474">Step&nbsp;8</a></span></div>
+      <div class="Code2_tabs"><a name="1107475">*/</a></div>
+      <div class="Code2_tabs"><a name="1102038">	</a>	SamlResponse response = validator.processSamlResponse(base64SamlResponse);</div>
+      <div class="Code2_tabs"><a name="1102039">	</a>	</div>
+      <div class="Code2_tabs"><a name="1102041">	</a>	System.out.println("The SAML response is valid.");</div>
+      <div class="Code2_tabs"><a name="1102042">	</a>	System.out.println(response);</div>
+      <div class="Code2_tabs"><a name="1107694">/*</a></div>
+      <div class="Code2_tabs"><span class="Jump_X-ref"><a href="#1094668" title="SamlResponseValidatorExample1" name="1107699">Step&nbsp;9</a></span></div>
+      <div class="Code2_tabs"><a name="1107700">*/</a></div>
+      <div class="Code2_tabs"><a name="1102044">	</a>	displaySamlResponse(response);</div>
+      <div class="Code2_tabs"><a name="1102045">	</a>	</div>
+      <div class="Code2_tabs"><a name="1102046">	</a>}</div>
+      <div class="Code2_tabs"><a name="1107811">/*</a></div>
+      <div class="Code2_tabs"><span class="Jump_X-ref"><a href="#1107874" title="SamlResponseValidatorExample1" name="1107816">Step&nbsp;10</a></span></div>
+      <div class="Code2_tabs"><a name="1107817">*/</a></div>
+      <div class="Code2_tabs"><a name="1102048">	</a>private static void displaySamlResponse(SamlResponse response) {</div>
+      <div class="Code2_tabs"><a name="1102049">	</a>	System.out.println();</div>
+      <div class="Code2_tabs"><a name="1107902">/*</a></div>
+      <div class="Code2_tabs"><span class="Jump_X-ref"><a href="#1107832" title="SamlResponseValidatorExample1" name="1107907">Step&nbsp;11</a></span></div>
+      <div class="Code2_tabs"><a name="1107908">*/</a></div>
+      <div class="Code2_tabs"><a name="1102051">	</a>	System.out.println("The id is \"" + response.getNameid() + "\"");</div>
+      <div class="Code2_tabs"><a name="1102052">	</a>	</div>
+      <div class="Code2_tabs"><a name="1102053">	</a>	// the attribute name is case sensitive</div>
+      <div class="Code2_tabs"><a name="1102054">	</a>	SamlResponse.Attribute emailAttr = response.getAttribute("Email");</div>
+      <div class="Code2_tabs"><a name="1107956">/*</a></div>
+      <div class="Code2_tabs"><span class="Jump_X-ref"><a href="#1107839" title="SamlResponseValidatorExample1" name="1107960">Step&nbsp;12</a></span></div>
+      <div class="Code2_tabs"><a name="1107961">*/</a></div>
+      <div class="Code2_tabs"><a name="1102055">	</a>	if (emailAttr != null) {</div>
+      <div class="Code2_tabs"><a name="1102056">	</a>		System.out.println(" Display Email attributes");</div>
+      <div class="Code2_tabs"><a name="1102057">	</a>		System.out.println(" name format = " + emailAttr.getNameFormat());</div>
+      <div class="Code2_tabs"><a name="1102058">	</a>		System.out.println(" Display attributes with \"format\"");</div>
+      <div class="Code2_tabs"><a name="1102059">	</a>		List&lt;SamlResponse.AttributeValue&gt; attrValues = emailAttr.getValues();</div>
+      <div class="Code2_tabs"><a name="1102060">	</a>		for (SamlResponse.AttributeValue attrValue : attrValues) {</div>
+      <div class="Code2_tabs"><a name="1102061">	</a>			System.out.println("  " + attrValue.getFormat() + ": "</div>
+      <div class="Code2_tabs"><a name="1102062">	</a>					+ attrValue.getValue());</div>
+      <div class="Code2_tabs"><a name="1102063">	</a>		}</div>
+      <div class="Code2_tabs"><a name="1107937">/*</a></div>
+      <div class="Code2_tabs"><span class="Jump_X-ref"><a href="#1107848" title="SamlResponseValidatorExample1" name="1107942">Step&nbsp;13</a></span></div>
+      <div class="Code2_tabs"><a name="1107943">*/</a></div>
+      <div class="Code2_tabs"><a name="1102065">	</a>		System.out.println(" Display attributes without \"format\"");</div>
+      <div class="Code2_tabs"><a name="1102066">	</a>		// if don't care the format, </div>
+      <div class="Code2_tabs"><a name="1102067">	</a>		// you can call Attribute.getStringValues() instead</div>
+      <div class="Code2_tabs"><a name="1102068">	</a>		List&lt;String&gt; attrStringValues = emailAttr.getStringValues();</div>
+      <div class="Code2_tabs"><a name="1102069">	</a>		System.out.println("  " + attrStringValues);</div>
+      <div class="Code2_tabs"><a name="1102070">	</a>	} else {</div>
+      <div class="Code2_tabs"><a name="1102071">	</a>		System.out.println(" no Email attribute");</div>
+      <div class="Code2_tabs"><a name="1102072">	</a>	}</div>
+      <div class="Code2_tabs"><a name="1107974">/*</a></div>
+      <div class="Code2_tabs"><span class="Jump_X-ref"><a href="#1107856" title="SamlResponseValidatorExample1" name="1107978">Step&nbsp;14</a></span></div>
+      <div class="Code2_tabs"><a name="1107979">*/</a></div>
+      <div class="Code2_tabs"><a name="1102077">	</a>	List&lt;String&gt; groupValues = response.getAttributeValues("Groups");</div>
+      <div class="Code2_tabs"><a name="1102078">	</a>	if (groupValues != null) {</div>
+      <div class="Code2_tabs"><a name="1102079">	</a>		System.out.println(" Display Groups attributes");</div>
+      <div class="Code2_tabs"><a name="1102080">	</a>		System.out.println(" Groups =  " + groupValues);</div>
+      <div class="Code2_tabs"><a name="1102081">	</a>	} else {</div>
+      <div class="Code2_tabs"><a name="1102082">	</a>		System.out.println(" no Groups attribute");</div>
+      <div class="Code2_tabs"><a name="1102083">	</a>	}</div>
+      <div class="Code2_tabs"><a name="1102084">	</a>}</div>
+      <div class="Code2_tabs"><a name="1108105">/*</a></div>
+      <div class="Code2_tabs"><span class="Jump_X-ref"><a href="#1094878" title="SamlResponseValidatorExample1" name="1108110">Step&nbsp;15</a></span></div>
+      <div class="Code2_tabs"><a name="1108111">*/</a></div>
+      <div class="Code2_tabs"><a name="1102091">	</a>private static X509Certificate getCertificate() throws Exception {</div>
+      <div class="Code2_tabs"><a name="1102092">	</a>	</div>
+      <div class="Code2_tabs"><a name="1102093">	</a>	CertificateFactory certFact = CertificateFactory</div>
+      <div class="Code2_tabs"><a name="1102094">	</a>			.getInstance(XMLX509Certificate.JCA_CERT_ID);</div>
+      <div class="Code2_tabs"><a name="1102095">&nbsp;</a></div>
+      <div class="Code2_tabs"><a name="1102096">	</a>	FileInputStream fis = new FileInputStream("sample.cer");</div>
+      <div class="Code2_tabs"><a name="1102097">	</a>	</div>
+      <div class="Code2_tabs"><a name="1102098">	</a>	try {</div>
+      <div class="Code2_tabs"><a name="1102099">	</a>		return (X509Certificate) certFact.generateCertificate(fis);</div>
+      <div class="Code2_tabs"><a name="1102100">	</a>	} finally {</div>
+      <div class="Code2_tabs"><a name="1102101">	</a>		fis.close();</div>
+      <div class="Code2_tabs"><a name="1102102">	</a>	}</div>
+      <div class="Code2_tabs"><a name="1102103">	</a>}</div>
+      <div class="Code2_tabs"><a name="1108260">/*</a></div>
+      <div class="Code2_tabs"><span class="Jump_X-ref"><a href="#1108194" title="SamlResponseValidatorExample1" name="1108265">Step&nbsp;16</a></span></div>
+      <div class="Code2_tabs"><a name="1108266">*/</a></div>
+      <div class="Code2_tabs"><a name="1102111">	</a>private static String getBase64SamlResponse(String file) throws IOException {</div>
+      <div class="Code2_tabs"><a name="1102112">	</a>	StringBuilder sb = new StringBuilder();</div>
+      <div class="Code2_tabs"><a name="1102113">	</a>	FileReader reader = new FileReader(file);</div>
+      <div class="Code2_tabs"><a name="1102114">	</a>	try {</div>
+      <div class="Code2_tabs"><a name="1102115">	</a>		int c;</div>
+      <div class="Code2_tabs"><a name="1102116">	</a>		while ((c = reader.read()) != -1) {</div>
+      <div class="Code2_tabs"><a name="1102117">	</a>			sb.append((char) c);</div>
+      <div class="Code2_tabs"><a name="1102118">	</a>		}</div>
+      <div class="Code2_tabs"><a name="1102119">	</a>	} finally {</div>
+      <div class="Code2_tabs"><a name="1102120">	</a>		reader.close();</div>
+      <div class="Code2_tabs"><a name="1102121">	</a>	}</div>
+      <div class="Code2_tabs"><a name="1102122">	</a>	return sb.toString();</div>
+      <div class="Code2_tabs"><a name="1102123">	</a>}</div>
+      <div class="Code2_tabs"><a name="1102124">&nbsp;</a></div>
+      <div class="Code2_tabs"><a name="1097608">}</a></div>
+      <div class="Code2_tabs"><a name="1097609">&nbsp;</a></div>
+      <div class="Body"><a name="1093940">&nbsp;</a></div>
+    </blockquote>
+    <hr align="left" />
+    <table align="right">
+      <tr>
+        <td class="WebWorks_Company_Logo_Bottom">
+          <a href="http://www.centrify.com" target="external_window"><img src="centrifylogo.gif" border="0" /></a>
+        </td>
+      </tr>
+      <tr>
+        <td class="WebWorks_Company_Name_Bottom">
+          <a href="http://www.centrify.com" target="external_window">Centrify Corporation</a>
+        </td>
+      </tr>
+      <tr>
+        <td class="WebWorks_Company_Email_Bottom">
+          <a href="mailto:support@centrify.com">support@centrify.com</a>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>

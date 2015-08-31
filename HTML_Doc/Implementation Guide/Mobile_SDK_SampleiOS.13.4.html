@@ -1,0 +1,527 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <!-- MOTW-DISABLED saved from url=(0014)about:internet -->
+    <title>HomeViewController.m</title>
+    <link rel="StyleSheet" href="css/Mobile_SDK_SampleiOS.css" type="text/css" media="all" />
+    <link rel="StyleSheet" href="css/webworks.css" type="text/css" media="all" />
+    <script type="text/javascript" language="JavaScript1.2" src="scripts/expand.js"></script>
+    <script type="text/javascript" language="JavaScript1.2">
+      <!--
+        var  WebWorksRootPath = "";
+      // -->
+    </script>
+  </head>
+  <body>
+    <div style="text-align: left;">
+      <table cellspacing="0" summary="">
+        <tr>
+          <td>
+            <a href="toc.html"><img src="images/toc.gif" alt="Table of Contents" border="0" /></a>
+          </td>
+          <td>
+            <a href="Mobile_SDK_SampleiOS.13.3.html"><img src="images/prev.gif" alt="Previous" border="0" /></a>
+          </td>
+          <td>
+            <a href="Mobile_SDK_SAML_Ref.html"><img src="images/next.gif" alt="Next" border="0" /></a>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <br />
+    <div class="WebWorks_Breadcrumbs" style="text-align: left;">
+      <a class="WebWorks_Breadcrumb_Link" href="Mobile_SDK_SampleiOS.13.1.html#1093984">iOS MAS Sample Code</a> : HomeViewController.m</div>
+    <hr align="left" />
+    <blockquote>
+      <div class="Heading1"><a name="1093984">HomeViewController.m</a></div>
+      <div class="Body"><a name="1096443">The </a><span class="Code">HomeViewController.m</span> file of the CentrifySDKSample app implements the buttons that exercise the iOS SDK. The code, shown below, performs the following actions:</div>
+      <div class="Step1_outer" style="margin-left: 46.8pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="Step1_inner" style="width: 14.400000000000005pt; white-space: nowrap">
+                <span class="StepNumber">1	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="Step1_inner"><a name="1096448">Loads and initializes the view.</a><span class="Jump_X-ref"><a href="#1105926" title="HomeViewController.m"> Step&nbsp;1</a></span></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="StepNum_outer" style="margin-left: 46.8pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="StepNum_inner" style="width: 14.400000000000005pt; white-space: nowrap">
+                <span class="StepNumber">2	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="StepNum_inner"><a name="1097627">Implements the </a><span class="bold">Get Centrify SAMLToken</span> button by calling the <span class="Code">getSecurityTokenForTarget</span>: method (see <span class="Jump_X-ref"><a href="Mobile_SDK_iOS_Ref.html#1400111" title="Mobile Authentication Service iOS Reference">“getSecurityTokenForTarget: alwaysUseFreshToken: completionHandler:” on page&nbsp;107</a></span>). <span class="Jump_X-ref"><a href="#1105984" title="HomeViewController.m"> Step&nbsp;2</a></span></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="StepText"><a name="1107761">The completion handler for this method is defined in </a><span class="Jump_X-ref"><a href="#1108032" title="HomeViewController.m">Step&nbsp;9</a></span>.</div>
+      <div class="StepNum_outer" style="margin-left: 46.8pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="StepNum_inner" style="width: 14.400000000000005pt; white-space: nowrap">
+                <span class="StepNumber">3	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="StepNum_inner"><a name="1097709">Implements the </a><span class="bold">Get User Information </span>button by calling the <span class="Code">getUserInformation</span>: method (see <span class="Jump_X-ref"><a href="Mobile_SDK_iOS_Ref.html#1392615" title="Mobile Authentication Service iOS Reference">“getUserInformation:” on page&nbsp;109</a></span>).<span class="Jump_X-ref"><a href="#1106215" title="HomeViewController.m"> Step&nbsp;3</a></span></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="StepText"><a name="1108154">The completion handler for this method is defined in </a><span class="Jump_X-ref"><a href="#1108039" title="HomeViewController.m">Step&nbsp;10</a></span>.</div>
+      <div class="StepNum_outer" style="margin-left: 46.8pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="StepNum_inner" style="width: 14.400000000000005pt; white-space: nowrap">
+                <span class="StepNumber">4	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="StepNum_inner"><a name="1108505">Implements the </a><span class="bold">Look Up User Attributes </span>button by calling the <span class="Code">userLookupForAdditionalAttributes:</span> method (see <span class="Jump_X-ref"><a href="Mobile_SDK_iOS_Ref.html#1374355" title="Mobile Authentication Service iOS Reference">“userLookupForAdditionalAttributes: completionHandler:” on page&nbsp;113</a></span>). <span class="Jump_X-ref"><a href="#1106332" title="HomeViewController.m"> Step&nbsp;4</a></span></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="StepText"><a name="1108528">The completion handler for this method is defined in </a><span class="Jump_X-ref"><a href="#1098409" title="HomeViewController.m">Step&nbsp;11</a></span>.</div>
+      <div class="StepNum_outer" style="margin-left: 46.8pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="StepNum_inner" style="width: 14.400000000000005pt; white-space: nowrap">
+                <span class="StepNumber">5	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="StepNum_inner"><a name="1108515">Implements the </a><span class="bold">Log Out </span>button by calling the <span class="Code">logout:</span> method (see <span class="Jump_X-ref"><a href="Mobile_SDK_iOS_Ref.html#1400361" title="Mobile Authentication Service iOS Reference">“logout:” on page&nbsp;111</a></span>).<span class="Jump_X-ref"><a href="#1106484" title="HomeViewController.m"> Step&nbsp;5</a></span></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="StepText"><a name="1108543">The completion handler for this method is defined in </a><span class="Jump_X-ref"><a href="#1099080" title="HomeViewController.m">Step&nbsp;12</a></span>.</div>
+      <div class="StepNum_outer" style="margin-left: 46.8pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="StepNum_inner" style="width: 14.400000000000005pt; white-space: nowrap">
+                <span class="StepNumber">6	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="StepNum_inner"><a name="1097926">Defines the behavior of the dialog box that appears when the user clicks the </a><span class="bold">Get </span><span class="bold">Centrify SAMLToken</span> button. As defined in the completion handler (<span class="Jump_X-ref"><a href="#1108032" title="HomeViewController.m">Step&nbsp;9</a></span>) for the <span class="Code">getSecurityTokenForTarget</span>: method, this dialog has three buttons: <span class="bold">OK</span>, <span class="bold">Parse </span><span class="bold">Token</span>, and <span class="bold">Open Url</span>. Indices for these buttons start with 0.<span class="Jump_X-ref"><a href="#1106508" title="HomeViewController.m"> Step&nbsp;6</a></span></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="StepNum_outer" style="margin-left: 46.8pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="StepNum_inner" style="width: 14.400000000000005pt; white-space: nowrap">
+                <span class="StepNumber">7	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="StepNum_inner"><a name="1096453">If the user clicks the </a><span class="bold">Parse Token</span> button (<span class="Code">buttonIndex == 1</span>), the <span class="Code">switch</span> statement calls the <span class="Code">EnterpriseAuthentication</span> <span class="Code">parseSecurityToken:</span> method (see <span class="Jump_X-ref"><a href="Mobile_SDK_iOS_Ref.html#1396351" title="Mobile Authentication Service iOS Reference">“parseSecurityToken:” on page&nbsp;112</a></span>) to parse the security token and displays a dialog with the title <span class="bold">Parsed Token</span> and the <span class="Code">description</span> property from the <span class="Code">CentrifySecurityToken</span> object (see <span class="Jump_X-ref"><a href="Mobile_SDK_iOS_Ref.html#1396469" title="Mobile Authentication Service iOS Reference">“CentrifySecurityToken” on page&nbsp;117</a></span>).<span class="Jump_X-ref"><a href="#1107170" title="HomeViewController.m"> Step&nbsp;7</a></span></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="StepNum_outer" style="margin-left: 46.8pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="StepNum_inner" style="width: 14.400000000000005pt; white-space: nowrap">
+                <span class="StepNumber">8	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="StepNum_inner"><a name="1098210">If the user clicks the </a><span class="bold">Open Url</span> button (<span class="Code">buttonIndex == 2</span>), the <span class="Code">switch</span> statement calls the <span class="Code">EnterpriseAuthentication</span> <span class="Code">parseSecurityToken:</span> method to parse the security token, opens the URL specified in the <span class="Code">audience</span> property of the <span class="Code">CentrifySecurityToken</span> object, and sends the token data to the URL. <span class="Jump_X-ref"><a href="#1107193" title="HomeViewController.m"> Step&nbsp;8</a></span></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="StepNum_outer" style="margin-left: 46.8pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="StepNum_inner" style="width: 14.400000000000005pt; white-space: nowrap">
+                <span class="StepNumber">9	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="StepNum_inner"><a name="1108032">Handles the </a><span class="bold">Get Centrify SAMLToken</span> button by extracting the data from the token, writing the data to <span class="Code">NSLog</span>, then displaying a dialog box with the token data and the buttons <span class="bold">OK</span>, <span class="bold">Parse Token</span>, and <span class="bold">Open URL</span><span class="Jump_X-ref"><a href="#1107724" title="HomeViewController.m"> Step&nbsp;9</a></span></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="StepNum_outer" style="margin-left: 46.8pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="StepNum_inner" style="width: 14.400000000000005pt; white-space: nowrap">
+                <span class="StepNumber">10	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="StepNum_inner"><a name="1108039">Handles the </a><span class="bold">Get User Information </span>button by extracting the user information from the token, writing the data to <span class="Code">NSLog</span>, and displaying the user name in a dialog box.<span class="Jump_X-ref"><a href="#1107990" title="HomeViewController.m"> Step&nbsp;10</a></span></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="StepNum_outer" style="margin-left: 46.8pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="StepNum_inner" style="width: 14.400000000000005pt; white-space: nowrap">
+                <span class="StepNumber">11	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="StepNum_inner"><a name="1098409">Handles the </a><span class="bold">Look Up User Attributes </span>button by extracting the user attributes from the token, writing the data to <span class="Code">NSLog</span>, and displaying the <span class="Code">description</span> attribute in a dialog box. <span class="Jump_X-ref"><a href="#1108221" title="HomeViewController.m"> Step&nbsp;11</a></span></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="StepNum_outer" style="margin-left: 46.8pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="StepNum_inner" style="width: 14.400000000000005pt; white-space: nowrap">
+                <span class="StepNumber">12	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="StepNum_inner"><a name="1099080">Handles the </a><span class="bold">Log Out </span>button by displaying a dialog that says “Logout done”. <span class="Jump_X-ref"><a href="#1108589" title="HomeViewController.m"> Step&nbsp;12</a></span></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="StepNum_outer" style="margin-left: 46.8pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="StepNum_inner" style="width: 14.400000000000005pt; white-space: nowrap">
+                <span class="StepNumber">13	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="StepNum_inner"><a name="1099168">When called in </a><span class="Jump_X-ref"><a href="#1098210" title="HomeViewController.m">Step&nbsp;8</a></span> as part of constructing a URL, replaces unsafe characters in the data with characters that are safe for URLs.<span class="Jump_X-ref"><a href="#1108678" title="HomeViewController.m"> Step&nbsp;13</a></span></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="Code2_tabs"><a name="1105652">&nbsp;</a></div>
+      <div class="Code2_tabs"><a name="1108842">#import "HomeViewController.h"</a></div>
+      <div class="Code2_tabs"><a name="1105653">#import "WebViewController.h"</a></div>
+      <div class="Code2_tabs"><a name="1105654">#import &lt;CentrifySDK/EnterpriseAuthentication.h&gt;</a></div>
+      <div class="Code2_tabs"><a name="1105655">&nbsp;</a></div>
+      <div class="Code2_tabs"><a name="1105656">typedef enum alertViewTag</a></div>
+      <div class="Code2_tabs"><a name="1105657">{</a></div>
+      <div class="Code2_tabs"><a name="1105658">	</a>AlertViewTagSecurityToken = 1,</div>
+      <div class="Code2_tabs"><a name="1105659">	</a>AlertViewTagUserInfformation,</div>
+      <div class="Code2_tabs"><a name="1105660">	</a>AlertViewTagUserLookup,</div>
+      <div class="Code2_tabs"><a name="1105661">	</a>AlertViewTagParsedToken,</div>
+      <div class="Code2_tabs"><a name="1105662">	</a>AlertViewTagLogout</div>
+      <div class="Code2_tabs"><a name="1105663">}alertViewTag;</a></div>
+      <div class="Code2_tabs"><a name="1105664">&nbsp;</a></div>
+      <div class="Code2_tabs"><a name="1105665">@interface HomeViewController (Private)</a></div>
+      <div class="Code2_tabs"><a name="1105666">&nbsp;</a></div>
+      <div class="Code2_tabs"><a name="1105667">-(NSString *)encodeQuery:(NSString *)str;</a></div>
+      <div class="Code2_tabs"><a name="1105668">- (void) getSecurityTokenHandler:(CentrifySDKResult *)result;</a></div>
+      <div class="Code2_tabs"><a name="1105669">- (void) getUserInformationHandler:(CentrifySDKResult *)result;</a></div>
+      <div class="Code2_tabs"><a name="1105670">- (void) lookupUserAttributeHandler:(CentrifySDKResult *)result;</a></div>
+      <div class="Code2_tabs"><a name="1105671">- (void) logoutHandler:(CentrifySDKResult *)result;</a></div>
+      <div class="Code2_tabs"><a name="1105672">&nbsp;</a></div>
+      <div class="Code2_tabs"><a name="1105673">@end</a></div>
+      <div class="Code2_tabs"><a name="1105674">&nbsp;</a></div>
+      <div class="Code2_tabs"><a name="1105675">@implementation HomeViewController</a></div>
+      <div class="Code2_tabs"><a name="1105676">&nbsp;</a></div>
+      <div class="Code2_tabs"><a name="1105677">@synthesize accessToken;</a></div>
+      <div class="Code2_tabs"><a name="1105921">/*</a></div>
+      <div class="Code2_tabs"><span class="Jump_X-ref"><a href="#1096448" title="HomeViewController.m" name="1105926">Step&nbsp;1</a></span></div>
+      <div class="Code2_tabs"><a name="1105927">*/</a></div>
+      <div class="Code2_tabs"><a name="1105679">- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil</a></div>
+      <div class="Code2_tabs"><a name="1105680">{</a></div>
+      <div class="Code2_tabs"><a name="1105681">	</a>self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];</div>
+      <div class="Code2_tabs"><a name="1105682">	</a>if (self) {</div>
+      <div class="Code2_tabs"><a name="1105683">	</a>	// Custom initialization</div>
+      <div class="Code2_tabs"><a name="1105684">	</a>}</div>
+      <div class="Code2_tabs"><a name="1105685">	</a>return self;</div>
+      <div class="Code2_tabs"><a name="1105686">}</a></div>
+      <div class="Code2_tabs"><a name="1105687">&nbsp;</a></div>
+      <div class="Code2_tabs"><a name="1105688">- (void)viewDidLoad</a></div>
+      <div class="Code2_tabs"><a name="1105689">{</a></div>
+      <div class="Code2_tabs"><a name="1105690">	</a>[super viewDidLoad];</div>
+      <div class="Code2_tabs"><a name="1105691">	</a>// Do any additional setup after loading the view.</div>
+      <div class="Code2_tabs"><a name="1105692">}</a></div>
+      <div class="Code2_tabs"><a name="1105693">&nbsp;</a></div>
+      <div class="Code2_tabs"><a name="1105694">- (void)didReceiveMemoryWarning</a></div>
+      <div class="Code2_tabs"><a name="1105695">{</a></div>
+      <div class="Code2_tabs"><a name="1105696">	</a>[super didReceiveMemoryWarning];</div>
+      <div class="Code2_tabs"><a name="1105697">	</a>// Dispose of any resources that can be recreated.</div>
+      <div class="Code2_tabs"><a name="1105698">}</a></div>
+      <div class="Code2_tabs"><a name="1105979">/*</a></div>
+      <div class="Code2_tabs"><span class="Jump_X-ref"><a href="#1097627" title="HomeViewController.m" name="1105984">Step&nbsp;2</a></span></div>
+      <div class="Code2_tabs"><a name="1105985">*/</a></div>
+      <div class="Code2_tabs"><a name="1105700">- (IBAction)getAccessToken:(id)sender</a></div>
+      <div class="Code2_tabs"><a name="1105701">{</a></div>
+      <div class="Code2_tabs"><a name="1105702">	</a>self.accessToken = nil;</div>
+      <div class="Code2_tabs"><a name="1105703">	</a>[EnterpriseAuthentication getSecurityTokenForTarget:@"sdkdemo" alwaysUseFreshToken:NO </div>
+      <div class="Code2_tabs"><a name="1105996">	</a>		completionHandler:^(CentrifySDKResult *result) {</div>
+      <div class="Code2_tabs"><a name="1105704">	</a>	[self getSecurityTokenHandler:result];</div>
+      <div class="Code2_tabs"><a name="1105705">	</a>}];</div>
+      <div class="Code2_tabs"><a name="1105706">}</a></div>
+      <div class="Code2_tabs"><a name="1106210">/*</a></div>
+      <div class="Code2_tabs"><span class="Jump_X-ref"><a href="#1097709" title="HomeViewController.m" name="1106215">Step&nbsp;3</a></span></div>
+      <div class="Code2_tabs"><a name="1106216">*/</a></div>
+      <div class="Code2_tabs"><a name="1105708">- (IBAction)getUserInformation:(id)sender</a></div>
+      <div class="Code2_tabs"><a name="1105709">{</a></div>
+      <div class="Code2_tabs"><a name="1105710">	</a>[EnterpriseAuthentication getUserInformation:^(CentrifySDKResult *result) {</div>
+      <div class="Code2_tabs"><a name="1105711">	</a>	[self getUserInformationHandler:result];</div>
+      <div class="Code2_tabs"><a name="1105712">	</a>}];</div>
+      <div class="Code2_tabs"><a name="1105713">}</a></div>
+      <div class="Code2_tabs"><a name="1106327">/*</a></div>
+      <div class="Code2_tabs"><span class="Jump_X-ref"><a href="#1108505" title="HomeViewController.m" name="1106332">Step&nbsp;4</a></span></div>
+      <div class="Code2_tabs"><a name="1106333">*/</a></div>
+      <div class="Code2_tabs"><a name="1105715">- (IBAction)lookupUserAttribute:(id)sender</a></div>
+      <div class="Code2_tabs"><a name="1105716">{</a></div>
+      <div class="Code2_tabs"><a name="1105717">	</a>NSArray *attributes = [NSArray arrayWithObjects:@"postOfficeBox", @"wWWHomePage", nil];</div>
+      <div class="Code2_tabs"><a name="1105718">	</a>[EnterpriseAuthentication userLookupForAdditionalAttributes:attributes completionHandler:^(CentrifySDKResult *result) {</div>
+      <div class="Code2_tabs"><a name="1105719">	</a>	[self lookupUserAttributeHandler:result];</div>
+      <div class="Code2_tabs"><a name="1105720">	</a>}];</div>
+      <div class="Code2_tabs"><a name="1105721">}</a></div>
+      <div class="Code2_tabs"><a name="1106479">/*</a></div>
+      <div class="Code2_tabs"><span class="Jump_X-ref"><a href="#1108515" title="HomeViewController.m" name="1106484">Step&nbsp;5</a></span></div>
+      <div class="Code2_tabs"><a name="1106485">*/</a></div>
+      <div class="Code2_tabs"><a name="1105723">- (IBAction)logoutUser:(id)sender{</a></div>
+      <div class="Code2_tabs"><a name="1105724">	</a>[EnterpriseAuthentication logout:^(CentrifySDKResult *result) {</div>
+      <div class="Code2_tabs"><a name="1105725">	</a>	[self logoutHandler:result];</div>
+      <div class="Code2_tabs"><a name="1105726">	</a>}];</div>
+      <div class="Code2_tabs"><a name="1105727">}</a></div>
+      <div class="Code2_tabs"><a name="1105728">&nbsp;</a></div>
+      <div class="Code2_tabs"><a name="1105729">#pragma mark UIAlertViewDelegate</a></div>
+      <div class="Code2_tabs"><a name="1106503">/*</a></div>
+      <div class="Code2_tabs"><span class="Jump_X-ref"><a href="#1097926" title="HomeViewController.m" name="1106508">Step&nbsp;6</a></span></div>
+      <div class="Code2_tabs"><a name="1106509">*/</a></div>
+      <div class="Code2_tabs"><a name="1105731">- (void)alertView:(UIAlertView *)alertView </a>didDismissWithButtonIndex:(NSInteger)buttonIndex</div>
+      <div class="Code2_tabs"><a name="1105732">{</a></div>
+      <div class="Code2_tabs"><a name="1105733">	</a>switch (alertView.tag)</div>
+      <div class="Code2_tabs"><a name="1105734">	</a>{</div>
+      <div class="Code2_tabs"><a name="1107165">/*</a></div>
+      <div class="Code2_tabs"><span class="Jump_X-ref"><a href="#1096453" title="HomeViewController.m" name="1107170">Step&nbsp;7</a></span></div>
+      <div class="Code2_tabs"><a name="1107172">*/</a></div>
+      <div class="Code2_tabs"><a name="1105735">	</a>	case AlertViewTagSecurityToken:</div>
+      <div class="Code2_tabs"><a name="1105736">	</a>		if (buttonIndex == 1)</div>
+      <div class="Code2_tabs"><a name="1105737">	</a>		{</div>
+      <div class="Code2_tabs"><a name="1105738">	</a>			CentrifySDKResult *result = [EnterpriseAuthentication </div>
+      <div class="Code2_tabs"><a name="1106423">	</a>				parseSecurityToken:self.accessToken];</div>
+      <div class="Code2_tabs"><a name="1105739">	</a>			if (result.error)</div>
+      <div class="Code2_tabs"><a name="1105740">	</a>			{</div>
+      <div class="Code2_tabs"><a name="1105741">	</a>				NSLog(@"Error occurred : %@", [result.error localizedDescription]);</div>
+      <div class="Code2_tabs"><a name="1105742">	</a>				UIAlertView* alert = [[UIAlertView alloc] initWithTitle:@"SDK Error" </div>
+      <div class="Code2_tabs"><a name="1106431">	</a>					message:[result.error localizedDescription] delegate:nil </div>
+      <div class="Code2_tabs"><a name="1106440">	</a>					cancelButtonTitle:@"OK" otherButtonTitles:nil];</div>
+      <div class="Code2_tabs"><a name="1105743">	</a>				[alert show];</div>
+      <div class="Code2_tabs"><a name="1105744">	</a>			}</div>
+      <div class="Code2_tabs"><a name="1105745">	</a>			else</div>
+      <div class="Code2_tabs"><a name="1105746">	</a>			{</div>
+      <div class="Code2_tabs"><a name="1105747">	</a>				CentrifySecurityToken *parsedToken = </div>
+      <div class="Code2_tabs"><a name="1106449">	</a>					(CentrifySecurityToken*)result.resultData;</div>
+      <div class="Code2_tabs"><a name="1105748">	</a>				NSLog(@"Parsed Token : %@", [parsedToken description]);</div>
+      <div class="Code2_tabs"><a name="1105749">	</a>				UIAlertView* alert = [[UIAlertView alloc] initWithTitle:@"Parsed </div>
+      <div class="Code2_tabs"><a name="1106458">	</a>					Token" message:[parsedToken description] delegate:nil </div>
+      <div class="Code2_tabs"><a name="1106467">	</a>					cancelButtonTitle:@"OK" otherButtonTitles:nil];</div>
+      <div class="Code2_tabs"><a name="1105750">	</a>				[alert show];</div>
+      <div class="Code2_tabs"><a name="1105751">	</a>			}</div>
+      <div class="Code2_tabs"><a name="1105752">	</a>		}</div>
+      <div class="Code2_tabs"><a name="1107188">/*</a></div>
+      <div class="Code2_tabs"><span class="Jump_X-ref"><a href="#1098210" title="HomeViewController.m" name="1107193">Step&nbsp;8</a></span></div>
+      <div class="Code2_tabs"><a name="1107194">*/</a></div>
+      <div class="Code2_tabs"><a name="1105753">	</a>		else if (buttonIndex == 2)</div>
+      <div class="Code2_tabs"><a name="1105754">	</a>		{</div>
+      <div class="Code2_tabs"><a name="1105755">	</a>			CentrifySDKResult *result = [EnterpriseAuthentication </div>
+      <div class="Code2_tabs"><a name="1106520">	</a>				parseSecurityToken:self.accessToken];</div>
+      <div class="Code2_tabs"><a name="1105756">	</a>			if (result.error)</div>
+      <div class="Code2_tabs"><a name="1105757">	</a>			{</div>
+      <div class="Code2_tabs"><a name="1105758">	</a>				NSLog(@"Error occurred : %@", [result.error localizedDescription]);</div>
+      <div class="Code2_tabs"><a name="1105759">	</a>				UIAlertView* alert = [[UIAlertView alloc] initWithTitle:@"SDK Error" </div>
+      <div class="Code2_tabs"><a name="1106528">	</a>					message:[result.error localizedDescription] delegate:nil </div>
+      <div class="Code2_tabs"><a name="1106537">	</a>					cancelButtonTitle:@"OK" otherButtonTitles:nil];</div>
+      <div class="Code2_tabs"><a name="1105760">	</a>				[alert show];</div>
+      <div class="Code2_tabs"><a name="1105761">	</a>			}</div>
+      <div class="Code2_tabs"><a name="1105762">	</a>			else</div>
+      <div class="Code2_tabs"><a name="1105763">	</a>			{</div>
+      <div class="Code2_tabs"><a name="1105764">	</a>				CentrifySecurityToken *parsedToken = </div>
+      <div class="Code2_tabs"><a name="1106546">	</a>					(CentrifySecurityToken*)result.resultData;</div>
+      <div class="Code2_tabs"><a name="1105765">&nbsp;</a></div>
+      <div class="Code2_tabs"><a name="1105766">// We have SAML token. Connect to your server and open a url</a></div>
+      <div class="Code2_tabs"><a name="1105767">	</a>				NSString *appUrl = [NSString stringWithFormat:@"%@?SAMLResponse=%@", </div>
+      <div class="Code2_tabs"><a name="1106561">	</a>					[parsedToken audience], [self encodeQuery:self.accessToken]];</div>
+      <div class="Code2_tabs"><a name="1105768">&nbsp;</a></div>
+      <div class="Code2_tabs"><a name="1105769">	</a>				[[UIApplication sharedApplication] openURL:[NSURL </div>
+      <div class="Code2_tabs"><a name="1106570">	</a>					URLWithString:appUrl]];</div>
+      <div class="Code2_tabs"><a name="1105773">	</a>			}</div>
+      <div class="Code2_tabs"><a name="1105774">&nbsp;</a></div>
+      <div class="Code2_tabs"><a name="1105776">	</a>		}</div>
+      <div class="Code2_tabs"><a name="1105777">	</a>		break;</div>
+      <div class="Code2_tabs"><a name="1105778">	</a>	default:</div>
+      <div class="Code2_tabs"><a name="1105779">	</a>		break;</div>
+      <div class="Code2_tabs"><a name="1105780">	</a>}</div>
+      <div class="Code2_tabs"><a name="1105781">}</a></div>
+      <div class="Code2_tabs"><a name="1105782">&nbsp;</a></div>
+      <div class="Code2_tabs"><a name="1105783">@end</a></div>
+      <div class="Code2_tabs"><a name="1105784">&nbsp;</a></div>
+      <div class="Code2_tabs"><a name="1105785">&nbsp;</a></div>
+      <div class="Code2_tabs"><a name="1105786">@implementation HomeViewController (Private)</a></div>
+      <div class="Code2_tabs"><a name="1107719">/*</a></div>
+      <div class="Code2_tabs"><span class="Jump_X-ref"><a href="#1108032" title="HomeViewController.m" name="1107724">Step&nbsp;9</a></span></div>
+      <div class="Code2_tabs"><a name="1107725">*/</a></div>
+      <div class="Code2_tabs"><a name="1105788">- (void) getSecurityTokenHandler:(CentrifySDKResult *)result</a></div>
+      <div class="Code2_tabs"><a name="1105789">{</a></div>
+      <div class="Code2_tabs"><a name="1105790">	</a>if (result.error)</div>
+      <div class="Code2_tabs"><a name="1105791">	</a>{</div>
+      <div class="Code2_tabs"><a name="1105792">	</a>	NSLog(@"Error occurred : %@", [result.error localizedDescription]);</div>
+      <div class="Code2_tabs"><a name="1105793">	</a>	UIAlertView* alert = [[UIAlertView alloc] initWithTitle:@"SDK Error" </div>
+      <div class="Code2_tabs"><a name="1107692">	</a>		message:[result.error localizedDescription] delegate:nil </div>
+      <div class="Code2_tabs"><a name="1107698">	</a>		cancelButtonTitle:@"OK" otherButtonTitles:nil];</div>
+      <div class="Code2_tabs"><a name="1105794">	</a>	[alert show];</div>
+      <div class="Code2_tabs"><a name="1105795">	</a>}</div>
+      <div class="Code2_tabs"><a name="1105796">	</a>else</div>
+      <div class="Code2_tabs"><a name="1105797">	</a>{</div>
+      <div class="Code2_tabs"><a name="1105798">	</a>	// auth token received</div>
+      <div class="Code2_tabs"><a name="1105799">	</a>	NSString *token = (NSString*)result.resultData;</div>
+      <div class="Code2_tabs"><a name="1105800">	</a>	NSLog(@"Auth Token Received : %@", token);</div>
+      <div class="Code2_tabs"><a name="1105801">	</a>	self.accessToken = token;</div>
+      <div class="Code2_tabs"><a name="1105802">&nbsp;</a></div>
+      <div class="Code2_tabs"><a name="1105803">	</a>	UIAlertView* alert = [[UIAlertView alloc] initWithTitle:@"Access Token" </div>
+      <div class="Code2_tabs"><a name="1107704">	</a>		message:token delegate:self cancelButtonTitle:@"OK" otherButtonTitles:@"Parse </div>
+      <div class="Code2_tabs"><a name="1107710">	</a>		Token", @"Open Url", nil];</div>
+      <div class="Code2_tabs"><a name="1105804">	</a>	alert.tag = AlertViewTagSecurityToken;</div>
+      <div class="Code2_tabs"><a name="1105805">	</a>	[alert show];</div>
+      <div class="Code2_tabs"><a name="1105806">	</a>}</div>
+      <div class="Code2_tabs"><a name="1105807">}</a></div>
+      <div class="Code2_tabs"><a name="1107985">/*</a></div>
+      <div class="Code2_tabs"><span class="Jump_X-ref"><a href="#1108039" title="HomeViewController.m" name="1107990">Step&nbsp;10</a></span></div>
+      <div class="Code2_tabs"><a name="1107991">*/</a></div>
+      <div class="Code2_tabs"><a name="1105809">- (void) getUserInformationHandler:(CentrifySDKResult *)result</a></div>
+      <div class="Code2_tabs"><a name="1105810">{</a></div>
+      <div class="Code2_tabs"><a name="1105811">	</a>if (result.error)</div>
+      <div class="Code2_tabs"><a name="1105812">	</a>{</div>
+      <div class="Code2_tabs"><a name="1105813">	</a>	NSLog(@"Error occurred : %@", [result.error localizedDescription]);</div>
+      <div class="Code2_tabs"><a name="1105814">	</a>	UIAlertView* alert = [[UIAlertView alloc] initWithTitle:@"SDK Error" </div>
+      <div class="Code2_tabs"><a name="1108002">	</a>		message:[result.error localizedDescription] delegate:nil </div>
+      <div class="Code2_tabs"><a name="1108008">	</a>		cancelButtonTitle:@"OK" otherButtonTitles:nil];</div>
+      <div class="Code2_tabs"><a name="1105815">	</a>	[alert show];</div>
+      <div class="Code2_tabs"><a name="1105816">	</a>}</div>
+      <div class="Code2_tabs"><a name="1105817">	</a>else</div>
+      <div class="Code2_tabs"><a name="1105818">	</a>{</div>
+      <div class="Code2_tabs"><a name="1105819">	</a>	// User Information received</div>
+      <div class="Code2_tabs"><a name="1105820">	</a>	UserInformation *userInfo = (UserInformation*)result.resultData;</div>
+      <div class="Code2_tabs"><a name="1105821">	</a>	NSLog(@"User Information Received : %@", userInfo);</div>
+      <div class="Code2_tabs"><a name="1105822">&nbsp;</a></div>
+      <div class="Code2_tabs"><a name="1105823">	</a>	UIAlertView* alert = [[UIAlertView alloc] initWithTitle:@"UserName" </div>
+      <div class="Code2_tabs"><a name="1108014">	</a>		message:[userInfo description] delegate:nil cancelButtonTitle:@"OK" </div>
+      <div class="Code2_tabs"><a name="1108020">	</a>		otherButtonTitles:nil];</div>
+      <div class="Code2_tabs"><a name="1105824">	</a>	[alert show];</div>
+      <div class="Code2_tabs"><a name="1105825">	</a>}</div>
+      <div class="Code2_tabs"><a name="1105826">}</a></div>
+      <div class="Code2_tabs"><a name="1108216">/*</a></div>
+      <div class="Code2_tabs"><span class="Jump_X-ref"><a href="#1098409" title="HomeViewController.m" name="1108221">Step&nbsp;11</a></span></div>
+      <div class="Code2_tabs"><a name="1108222">*/</a></div>
+      <div class="Code2_tabs"><a name="1105828">- (void) lookupUserAttributeHandler:(CentrifySDKResult *)result</a></div>
+      <div class="Code2_tabs"><a name="1105829">{</a></div>
+      <div class="Code2_tabs"><a name="1105830">	</a>if (result.error)</div>
+      <div class="Code2_tabs"><a name="1105831">	</a>{</div>
+      <div class="Code2_tabs"><a name="1105832">	</a>	NSLog(@"Error occurred : %@", [result.error localizedDescription]);</div>
+      <div class="Code2_tabs"><a name="1105833">	</a>	UIAlertView* alert = [[UIAlertView alloc] initWithTitle:@"SDK Error" </div>
+      <div class="Code2_tabs"><a name="1108233">	</a>		message:[result.error localizedDescription] delegate:nil </div>
+      <div class="Code2_tabs"><a name="1108239">	</a>		cancelButtonTitle:@"OK" otherButtonTitles:nil];</div>
+      <div class="Code2_tabs"><a name="1105834">	</a>	[alert show];</div>
+      <div class="Code2_tabs"><a name="1105835">	</a>}</div>
+      <div class="Code2_tabs"><a name="1105836">	</a>else</div>
+      <div class="Code2_tabs"><a name="1105837">	</a>{</div>
+      <div class="Code2_tabs"><a name="1105838">	</a>	// User Information received</div>
+      <div class="Code2_tabs"><a name="1105839">	</a>	UserAttributes *userInfo = (UserAttributes*)result.resultData;</div>
+      <div class="Code2_tabs"><a name="1105840">	</a>	NSLog(@"User lookup attributes Received : %@", userInfo);</div>
+      <div class="Code2_tabs"><a name="1105841">&nbsp;</a></div>
+      <div class="Code2_tabs"><a name="1105842">	</a>	UIAlertView* alert = [[UIAlertView alloc] initWithTitle:@"User Attributes" </div>
+      <div class="Code2_tabs"><a name="1108245">	</a>		message:[userInfo description] delegate:nil cancelButtonTitle:@"OK" </div>
+      <div class="Code2_tabs"><a name="1108251">	</a>		otherButtonTitles:nil];</div>
+      <div class="Code2_tabs"><a name="1105843">	</a>	[alert show];</div>
+      <div class="Code2_tabs"><a name="1105844">	</a>}</div>
+      <div class="Code2_tabs"><a name="1105845">}</a></div>
+      <div class="Code2_tabs"><a name="1108584">/*</a></div>
+      <div class="Code2_tabs"><span class="Jump_X-ref"><a href="#1099080" title="HomeViewController.m" name="1108589">Step&nbsp;12</a></span></div>
+      <div class="Code2_tabs"><a name="1108590">*/</a></div>
+      <div class="Code2_tabs"><a name="1105847">- (void) logoutHandler:(CentrifySDKResult *)result</a></div>
+      <div class="Code2_tabs"><a name="1105848">{</a></div>
+      <div class="Code2_tabs"><a name="1105849">	</a>if (result.error)</div>
+      <div class="Code2_tabs"><a name="1105850">	</a>{</div>
+      <div class="Code2_tabs"><a name="1105851">	</a>	NSLog(@"Error occurred : %@", [result.error localizedDescription]);</div>
+      <div class="Code2_tabs"><a name="1105852">	</a>	UIAlertView* alert = [[UIAlertView alloc] initWithTitle:@"SDK Error" </div>
+      <div class="Code2_tabs"><a name="1108601">	</a>		message:[result.error localizedDescription] delegate:nil </div>
+      <div class="Code2_tabs"><a name="1108607">	</a>		cancelButtonTitle:@"OK" otherButtonTitles:nil];</div>
+      <div class="Code2_tabs"><a name="1105853">	</a>	[alert show];</div>
+      <div class="Code2_tabs"><a name="1105854">	</a>}</div>
+      <div class="Code2_tabs"><a name="1105855">	</a>else</div>
+      <div class="Code2_tabs"><a name="1105856">	</a>{</div>
+      <div class="Code2_tabs"><a name="1105857">	</a>	// Logout is done</div>
+      <div class="Code2_tabs"><a name="1105858">	</a>	NSLog(@"Logout done");</div>
+      <div class="Code2_tabs"><a name="1105859">&nbsp;</a></div>
+      <div class="Code2_tabs"><a name="1105860">	</a>	UIAlertView* alert = [[UIAlertView alloc] initWithTitle:@"Success" </div>
+      <div class="Code2_tabs"><a name="1108613">	</a>		message:@"Logout done" delegate:nil cancelButtonTitle:@"OK" </div>
+      <div class="Code2_tabs"><a name="1108619">	</a>		otherButtonTitles:nil];</div>
+      <div class="Code2_tabs"><a name="1105861">	</a>	[alert show];</div>
+      <div class="Code2_tabs"><a name="1105862">	</a>}</div>
+      <div class="Code2_tabs"><a name="1105863">}</a></div>
+      <div class="Code2_tabs"><a name="1108673">/*</a></div>
+      <div class="Code2_tabs"><span class="Jump_X-ref"><a href="#1099168" title="HomeViewController.m" name="1108678">Step&nbsp;13</a></span></div>
+      <div class="Code2_tabs"><a name="1108679">*/</a></div>
+      <div class="Code2_tabs"><a name="1105865">-(NSString *)encodeQuery:(NSString *)str</a></div>
+      <div class="Code2_tabs"><a name="1105866">{</a></div>
+      <div class="Code2_tabs"><a name="1105867">	</a>// Encode unsafe characters according to RFC 1738 and RFC 3986</div>
+      <div class="Code2_tabs"><a name="1105868">	</a>NSString* escapeStr = @":/?#[]@!$&amp;'()*+,;= &lt;&gt;\"%{}|\\^~`";</div>
+      <div class="Code2_tabs"><a name="1105869">	</a>NSString *result = (__bridge_transfer NSString*) </div>
+      <div class="Code2_tabs"><a name="1108694">	</a>	CFURLCreateStringByAddingPercentEscapes(kCFAllocatorDefault, (__bridge </div>
+      <div class="Code2_tabs"><a name="1108699">	</a>	CFStringRef)str, nil, (__bridge CFStringRef)escapeStr, kCFStringEncodingUTF8);</div>
+      <div class="Code2_tabs"><a name="1105870">	</a>return result;</div>
+      <div class="Code2_tabs"><a name="1105871">}</a></div>
+      <div class="Code2_tabs"><a name="1105872">&nbsp;</a></div>
+      <div class="Code2_tabs"><a name="1105648">@end</a></div>
+      <div class="Code2_tabs"><a name="1096495">&nbsp;</a></div>
+      <div class="Body"><a name="1093940">&nbsp;</a></div>
+    </blockquote>
+    <hr align="left" />
+    <table align="right">
+      <tr>
+        <td class="WebWorks_Company_Logo_Bottom">
+          <a href="http://www.centrify.com" target="external_window"><img src="centrifylogo.gif" border="0" /></a>
+        </td>
+      </tr>
+      <tr>
+        <td class="WebWorks_Company_Name_Bottom">
+          <a href="http://www.centrify.com" target="external_window">Centrify Corporation</a>
+        </td>
+      </tr>
+      <tr>
+        <td class="WebWorks_Company_Email_Bottom">
+          <a href="mailto:support@centrify.com">support@centrify.com</a>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>

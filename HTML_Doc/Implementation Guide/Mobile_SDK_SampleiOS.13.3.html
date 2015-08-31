@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <!-- MOTW-DISABLED saved from url=(0014)about:internet -->
+    <title>AppDelegate.m</title>
+    <link rel="StyleSheet" href="css/Mobile_SDK_SampleiOS.css" type="text/css" media="all" />
+    <link rel="StyleSheet" href="css/webworks.css" type="text/css" media="all" />
+    <script type="text/javascript" language="JavaScript1.2" src="scripts/expand.js"></script>
+    <script type="text/javascript" language="JavaScript1.2">
+      <!--
+        var  WebWorksRootPath = "";
+      // -->
+    </script>
+  </head>
+  <body>
+    <div style="text-align: left;">
+      <table cellspacing="0" summary="">
+        <tr>
+          <td>
+            <a href="toc.html"><img src="images/toc.gif" alt="Table of Contents" border="0" /></a>
+          </td>
+          <td>
+            <a href="Mobile_SDK_SampleiOS.13.2.html"><img src="images/prev.gif" alt="Previous" border="0" /></a>
+          </td>
+          <td>
+            <a href="Mobile_SDK_SampleiOS.13.4.html"><img src="images/next.gif" alt="Next" border="0" /></a>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <br />
+    <div class="WebWorks_Breadcrumbs" style="text-align: left;">
+      <a class="WebWorks_Breadcrumb_Link" href="Mobile_SDK_SampleiOS.13.1.html#1078421">iOS MAS Sample Code</a> : AppDelegate.m</div>
+    <hr align="left" />
+    <blockquote>
+      <div class="Heading1"><a name="1078421">AppDelegate.m</a></div>
+      <div class="Body"><a name="1094051">The </a><span class="Code">AppDelegate.m</span> file of the CentrifySDKSample app implements the application delegate. The application delegate handles certain calls from the system. The code, shown below, performs the following actions:</div>
+      <div class="Step1_outer" style="margin-left: 46.8pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="Step1_inner" style="width: 14.400000000000005pt; white-space: nowrap">
+                <span class="StepNumber">1	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="Step1_inner"><a name="1094053">Imports Java libraries. </a><span class="Jump_X-ref"><a href="Mobile_SDK_SampleiOS.13.4.html#1105926" title="HomeViewController.m"> Step&nbsp;1</a></span></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="StepNum_outer" style="margin-left: 46.8pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="StepNum_inner" style="width: 14.400000000000005pt; white-space: nowrap">
+                <span class="StepNumber">2	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="StepNum_inner"><a name="1094237">Makes the app window key and visible when the app finishes launching.</a><span class="Jump_X-ref"><a href="#1104966" title="AppDelegate.m"> Step&nbsp;2</a></span></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="StepNum_outer" style="margin-left: 46.8pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="StepNum_inner" style="width: 14.400000000000005pt; white-space: nowrap">
+                <span class="StepNumber">3	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="StepNum_inner"><a name="1105387">Handles requests to open resources identified by URL.</a><span class="Jump_X-ref"><a href="#1105068" title="AppDelegate.m"> Step&nbsp;3</a></span></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="StepNum_outer" style="margin-left: 46.8pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="StepNum_inner" style="width: 14.400000000000005pt; white-space: nowrap">
+                <span class="StepNumber">4	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="StepNum_inner"><a name="1105389">Handles a request for a security token by callling the </a><span class="Code">getSecurityTokenForTarget:</span> method, which returns the security token for the <span class="Code">sdkdemo</span> application defined in Cloud Manager.<span class="Jump_X-ref"><a href="#1105159" title="AppDelegate.m"> Step&nbsp;4</a></span></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="Code2_tabs"><a name="1097440">/*</a></div>
+      <div class="Code2_tabs"><span class="Jump_X-ref"><a href="#1094053" title="AppDelegate.m" name="1097445">Step&nbsp;1</a></span></div>
+      <div class="Code2_tabs"><a name="1098153">*/</a></div>
+      <div class="Code2_tabs"><a name="1104843">#import "AppDelegate.h"</a></div>
+      <div class="Code2_tabs"><a name="1104844">#import &lt;CentrifySDK/EnterpriseAuthentication.h&gt;</a></div>
+      <div class="Code2_tabs"><a name="1104845">&nbsp;</a></div>
+      <div class="Code2_tabs"><a name="1104846">@interface AppDelegate(Private)</a></div>
+      <div class="Code2_tabs"><a name="1104847">&nbsp;</a></div>
+      <div class="Code2_tabs"><a name="1104848">- (void)testSDKApis;</a></div>
+      <div class="Code2_tabs"><a name="1104849">&nbsp;</a></div>
+      <div class="Code2_tabs"><a name="1104850">@end</a></div>
+      <div class="Code2_tabs"><a name="1104851">&nbsp;</a></div>
+      <div class="Code2_tabs"><a name="1104852">@implementation AppDelegate</a></div>
+      <div class="Code2_tabs"><a name="1104853">&nbsp;</a></div>
+      <div class="Code2_tabs"><a name="1104854">@synthesize window = _window;</a></div>
+      <div class="Code2_tabs"><a name="1104855">@synthesize appNavigationController = _appNavigationController;</a></div>
+      <div class="Code2_tabs"><a name="1104856">@synthesize homeViewController = _homeViewController;</a></div>
+      <div class="Code2_tabs"><a name="1104857">&nbsp;</a></div>
+      <div class="Code2_tabs"><a name="1104961">/*</a></div>
+      <div class="Code2_tabs"><span class="Jump_X-ref"><a href="#1094237" title="AppDelegate.m" name="1104966">Step&nbsp;2</a></span></div>
+      <div class="Code2_tabs"><a name="1104967">*/</a></div>
+      <div class="Code2_tabs"><a name="1104859">- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:</a></div>
+      <div class="Code2_tabs"><a name="1104938">	</a>(NSDictionary *)launchOptions {</div>
+      <div class="Code2_tabs"><a name="1104860">&nbsp;</a></div>
+      <div class="Code2_tabs"><a name="1104861">	</a>_appNavigationController.view.frame = _window.frame;</div>
+      <div class="Code2_tabs"><a name="1104862">	</a>[self.window makeKeyAndVisible];</div>
+      <div class="Code2_tabs"><a name="1104865">&nbsp;</a></div>
+      <div class="Code2_tabs"><a name="1104866">	</a>return YES;</div>
+      <div class="Code2_tabs"><a name="1104867">}</a></div>
+      <div class="Code2_tabs"><a name="1105063">/*</a></div>
+      <div class="Code2_tabs"><span class="Jump_X-ref"><a href="#1105387" title="AppDelegate.m" name="1105068">Step&nbsp;3</a></span></div>
+      <div class="Code2_tabs"><a name="1105069">*/</a></div>
+      <div class="Code2_tabs"><a name="1104869">- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url </a></div>
+      <div class="Code2_tabs"><a name="1104942">	</a>sourceApplication:(NSString *)sourceApplication annotation:(id)annotation</div>
+      <div class="Code2_tabs"><a name="1104870">{</a></div>
+      <div class="Code2_tabs"><a name="1104871">	</a>BOOL handled = [EnterpriseAuthentication application:application openURL:url </div>
+      <div class="Code2_tabs"><a name="1104946">	</a>	sourceApplication:sourceApplication annotation:annotation];</div>
+      <div class="Code2_tabs"><a name="1104872">	</a>if (handled)</div>
+      <div class="Code2_tabs"><a name="1104873">	</a>{</div>
+      <div class="Code2_tabs"><a name="1104874">	</a>	return handled;</div>
+      <div class="Code2_tabs"><a name="1104875">	</a>}</div>
+      <div class="Code2_tabs"><a name="1104876">&nbsp;</a></div>
+      <div class="Code2_tabs"><a name="1104877">	</a>return NO;</div>
+      <div class="Code2_tabs"><a name="1104878">}</a></div>
+      <div class="Code2_tabs"><a name="1104879">&nbsp;</a></div>
+      <div class="Code2_tabs"><a name="1104880">@end</a></div>
+      <div class="Code2_tabs"><a name="1104881">&nbsp;</a></div>
+      <div class="Code2_tabs"><a name="1104882">@implementation AppDelegate(Private)</a></div>
+      <div class="Code2_tabs"><a name="1105154">/*</a></div>
+      <div class="Code2_tabs"><span class="Jump_X-ref"><a href="#1105389" title="AppDelegate.m" name="1105159">Step&nbsp;4</a></span></div>
+      <div class="Code2_tabs"><a name="1105160">*/</a></div>
+      <div class="Code2_tabs"><a name="1104884">- (void)testSDKApis</a></div>
+      <div class="Code2_tabs"><a name="1104885">{</a></div>
+      <div class="Code2_tabs"><a name="1104886">	</a>[EnterpriseAuthentication getSecurityTokenForTarget:@"sdkdemo" </div>
+      <div class="Code2_tabs"><a name="1104951">	</a>	alwaysUseFreshToken:YES completionHandler:NULL];</div>
+      <div class="Code2_tabs"><a name="1104887">}</a></div>
+      <div class="Code2_tabs"><a name="1104888">&nbsp;</a></div>
+      <div class="Code2_tabs"><a name="1097447">@end</a></div>
+    </blockquote>
+    <hr align="left" />
+    <table align="right">
+      <tr>
+        <td class="WebWorks_Company_Logo_Bottom">
+          <a href="http://www.centrify.com" target="external_window"><img src="centrifylogo.gif" border="0" /></a>
+        </td>
+      </tr>
+      <tr>
+        <td class="WebWorks_Company_Name_Bottom">
+          <a href="http://www.centrify.com" target="external_window">Centrify Corporation</a>
+        </td>
+      </tr>
+      <tr>
+        <td class="WebWorks_Company_Email_Bottom">
+          <a href="mailto:support@centrify.com">support@centrify.com</a>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>

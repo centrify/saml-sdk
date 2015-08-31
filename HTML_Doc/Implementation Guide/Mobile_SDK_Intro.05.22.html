@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <!-- MOTW-DISABLED saved from url=(0014)about:internet -->
+    <title>Specify assertion elements in the SAML script</title>
+    <link rel="StyleSheet" href="css/Mobile_SDK_Intro.css" type="text/css" media="all" />
+    <link rel="StyleSheet" href="css/webworks.css" type="text/css" media="all" />
+    <script type="text/javascript" language="JavaScript1.2" src="scripts/expand.js"></script>
+    <script type="text/javascript" language="JavaScript1.2">
+      <!--
+        var  WebWorksRootPath = "";
+      // -->
+    </script>
+  </head>
+  <body>
+    <div style="text-align: left;">
+      <table cellspacing="0" summary="">
+        <tr>
+          <td>
+            <a href="toc.html"><img src="images/toc.gif" alt="Table of Contents" border="0" /></a>
+          </td>
+          <td>
+            <a href="Mobile_SDK_Intro.05.21.html"><img src="images/prev.gif" alt="Previous" border="0" /></a>
+          </td>
+          <td>
+            <a href="Mobile_SDK_Intro.05.23.html"><img src="images/next.gif" alt="Next" border="0" /></a>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <br />
+    <div class="WebWorks_Breadcrumbs" style="text-align: left;">
+      <a class="WebWorks_Breadcrumb_Link" href="Mobile_SDK_Intro.05.01.html#1112596">Introduction</a> : <a class="WebWorks_Breadcrumb_Link" href="Mobile_SDK_Intro.05.19.html#1112596">The SAML script specifies the attributes in the token</a> : Specify assertion elements in the SAML script</div>
+    <hr align="left" />
+    <blockquote>
+      <div class="Heading2"><a name="1112596">Specify assertion elements in the SAML script</a></div>
+      <div class="Body"><a name="1112597">Centrify Cloud Service offers a group of global functions used to set assertion elements for </a>a user session. These functions set the attributes of the private assertion object, which specifies how Centrify Cloud Service constructs the SAML assertion for this user session. Most of these functions take as an argument the value for a specific SAML assertion element. The <span class="Code">setIssuer</span> function, for example, accepts an entity ID and uses it to specify the issuer URL in the SAML assertion.</div>
+      <div class="Body"><a name="1112598">Two of these functions, </a><span class="Code">setAttribute</span> and <span class="Code">setAttributeArray</span>, specify a SAML response attribute by name and then specify a value for that attribute that is either a single argument or an array.</div>
+      <div class="Body"><a name="1112601">The following table lists the most commonly used assertion-set functions. </a><span class="Jump_X-ref"><a href="Mobile_SDK_SAML_scripting.18.6.html#1143498" title="Scripting environment reference">“Global functions” on page&nbsp;239</a></span> fully describes these functions.</div>
+      <table class="Standard_Indent" style="margin-left: 46.8pt; text-align: left" cellspacing="0" summary="">
+        <caption></caption>
+        <tr>
+          <td style="border-bottom-color: Black; border-bottom-style: solid; border-bottom-width: thin; border-left-color: Black; border-left-style: solid; border-left-width: thin; border-right-color: Black; border-right-style: solid; border-right-width: thin; border-top-color: Black; border-top-style: solid; border-top-width: thin; padding-bottom: 2pt; padding-left: 2pt; padding-right: 2pt; padding-top: 6pt; vertical-align: top">
+            <div class="CellHeading"><a name="1112605">global function</a></div>
+          </td>
+          <td style="border-bottom-color: Black; border-bottom-style: solid; border-bottom-width: thin; border-left-color: Black; border-left-style: solid; border-left-width: thin; border-right-color: Black; border-right-style: solid; border-right-width: thin; border-top-color: Black; border-top-style: solid; border-top-width: thin; padding-bottom: 2pt; padding-left: 2pt; padding-right: 2pt; padding-top: 6pt; vertical-align: top">
+            <div class="CellHeading"><a name="1112607">Description</a></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-bottom-color: Black; border-bottom-style: solid; border-bottom-width: thin; border-left-color: Black; border-left-style: solid; border-left-width: thin; border-right-color: Black; border-right-style: solid; border-right-width: thin; border-top-color: Black; border-top-style: solid; border-top-width: thin; padding-bottom: 2pt; padding-left: 2pt; padding-right: 2pt; padding-top: 6pt; vertical-align: top">
+            <div class="CellBody"><span class="Jump_X-ref"><a href="Mobile_SDK_SAML_scripting.18.6.html#1167032" title="Scripting environment reference" name="1112612"> setAttribute</a></span></div>
+          </td>
+          <td style="border-bottom-color: Black; border-bottom-style: solid; border-bottom-width: thin; border-left-color: Black; border-left-style: solid; border-left-width: thin; border-right-color: Black; border-right-style: solid; border-right-width: thin; border-top-color: Black; border-top-style: solid; border-top-width: thin; padding-bottom: 2pt; padding-left: 2pt; padding-right: 2pt; padding-top: 6pt; vertical-align: top">
+            <div class="CellBody"><span class="Jump_X-ref"><a href="Mobile_SDK_SAML_scripting.18.6.html#1167033" title="Scripting environment reference" name="1112617"> Sets a specified SAML assertion element to a value.</a></span></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-bottom-color: Black; border-bottom-style: solid; border-bottom-width: thin; border-left-color: Black; border-left-style: solid; border-left-width: thin; border-right-color: Black; border-right-style: solid; border-right-width: thin; border-top-color: Black; border-top-style: solid; border-top-width: thin; padding-bottom: 2pt; padding-left: 2pt; padding-right: 2pt; padding-top: 6pt; vertical-align: top">
+            <div class="CellBody"><span class="Jump_X-ref"><a href="Mobile_SDK_SAML_scripting.18.6.html#1167389" title="Scripting environment reference" name="1112622"> setAttributeArray</a></span></div>
+          </td>
+          <td style="border-bottom-color: Black; border-bottom-style: solid; border-bottom-width: thin; border-left-color: Black; border-left-style: solid; border-left-width: thin; border-right-color: Black; border-right-style: solid; border-right-width: thin; border-top-color: Black; border-top-style: solid; border-top-width: thin; padding-bottom: 2pt; padding-left: 2pt; padding-right: 2pt; padding-top: 6pt; vertical-align: top">
+            <div class="CellBody"><span class="Jump_X-ref"><a href="Mobile_SDK_SAML_scripting.18.6.html#1167391" title="Scripting environment reference" name="1112627"> Sets a specified SAML assertion element to an array.</a></span></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-bottom-color: Black; border-bottom-style: solid; border-bottom-width: thin; border-left-color: Black; border-left-style: solid; border-left-width: thin; border-right-color: Black; border-right-style: solid; border-right-width: thin; border-top-color: Black; border-top-style: solid; border-top-width: thin; padding-bottom: 2pt; padding-left: 2pt; padding-right: 2pt; padding-top: 6pt; vertical-align: top">
+            <div class="CellBody"><span class="Jump_X-ref"><a href="Mobile_SDK_SAML_scripting.18.6.html#1167580" title="Scripting environment reference" name="1112632"> setAudience</a></span></div>
+          </td>
+          <td style="border-bottom-color: Black; border-bottom-style: solid; border-bottom-width: thin; border-left-color: Black; border-left-style: solid; border-left-width: thin; border-right-color: Black; border-right-style: solid; border-right-width: thin; border-top-color: Black; border-top-style: solid; border-top-width: thin; padding-bottom: 2pt; padding-left: 2pt; padding-right: 2pt; padding-top: 6pt; vertical-align: top">
+            <div class="CellBody"><span class="Jump_X-ref"><a href="Mobile_SDK_SAML_scripting.18.6.html#1167582" title="Scripting environment reference" name="1112637"> Specifies the audience in an audience restriction in the SAML assertion.</a></span></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-bottom-color: Black; border-bottom-style: solid; border-bottom-width: thin; border-left-color: Black; border-left-style: solid; border-left-width: thin; border-right-color: Black; border-right-style: solid; border-right-width: thin; border-top-color: Black; border-top-style: solid; border-top-width: thin; padding-bottom: 2pt; padding-left: 2pt; padding-right: 2pt; padding-top: 6pt; vertical-align: top">
+            <div class="CellBody"><span class="Jump_X-ref"><a href="Mobile_SDK_SAML_scripting.18.6.html#1168064" title="Scripting environment reference" name="1112642"> setHttpDestination</a></span></div>
+          </td>
+          <td style="border-bottom-color: Black; border-bottom-style: solid; border-bottom-width: thin; border-left-color: Black; border-left-style: solid; border-left-width: thin; border-right-color: Black; border-right-style: solid; border-right-width: thin; border-top-color: Black; border-top-style: solid; border-top-width: thin; padding-bottom: 2pt; padding-left: 2pt; padding-right: 2pt; padding-top: 6pt; vertical-align: top">
+            <div class="CellBody"><span class="Jump_X-ref"><a href="Mobile_SDK_SAML_scripting.18.6.html#1168066" title="Scripting environment reference" name="1112647"> Specifies the URL to which to post the SAML response.</a></span></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-bottom-color: Black; border-bottom-style: solid; border-bottom-width: thin; border-left-color: Black; border-left-style: solid; border-left-width: thin; border-right-color: Black; border-right-style: solid; border-right-width: thin; border-top-color: Black; border-top-style: solid; border-top-width: thin; padding-bottom: 2pt; padding-left: 2pt; padding-right: 2pt; padding-top: 6pt; vertical-align: top">
+            <div class="CellBody"><span class="Jump_X-ref"><a href="Mobile_SDK_SAML_scripting.18.6.html#1168428" title="Scripting environment reference" name="1112652"> setIssuer</a></span></div>
+          </td>
+          <td style="border-bottom-color: Black; border-bottom-style: solid; border-bottom-width: thin; border-left-color: Black; border-left-style: solid; border-left-width: thin; border-right-color: Black; border-right-style: solid; border-right-width: thin; border-top-color: Black; border-top-style: solid; border-top-width: thin; padding-bottom: 2pt; padding-left: 2pt; padding-right: 2pt; padding-top: 6pt; vertical-align: top">
+            <div class="CellBody"><span class="Jump_X-ref"><a href="Mobile_SDK_SAML_scripting.18.6.html#1168430" title="Scripting environment reference" name="1112657"> Specifies the issuer in the SAML assertion.</a></span></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-bottom-color: Black; border-bottom-style: solid; border-bottom-width: thin; border-left-color: Black; border-left-style: solid; border-left-width: thin; border-right-color: Black; border-right-style: solid; border-right-width: thin; border-top-color: Black; border-top-style: solid; border-top-width: thin; padding-bottom: 2pt; padding-left: 2pt; padding-right: 2pt; padding-top: 6pt; vertical-align: top">
+            <div class="CellBody"><span class="Jump_X-ref"><a href="Mobile_SDK_SAML_scripting.18.6.html#1172939" title="Scripting environment reference" name="1112662"> setRecipient</a></span></div>
+          </td>
+          <td style="border-bottom-color: Black; border-bottom-style: solid; border-bottom-width: thin; border-left-color: Black; border-left-style: solid; border-left-width: thin; border-right-color: Black; border-right-style: solid; border-right-width: thin; border-top-color: Black; border-top-style: solid; border-top-width: thin; padding-bottom: 2pt; padding-left: 2pt; padding-right: 2pt; padding-top: 6pt; vertical-align: top">
+            <div class="CellBody"><span class="Jump_X-ref"><a href="Mobile_SDK_SAML_scripting.18.6.html#1172941" title="Scripting environment reference" name="1112667"> Specifies the recipient in the SAML assertion.</a></span></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-bottom-color: Black; border-bottom-style: solid; border-bottom-width: thin; border-left-color: Black; border-left-style: solid; border-left-width: thin; border-right-color: Black; border-right-style: solid; border-right-width: thin; border-top-color: Black; border-top-style: solid; border-top-width: thin; padding-bottom: 2pt; padding-left: 2pt; padding-right: 2pt; padding-top: 6pt; vertical-align: top">
+            <div class="CellBody"><span class="Jump_X-ref"><a href="Mobile_SDK_SAML_scripting.18.6.html#1170897" title="Scripting environment reference" name="1112672"> setServiceUrl</a></span></div>
+          </td>
+          <td style="border-bottom-color: Black; border-bottom-style: solid; border-bottom-width: thin; border-left-color: Black; border-left-style: solid; border-left-width: thin; border-right-color: Black; border-right-style: solid; border-right-width: thin; border-top-color: Black; border-top-style: solid; border-top-width: thin; padding-bottom: 2pt; padding-left: 2pt; padding-right: 2pt; padding-top: 6pt; vertical-align: top">
+            <div class="CellBody"><span class="Jump_X-ref"><a href="Mobile_SDK_SAML_scripting.18.6.html#1170898" title="Scripting environment reference" name="1112677"> Specifies the resource to which the user is requesting access.</a></span></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-bottom-color: Black; border-bottom-style: solid; border-bottom-width: thin; border-left-color: Black; border-left-style: solid; border-left-width: thin; border-right-color: Black; border-right-style: solid; border-right-width: thin; border-top-color: Black; border-top-style: solid; border-top-width: thin; padding-bottom: 2pt; padding-left: 2pt; padding-right: 2pt; padding-top: 6pt; vertical-align: top">
+            <div class="CellBody"><span class="Jump_X-ref"><a href="Mobile_SDK_SAML_scripting.18.6.html#1171465" title="Scripting environment reference" name="1112682"> setSignatureType</a></span></div>
+          </td>
+          <td style="border-bottom-color: Black; border-bottom-style: solid; border-bottom-width: thin; border-left-color: Black; border-left-style: solid; border-left-width: thin; border-right-color: Black; border-right-style: solid; border-right-width: thin; border-top-color: Black; border-top-style: solid; border-top-width: thin; padding-bottom: 2pt; padding-left: 2pt; padding-right: 2pt; padding-top: 6pt; vertical-align: top">
+            <div class="CellBody"><span class="Jump_X-ref"><a href="Mobile_SDK_SAML_scripting.18.6.html#1171467" title="Scripting environment reference" name="1112687"> Specifies what should be signed: the SAML assertion or the SAML response.</a></span></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-bottom-color: Black; border-bottom-style: solid; border-bottom-width: thin; border-left-color: Black; border-left-style: solid; border-left-width: thin; border-right-color: Black; border-right-style: solid; border-right-width: thin; border-top-color: Black; border-top-style: solid; border-top-width: thin; padding-bottom: 2pt; padding-left: 2pt; padding-right: 2pt; padding-top: 6pt; vertical-align: top">
+            <div class="CellBody"><span class="Jump_X-ref"><a href="Mobile_SDK_SAML_scripting.18.6.html#1172379" title="Scripting environment reference" name="1112692"> setSubjectName</a></span></div>
+          </td>
+          <td style="border-bottom-color: Black; border-bottom-style: solid; border-bottom-width: thin; border-left-color: Black; border-left-style: solid; border-left-width: thin; border-right-color: Black; border-right-style: solid; border-right-width: thin; border-top-color: Black; border-top-style: solid; border-top-width: thin; padding-bottom: 2pt; padding-left: 2pt; padding-right: 2pt; padding-top: 6pt; vertical-align: top">
+            <div class="CellBody"><span class="Jump_X-ref"><a href="Mobile_SDK_SAML_scripting.18.6.html#1172380" title="Scripting environment reference" name="1112697"> Specifies the user identity presented to the SAML service.</a></span></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-bottom-color: Black; border-bottom-style: solid; border-bottom-width: thin; border-left-color: Black; border-left-style: solid; border-left-width: thin; border-right-color: Black; border-right-style: solid; border-right-width: thin; border-top-color: Black; border-top-style: solid; border-top-width: thin; padding-bottom: 2pt; padding-left: 2pt; padding-right: 2pt; padding-top: 6pt; vertical-align: top">
+            <div class="CellBody"><span class="Jump_X-ref"><a href="Mobile_SDK_SAML_scripting.18.6.html#1172607" title="Scripting environment reference" name="1112702"> setVersion</a></span></div>
+          </td>
+          <td style="border-bottom-color: Black; border-bottom-style: solid; border-bottom-width: thin; border-left-color: Black; border-left-style: solid; border-left-width: thin; border-right-color: Black; border-right-style: solid; border-right-width: thin; border-top-color: Black; border-top-style: solid; border-top-width: thin; padding-bottom: 2pt; padding-left: 2pt; padding-right: 2pt; padding-top: 6pt; vertical-align: top">
+            <div class="CellBody"><span class="Jump_X-ref"><a href="Mobile_SDK_SAML_scripting.18.6.html#1172609" title="Scripting environment reference" name="1112707"> Specifies the version of the SAML assertion.</a></span></div>
+          </td>
+        </tr>
+      </table>
+    </blockquote>
+    <hr align="left" />
+    <table align="right">
+      <tr>
+        <td class="WebWorks_Company_Logo_Bottom">
+          <a href="http://www.centrify.com" target="external_window"><img src="centrifylogo.gif" border="0" /></a>
+        </td>
+      </tr>
+      <tr>
+        <td class="WebWorks_Company_Name_Bottom">
+          <a href="http://www.centrify.com" target="external_window">Centrify Corporation</a>
+        </td>
+      </tr>
+      <tr>
+        <td class="WebWorks_Company_Email_Bottom">
+          <a href="mailto:support@centrify.com">support@centrify.com</a>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>

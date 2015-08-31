@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <!-- MOTW-DISABLED saved from url=(0014)about:internet -->
+    <title>Use the sample project to write your application</title>
+    <link rel="StyleSheet" href="css/Mobile_QS_Integrate.css" type="text/css" media="all" />
+    <link rel="StyleSheet" href="css/webworks.css" type="text/css" media="all" />
+    <script type="text/javascript" language="JavaScript1.2" src="scripts/expand.js"></script>
+    <script type="text/javascript" language="JavaScript1.2">
+      <!--
+        var  WebWorksRootPath = "";
+      // -->
+    </script>
+  </head>
+  <body>
+    <div style="text-align: left;">
+      <table cellspacing="0" summary="">
+        <tr>
+          <td>
+            <a href="toc.html"><img src="images/toc.gif" alt="Table of Contents" border="0" /></a>
+          </td>
+          <td>
+            <a href="Mobile_QS_Integrate.5.6.html"><img src="images/prev.gif" alt="Previous" border="0" /></a>
+          </td>
+          <td>
+            <a href="Mobile_QS_Integrate.5.8.html"><img src="images/next.gif" alt="Next" border="0" /></a>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <br />
+    <div class="WebWorks_Breadcrumbs" style="text-align: left;">
+      <a class="WebWorks_Breadcrumb_Link" href="Mobile_QS_Integrate.5.1.html#1107211">Developing with the Centrify MAS API</a> : Use the sample project to write your application</div>
+    <hr align="left" />
+    <blockquote>
+      <div class="Heading1"><a name="1107211">Use the sample project to write your application</a></div>
+      <div class="Step1_outer" style="margin-left: 46.8pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="Step1_inner" style="width: 14.400000000000005pt; white-space: nowrap">
+                <span class="StepNumber">1	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="Step1_inner"><a name="1107247">Open the source code for the sample application (</a><span class="Code">GenericSSODemo1</span> for Android, <span class="Code">CentrifySDKSample</span> for iOS)<span class="Code">.</span></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="StepNum_outer" style="margin-left: 46.8pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="StepNum_inner" style="width: 14.400000000000005pt; white-space: nowrap">
+                <span class="StepNumber">2	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="StepNum_inner"><a name="1107248">Find the </a><span class="Code">getSecurityToken</span> call in the file <span class="Code">SalesRecordsActivity.java</span>. This method retrieves the authentication token for the application. For example:</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="Code2_tabs"><a name="1107249">	</a>try {</div>
+      <div class="Code2_tabs"><a name="1107250">	</a>	String target = Preferences.getTarget(SalesRecordsActivity.this)</div>
+      <div class="Code2_tabs"><a name="1107251">	</a>	<span class="bold">samlToken = EnterpriseAuthentication.getSecurityToken(target, false,</span></div>
+      <div class="Code2_tabs"><a name="1107252">	</a>		<span class="bold">SalesRecordsActivity.this)</span></div>
+      <div class="Code2_tabs"><a name="1107253">	</a>	if (samlToken == null || samlToken.length() == 0) {</div>
+      <div class="Code2_tabs"><a name="1107254">	</a>		Toast.makeText(SalesRecordsActivity.this,</div>
+      <div class="Code2_tabs"><a name="1107255">	</a>			"No saml token found", Toast.LENGTH_SHORT).show();</div>
+      <div class="Code2_tabs"><a name="1107256">	</a>		return null;</div>
+      <div class="Code2_tabs"><a name="1107257">	</a>	}</div>
+      <div class="Code2_tabs"><a name="1107258">&nbsp;</a></div>
+      <div class="Code2_tabs"><a name="1107259">	</a>	publishProgress("Auth token obtained...");</div>
+      <div class="Code2_tabs"><a name="1107260">	</a>}</div>
+      <div class="StepText"><a name="1107261">In the sample application, the application name (</a><span class="Code">target</span>) passed to the <span class="Code">getSecurityToken</span> method is <span class="Code">"sdkdemo"</span>, as defined in the file <span class="Code">Preferences.java</span>. This call will work only if you have an application named sdkdemo in Centrify Cloud Manager created using the Generic SAML template. Centrify Cloud Services uses the SAML script specified in the Generic SAML template to generate the token.</div>
+      <div class="StepText"><a name="1105634">For iOS, find the </a><span class="Code">getSecurityTokenForTarget:</span> call in the files <span class="Code">AppDelegate.m</span> and <span class="Code">HomeViewController.m</span>. This method retrieves the authentication token for the application. For example:</div>
+      <div class="Code2_tabs"><a name="1105720">	</a>- (IBAction)getAccessToken:(id)sender</div>
+      <div class="Code2_tabs"><a name="1105721">	</a>{</div>
+      <div class="Code2_tabs"><a name="1105722">	</a>	self.accessToken = nil;</div>
+      <div class="Code2_tabs"><a name="1105723">	</a>	[EnterpriseAuthentication getSecurityTokenForTarget:@"sdkdemo" </div>
+      <div class="Code2_tabs"><a name="1105724">	</a>		alwaysUseFreshToken:NO completionHandler:^(CentrifySDKResult *result) {</div>
+      <div class="Code2_tabs"><a name="1105725">	</a>			[self getSecurityTokenHandler:result];</div>
+      <div class="Code2_tabs"><a name="1105726">	</a>	}];</div>
+      <div class="Code2_tabs"><a name="1105727">	</a>}</div>
+      <div class="StepText"><a name="1105689">Notice that, in the sample application, the application name passed to the </a><span class="Code">getSecurityToken</span> or <span class="Code">getSecurityTokenForTarget:</span> method is <span class="Code">"sdkdemo"</span>. This call will work only if you have an application named sdkdemo in Centrify Cloud Manager created using the Generic SAML template. Centrify Cloud Services uses the SAML script specified in the Generic SAML template to generate the token.</div>
+      <div class="StepNum_outer" style="margin-left: 46.8pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="StepNum_inner" style="width: 14.400000000000005pt; white-space: nowrap">
+                <span class="StepNumber">3	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="StepNum_inner"><a name="1105635">Write your application using the Centrify </a>MAS API to authenticate the user and parse the authentication token. Be sure that your call to <span class="Code">getSecurityToken</span> or <span class="Code">getSecurityTokenForTarget:</span> uses the same application name as you used in your Generic SAML template for your web service.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="StepNote">
+        <span class="Note">Note	</span><a name="1105636">You will need to get some parameter values for the methods in the API from Cloud </a>Manager. See the API descriptions in the chapter “Mobile Authentication Service Android Reference” or “Mobile Authentication Service iOS Reference” for details. </div>
+    </blockquote>
+    <hr align="left" />
+    <table align="right">
+      <tr>
+        <td class="WebWorks_Company_Logo_Bottom">
+          <a href="http://centrify.com" target="external_window"><img src="centrifylogo.gif" border="0" /></a>
+        </td>
+      </tr>
+      <tr>
+        <td class="WebWorks_Company_Name_Bottom">
+          <a href="http://centrify.com" target="external_window">Centrify Corporation</a>
+        </td>
+      </tr>
+      <tr>
+        <td class="WebWorks_Company_Email_Bottom">
+          <a href="mailto:support@centrify.com">support@centrify.com</a>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>

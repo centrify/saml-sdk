@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <!-- MOTW-DISABLED saved from url=(0014)about:internet -->
+    <title>SAMLFilter</title>
+    <link rel="StyleSheet" href="css/Mobile_SDK_SampleJ2EE-SAML.css" type="text/css" media="all" />
+    <link rel="StyleSheet" href="css/webworks.css" type="text/css" media="all" />
+    <script type="text/javascript" language="JavaScript1.2" src="scripts/expand.js"></script>
+    <script type="text/javascript" language="JavaScript1.2">
+      <!--
+        var  WebWorksRootPath = "";
+      // -->
+    </script>
+  </head>
+  <body>
+    <div style="text-align: left;">
+      <table cellspacing="0" summary="">
+        <tr>
+          <td>
+            <a href="toc.html"><img src="images/toc.gif" alt="Table of Contents" border="0" /></a>
+          </td>
+          <td>
+            <a href="Mobile_SDK_SampleJ2EE-SAML.17.1.html"><img src="images/prev.gif" alt="Previous" border="0" /></a>
+          </td>
+          <td>
+            <a href="Mobile_SDK_SampleJ2EE-SAML.17.3.html"><img src="images/next.gif" alt="Next" border="0" /></a>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <br />
+    <div class="WebWorks_Breadcrumbs" style="text-align: left;">
+      <a class="WebWorks_Breadcrumb_Link" href="Mobile_SDK_SampleJ2EE-SAML.17.1.html#1106623">SAML J2EE Sample Code</a> : SAMLFilter</div>
+    <hr align="left" />
+    <blockquote>
+      <div class="Heading1"><a name="1106623">SAMLFilter</a></div>
+      <div class="Body"><a name="1106627">This sample uses the </a><span class="Code">xxx</span> class (see <span class="Jump_X-ref"><a href="Mobile_SDK_SAML_Ref.html#1387549" title="SAML Java Reference">“CentrifySaasService” on page&nbsp;144</a></span>) to ....</div>
+      <div class="Body"><a name="1106628">The sample code file </a><span class="Code">SAMLFilter.java</span> performs the following actions:</div>
+      <div class="Step1_outer" style="margin-left: 46.8pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="Step1_inner" style="width: 14.400000000000005pt; white-space: nowrap">
+                <span class="StepNumber">1	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="Step1_inner"><a name="1101611">Imports J2EE libraries. </a><span class="Jump_X-ref"><a href="#1093265" title="SAMLFilter">Step&nbsp;1</a></span></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="StepNum_outer" style="margin-left: 46.8pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="StepNum_inner" style="width: 14.400000000000005pt; white-space: nowrap">
+                <span class="StepNumber">2	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="StepNum_inner"><a name="1102316">Imports Centrify SaaS libraries. </a><span class="Jump_X-ref"><a href="#1110096" title="SAMLFilter">Step&nbsp;2</a></span></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="StepNum_outer" style="margin-left: 46.8pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="StepNum_inner" style="width: 14.400000000000005pt; white-space: nowrap">
+                <span class="StepNumber">3	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="StepNum_inner"><a name="1093572">Implements the </a><span class="Code">SamlFilter</span> class by extending the <span class="Code">AbstractSamlFilter</span> class in the API (see <span class="Jump_X-ref"><a href="Mobile_SDK_J2EE_Ref.html#1428444" title="SAML J2EE Reference">“AbstractSamlFilter” on page&nbsp;202</a></span>). <span class="Jump_X-ref"><a href="#1110207" title="SAMLFilter">Step&nbsp;3</a></span></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="StepText"><a name="1110327">When a filter that is an instantiation of the </a><span class="Code">AbstractSamlFilter</span> class receives a login request, it determines whether the client is authenticated. If not, the filter sends a SAML <span class="Code">AuthnRequest</span> message to the identity provider through the browser that sent the request.</div>
+      <div class="StepNum_outer" style="margin-left: 46.8pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="StepNum_inner" style="width: 14.400000000000005pt; white-space: nowrap">
+                <span class="StepNumber">4	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="StepNum_inner"><a name="1110810">Implements the </a><span class="Code">getSamlRequestGenerator</span> method (see <span class="Jump_X-ref"><a href="Mobile_SDK_J2EE_Ref.html#1442274" title="SAML J2EE Reference">“getSamlRequestGenerator” on page&nbsp;207</a></span>). <span class="Jump_X-ref"><a href="#1110475" title="SAMLFilter">Step&nbsp;4</a></span></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="StepText"><a name="1110815">This method returns an </a><span class="Code">ISamlRequestGenerator</span> object created in the <span class="Code">init</span> method (see <span class="Jump_X-ref"><a href="#1112245" title="SAMLFilter">Step&nbsp;10</a></span>). The filter uses this object to generate the <span class="Code">AuthnRequest</span> message that it passes to the identity provider.</div>
+      <div class="StepNum_outer" style="margin-left: 46.8pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="StepNum_inner" style="width: 14.400000000000005pt; white-space: nowrap">
+                <span class="StepNumber">5	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="StepNum_inner"><a name="1110817">Implements the </a><span class="Code">getIdpHttpPostUrl</span><span style="font-family: &quot;Lucida Console&quot;; font-size: 7.5pt"> </span>method (see <span class="Jump_X-ref"><a href="Mobile_SDK_J2EE_Ref.html#1428641" title="SAML J2EE Reference">“getIdpHttpPostUrl” on page&nbsp;206</a></span>). <span class="Jump_X-ref"><a href="#1110565" title="SAMLFilter">Step&nbsp;5</a></span></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="StepText"><a name="1112583">This method returns an </a><span class="Code">idpHttpPostUrl</span> object created in the <span class="Code">init</span> method (see <span class="Jump_X-ref"><a href="#1112247" title="SAMLFilter">Step&nbsp;11</a></span>). The filter uses this object to determine the address of the identity provider.</div>
+      <div class="StepNum_outer" style="margin-left: 46.8pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="StepNum_inner" style="width: 14.400000000000005pt; white-space: nowrap">
+                <span class="StepNumber">6	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="StepNum_inner"><a name="1112588">Implements the filter’s </a><span class="Code">init</span> method. In the SDK sample code, the Tomcat server passes a configuration object containing the configuration parameters from the <span class="Code">web.xml</span> file to the filter. In this sample (sample1), the configuration parameters include the <span class="Code">idpPostUrl</span> and <span class="Code">spIssuerName</span> values. <span class="Jump_X-ref"><a href="#1110586" title="SAMLFilter">Step&nbsp;6</a></span></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="StepNum_outer" style="margin-left: 46.8pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="StepNum_inner" style="width: 14.400000000000005pt; white-space: nowrap">
+                <span class="StepNumber">7	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="StepNum_inner"><a name="1110602">Calls the </a><span class="Code">super.init</span> method to pass the configuration object to the <span class="Code">init</span> method of the parent class. <span class="Jump_X-ref"><a href="#1110612" title="SAMLFilter">Step&nbsp;7</a></span></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="StepNum_outer" style="margin-left: 46.8pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="StepNum_inner" style="width: 14.400000000000005pt; white-space: nowrap">
+                <span class="StepNumber">8	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="StepNum_inner"><a name="1110604">Instantiates a </a><span class="Code">filterConfigWrapper</span> object, passing it the configuration object (see <span class="Jump_X-ref"><a href="Mobile_SDK_J2EE_Ref.html#1438699" title="SAML J2EE Reference">“FilterConfigWrapper” on page&nbsp;213</a></span>). <span class="Jump_X-ref"><a href="#1110643" title="SAMLFilter">Step&nbsp;8</a></span></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="StepNum_outer" style="margin-left: 46.8pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="StepNum_inner" style="width: 14.400000000000005pt; white-space: nowrap">
+                <span class="StepNumber">9	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="StepNum_inner"><a name="1112240">Calls the </a><span class="Code">filterConfigWrapper.getString</span> method to get the value of the <span class="Code">spIssuerName</span> configuration parameter. <span class="Jump_X-ref"><a href="#1110676" title="SAMLFilter">Step&nbsp;9</a></span></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="StepNum_outer" style="margin-left: 46.8pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="StepNum_inner" style="width: 14.400000000000005pt; white-space: nowrap">
+                <span class="StepNumber">10	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="StepNum_inner"><a name="1112245">Instantiates an </a><span class="Code">ISamlRequestGenerator</span> object (see <span class="Jump_X-ref"><a href="Mobile_SDK_SAML_Ref.html#1429889" title="SAML Java Reference">“SamlRequestGenerator” on page&nbsp;161</a></span>), using the value of the <span class="Code">spIssuerName</span> parameter. <span class="Jump_X-ref"><a href="#1110704" title="SAMLFilter">Step&nbsp;10</a></span></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="StepText"><a name="1112333">The filter container calls the </a><span class="Code">getSamlRequestGenerator</span> method implemented in <span class="Jump_X-ref"><a href="#1110810" title="SAMLFilter">Step&nbsp;4</a></span> to obtain this object.</div>
+      <div class="StepNum_outer" style="margin-left: 46.8pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="StepNum_inner" style="width: 14.400000000000005pt; white-space: nowrap">
+                <span class="StepNumber">11	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="StepNum_inner"><a name="1112247">Calls the </a><span class="Code">filterConfigWrapper.getString</span> method to get the value of the <span class="Code">idpHttpPostUrl</span> configuration parameter. <span class="Jump_X-ref"><a href="#1110742" title="SAMLFilter">Step&nbsp;11</a></span></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="StepText"><a name="1112702">The filter container calls the </a><span class="Code">getIdpHttpPostUrl</span> method implemented in <span class="Jump_X-ref"><a href="#1110817" title="SAMLFilter">Step&nbsp;5</a></span> to obtain this value.</div>
+      <div class="Code2_tabs"><a name="1105496">	</a>						</div>
+      <div class="Code2_tabs"><a name="1110070">package com.centrify.cloud.saas.example;</a></div>
+      <div class="Code2_tabs"><a name="1095883">/*</a></div>
+      <div class="Code2_tabs"><span class="Jump_X-ref"><a href="#1101611" title="SAMLFilter" name="1093265">Step&nbsp;1</a></span></div>
+      <div class="Code2_tabs"><a name="1095888">*/</a></div>
+      <div class="Code2_tabs"><a name="1110010">import javax.servlet.FilterConfig;</a></div>
+      <div class="Code2_tabs"><a name="1110011">import javax.servlet.ServletException;</a></div>
+      <div class="Code2_tabs"><a name="1110091">/*</a></div>
+      <div class="Code2_tabs"><span class="Jump_X-ref"><a href="#1102316" title="SAMLFilter" name="1110096">Step&nbsp;2</a></span></div>
+      <div class="Code2_tabs"><a name="1110097">*/</a></div>
+      <div class="Code2_tabs"><a name="1110013">import com.centrify.cloud.saas.AbstractServletConfigWrapper;</a></div>
+      <div class="Code2_tabs"><a name="1110014">import com.centrify.cloud.saas.ISamlRequestGenerator;</a></div>
+      <div class="Code2_tabs"><a name="1110015">import com.centrify.cloud.saas.SamlRequestGenerator;</a></div>
+      <div class="Code2_tabs"><a name="1110016">import com.centrify.cloud.saas.filter.AbstractSamlFilter;</a></div>
+      <div class="Code2_tabs"><a name="1110017">import com.centrify.cloud.saas.filter.FilterConfigWrapper;</a></div>
+      <div class="Code2_tabs"><a name="1110018">&nbsp;</a></div>
+      <div class="Code2_tabs"><a name="1110019">/*</a></div>
+      <div class="Code2_tabs"><span class="Jump_X-ref"><a href="#1093572" title="SAMLFilter" name="1110207">Step&nbsp;3</a></span></div>
+      <div class="Code2_tabs"><a name="1110021">*/</a></div>
+      <div class="Code2_tabs"><a name="1110022">public class SamlFilter extends AbstractSamlFilter {</a></div>
+      <div class="Code2_tabs"><a name="1110023">&nbsp;</a></div>
+      <div class="Code2_tabs"><a name="1110024">    private static final String PARAM_ISSUER_NAME = "spIssuerName";</a></div>
+      <div class="Code2_tabs"><a name="1110025">    </a></div>
+      <div class="Code2_tabs"><a name="1110026">    private static final String PARAM_IDP_HTTP_POST_URL = "idpPostUrl";</a></div>
+      <div class="Code2_tabs"><a name="1110027">    </a></div>
+      <div class="Code2_tabs"><a name="1110028">    private ISamlRequestGenerator requestGenerator;</a></div>
+      <div class="Code2_tabs"><a name="1110029">    private String idpHttpPostUrl;</a></div>
+      <div class="Code2_tabs"><a name="1110470">/*</a></div>
+      <div class="Code2_tabs"><span class="Jump_X-ref"><a href="#1110810" title="SAMLFilter" name="1110475">Step&nbsp;4</a></span></div>
+      <div class="Code2_tabs"><a name="1110476">*/</a></div>
+      <div class="Code2_tabs"><a name="1110031">@Override</a></div>
+      <div class="Code2_tabs"><a name="1110032">    protected ISamlRequestGenerator getSamlRequestGenerator() {</a></div>
+      <div class="Code2_tabs"><a name="1110033">        return requestGenerator;</a></div>
+      <div class="Code2_tabs"><a name="1110034">    }</a></div>
+      <div class="Code2_tabs"><a name="1110561">/*</a></div>
+      <div class="Code2_tabs"><span class="Jump_X-ref"><a href="#1110817" title="SAMLFilter" name="1110565">Step&nbsp;5</a></span></div>
+      <div class="Code2_tabs"><a name="1110566">*/</a></div>
+      <div class="Code2_tabs"><a name="1110036">@Override</a></div>
+      <div class="Code2_tabs"><a name="1110037">    protected String getIdpHttpPostUrl() {</a></div>
+      <div class="Code2_tabs"><a name="1110038">        return idpHttpPostUrl;</a></div>
+      <div class="Code2_tabs"><a name="1110039">    }</a></div>
+      <div class="Code2_tabs"><a name="1110582">/*</a></div>
+      <div class="Code2_tabs"><span class="Jump_X-ref"><a href="#1112588" title="SAMLFilter" name="1110586">Step&nbsp;6</a></span></div>
+      <div class="Code2_tabs"><a name="1110587">*/</a></div>
+      <div class="Code2_tabs"><a name="1110041">@Override</a></div>
+      <div class="Code2_tabs"><a name="1110042">    public void init(FilterConfig fConfig) throws ServletException {</a></div>
+      <div class="Code2_tabs"><a name="1110608">/*</a></div>
+      <div class="Code2_tabs"><span class="Jump_X-ref"><a href="#1110602" title="SAMLFilter" name="1110612">Step&nbsp;7</a></span></div>
+      <div class="Code2_tabs"><a name="1110613">*/</a></div>
+      <div class="Code2_tabs"><a name="1110043">	</a>	super.init(fConfig);</div>
+      <div class="Code2_tabs"><a name="1110639">/*</a></div>
+      <div class="Code2_tabs"><span class="Jump_X-ref"><a href="#1110604" title="SAMLFilter" name="1110643">Step&nbsp;8</a></span></div>
+      <div class="Code2_tabs"><a name="1110644">*/</a></div>
+      <div class="Code2_tabs"><a name="1110044">	</a>	AbstractServletConfigWrapper filterConfig = new FilterConfigWrapper(</div>
+      <div class="Code2_tabs"><a name="1110045">              fConfig);</a></div>
+      <div class="Code2_tabs"><a name="1110672">/*</a></div>
+      <div class="Code2_tabs"><span class="Jump_X-ref"><a href="#1112240" title="SAMLFilter" name="1110676">Step&nbsp;9</a></span></div>
+      <div class="Code2_tabs"><a name="1110677">*/</a></div>
+      <div class="Code2_tabs"><a name="1110047">	</a>	String spIssuerName = filterConfig.getString(PARAM_ISSUER_NAME);</div>
+      <div class="Code2_tabs"><a name="1110700">/*</a></div>
+      <div class="Code2_tabs"><span class="Jump_X-ref"><a href="#1112245" title="SAMLFilter" name="1110704">Step&nbsp;10</a></span></div>
+      <div class="Code2_tabs"><a name="1110705">*/</a></div>
+      <div class="Code2_tabs"><a name="1110048">	</a>	requestGenerator = new SamlRequestGenerator(spIssuerName);</div>
+      <div class="Code2_tabs"><a name="1110738">/*</a></div>
+      <div class="Code2_tabs"><span class="Jump_X-ref"><a href="#1112247" title="SAMLFilter" name="1110742">Step&nbsp;11</a></span></div>
+      <div class="Code2_tabs"><a name="1110743">*/</a></div>
+      <div class="Code2_tabs"><a name="1110050">	</a>	idpHttpPostUrl = filterConfig.getString(PARAM_IDP_HTTP_POST_URL);</div>
+      <div class="Code2_tabs"><a name="1110051">    }</a></div>
+      <div class="Code2_tabs"><a name="1110052">    </a></div>
+      <div class="Code2_tabs"><a name="1110053">}</a></div>
+    </blockquote>
+    <hr align="left" />
+    <table align="right">
+      <tr>
+        <td class="WebWorks_Company_Logo_Bottom">
+          <a href="http://www.centrify.com" target="external_window"><img src="centrifylogo.gif" border="0" /></a>
+        </td>
+      </tr>
+      <tr>
+        <td class="WebWorks_Company_Name_Bottom">
+          <a href="http://www.centrify.com" target="external_window">Centrify Corporation</a>
+        </td>
+      </tr>
+      <tr>
+        <td class="WebWorks_Company_Email_Bottom">
+          <a href="mailto:support@centrify.com">support@centrify.com</a>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>

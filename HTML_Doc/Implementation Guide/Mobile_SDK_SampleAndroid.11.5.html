@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <!-- MOTW-DISABLED saved from url=(0014)about:internet -->
+    <title>UserLookupActivity</title>
+    <link rel="StyleSheet" href="css/Mobile_SDK_SampleAndroid.css" type="text/css" media="all" />
+    <link rel="StyleSheet" href="css/webworks.css" type="text/css" media="all" />
+    <script type="text/javascript" language="JavaScript1.2" src="scripts/expand.js"></script>
+    <script type="text/javascript" language="JavaScript1.2">
+      <!--
+        var  WebWorksRootPath = "";
+      // -->
+    </script>
+  </head>
+  <body>
+    <div style="text-align: left;">
+      <table cellspacing="0" summary="">
+        <tr>
+          <td>
+            <a href="toc.html"><img src="images/toc.gif" alt="Table of Contents" border="0" /></a>
+          </td>
+          <td>
+            <a href="Mobile_SDK_SampleAndroid.11.4.html"><img src="images/prev.gif" alt="Previous" border="0" /></a>
+          </td>
+          <td>
+            <a href="Mobile_SDK_iOS_Ref.html"><img src="images/next.gif" alt="Next" border="0" /></a>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <br />
+    <div class="WebWorks_Breadcrumbs" style="text-align: left;">
+      <a class="WebWorks_Breadcrumb_Link" href="Mobile_SDK_SampleAndroid.11.1.html#1094013">Android MAS Sample Code</a> : UserLookupActivity</div>
+    <hr align="left" />
+    <blockquote>
+      <div class="Heading1"><a name="1094013">UserLookupActivity</a></div>
+      <div class="Body"><a name="1100182">The </a><span class="Code">UserLookupActivity.java</span> file of the Android SSO Demo1 sample application illustrates the use of the methods of the Android MAS API to get Active Directory attributes for the authenticated user. The code, shown below, performs the following actions:</div>
+      <div class="Step1_outer" style="margin-left: 46.8pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="Step1_inner" style="width: 14.400000000000005pt; white-space: nowrap">
+                <span class="StepNumber">1	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="Step1_inner"><a name="1100436">Imports Android libraries. </a><span class="Jump_X-ref"><a href="#1100255" title="UserLookupActivity"> Step&nbsp;1</a></span></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="StepNum_outer" style="margin-left: 46.8pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="StepNum_inner" style="width: 14.400000000000005pt; white-space: nowrap">
+                <span class="StepNumber">2	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="StepNum_inner"><a name="1100192">Imports Centrify libraries. </a><span class="Jump_X-ref"><a href="#1100610" title="UserLookupActivity"> Step&nbsp;2</a></span></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="StepNum_outer" style="margin-left: 46.8pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="StepNum_inner" style="width: 14.400000000000005pt; white-space: nowrap">
+                <span class="StepNumber">3	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="StepNum_inner"><a name="1100201">Defines a new class, </a><span class="Code">UserLookupActivity</span>, by extending the Android <span class="Code">Activity</span> class. <span class="Jump_X-ref"><a href="#1100630" title="UserLookupActivity"> Step&nbsp;3</a></span></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="StepNum_outer" style="margin-left: 46.8pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="StepNum_inner" style="width: 14.400000000000005pt; white-space: nowrap">
+                <span class="StepNumber">4	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="StepNum_inner"><a name="1100207">Initializes the interface with saved state information. </a><span class="Jump_X-ref"><a href="#1100665" title="UserLookupActivity"> Step&nbsp;4</a></span></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="StepNum_outer" style="margin-left: 46.8pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="StepNum_inner" style="width: 14.400000000000005pt; white-space: nowrap">
+                <span class="StepNumber">5	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="StepNum_inner"><a name="1100212">Activates the lookup activity when it is in front.</a><span class="Jump_X-ref"><a href="#1100767" title="UserLookupActivity"> Step&nbsp;5</a></span></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="StepNum_outer" style="margin-left: 46.8pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="StepNum_inner" style="width: 14.400000000000005pt; white-space: nowrap">
+                <span class="StepNumber">6	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="StepNum_inner"><a name="1100217">Gets the user information in the background as an asynchronous task. </a><span class="Jump_X-ref"><a href="#1100805" title="UserLookupActivity"> Step&nbsp;6</a></span></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="StepNum_outer" style="margin-left: 46.8pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="StepNum_inner" style="width: 14.400000000000005pt; white-space: nowrap">
+                <span class="StepNumber">7	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="StepNum_inner"><a name="1100221">Creates a new </a><span class="Code">EnterpriseAuthentication</span> object (see <span class="Jump_X-ref"><a href="Mobile_SDK_Ref.html#1386698" title="Mobile Authentication Service Android Reference">“EnterpriseAuthentication” on page&nbsp;56</a></span>), which can be used to return user information, and calls <span class="Code">EnterpriseAuthentication.userLookup</span> to get a <span class="Code">UserAttributes</span> object (see <span class="Jump_X-ref"><a href="Mobile_SDK_Ref.html#1394669" title="Mobile Authentication Service Android Reference">“UserAttributes” on page&nbsp;81</a></span>) that contains the currently authenticated user’s Active Directory <span class="Code">proxyaddresses</span><span style="font-family: &quot;Lucida Console&quot;; font-size: 7.5pt"> </span>attribute. If the user is not already authenticated, Centrify Cloud Services displays an authentication dialog requesting the user’s Active Directory credentials. This is a blocking call, so it does not return until the user has responded.. <span class="Jump_X-ref"><a href="#1100843" title="UserLookupActivity"> Step&nbsp;7</a></span></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="StepNote">
+        <span class="Note">Note	</span><a name="1100543">The SAML response contains the attributes that are specified by an application-</a>specific SAML script run by Centrify Cloud Service. The script is created by the administrator when configuring the Generic SAML template in Centrify Cloud Manager. See Centrify Application Configuration Help for instructions on using the Generic SAML template.</div>
+      <div class="StepNum_outer" style="margin-left: 46.8pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="StepNum_inner" style="width: 14.400000000000005pt; white-space: nowrap">
+                <span class="StepNumber">8	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="StepNum_inner"><a name="1101062">Logs the result of the call: either the information was returned or authentication failed. </a><span class="Jump_X-ref"><a href="#1100913" title="UserLookupActivity"> Step&nbsp;8</a></span></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="StepNum_outer" style="margin-left: 46.8pt">
+        <table border="0" cellspacing="0" cellpadding="0" summary="">
+          <tr style="vertical-align: baseline">
+            <td>
+              <div class="StepNum_inner" style="width: 14.400000000000005pt; white-space: nowrap">
+                <span class="StepNumber">9	</span>
+              </div>
+            </td>
+            <td width="100%">
+              <div class="StepNum_inner"><a name="1101068">Displays the attribute as a string. </a><span class="Jump_X-ref"><a href="#1100986" title="UserLookupActivity"> Step&nbsp;9</a></span></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="Code2_tabs"><a name="1101069">&nbsp;</a></div>
+      <div class="Code2_tabs"><a name="1100250">package com.centrify.sso.demo1;</a></div>
+      <div class="Code2_tabs"><a name="1100251">/*</a></div>
+      <div class="Code2_tabs"><span class="Jump_X-ref"><a href="#1100436" title="UserLookupActivity" name="1100255">Step&nbsp;1</a></span></div>
+      <div class="Code2_tabs"><a name="1100256">*/</a></div>
+      <div class="Code2_tabs"><a name="1100325">import android.app.Activity;</a></div>
+      <div class="Code2_tabs"><a name="1100326">import android.content.Context;</a></div>
+      <div class="Code2_tabs"><a name="1100327">import android.content.Intent;</a></div>
+      <div class="Code2_tabs"><a name="1100328">import android.os.AsyncTask;</a></div>
+      <div class="Code2_tabs"><a name="1100329">import android.os.Bundle;</a></div>
+      <div class="Code2_tabs"><a name="1100330">import android.util.Log;</a></div>
+      <div class="Code2_tabs"><a name="1100331">import android.widget.TextView;</a></div>
+      <div class="Code2_tabs"><a name="1100605">/*</a></div>
+      <div class="Code2_tabs"><span class="Jump_X-ref"><a href="#1100192" title="UserLookupActivity" name="1100610">Step&nbsp;2</a></span></div>
+      <div class="Code2_tabs"><a name="1100611">*/</a></div>
+      <div class="Code2_tabs"><a name="1104263">import com.centrify.auth.EnterpriseAuthentication;</a></div>
+      <div class="Code2_tabs"><a name="1100625">import com.centrify.auth.UserAttributes;/*</a></div>
+      <div class="Code2_tabs"><span class="Jump_X-ref"><a href="#1100201" title="UserLookupActivity" name="1100630">Step&nbsp;3</a></span></div>
+      <div class="Code2_tabs"><a name="1100631">*/</a></div>
+      <div class="Code2_tabs"><a name="1100336">public class UserLookupActivity extends Activity {</a></div>
+      <div class="Code2_tabs"><a name="1100337">	</a>protected static final String TAG = "UserLookupActivity";</div>
+      <div class="Code2_tabs"><a name="1100338">	</a></div>
+      <div class="Code2_tabs"><a name="1100339">	</a>private AsyncTask&lt;Void, Void, UserAttributes&gt; loadTask;</div>
+      <div class="Code2_tabs"><a name="1100340">	</a>private TextView bodyText;</div>
+      <div class="Code2_tabs"><a name="1100341">	</a></div>
+      <div class="Code2_tabs"><a name="1100342">	</a>public static void startActivity(Context ctx) {</div>
+      <div class="Code2_tabs"><a name="1100343">	</a>	ctx.startActivity(new Intent(ctx, UserLookupActivity.class));</div>
+      <div class="Code2_tabs"><a name="1100344">	</a>}</div>
+      <div class="Code2_tabs"><a name="1100345">	</a></div>
+      <div class="Code2_tabs"><a name="1100346">	</a></div>
+      <div class="Code2_tabs"><a name="1100660">/*</a></div>
+      <div class="Code2_tabs"><span class="Jump_X-ref"><a href="#1100207" title="UserLookupActivity" name="1100665">Step&nbsp;4</a></span></div>
+      <div class="Code2_tabs"><a name="1100347">/** Called when the activity is first created. </a></div>
+      <div class="Code2_tabs"><a name="1100738">*/</a></div>
+      <div class="Code2_tabs"><a name="1100739">	</a>@Override</div>
+      <div class="Code2_tabs"><a name="1100740">	</a>public void onCreate(Bundle savedInstanceState) {</div>
+      <div class="Code2_tabs"><a name="1100735">	</a>	super.onCreate(savedInstanceState);</div>
+      <div class="Code2_tabs"><a name="1100730">	</a>	setContentView(R.layout.user_lookup);</div>
+      <div class="Code2_tabs"><a name="1100725">	</a>	bodyText = (TextView)this.findViewById(R.id.bodyText);</div>
+      <div class="Code2_tabs"><a name="1100720">	</a>}</div>
+      <div class="Code2_tabs"><a name="1100762">/*</a></div>
+      <div class="Code2_tabs"><span class="Jump_X-ref"><a href="#1100212" title="UserLookupActivity" name="1100767">Step&nbsp;5</a></span></div>
+      <div class="Code2_tabs"><a name="1100769">*/</a></div>
+      <div class="Code2_tabs"><a name="1100355">	</a>@Override</div>
+      <div class="Code2_tabs"><a name="1100356">	</a>protected void onResume() {</div>
+      <div class="Code2_tabs"><a name="1100357">	</a>	super.onResume();</div>
+      <div class="Code2_tabs"><a name="1100358">	</a>	if (loadTask == null) {</div>
+      <div class="Code2_tabs"><a name="1100359">	</a>		getUserAttributes();</div>
+      <div class="Code2_tabs"><a name="1100360">	</a>	}</div>
+      <div class="Code2_tabs"><a name="1100361">	</a>}</div>
+      <div class="Code2_tabs"><a name="1100800">/*</a></div>
+      <div class="Code2_tabs"><span class="Jump_X-ref"><a href="#1100217" title="UserLookupActivity" name="1100805">Step&nbsp;6</a></span></div>
+      <div class="Code2_tabs"><a name="1100806">*/</a></div>
+      <div class="Code2_tabs"><a name="1100363">	</a>private void getUserAttributes() {</div>
+      <div class="Code2_tabs"><a name="1100364">	</a>	Log.i(TAG, "Enter userLookup");</div>
+      <div class="Code2_tabs"><a name="1100365">	</a>	loadTask = new AsyncTask&lt;Void, Void, UserAttributes&gt;() {</div>
+      <div class="Code2_tabs"><a name="1100366">	</a>		private String error;</div>
+      <div class="Code2_tabs"><a name="1100367">	</a>		</div>
+      <div class="Code2_tabs"><a name="1100368">	</a>		@Override</div>
+      <div class="Code2_tabs"><a name="1100369">	</a>		protected UserAttributes doInBackground(Void... params) {</div>
+      <div class="Code2_tabs"><a name="1100838">/*</a></div>
+      <div class="Code2_tabs"><span class="Jump_X-ref"><a href="#1100221" title="UserLookupActivity" name="1100843">Step&nbsp;7</a></span></div>
+      <div class="Code2_tabs"><a name="1100844">*/</a></div>
+      <div class="Code2_tabs"><a name="1104278">	</a>			try {</div>
+      <div class="Code2_tabs"><a name="1104279">	</a>				String[] attributes = new String[] { "proxyaddresses" };</div>
+      <div class="Code2_tabs"><a name="1104280">	</a>				return EnterpriseAuthentication.userLookup(UserLookupActivity.this,</div>
+      <div class="Code2_tabs"><a name="1100374">	</a>						attributes);</div>
+      <div class="Code2_tabs"><a name="1104292">	</a>			} catch (Exception e) {</div>
+      <div class="Code2_tabs"><a name="1100375">	</a>				Log.w(TAG, "Authentication failed:" + e);</div>
+      <div class="Code2_tabs"><a name="1100376">	</a>				error = e.toString();</div>
+      <div class="Code2_tabs"><a name="1100377">	</a>			}</div>
+      <div class="Code2_tabs"><a name="1100378">	</a>			// Auth failed</div>
+      <div class="Code2_tabs"><a name="1100379">	</a>			return null;</div>
+      <div class="Code2_tabs"><a name="1100380">	</a>		}</div>
+      <div class="Code2_tabs"><a name="1100908">/*</a></div>
+      <div class="Code2_tabs"><span class="Jump_X-ref"><a href="#1101062" title="UserLookupActivity" name="1100913">Step&nbsp;8</a></span></div>
+      <div class="Code2_tabs"><a name="1100914">*/</a></div>
+      <div class="Code2_tabs"><a name="1100382">	</a>		@Override</div>
+      <div class="Code2_tabs"><a name="1100383">	</a>		protected void onPostExecute(UserAttributes result) {</div>
+      <div class="Code2_tabs"><a name="1100384">	</a>			super.onPostExecute(result);</div>
+      <div class="Code2_tabs"><a name="1100385">	</a>			Log.i(TAG, "User info loaded, result:" + result);</div>
+      <div class="Code2_tabs"><a name="1100386">	</a>			</div>
+      <div class="Code2_tabs"><a name="1100387">	</a>			if (result == null) {</div>
+      <div class="Code2_tabs"><a name="1100388">	</a>				bodyText.setText("Authentication failed:" + error);</div>
+      <div class="Code2_tabs"><a name="1100389">	</a>				return;</div>
+      <div class="Code2_tabs"><a name="1100390">	</a>			}</div>
+      <div class="Code2_tabs"><a name="1100981">/*</a></div>
+      <div class="Code2_tabs"><span class="Jump_X-ref"><a href="#1101068" title="UserLookupActivity" name="1100986">Step&nbsp;9</a></span></div>
+      <div class="Code2_tabs"><a name="1100987">*/</a></div>
+      <div class="Code2_tabs"><a name="1100392">	</a>			bodyText.setText(result.toString());</div>
+      <div class="Code2_tabs"><a name="1100393">	</a>		}</div>
+      <div class="Code2_tabs"><a name="1100394">	</a>	};</div>
+      <div class="Code2_tabs"><a name="1100395">	</a>	Log.i(TAG, "Start to load user attributes");</div>
+      <div class="Code2_tabs"><a name="1100396">	</a>	loadTask.execute();</div>
+      <div class="Code2_tabs"><a name="1100397">	</a>}</div>
+      <div class="Code2_tabs"><a name="1100398">}</a></div>
+      <div class="Code2_tabs"><a name="1094038">&nbsp;</a></div>
+      <div class="Body"><a name="1093940">&nbsp;</a></div>
+    </blockquote>
+    <hr align="left" />
+    <table align="right">
+      <tr>
+        <td class="WebWorks_Company_Logo_Bottom">
+          <a href="http://www.centrify.com" target="external_window"><img src="centrifylogo.gif" border="0" /></a>
+        </td>
+      </tr>
+      <tr>
+        <td class="WebWorks_Company_Name_Bottom">
+          <a href="http://www.centrify.com" target="external_window">Centrify Corporation</a>
+        </td>
+      </tr>
+      <tr>
+        <td class="WebWorks_Company_Email_Bottom">
+          <a href="mailto:support@centrify.com">support@centrify.com</a>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>

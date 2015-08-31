@@ -1,0 +1,514 @@
+div.BookTitle
+{
+  color: #000000;
+  font-family: Arial, Sans-Serif, Myriad Web;
+  font-size: 18pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  margin-bottom: 9.0pt;
+  margin-left: 0pt;
+  margin-right: 0pt;
+  margin-top: 0.0pt;
+  text-align: Left;
+  text-indent: 0pt;
+  text-transform: none;
+  vertical-align: baseline;
+}
+
+.BookTitle_outer
+{
+  margin-bottom: 9.0pt;
+  margin-right: 0pt;
+  margin-top: 0.0pt;
+}
+
+.BookTitle_inner
+{
+  color: #000000;
+  font-family: Arial, Sans-Serif, Myriad Web;
+  font-size: 18pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-align: Left;
+  text-transform: none;
+  vertical-align: baseline;
+  margin-left: 0pt;
+  margin-right: 0pt;
+  margin-top: 0pt;
+  margin-bottom: 0pt;
+  padding-left: 0pt;
+  padding-right: 0pt;
+  padding-top: 0pt;
+  padding-bottom: 0pt;
+}
+
+div.Company
+{
+  color: #000000;
+  font-family: Arial, Sans-Serif, Myriad Web;
+  font-size: 10pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  margin-bottom: 6.0pt;
+  margin-left: 0pt;
+  margin-right: 0pt;
+  margin-top: 60.0pt;
+  text-align: Left;
+  text-indent: 0pt;
+  text-transform: none;
+  vertical-align: baseline;
+}
+
+.Company_outer
+{
+  margin-bottom: 6.0pt;
+  margin-right: 0pt;
+  margin-top: 60.0pt;
+}
+
+.Company_inner
+{
+  color: #000000;
+  font-family: Arial, Sans-Serif, Myriad Web;
+  font-size: 10pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-align: Left;
+  text-transform: none;
+  vertical-align: baseline;
+  margin-left: 0pt;
+  margin-right: 0pt;
+  margin-top: 0pt;
+  margin-bottom: 0pt;
+  padding-left: 0pt;
+  padding-right: 0pt;
+  padding-top: 0pt;
+  padding-bottom: 0pt;
+}
+
+div.ConfidentialMarker
+{
+  color: #000000;
+  font-family: Arial, Sans-Serif, Myriad Web;
+  font-size: 10pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  margin-bottom: 7.0pt;
+  margin-left: 0pt;
+  margin-right: 0pt;
+  margin-top: 0.0pt;
+  text-align: Left;
+  text-indent: 0pt;
+  text-transform: none;
+  vertical-align: baseline;
+}
+
+.ConfidentialMarker_outer
+{
+  margin-bottom: 7.0pt;
+  margin-right: 0pt;
+  margin-top: 0.0pt;
+}
+
+.ConfidentialMarker_inner
+{
+  color: #000000;
+  font-family: Arial, Sans-Serif, Myriad Web;
+  font-size: 10pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-align: Left;
+  text-transform: none;
+  vertical-align: baseline;
+  margin-left: 0pt;
+  margin-right: 0pt;
+  margin-top: 0pt;
+  margin-bottom: 0pt;
+  padding-left: 0pt;
+  padding-right: 0pt;
+  padding-top: 0pt;
+  padding-bottom: 0pt;
+}
+
+div.NoChapterNumber
+{
+  color: #000000;
+  font-family: Arial, Sans-Serif, Myriad Web;
+  font-size: 10pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  margin-bottom: 2.0pt;
+  margin-left: 0pt;
+  margin-right: 0pt;
+  margin-top: 0.0pt;
+  text-align: Right;
+  text-indent: 0pt;
+  text-transform: none;
+  vertical-align: baseline;
+}
+
+.NoChapterNumber_outer
+{
+  margin-bottom: 2.0pt;
+  margin-right: 0pt;
+  margin-top: 0.0pt;
+}
+
+.NoChapterNumber_inner
+{
+  color: #000000;
+  font-family: Arial, Sans-Serif, Myriad Web;
+  font-size: 10pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-align: Right;
+  text-transform: none;
+  vertical-align: baseline;
+  margin-left: 0pt;
+  margin-right: 0pt;
+  margin-top: 0pt;
+  margin-bottom: 0pt;
+  padding-left: 0pt;
+  padding-right: 0pt;
+  padding-top: 0pt;
+  padding-bottom: 0pt;
+}
+
+div.ProductName
+{
+  color: #000000;
+  font-family: Arial, Sans-Serif, Myriad Web;
+  font-size: 10pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  margin-bottom: 32.0pt;
+  margin-left: 0pt;
+  margin-right: 0pt;
+  margin-top: 0.0pt;
+  text-align: Left;
+  text-indent: 0pt;
+  text-transform: none;
+  vertical-align: baseline;
+}
+
+.ProductName_outer
+{
+  margin-bottom: 32.0pt;
+  margin-right: 0pt;
+  margin-top: 0.0pt;
+}
+
+.ProductName_inner
+{
+  color: #000000;
+  font-family: Arial, Sans-Serif, Myriad Web;
+  font-size: 10pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-align: Left;
+  text-transform: none;
+  vertical-align: baseline;
+  margin-left: 0pt;
+  margin-right: 0pt;
+  margin-top: 0pt;
+  margin-bottom: 0pt;
+  padding-left: 0pt;
+  padding-right: 0pt;
+  padding-top: 0pt;
+  padding-bottom: 0pt;
+}
+
+div.Version
+{
+  color: #000000;
+  font-family: Arial, Sans-Serif, Myriad Web;
+  font-size: 10pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  margin-bottom: 12.0pt;
+  margin-left: 0pt;
+  margin-right: 0pt;
+  margin-top: 0.0pt;
+  text-align: Left;
+  text-indent: 0pt;
+  text-transform: none;
+  vertical-align: baseline;
+}
+
+.Version_outer
+{
+  margin-bottom: 12.0pt;
+  margin-right: 0pt;
+  margin-top: 0.0pt;
+}
+
+.Version_inner
+{
+  color: #000000;
+  font-family: Arial, Sans-Serif, Myriad Web;
+  font-size: 10pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-align: Left;
+  text-transform: none;
+  vertical-align: baseline;
+  margin-left: 0pt;
+  margin-right: 0pt;
+  margin-top: 0pt;
+  margin-bottom: 0pt;
+  padding-left: 0pt;
+  padding-right: 0pt;
+  padding-top: 0pt;
+  padding-bottom: 0pt;
+}
+
+div.WorkSmarter
+{
+  color: #000000;
+  font-family: Arial, Sans-Serif, Myriad Web;
+  font-size: 10pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  margin-bottom: 18.0pt;
+  margin-left: 0pt;
+  margin-right: 0pt;
+  margin-top: 0.0pt;
+  text-align: Right;
+  text-indent: 0pt;
+  text-transform: none;
+  vertical-align: baseline;
+}
+
+.WorkSmarter_outer
+{
+  margin-bottom: 18.0pt;
+  margin-right: 0pt;
+  margin-top: 0.0pt;
+}
+
+.WorkSmarter_inner
+{
+  color: #000000;
+  font-family: Arial, Sans-Serif, Myriad Web;
+  font-size: 10pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-align: Right;
+  text-transform: none;
+  vertical-align: baseline;
+  margin-left: 0pt;
+  margin-right: 0pt;
+  margin-top: 0pt;
+  margin-bottom: 0pt;
+  padding-left: 0pt;
+  padding-right: 0pt;
+  padding-top: 0pt;
+  padding-bottom: 0pt;
+}
+
+span.bold
+{
+  font-weight: bold;
+}
+
+span.Book_titles
+{
+  font-style: italic;
+  font-variant: normal;
+  text-transform: none;
+  vertical-align: baseline;
+}
+
+span.Book_Titles
+{
+  font-style: italic;
+  font-variant: normal;
+  text-transform: none;
+  vertical-align: baseline;
+}
+
+span.BulletSymbol
+{
+  font-family: Wingdings;
+}
+
+span.Cell_Code
+{
+  color: #000000;
+  font-family: "Lucida Console";
+  font-size: 8.0pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-transform: none;
+  vertical-align: baseline;
+}
+
+span.Code
+{
+  color: #000000;
+  font-family: 'Lucida Console', 'Courier New', Monospace;
+  font-size: 8.5pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-transform: none;
+  vertical-align: baseline;
+}
+
+span.Emphasis
+{
+  font-style: italic;
+  font-variant: normal;
+  text-transform: none;
+  vertical-align: baseline;
+}
+
+span.GUI_Actions
+{
+  font-weight: bold;
+}
+
+span.HeaderSymbols
+{
+  color: #000000;
+  font-family: Wingdings;
+  font-size: 5.0pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-transform: none;
+  vertical-align: baseline;
+}
+
+span.Jump_X-ref
+{
+  color: #0000ff;
+  font-family: Arial, 'Myriad Web', Sans-Serif;
+  font-size: 10pt;
+  font-variant: normal;
+  text-transform: none;
+  vertical-align: baseline;
+}
+
+span.Note
+{
+  color: #000000;
+  font-family: "Myriad Condensed Web";
+  font-size: 9.5pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: bold;
+  text-transform: none;
+  vertical-align: baseline;
+}
+
+span.SmallCaps
+{
+  color: #000000;
+  font-family: Garamond;
+  font-size: 9.0pt;
+  font-style: normal;
+  font-weight: normal;
+  vertical-align: baseline;
+}
+
+span.StepNumber
+{
+  color: #000000;
+  font-family: "Myriad Condensed Web";
+  font-size: 11.0pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: bold;
+  text-transform: none;
+  vertical-align: baseline;
+}
+
+span.Term
+{
+  font-variant: normal;
+  font-weight: bold;
+  text-transform: none;
+  vertical-align: baseline;
+}
+
+span.Trademark
+{
+  color: #000000;
+  font-family: Perpetua;
+  font-size: 8.0pt;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-transform: none;
+  vertical-align: super;
+}
+
+span.Variable
+{
+  color: #000000;
+  font-family: "Lucida Console";
+  font-size: 8.5pt;
+  font-style: italic;
+  font-variant: normal;
+  font-weight: normal;
+  text-transform: none;
+  vertical-align: baseline;
+}
+
+table.UnstructMasterPageMaps
+{
+  border-collapse: collapse;
+  margin-bottom: 6.0pt;
+  margin-left: 0pt;
+  margin-right: 0pt;
+  margin-top: 6.0pt;
+  padding-bottom: 3pt;
+  padding-left: 3pt;
+  padding-right: 3pt;
+  padding-top: 3pt;
+  text-align: left;
+}
+
+table.Standard
+{
+  border-bottom-color: Black;
+  border-bottom-style: solid;
+  border-bottom-width: thin;
+  border-collapse: collapse;
+  border-left-color: Black;
+  border-left-style: solid;
+  border-left-width: thin;
+  border-right-color: Black;
+  border-right-style: solid;
+  border-right-width: thin;
+  border-top-color: Black;
+  border-top-style: solid;
+  border-top-width: thin;
+  margin-bottom: 0.0pt;
+  margin-left: 54pt;
+  margin-right: 0pt;
+  margin-top: 10.0pt;
+  padding-bottom: 2pt;
+  padding-left: 2pt;
+  padding-right: 2pt;
+  padding-top: 6pt;
+  text-align: left;
+  width: 80%;
+}
+
